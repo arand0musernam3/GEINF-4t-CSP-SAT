@@ -268,29 +268,51 @@ class ScalAT(problemName: String = "", workingpath: String = "working/") {
     //Adds the encoding of an exactly-K constraint.
     // x can be empty, and K take any value from -infinity to infinity
     def addEK(x: List[Int], K: Int): Unit = {
-        val sortedX = newVarArray(x.length).toList
-        addSorter(x, sortedX)
-        addClause(-sortedX(K) :: List())
-        addClause(sortedX(K-1):: List())
+        if (K > x.length || K < 1) {
+            throw new IndexOutOfBoundsException("La K ha de ser positiva i igual o inferior al nombre de variables")
+        }
+        if (K == x.length) {
+            x.foreach{ v => addClause(v :: List()) }
+        }
+        else {
+            val sortedX = newVarArray(x.length).toList
+            addSorter(x, sortedX)
+            addClause(-sortedX(K) :: List())
+            addClause(sortedX(K-1):: List())
+        }
     }
 
 
     //Adds the encoding of an at-least-K constraint.
     // x can be empty, and K take any value from -infinity to infinity
     def addALK(x: List[Int], K: Int): Unit = {
-        val sortedX = newVarArray(x.length).toList
-        addSorter(x, sortedX)
-        //addClause(-sortedX(K) :: List())
-        addClause(sortedX(K-1):: List())
+        if (K > x.length || K < 1) {
+            throw new IndexOutOfBoundsException("La K ha de ser positiva i igual o inferior al nombre de variables")
+        }
+        if (K == x.length) {
+            x.foreach{ v => addClause(v :: List()) }
+        }
+        else {
+            val sortedX = newVarArray(x.length).toList
+            addSorter(x, sortedX)
+            //addClause(-sortedX(K) :: List())
+            addClause(sortedX(K-1):: List())
+        }
     }
 
     //Adds the encoding of an at-most-K constraint.
     // x can be empty, and K take any value from -infinity to infinity
     def addAMK(x: List[Int], K: Int): Unit = {
+        if (K > x.length || K < 1) {
+            throw new IndexOutOfBoundsException("La K ha de ser positiva i igual o inferior al nombre de variables")
+        }
+        if (K == x.length) {
+            // No cal afegir cap restricció en aquest cas
+            return
+        }
         val sortedX = newVarArray(x.length).toList
         addSorter(x, sortedX)
         addClause(-sortedX(K) :: List())
-        //addClause(sortedX(K-1):: List())
     }
 
 
@@ -388,10 +410,10 @@ class ScalAT(problemName: String = "", workingpath: String = "working/") {
         val s: ISolver = problem.asInstanceOf[ISolver]
         if (satisfiable) {
             mapModelResults(problem.model)
-            SolverResult(this.model, elapsedtime, true, s.getStat.asScala.toMap)
+            SolverResult(this.model, elapsedtime, satisfiable = true, s.getStat.asScala.toMap)
         }
         else
-            SolverResult(this.model, elapsedtime, false, s.getStat.asScala.toMap)
+            SolverResult(this.model, elapsedtime, satisfiable = false, s.getStat.asScala.toMap)
     }
 
     def solve() = {

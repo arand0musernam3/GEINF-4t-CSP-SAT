@@ -1,0 +1,974 @@
+
+￼
+Running calendari_v0.mzn, t4fix.dzn
+2h 31m 5s
+
+%%%mzn-stat: eliminatedImplications=8877
+%%%mzn-stat: evaluatedHalfReifiedConstraints=16369
+%%%mzn-stat: evaluatedReifiedConstraints=6492
+%%%mzn-stat: flatBoolConstraints=126557
+%%%mzn-stat: flatBoolVars=35668
+%%%mzn-stat: flatIntConstraints=22736
+%%%mzn-stat: flatIntVars=21677
+%%%mzn-stat: flatTime=18.0784
+%%%mzn-stat: method=minimize
+%%%mzn-stat: paths=112962
+%%%mzn-stat-end
+Using FZN solver C:\Program Files\MiniZinc\bin\fzn-cp-sat.EXE for solving, parameters: -a -p 16 -s -v 
+%% File C:\\Users\\steam\\AppData\\Local\\Temp\\tmp51CC.tmp.fzn parsed in 682 ms
+%% Presolve model
+%%   - rule 'bool2int: merge boolean and integer variables.' was applied 20752 times
+%%   - done in 34 ms
+%% Model C:\\Users\\steam\\AppData\\Local\\Temp\\tmp51CC.tmp
+%%   - array_bool_and: 25762
+%%   - bool_clause: 95614
+%%   - bool_eq_reif: 3345
+%%   - bool_lin_eq: 169
+%%   - bool_not: 1812
+%%   - int_eq_imp: 1015
+%%   - int_eq_reif: 145
+%%   - int_lin_eq: 514
+%%   - int_max: 165
+%%   - Minimization problem
+%% Starting CP-SAT solver v9.11.4210
+%% Parameters: log_search_progress: true log_to_stdout: false max_domain_size_when_encoding_eq_neq_constraints: 32 num_workers: 16
+%% Initial optimization model 'C:\\Users\\steam\\AppData\\Local\\Temp\\tmp51CC.tmp': (model_fingerprint: 0xfe77371abe909d8)
+%% #Variables: 40'198 (#ints: 1 in objective)
+%%   - 35'511 Booleans in [0,1]
+%%   - 11 in [-50000,143000]
+%%   - 11 in [-41000,152000]
+%%   - 1 in [-40000,143000]
+%%   - 11 in [-40000,153000]
+%%   - 1 in [-38000,153000]
+%%   - 11 in [-36000,157000]
+%%   - 1 in [-35000,143000]
+%%   - 12 in [-35000,158000]
+%%   - 1 in [-31000,152000]
+%%   - 11 in [-31000,162000]
+%%   - 1 in [-26000,152000]
+%%   - 1 in [-26000,157000]
+%%   - 11 in [-25000,168000]
+%%   - 1 in [-24000,162000]
+%%   - 1 in [-23000,168000]
+%%   - 12 in [-23000,170000]
+%%   - 1 in [-21000,157000]
+%%   - 1 in [-21000,162000]
+%%   - 11 in [-20000,173000]
+%%   - 1 in [-18000,173000]
+%%   - 11 in [-18000,175000]
+%%   - 1 in [-16000,175000]
+%%   - 1 in [-13000,170000]
+%%   - 11 in [-10000,183000]
+%%   - 1 in [-8000,175000]
+%%   - 1 in [-8000,183000]
+%%   - 11 in [-7000,186000]
+%%   - 11 in [-6500,186500]
+%%   - 3 in [0,9]
+%%   - 20 in [0,10]
+%%   - 76 in [0,11]
+%%   - 45 in [0,12]
+%%   - 1 in [0,13]
+%%   - 24 in [0,143000]
+%%   - 24 in [0,152000]
+%%   - 23 in [0,153000]
+%%   - 24 in [0,157000]
+%%   - 24 in [0,158000]
+%%   - 24 in [0,162000]
+%%   - 23 in [0,168000]
+%%   - 25 in [0,170000]
+%%   - 23 in [0,173000]
+%%   - 24 in [0,175000]
+%%   - 25 in [0,183000]
+%%   - 22 in [0,186000]
+%%   - 22 in [0,186500]
+%%   - 11 in [60,1140]
+%%   - 1 in [65,1140]
+%%   - 1 in [197,1140]
+%%   - 1 in [1200,15098]
+%%   - 2 in [3000,186000]
+%%   - 2 in [3500,186500]
+%%   - 2 in [8000,186000]
+%%   - 2 in [8500,186500]
+%%   - 1 in [28000,27195500]
+%%   - 4052 constants in {0,1,278,5000} 
+%% #kBoolAnd: 25'762 (#enforced: 25'762) (#literals: 78'612)
+%% #kBoolOr: 121'376 (#enforced: 25'762) (#literals: 252'346)
+%% #kLinMax: 165 (#expressions: 330)
+%% #kLinear1: 7'850 (#enforced: 7'850)
+%% #kLinear2: 1'957 (#enforced: 145)
+%% #kLinearN: 683 (#terms: 27'664)
+%% Starting presolve at 0.05s
+%%   2.14e-02s  0.00e+00d  [DetectDominanceRelations] 
+%%   1.81e-01s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=5 #num_dual_strengthening=2 
+%%   8.53e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::ExtractEncodingFromLinear] #potential_supersets=328 #potential_subsets=303 
+%% [Symmetry] Graph for symmetry has 141'628 nodes and 446'037 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0281273 dtime: 0.0692973
+%% [SAT presolve] num removable Booleans: 8442 / 29774
+%% [SAT presolve] num trivial clauses: 0
+%% [SAT presolve] [0s] clauses:154102 literals:336852 vars:29774 one_side_vars:1 simple_definition:27787 singleton_clauses:0
+%% [SAT presolve] [0.0218526s] clauses:154102 literals:336852 vars:29774 one_side_vars:1 simple_definition:27787 singleton_clauses:0
+%% [SAT presolve] [0.0271702s] clauses:154102 literals:336852 vars:29774 one_side_vars:1 simple_definition:27787 singleton_clauses:0
+%%   4.04e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   1.05e+00s  1.01e+00d *[operations_research::sat::CpModelPresolver::Probe] #probed=13'678 #new_bounds=145 #equiv=290 #new_binary_clauses=7'524 
+%%   3.75e-01s  0.00e+00d  [MaxClique] Merged 134961(269922 literals) into 131178(320745 literals) at_most_ones. 
+%%   2.19e-02s  0.00e+00d  [DetectDominanceRelations] 
+%%   7.79e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=2 #num_dual_strengthening=1 
+%%   3.06e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::ProcessAtMostOneAndLinear] 
+%%   1.80e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] 
+%%   1.85e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   2.27e-03s  6.88e-05d  [operations_research::sat::CpModelPresolver::DetectDominatedLinearConstraints] #relevant_constraints=329 
+%%   1.40e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDifferentVariables] 
+%%   4.25e-02s  2.22e-03d  [operations_research::sat::CpModelPresolver::ProcessSetPPC] #relevant_constraints=150'396 #num_inclusions=39'442 
+%%   1.95e-03s  2.62e-06d  [operations_research::sat::CpModelPresolver::FindAlmostIdenticalLinearConstraints] #num_tested_pairs=45 
+%%   2.42e-01s  3.27e-01d  [operations_research::sat::CpModelPresolver::FindBigAtMostOneAndLinearOverlap] 
+%%   2.20e-02s  1.62e-01d  [operations_research::sat::CpModelPresolver::FindBigVerticalLinearOverlap] 
+%%   1.58e-02s  3.12e-02d  [operations_research::sat::CpModelPresolver::FindBigHorizontalLinearOverlap] #linears=329 
+%%   5.62e-03s  3.35e-04d  [operations_research::sat::CpModelPresolver::MergeClauses] 
+%%   2.30e-02s  0.00e+00d  [DetectDominanceRelations] 
+%%   5.38e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=2 #num_dual_strengthening=1 
+%%   2.28e-02s  0.00e+00d  [DetectDominanceRelations] 
+%%   5.35e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%% [Symmetry] Graph for symmetry has 143'877 nodes and 493'524 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0273737 dtime: 0.0643492
+%% [SAT presolve] num removable Booleans: 1466 / 29484
+%% [SAT presolve] num trivial clauses: 0
+%% [SAT presolve] [0s] clauses:145759 literals:320166 vars:29338 one_side_vars:279 simple_definition:27224 singleton_clauses:0
+%% [SAT presolve] [0.0206047s] clauses:145759 literals:320166 vars:29338 one_side_vars:279 simple_definition:27224 singleton_clauses:0
+%% [SAT presolve] [0.0229135s] clauses:145759 literals:320166 vars:29338 one_side_vars:279 simple_definition:27224 singleton_clauses:0
+%%   6.19e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   1.05e+00s  1.01e+00d *[operations_research::sat::CpModelPresolver::Probe] #probed=13'472 #new_binary_clauses=7'421 
+%%   4.35e-01s  0.00e+00d  [MaxClique] Merged 130598(319585 literals) into 130108(327942 literals) at_most_ones. 
+%%   2.47e-02s  0.00e+00d  [DetectDominanceRelations] 
+%%   8.16e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   3.21e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::ProcessAtMostOneAndLinear] 
+%%   1.84e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] 
+%%   1.85e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   3.03e-03s  6.87e-05d  [operations_research::sat::CpModelPresolver::DetectDominatedLinearConstraints] #relevant_constraints=329 
+%%   2.18e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDifferentVariables] 
+%%   4.46e-02s  2.30e-03d  [operations_research::sat::CpModelPresolver::ProcessSetPPC] #relevant_constraints=149'906 #num_inclusions=39'434 
+%%   3.07e-03s  2.21e-06d  [operations_research::sat::CpModelPresolver::FindAlmostIdenticalLinearConstraints] #num_tested_pairs=38 
+%%   2.43e-01s  3.27e-01d  [operations_research::sat::CpModelPresolver::FindBigAtMostOneAndLinearOverlap] 
+%%   2.29e-02s  1.62e-01d  [operations_research::sat::CpModelPresolver::FindBigVerticalLinearOverlap] 
+%%   1.65e-02s  3.12e-02d  [operations_research::sat::CpModelPresolver::FindBigHorizontalLinearOverlap] #linears=329 
+%%   6.79e-03s  3.35e-04d  [operations_research::sat::CpModelPresolver::MergeClauses] 
+%%   2.58e-02s  0.00e+00d  [DetectDominanceRelations] 
+%%   5.93e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=2 #num_dual_strengthening=1 
+%%   2.62e-02s  0.00e+00d  [DetectDominanceRelations] 
+%%   6.03e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%% [Symmetry] Graph for symmetry has 144'301 nodes and 501'777 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0280676 dtime: 0.063608
+%% [SAT presolve] num removable Booleans: 1162 / 29484
+%% [SAT presolve] num trivial clauses: 0
+%% [SAT presolve] [0s] clauses:144741 literals:318130 vars:29338 one_side_vars:331 simple_definition:27172 singleton_clauses:0
+%% [SAT presolve] [0.0206324s] clauses:144741 literals:318130 vars:29338 one_side_vars:331 simple_definition:27172 singleton_clauses:0
+%% [SAT presolve] [0.0228106s] clauses:144741 literals:318130 vars:29338 one_side_vars:331 simple_definition:27172 singleton_clauses:0
+%%   7.26e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   1.06e+00s  1.01e+00d *[operations_research::sat::CpModelPresolver::Probe] #probed=13'442 #new_binary_clauses=7'406 
+%%   4.47e-01s  0.00e+00d  [MaxClique] Merged 130108(327942 literals) into 130108(327951 literals) at_most_ones. 
+%%   2.71e-02s  0.00e+00d  [DetectDominanceRelations] 
+%%   8.68e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   3.44e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::ProcessAtMostOneAndLinear] 
+%%   2.34e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] 
+%%   2.40e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   3.70e-03s  6.87e-05d  [operations_research::sat::CpModelPresolver::DetectDominatedLinearConstraints] #relevant_constraints=329 
+%%   3.11e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDifferentVariables] 
+%%   4.56e-02s  2.30e-03d  [operations_research::sat::CpModelPresolver::ProcessSetPPC] #relevant_constraints=149'906 #num_inclusions=39'434 
+%%   3.76e-03s  2.38e-06d  [operations_research::sat::CpModelPresolver::FindAlmostIdenticalLinearConstraints] #num_tested_pairs=41 
+%%   2.45e-01s  3.27e-01d  [operations_research::sat::CpModelPresolver::FindBigAtMostOneAndLinearOverlap] 
+%%   2.30e-02s  1.62e-01d  [operations_research::sat::CpModelPresolver::FindBigVerticalLinearOverlap] 
+%%   1.74e-02s  3.12e-02d  [operations_research::sat::CpModelPresolver::FindBigHorizontalLinearOverlap] #linears=329 
+%%   7.71e-03s  3.35e-04d  [operations_research::sat::CpModelPresolver::MergeClauses] 
+%%   2.78e-02s  0.00e+00d  [DetectDominanceRelations] 
+%%   6.38e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   5.47e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::ExpandObjective] #entries=46'916 #tight_variables=4'203 #tight_constraints=473 
+%% Presolve summary:
+%%   - 6492 affine relations were detected.
+%%   - rule 'TODO dual: add implied bound' was applied 1'450 times.
+%%   - rule 'TODO dual: only one blocking constraint?' was applied 84'550 times.
+%%   - rule 'TODO dual: only one blocking enforced constraint?' was applied 1'450 times.
+%%   - rule 'affine: new relation' was applied 6'492 times.
+%%   - rule 'at_most_one: transformed into max clique.' was applied 2 times.
+%%   - rule 'bool_and: x => x' was applied 7'270 times.
+%%   - rule 'bool_or: always true' was applied 6'708 times.
+%%   - rule 'bool_or: implications' was applied 95'527 times.
+%%   - rule 'deductions: 8143 stored' was applied 1 time.
+%%   - rule 'dual: enforced equivalence' was applied 3'925 times.
+%%   - rule 'dual: reduced domain' was applied 145 times.
+%%   - rule 'enforcement: always false' was applied 6'708 times.
+%%   - rule 'lin_max: affine_max target domain reduced' was applied 159 times.
+%%   - rule 'lin_max: canonicalize target using gcd' was applied 160 times.
+%%   - rule 'lin_max: converted to equality' was applied 5 times.
+%%   - rule 'lin_max: divising by gcd' was applied 160 times.
+%%   - rule 'lin_max: removed exprs' was applied 5 times.
+%%   - rule 'lin_max: unused affine_max target' was applied 15 times.
+%%   - rule 'linear: always true' was applied 440 times.
+%%   - rule 'linear: divide by GCD' was applied 160 times.
+%%   - rule 'linear: doubleton free' was applied 1 time.
+%%   - rule 'linear: enforcement literal in expression' was applied 435 times.
+%%   - rule 'linear: fixed or dup variables' was applied 435 times.
+%%   - rule 'linear: positive equal one' was applied 328 times.
+%%   - rule 'linear: reduced variable domains' was applied 159 times.
+%%   - rule 'linear: reduced variable domains in derived constraint' was applied 5 times.
+%%   - rule 'linear: remapped using affine relations' was applied 1'232 times.
+%%   - rule 'linear: simplified rhs' was applied 3'635 times.
+%%   - rule 'linear: singleton column' was applied 1 time.
+%%   - rule 'linear: variable substitution 0' was applied 16 times.
+%%   - rule 'linear: variable substitution 1' was applied 10 times.
+%%   - rule 'presolve: 4052 unused variables removed.' was applied 1 time.
+%%   - rule 'presolve: iteration' was applied 3 times.
+%%   - rule 'setppc: exactly_one included in linear' was applied 8 times.
+%%   - rule 'setppc: reduced linear coefficients' was applied 8 times.
+%%   - rule 'variables with 2 values: new affine relation' was applied 145 times.
+%%   - rule 'variables with 2 values: register other encoding' was applied 145 times.
+%%   - rule 'variables: canonicalize affine domain' was applied 320 times.
+%%   - rule 'variables: detect fully reified value encoding' was applied 145 times.
+%%   - rule 'variables: detect half reified value encoding' was applied 580 times.
+%% Presolved optimization model 'C:\\Users\\steam\\AppData\\Local\\Temp\\tmp51CC.tmp': (model_fingerprint: 0x3544679c142bca09)
+%% #Variables: 29'932 (#ints: 13 in objective)
+%%   - 29'484 Booleans in [0,1]
+%%   - 2 in [0,1][3][5][7][9][11][13][15][17][19][21] ... 291][293][295][297][299][301][303][305][307][309]
+%%   - 5 in [0,1][3][5][7][9][11][13][15][17][19][21] ... 301][303][305][307][309][311][313][315][317][319]
+%%   - 4 in [0,1][3][5][7][9][11][13][15][17][19][21] ... 305][307][309][311][313][315][317][319][321][323]
+%%   - 1 in [0,98]
+%%   - 2 in [0,99]
+%%   - 3 in [0,106]
+%%   - 1 in [0,107]
+%%   - 1 in [0,110]
+%%   - 3 in [0,111]
+%%   - 1 in [0,112]
+%%   - 1 in [0,114]
+%%   - 5 in [0,116]
+%%   - 3 in [0,118]
+%%   - 1 in [0,120]
+%%   - 6 in [0,121]
+%%   - 2 in [0,124]
+%%   - 8 in [0,125]
+%%   - 1 in [0,126]
+%%   - 4 in [0,127]
+%%   - 2 in [0,128]
+%%   - 8 in [0,130]
+%%   - 2 in [0,131]
+%%   - 3 in [0,132]
+%%   - 4 in [0,134]
+%%   - 1 in [0,136]
+%%   - 2 in [0,138]
+%%   - 4 in [0,139]
+%%   - 4 in [0,141]
+%%   - 5 in [0,143]
+%%   - 4 in [0,145]
+%%   - 23 in [0,146]
+%%   - 7 in [0,148]
+%%   - 8 in [0,149]
+%%   - 2 in [0,154]
+%%   - 2 in [0,156]
+%%   - 5 in [0,158]
+%%   - 17 in [0,159]
+%%   - 1 in [0,160]
+%%   - 23 in [0,161]
+%%   - 6 in [0,163]
+%%   - 41 in [0,166]
+%%   - 19 in [0,168]
+%%   - 6 in [0,171]
+%%   - 10 in [0,174]
+%%   - 2 in [0,176]
+%%   - 24 in [0,181]
+%%   - 1 in [0,183]
+%%   - 1 in [0,98000]
+%%   - 2 in [0,99000]
+%%   - 3 in [0,106000]
+%%   - 1 in [0,107000]
+%%   - 1 in [0,110000]
+%%   - 3 in [0,111000]
+%%   - 1 in [0,112000]
+%%   - 1 in [0,114000]
+%%   - 5 in [0,116000]
+%%   - 3 in [0,118000]
+%%   - 1 in [0,120000]
+%%   - 6 in [0,121000]
+%%   - 2 in [0,124000]
+%%   - 8 in [0,125000]
+%%   - 1 in [0,126000]
+%%   - 4 in [0,127000]
+%%   - 2 in [0,128000]
+%%   - 8 in [0,130000]
+%%   - 2 in [0,131000]
+%%   - 3 in [0,132000]
+%%   - 4 in [0,134000]
+%%   - 1 in [0,136000]
+%%   - 2 in [0,138000]
+%%   - 1 in [0,139000]
+%%   - 3 in [0,141000]
+%%   - 5 in [0,143000]
+%%   - 4 in [0,145000]
+%%   - 16 in [0,146000]
+%%   - 2 in [0,148000]
+%%   - 8 in [0,149000]
+%%   - 2 in [0,154000]
+%%   - 2 in [0,154500]
+%%   - 2 in [0,156000]
+%%   - 5 in [0,158000]
+%%   - 5 in [0,159000]
+%%   - 5 in [0,159500]
+%%   - 1 in [0,160000]
+%%   - 3 in [0,161000]
+%%   - 4 in [0,161500]
+%%   - 6 in [0,163000]
+%%   - 6 in [0,171000]
+%%   - 10 in [60,1140]
+%%   - 1 in [82,1140]
+%%   - 1 in [195,1140]
+%%   - 1 in [212,1140]
+%% #kAtMostOne: 4'508 (#literals: 76'751)
+%% #kBoolAnd: 11'473 (#enforced: 11'473) (#literals: 137'073)
+%% #kBoolOr: 19'141 (#literals: 66'930)
+%% #kExactlyOne: 328 (#literals: 3'913)
+%% #kLinMax: 145 (#expressions: 290)
+%% #kLinear1: 145 (#enforced: 145)
+%% #kLinear2: 145 (#enforced: 145)
+%% #kLinearN: 329 (#terms: 22'791)
+%% Preloading model.
+%% #Bound   7.29s best:inf   next:[1367,15098] initial_domain
+%% [Symmetry] Graph for symmetry has 133'715 nodes and 501'786 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0285272 dtime: 0.0631171
+%% #Model   7.38s var:29932/29932 constraints:36214/36214
+%% Starting search at 7.38s with 16 workers.
+%% 11 full problem subsolvers: [core, default_lp, lb_tree_search, max_lp, no_lp, objective_lb_search, probing, pseudo_costs, quick_restart, quick_restart_no_lp, reduced_costs]
+%% 5 first solution subsolvers: [fj(2), fs_random, fs_random_no_lp, fs_random_quick_restart_no_lp]
+%% 11 interleaved subsolvers: [feasibility_pump, graph_arc_lns, graph_cst_lns, graph_dec_lns, graph_var_lns, ls(2), ls_lin, rins/rens, rnd_cst_lns, rnd_var_lns]
+%% 3 helper subsolvers: [neighborhood_helper, synchronization_agent, update_gap_integral]
+%% #Bound  12.09s best:inf   next:[1368,15098] fs_random_no_lp
+%% #Bound  12.73s best:inf   next:[1415,15098] fs_random
+%% #1      20.52s best:7155  next:[1415,7154] no_lp (fixed_bools=0/29629)
+%%%mzn-stat: boolVariables=29629
+%%%mzn-stat: failures=3715
+%%%mzn-stat: objective=7155
+%%%mzn-stat: objectiveBound=1415
+%%%mzn-stat: propagations=52441365
+%%%mzn-stat: solveTime=20.518
+%%%mzn-stat-end
+tauler = 
+[|   1..2,      {},      {},  {7,10},      {},     {},     {}, {9,13},     {}, {6,14},  {3,11}, {5,12},   {4,8}
+ |   8..9,   {1,3},  {6,12},  {2,13},      {}, {5,10},     {},     {},     {},     {},      {}, {4,14},  {7,11}
+ |     {},      {},   {1,4},      {},  {2,11},   6..7,     {},     {}, {3,10}, 12..13,   {5,8},     {},  {9,14}
+ |     {}, {11,13},      {},   {1,5},      {},     {},  {2,6}, {8,14},     {},   3..4,  {7,12},  9..10,      {}
+ | {5,11},      {},      {},      {},   {1,8},     {}, 13..14,     {},  {4,7},     {},   {6,9},   2..3, {10,12}
+ |     {},   {6,8},      {},  {9,11},      {}, {1,12},     {}, {4,10}, {5,14},  {2,7},      {},     {},  {3,13}
+ |     {},    4..5,   {2,9},      {}, {10,14}, {8,13},  {1,7},  {3,6}, 11..12,     {},      {},     {},      {}
+ | {4,12},  {7,14},  {8,10},      {},      {},  {3,9},     {}, {1,11}, {6,13},     {},      {},     {},   {2,5}
+ |     {},      {},  {5,13},   {4,6},  {3,12}, {2,14}, 10..11,     {},  {1,9},     {},      {},   7..8,      {}
+ | {7,13},      {}, {11,14},   {3,8},    5..6,     {},  {4,9}, {2,12},     {}, {1,10},      {},     {},      {}
+ |     {},  {2,10},   {3,7},      {},  {4,13},     {}, {8,12},     {},     {},  {5,9},  {1,14}, {6,11},      {}
+ | {6,10},      {},      {}, {12,14},   {7,9},     {},  {3,5},     {},     {}, {8,11},   {2,4}, {1,13},      {}
+ | {3,14},  {9,12},      {},      {},      {}, {4,11},     {},  {5,7},  {2,8},     {}, {10,13},     {},   {1,6}
+ |];
+distanciesEquips = [278, 595, 545, 466, 584, 509, 397, 489, 547, 569, 474, 496, 642, 564];
+distTotal = 7155;
+_objective = 7155;
+seguidorsFora = 
+[|     0,     0,     0,  5000,     0,     0,     0, 8000,     0, 0,     0, 0, 33500
+ |     0,     0, 14000, 30000,     0, 16000,     0,    0,     0, 0,     0, 0,  1500
+ |     0,     0,  5000,     0, 15000, 15000,     0,    0, 22000, 0,  1000, 0,  3500
+ |     0,  5000,     0,     0,     0,     0, 27000,    0,     0, 0,     0, 0,     0
+ |     0,     0,     0,     0, 25000,     0, 13000,    0, 11000, 0,  8000, 0, 24500
+ |     0, 20000,     0,     0,     0,     0,     0, 6000,  1000, 0,     0, 0, 30500
+ |     0,     0,  9000,     0, 18000, 42000,     0,    0,  2000, 0,     0, 0,     0
+ |     0,     0, 32000,     0,     0,     0,     0,    0, 58000, 0,     0, 0, 20500
+ |     0,     0, 22000, 20000,     0,  3000,  9000,    0, 12000, 0,     0, 0,     0
+ |     0,     0,     0,  2000, 27000,     0,  1000,    0,     0, 0,     0, 0,     0
+ |     0, 12000,     0,     0, 40000,     0,  6000,    0,     0, 0,     0, 0,     0
+ | 17000,     0,     0,     0,  2000,     0,     0,    0,     0, 0,  4000, 0,     0
+ |     0,     0,     0,     0,     0,  2000,     0,    0, 38000, 0, 31000, 0, 33500
+ |];
+seguidorsForaTotal = 803500;
+% time elapsed: 40s 410msec
+----------
+%% #2      22.56s best:7068  next:[1415,7067] no_lp (fixed_bools=0/29629)
+%%%mzn-stat: boolVariables=29629
+%%%mzn-stat: failures=5038
+%%%mzn-stat: objective=7068
+%%%mzn-stat: objectiveBound=1415
+%%%mzn-stat: propagations=55701533
+%%%mzn-stat: solveTime=22.5551
+%%%mzn-stat-end
+tauler = 
+[|   1..2,      {},      {},  {7,10},      {},     {},     {}, {9,13},     {}, {6,14},  {3,11}, {5,12},   {4,8}
+ |   8..9,   {1,3},  {6,12},  {2,13},      {}, {5,10},     {},     {},     {},     {},      {}, {4,14},  {7,11}
+ |     {},      {},   {1,4},      {},  {2,11},   6..7,     {},     {}, {3,10}, 12..13,   {5,8},     {},  {9,14}
+ |     {}, {11,13},      {},   {1,5},      {},     {},  {2,6}, {8,14},     {},   3..4,  {7,12},  9..10,      {}
+ | {5,11},      {},   {2,9},      {},   {1,8},     {}, 13..14,  {3,6},  {4,7},     {},      {},     {}, {10,12}
+ |     {},   {6,8},      {},  {9,11},      {}, {1,12},     {}, {4,10}, {5,14},  {2,7},      {},     {},  {3,13}
+ |     {},    4..5,      {},      {}, {10,14}, {8,13},  {1,7},     {}, 11..12,     {},   {6,9},   2..3,      {}
+ | {4,12},  {7,14},  {8,10},      {},      {},  {3,9},     {}, {1,11}, {6,13},     {},      {},     {},   {2,5}
+ |     {},      {},  {5,13},   {4,6},  {3,12}, {2,14}, 10..11,     {},  {1,9},     {},      {},   7..8,      {}
+ | {7,13},      {}, {11,14},   {3,8},    5..6,     {},  {4,9}, {2,12},     {}, {1,10},      {},     {},      {}
+ |     {},  {2,10},   {3,7},      {},  {4,13},     {}, {8,12},     {},     {},  {5,9},  {1,14}, {6,11},      {}
+ | {6,10},      {},      {}, {12,14},   {7,9},     {},  {3,5},     {},     {}, {8,11},   {2,4}, {1,13},      {}
+ | {3,14},  {9,12},      {},      {},      {}, {4,11},     {},  {5,7},  {2,8},     {}, {10,13},     {},   {1,6}
+ |];
+distanciesEquips = [278, 576, 525, 466, 584, 494, 397, 489, 514, 569, 474, 496, 642, 564];
+distTotal = 7068;
+_objective = 7068;
+seguidorsFora = 
+[|     0,     0,     0,  5000,     0,     0,     0, 8000,     0, 0,     0, 0, 33500
+ |     0,     0, 14000, 30000,     0, 16000,     0,    0,     0, 0,     0, 0,  1500
+ |     0,     0,  5000,     0, 15000, 15000,     0,    0, 22000, 0,  1000, 0,  3500
+ |     0,  5000,     0,     0,     0,     0, 27000,    0,     0, 0,     0, 0,     0
+ |     0,     0,  9000,     0, 25000,     0, 13000,    0, 11000, 0,     0, 0, 24500
+ |     0, 20000,     0,     0,     0,     0,     0, 6000,  1000, 0,     0, 0, 30500
+ |     0,     0,     0,     0, 18000, 42000,     0,    0,  2000, 0,  8000, 0,     0
+ |     0,     0, 32000,     0,     0,     0,     0,    0, 58000, 0,     0, 0, 20500
+ |     0,     0, 22000, 20000,     0,  3000,  9000,    0, 12000, 0,     0, 0,     0
+ |     0,     0,     0,  2000, 27000,     0,  1000,    0,     0, 0,     0, 0,     0
+ |     0, 12000,     0,     0, 40000,     0,  6000,    0,     0, 0,     0, 0,     0
+ | 17000,     0,     0,     0,  2000,     0,     0,    0,     0, 0,  4000, 0,     0
+ |     0,     0,     0,     0,     0,  2000,     0,    0, 38000, 0, 31000, 0, 33500
+ |];
+seguidorsForaTotal = 803500;
+% time elapsed: 42s 448msec
+----------
+%% #Bound  35.98s best:7068  next:[1432,7067] quick_restart
+%% #Bound  41.43s best:7068  next:[1439,7067] objective_lb_search
+%% #Bound  46.74s best:7068  next:[1445,7067] objective_lb_search
+%% #Bound  60.34s best:7068  next:[1452,7067] objective_lb_search
+%% #Bound  68.35s best:7068  next:[1476,7067] objective_lb_search
+%% #Bound  80.83s best:7068  next:[1487,7067] objective_lb_search
+%% #Bound 266.89s best:7068  next:[1490,7067] default_lp
+%% #Bound 269.08s best:7068  next:[1492,7067] default_lp
+%% #Bound 272.55s best:7068  next:[1493,7067] default_lp
+%% #Bound 283.25s best:7068  next:[1494,7067] default_lp
+%% #Bound 295.01s best:7068  next:[1498,7067] default_lp
+%% #Bound 302.32s best:7068  next:[1499,7067] default_lp
+%% #Bound 310.52s best:7068  next:[1501,7067] default_lp
+%% #Bound 324.56s best:7068  next:[1502,7067] default_lp
+%% #Bound 341.94s best:7068  next:[1503,7067] default_lp
+%% #Bound 363.84s best:7068  next:[1504,7067] quick_restart
+%% #Bound 393.13s best:7068  next:[1508,7067] default_lp
+%% #Bound 394.30s best:7068  next:[1509,7067] quick_restart
+%% #Bound 397.41s best:7068  next:[1510,7067] default_lp
+%% #Bound 426.98s best:7068  next:[1513,7067] quick_restart
+%% #Bound 439.34s best:7068  next:[1514,7067] default_lp
+%% #Bound 442.44s best:7068  next:[1515,7067] default_lp
+%% #Bound 454.23s best:7068  next:[1516,7067] default_lp
+%% #Bound 474.37s best:7068  next:[1524,7067] quick_restart_no_lp
+%% #Bound 475.48s best:7068  next:[1525,7067] pseudo_costs
+%% #Bound 478.24s best:7068  next:[1526,7067] quick_restart_no_lp
+%% #Bound 480.71s best:7068  next:[1528,7067] default_lp
+%% #Bound 496.10s best:7068  next:[1529,7067] default_lp
+%% #Bound 511.94s best:7068  next:[1530,7067] quick_restart_no_lp
+%% #Bound 519.17s best:7068  next:[1531,7067] quick_restart
+%% #Bound 522.47s best:7068  next:[1532,7067] default_lp
+%% #Bound 545.93s best:7068  next:[1533,7067] default_lp
+%% #Bound 551.57s best:7068  next:[1534,7067] quick_restart_no_lp
+%% #Bound 552.85s best:7068  next:[1535,7067] quick_restart_no_lp
+%% #Bound 554.47s best:7068  next:[1536,7067] quick_restart_no_lp
+%% #Bound 556.11s best:7068  next:[1537,7067] quick_restart_no_lp
+%% #Bound 557.78s best:7068  next:[1538,7067] bool_core (num_cores=150 [cover] a=13 d=0 fixed=107/29748 clauses=43'307)
+%% #Bound 568.69s best:7068  next:[1539,7067] quick_restart
+%% #Bound 592.99s best:7068  next:[1540,7067] default_lp
+%% #Bound 601.96s best:7068  next:[1541,7067] default_lp
+%% #Bound 624.13s best:7068  next:[1542,7067] bool_core (num_cores=153 [cover] a=13 d=0 fixed=111/29752 clauses=43'607)
+%% #Bound 629.88s best:7068  next:[1543,7067] quick_restart
+%% #3     630.25s best:7030  next:[1543,7029] no_lp (fixed_bools=0/29629)
+%%%mzn-stat: boolVariables=29629
+%%%mzn-stat: failures=308167
+%%%mzn-stat: objective=7030
+%%%mzn-stat: objectiveBound=1543
+%%%mzn-stat: propagations=920208220
+%%%mzn-stat: solveTime=630.247
+%%%mzn-stat-end
+tauler = 
+[|   1..2,  {7,10},      {},      {},      {},     {},     {}, {9,13},     {}, {6,14},  {3,11}, {5,12},   {4,8}
+ |     {},   {1,3},  {6,12},  {2,13},      {}, {5,10},     {},     {},     {},   8..9,      {}, {4,14},  {7,11}
+ |     {},  {2,14},   {1,4},      {},  {9,11},     {},     {},   6..7, {3,10}, 12..13,   {5,8},     {},      {}
+ | {6,10}, {11,13},      {},   {1,5},      {},     {},     {},     {},  {2,8},   3..4,  {7,12},     {},  {9,14}
+ |     {},      {},   {2,9},      {},   {1,8},     {}, 13..14,  {3,5},  {4,7},     {},      {}, {6,11}, {10,12}
+ |     {},   {6,8},      {},   {7,9},      {}, {1,12}, {2,11}, {4,10}, {5,14},     {},      {},     {},  {3,13}
+ | {7,13},    4..5,      {},      {},      {},     {}, {1,10}, {8,14}, 11..12,     {},   {6,9},   2..3,      {}
+ | {4,12},      {},      {},      {}, {10,14},  {3,9},     {}, {1,11}, {6,13},     {},      {},   7..8,   {2,5}
+ | {8,11},      {},  {5,13},   {4,6},  {3,12}, {7,14},     {},     {},  {1,9}, {2,10},      {},     {},      {}
+ |     {},      {}, {11,14},   {3,8},    5..6,     {},  {4,9}, {2,12},     {},  {1,7}, {10,13},     {},      {}
+ |     {},      {},   {3,7},      {},  {4,13},  {2,6}, {8,12},     {},     {}, {5,11},  {1,14},  9..10,      {}
+ |  {5,9},      {},  {8,10}, {12,14},   {2,7}, {4,11},  {3,6},     {},     {},     {},      {}, {1,13},      {}
+ | {3,14},  {9,12},      {},  10..11,      {}, {8,13},  {5,7},     {},     {},     {},   {2,4},     {},   {1,6}
+ |];
+distanciesEquips = [278, 527, 525, 427, 631, 494, 475, 463, 457, 506, 514, 496, 730, 507];
+distTotal = 7030;
+_objective = 7030;
+seguidorsFora = 
+[|     0,     0,     0,     0,     0,     0,     0, 8000,     0,    0,     0, 0, 33500
+ |     0,     0, 14000, 30000,     0, 16000,     0,    0,     0,    0,     0, 0,  1500
+ |     0,     0,  5000,     0,  4000,     0,     0,    0, 22000,    0,  1000, 0,     0
+ | 17000,  5000,     0,     0,     0,     0,     0,    0, 38000,    0,     0, 0,  3500
+ |     0,     0,  9000,     0, 25000,     0, 13000,    0, 11000,    0,     0, 0, 24500
+ |     0, 20000,     0,     0,     0,     0,  2000, 6000,  1000,    0,     0, 0, 30500
+ |     0,     0,     0,     0,     0,     0, 14000,    0,  2000,    0,  8000, 0,     0
+ |     0,     0,     0,     0, 18000,     0,     0,    0, 58000,    0,     0, 0, 20500
+ |     0,     0, 22000, 20000,     0,     0,     0,    0, 12000, 6000,     0, 0,     0
+ |     0,     0,     0,  2000, 27000,     0,  1000,    0,     0,    0, 31000, 0,     0
+ |     0,     0,     0,     0, 40000, 32000,  6000,    0,     0,    0,     0, 0,     0
+ |     0,     0, 32000,     0, 13000,  2000,  9000,    0,     0,    0,     0, 0,     0
+ |     0,     0,     0,  7000,     0, 42000,     0,    0,     0,    0,  4000, 0, 33500
+ |];
+seguidorsForaTotal = 802500;
+% time elapsed: 10m 50s
+----------
+%% #Bound 665.46s best:7030  next:[1544,7029] quick_restart
+%% #Bound 673.62s best:7030  next:[1545,7029] bool_core (num_cores=155 [cover] a=13 d=0 fixed=114/29755 clauses=53'319)
+%% #Bound 678.41s best:7030  next:[1546,7029] quick_restart
+%% #Bound 712.93s best:7030  next:[1547,7029] quick_restart_no_lp
+%% #Bound 713.81s best:7030  next:[1548,7029] bool_core (num_cores=156 [cover] a=13 d=0 fixed=117/29757 clauses=49'621)
+%% #Bound 725.88s best:7030  next:[1549,7029] quick_restart
+%% #Bound 749.51s best:7030  next:[1550,7029] quick_restart
+%% #Bound 771.06s best:7030  next:[1551,7029] quick_restart
+%% #Bound 796.92s best:7030  next:[1552,7029] quick_restart
+%% #Bound 805.48s best:7030  next:[1553,7029] quick_restart_no_lp
+%% #Bound 806.24s best:7030  next:[1554,7029] quick_restart_no_lp
+%% #Bound 808.47s best:7030  next:[1555,7029] quick_restart_no_lp
+%% #Bound 810.67s best:7030  next:[1556,7029] quick_restart_no_lp
+%% #Bound 812.53s best:7030  next:[1557,7029] bool_core (num_cores=164 [cover] a=13 d=0 fixed=126/29767 clauses=43'352)
+%% #Bound 828.10s best:7030  next:[1558,7029] objective_lb_search
+%% #Bound 845.49s best:7030  next:[1559,7029] bool_core (num_cores=165 [size:2 mw:1 d:1] a=12 d=1 fixed=128/29769 clauses=50'066)
+%% #4     851.82s best:6995  next:[1559,6994] no_lp (fixed_bools=0/29629)
+%%%mzn-stat: boolVariables=29629
+%%%mzn-stat: failures=396045
+%%%mzn-stat: objective=6995
+%%%mzn-stat: objectiveBound=1559
+%%%mzn-stat: propagations=1163579871
+%%%mzn-stat: solveTime=851.817
+%%%mzn-stat-end
+tauler = 
+[|   1..2,      {},      {},  {8,10},     {},    6..7,     {}, {9,13},     {},     {}, {3,11}, {5,12},  {4,14}
+ |     {},   {1,3},  {6,12},   {2,7},     {},  {5,14},     {},     {},     {},  9..10,     {},  {4,8}, {11,13}
+ |     {},    7..8,   {1,4},      {}, {2,11},      {},     {},     {},     {}, 12..13, {5,10}, {6,14},   {3,9}
+ |     {},  {6,11},    8..9,   {1,5},     {}, {10,13},     {},     {}, {2,14},   3..4, {7,12},     {},      {}
+ |     {},      {},      {},  {9,11},  {1,8},      {}, 13..14,  {3,5},  {4,7},  {2,6},     {},     {}, {10,12}
+ |     {},  {2,13}, {11,14},      {},     {},  {1,12},  {3,6}, {4,10},  {5,8},     {},     {},  {7,9},      {}
+ | {7,13},    4..5,      {},      {},     {},      {}, {1,10},     {}, 11..12, {8,14},  {6,9},   2..3,      {}
+ | {4,12},      {},  {2,10},      {}, {9,14},   {3,8},     {}, {1,11}, {6,13},     {},     {},     {},   {5,7}
+ |     {},      {},  {5,13},   {4,6}, {3,12},      {},     {}, {7,14},  {1,9},     {},     {}, 10..11,   {2,8}
+ | {8,11}, {10,14},      {},  {3,13},   5..6,      {},  {4,9}, {2,12},     {},  {1,7},     {},     {},      {}
+ | {6,10},      {},   {3,7},      {}, {4,13},   {2,9}, {8,12},     {},     {}, {5,11}, {1,14},     {},      {}
+ |  {5,9},      {},      {}, {12,14},     {},      {}, {7,11},  {6,8}, {3,10},     {},  {2,4}, {1,13},      {}
+ | {3,14},  {9,12},      {},      {}, {7,10},  {4,11},  {2,5},     {},     {},     {}, {8,13},     {},   {1,6}
+ |];
+distanciesEquips = [278, 468, 545, 466, 631, 501, 525, 422, 481, 490, 484, 496, 549, 659];
+distTotal = 6995;
+_objective = 6995;
+seguidorsFora = 
+[|     0,     0,     0, 27000,     0, 15000,     0,  8000,     0,    0,     0, 0,  9500
+ |     0,     0, 14000,     0,     0,     0,     0,     0,     0,    0,     0, 0, 33500
+ |     0,     0,  5000,     0, 15000,     0,     0,     0,     0,    0,  3000, 0,  4500
+ |     0,     0, 14000,     0,     0, 44000,     0,     0, 14000,    0,     0, 0,     0
+ |     0,     0,     0,     0, 25000,     0, 13000,     0, 11000, 9000,     0, 0, 24500
+ |     0, 20000,     0,     0,     0,     0,  9000,  6000, 25000,    0,     0, 0,     0
+ |     0,     0,     0,     0,     0,     0, 14000,     0,  2000,    0,  8000, 0,     0
+ |     0,     0, 27000,     0,     0,  9000,     0,     0, 58000,    0,     0, 0,  3500
+ |     0,     0, 22000, 20000,     0,     0,     0,     0, 12000,    0,     0, 0, 38500
+ |     0,     0,     0, 12000, 27000,     0,  1000,     0,     0,    0,     0, 0,     0
+ | 17000,     0,     0,     0, 40000, 11000,  6000,     0,     0,    0,     0, 0,     0
+ |     0,     0,     0,     0,     0,     0,     0, 19000, 22000,    0,  4000, 0,     0
+ |     0,     0,     0,     0, 20000,  2000,  4000,     0,     0,    0, 29000, 0, 33500
+ |];
+seguidorsForaTotal = 810500;
+% time elapsed: 14m 31s
+----------
+%% #Bound 854.69s best:6995  next:[1564,6994] objective_lb_search
+%% #Model 908.34s var:29931/29932 constraints:36214/36214
+%% #Bound 937.10s best:6995  next:[1565,6994] quick_restart
+%% #Model 946.43s var:29849/29932 constraints:36132/36214
+%% #Bound 965.70s best:6995  next:[1566,6994] bool_core (num_cores=170 [size:1 mw:1] a=11 d=2 fixed=224/29799 clauses=70'623)
+%% #Model 966.83s var:29848/29932 constraints:36132/36214
+%% #Bound 979.29s best:6995  next:[1567,6994] bool_core (num_cores=171 [size:1 mw:1] a=11 d=2 fixed=226/29804 clauses=67'837)
+%% #Bound 984.56s best:6995  next:[1568,6994] bool_core (num_cores=172 [size:1 mw:1] a=11 d=2 fixed=227/29809 clauses=69'971)
+%% #Bound 984.60s best:6995  next:[1569,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=231/29814 clauses=70'023)
+%% #Bound 984.61s best:6995  next:[1570,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=232/29819 clauses=70'038)
+%% #Bound 984.62s best:6995  next:[1571,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=233/29824 clauses=70'053)
+%% #Bound 984.64s best:6995  next:[1572,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=234/29829 clauses=70'067)
+%% #Bound 984.65s best:6995  next:[1573,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=235/29834 clauses=70'084)
+%% #Bound 984.66s best:6995  next:[1574,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=236/29839 clauses=70'102)
+%% #Bound 984.68s best:6995  next:[1575,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=237/29844 clauses=70'128)
+%% #Bound 984.69s best:6995  next:[1576,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=238/29849 clauses=70'157)
+%% #Bound 984.72s best:6995  next:[1577,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=239/29854 clauses=70'185)
+%% #Bound 984.73s best:6995  next:[1578,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=240/29859 clauses=70'217)
+%% #Bound 984.75s best:6995  next:[1579,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=241/29864 clauses=70'250)
+%% #Bound 984.77s best:6995  next:[1580,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=242/29869 clauses=70'288)
+%% #Bound 984.78s best:6995  next:[1581,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=243/29874 clauses=70'330)
+%% #Bound 984.80s best:6995  next:[1582,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=244/29879 clauses=70'370)
+%% #Bound 984.81s best:6995  next:[1583,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=245/29884 clauses=70'415)
+%% #Bound 984.83s best:6995  next:[1584,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=246/29889 clauses=70'460)
+%% #Bound 984.85s best:6995  next:[1585,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=247/29894 clauses=70'523)
+%% #Bound 984.87s best:6995  next:[1586,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=248/29899 clauses=70'585)
+%% #Bound 984.88s best:6995  next:[1587,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=249/29904 clauses=70'655)
+%% #Bound 984.90s best:6995  next:[1588,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=250/29909 clauses=70'722)
+%% #Bound 984.92s best:6995  next:[1589,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=251/29914 clauses=70'797)
+%% #Bound 984.95s best:6995  next:[1590,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=252/29919 clauses=70'877)
+%% #Bound 984.97s best:6995  next:[1591,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=253/29924 clauses=70'954)
+%% #Bound 984.99s best:6995  next:[1592,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=254/29929 clauses=71'036)
+%% #Bound 985.01s best:6995  next:[1593,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=255/29934 clauses=71'118)
+%% #Bound 985.04s best:6995  next:[1594,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=256/29939 clauses=71'203)
+%% #Bound 985.06s best:6995  next:[1595,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=257/29944 clauses=71'297)
+%% #Bound 985.08s best:6995  next:[1596,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=258/29949 clauses=71'415)
+%% #Bound 985.11s best:6995  next:[1597,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=259/29954 clauses=71'510)
+%% #Bound 985.13s best:6995  next:[1598,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=260/29959 clauses=71'628)
+%% #Bound 985.15s best:6995  next:[1599,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=261/29964 clauses=71'739)
+%% #Bound 985.18s best:6995  next:[1600,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=262/29969 clauses=71'864)
+%% #Bound 985.22s best:6995  next:[1601,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=263/29974 clauses=71'984)
+%% #Bound 985.24s best:6995  next:[1602,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=264/29979 clauses=72'101)
+%% #Bound 985.27s best:6995  next:[1603,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=265/29984 clauses=72'235)
+%% #Bound 985.30s best:6995  next:[1604,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=266/29989 clauses=72'358)
+%% #Bound 985.32s best:6995  next:[1605,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=267/29994 clauses=72'499)
+%% #Bound 985.35s best:6995  next:[1606,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=268/29999 clauses=72'650)
+%% #Bound 985.37s best:6995  next:[1607,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=269/30004 clauses=72'786)
+%% #Bound 985.41s best:6995  next:[1608,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=270/30009 clauses=72'946)
+%% #Bound 985.45s best:6995  next:[1609,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=271/30014 clauses=73'137)
+%% #Bound 985.48s best:6995  next:[1610,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=272/30019 clauses=73'341)
+%% #Bound 985.51s best:6995  next:[1611,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=273/30024 clauses=73'592)
+%% #Bound 985.55s best:6995  next:[1612,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=274/30029 clauses=73'783)
+%% #Bound 985.58s best:6995  next:[1613,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=275/30034 clauses=73'979)
+%% #Bound 985.62s best:6995  next:[1614,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=276/30039 clauses=74'166)
+%% #Bound 985.66s best:6995  next:[1615,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=277/30044 clauses=74'375)
+%% #Bound 985.70s best:6995  next:[1616,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=278/30049 clauses=74'608)
+%% #Bound 985.76s best:6995  next:[1617,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=279/30054 clauses=74'920)
+%% #Bound 985.79s best:6995  next:[1618,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=280/30059 clauses=75'182)
+%% #Bound 985.85s best:6995  next:[1619,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=281/30064 clauses=75'478)
+%% #Bound 985.88s best:6995  next:[1620,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=282/30069 clauses=75'715)
+%% #Bound 985.93s best:6995  next:[1621,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=283/30074 clauses=75'950)
+%% #Bound 985.97s best:6995  next:[1622,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=284/30079 clauses=76'197)
+%% #Bound 986.02s best:6995  next:[1623,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=285/30084 clauses=76'463)
+%% #Bound 986.06s best:6995  next:[1624,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=286/30089 clauses=76'739)
+%% #Bound 986.11s best:6995  next:[1625,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=287/30094 clauses=77'035)
+%% #Bound 986.17s best:6995  next:[1626,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=288/30099 clauses=77'345)
+%% #Bound 986.25s best:6995  next:[1627,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=289/30104 clauses=77'718)
+%% #Bound 986.29s best:6995  next:[1628,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=290/30109 clauses=78'011)
+%% #Bound 986.35s best:6995  next:[1629,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=291/30114 clauses=78'369)
+%% #Bound 986.40s best:6995  next:[1630,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=353/30119 clauses=78'768)
+%% #Bound 986.48s best:6995  next:[1631,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=354/30124 clauses=79'253)
+%% #Bound 986.57s best:6995  next:[1632,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=355/30129 clauses=79'577)
+%% #Bound 986.64s best:6995  next:[1633,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=356/30134 clauses=79'918)
+%% #Bound 986.69s best:6995  next:[1634,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=357/30139 clauses=80'240)
+%% #Bound 986.75s best:6995  next:[1635,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=358/30144 clauses=80'636)
+%% #Bound 986.81s best:6995  next:[1636,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=359/30149 clauses=81'037)
+%% #Bound 986.90s best:6995  next:[1637,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=360/30154 clauses=81'491)
+%% #Bound 986.96s best:6995  next:[1638,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=361/30159 clauses=81'892)
+%% #Bound 987.05s best:6995  next:[1639,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=362/30164 clauses=82'302)
+%% #Bound 987.12s best:6995  next:[1640,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=363/30169 clauses=82'819)
+%% #Bound 987.20s best:6995  next:[1641,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=364/30174 clauses=67'640)
+%% #Bound 987.27s best:6995  next:[1642,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=377/30179 clauses=68'096)
+%% #Bound 987.35s best:6995  next:[1643,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=378/30184 clauses=68'669)
+%% #Bound 987.43s best:6995  next:[1644,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=379/30189 clauses=69'214)
+%% #Bound 987.52s best:6995  next:[1645,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=383/30194 clauses=69'786)
+%% #Bound 987.66s best:6995  next:[1646,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=384/30199 clauses=70'344)
+%% #Bound 987.75s best:6995  next:[1647,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=385/30204 clauses=70'965)
+%% #Bound 987.87s best:6995  next:[1648,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=386/30209 clauses=71'533)
+%% #Bound 987.96s best:6995  next:[1649,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=387/30214 clauses=72'137)
+%% #Bound 988.07s best:6995  next:[1650,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=388/30219 clauses=72'780)
+%% #Bound 988.17s best:6995  next:[1651,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=389/30224 clauses=73'401)
+%% #Bound 988.28s best:6995  next:[1652,6994] bool_core (num_cores=172 [cover] a=11 d=2 fixed=390/30229 clauses=74'082)
+%% #Bound 996.84s best:6995  next:[1653,6994] bool_core (num_cores=173 [size:1 mw:1] a=11 d=2 fixed=399/30234 clauses=70'214)
+%% #Bound 1025.64s best:6995  next:[1654,6994] bool_core (num_cores=174 [size:1 mw:1] a=11 d=2 fixed=400/30239 clauses=87'612)
+%% #Model 1068.24s var:29841/29932 constraints:36125/36214
+%% #Bound 1070.04s best:6995  next:[1655,6994] bool_core (num_cores=175 [size:1 mw:1] a=11 d=2 fixed=403/30244 clauses=99'294)
+%% #Bound 1087.47s best:6995  next:[1657,6994] objective_lb_search
+%% #Model 1207.42s var:29821/29932 constraints:36105/36214
+%% #Bound 1212.61s best:6995  next:[1658,6994] bool_core (num_cores=178 [size:1 mw:1] a=11 d=2 fixed=415/30259 clauses=100'765)
+%% #Model 1241.15s var:29801/29932 constraints:36085/36214
+%% #Bound 1263.91s best:6995  next:[1659,6994] bool_core (num_cores=179 [size:1 mw:1] a=11 d=2 fixed=436/30264 clauses=116'776)
+%% #Bound 1318.31s best:6995  next:[1660,6994] bool_core (num_cores=180 [size:1 mw:1] a=11 d=2 fixed=459/30269 clauses=129'157)
+%% #Model 1343.93s var:29660/29932 constraints:35944/36214
+%% #Model 1377.14s var:29649/29932 constraints:35933/36214
+%% #Bound 1389.02s best:6995  next:[1661,6994] bool_core (num_cores=181 [size:1 mw:1] a=11 d=2 fixed=460/30274 clauses=136'811)
+%% #Bound 1442.26s best:6995  next:[1662,6994] bool_core (num_cores=182 [size:1 mw:1] a=11 d=2 fixed=613/30279 clauses=144'800)
+%% #Bound 1489.51s best:6995  next:[1663,6994] bool_core (num_cores=183 [size:1 mw:1] a=11 d=2 fixed=616/30284 clauses=151'923)
+%% #Bound 1577.76s best:6995  next:[1664,6994] bool_core (num_cores=184 [size:1 mw:1] a=11 d=2 fixed=619/30289 clauses=171'015)
+%% #Model 1616.71s var:29648/29932 constraints:35933/36214
+%% #Bound 1650.82s best:6995  next:[1665,6994] bool_core (num_cores=185 [size:1 mw:1] a=11 d=2 fixed=620/30294 clauses=179'036)
+%% #Bound 1739.96s best:6995  next:[1666,6994] bool_core (num_cores=186 [size:1 mw:1] a=11 d=2 fixed=622/30299 clauses=198'591)
+%% #Bound 1843.66s best:6995  next:[1667,6994] bool_core (num_cores=187 [size:1 mw:1] a=11 d=2 fixed=623/30304 clauses=224'591)
+%% #5     1845.49s best:6822  next:[1667,6821] pseudo_costs (fixed_bools=293/29733)
+%%%mzn-stat: boolVariables=29733
+%%%mzn-stat: failures=135423
+%%%mzn-stat: objective=6822
+%%%mzn-stat: objectiveBound=1667
+%%%mzn-stat: propagations=1284874727
+%%%mzn-stat: solveTime=1845.49
+%%%mzn-stat-end
+tauler = 
+[|   1..2,      {},   8..9,      {},     {}, {6,11},   {5,7},     {}, {10,12},      {},      {}, {3,14}, {4,13}
+ | 13..14,   {1,3},     {},      {}, {7,11},     {},   9..10,     {},      {},      {},  {6,12},  {2,4},  {5,8}
+ |  {6,9},  {7,13},  {1,4},      {},     {},     {}, {12,14},     {},      {},  {8,10},  {5,11},     {},   2..3
+ |     {},      {},     {},   {1,5}, {9,13},     {},   {2,6},     {},  {7,14},  {4,12},   {3,8}, 10..11,     {}
+ |     {},  {9,12},     {},      {}, {1,10},     {},  {3,13}, {8,11},   {4,6},  {5,14},   {2,7},     {},     {}
+ |     {},      {},     {},  {9,11},     {}, {1,12},      {},   4..5,  {2,13},   {3,6}, {10,14},   7..8,     {}
+ |     {},  {4,10}, {6,14},      {},     {}, {8,13},  {1,11},  {3,7},      {},   {2,9},      {}, {5,12},     {}
+ | {7,10}, {11,14}, {5,13},  {2,12},     {},  {3,9},   {4,8},  {1,6},      {},      {},      {},     {},     {}
+ | {4,11},    5..6,     {}, {10,13}, {3,12}, {2,14},      {},     {},   {1,8},      {},      {},     {},  {7,9}
+ | {8,12},      {}, {2,11},    3..4,     {}, {5,10},      {}, {9,14},      {},   {1,7},      {}, {6,13},     {}
+ |     {},   {2,8}, {3,10},    6..7, {4,14},     {},      {},     {},   {5,9},      {},  {1,13},     {}, 11..12
+ |     {},      {},     {},  {8,14},  {2,5},  {4,7},      {}, 12..13,  {3,11},      {},      {},  {1,9}, {6,10}
+ |  {3,5},      {}, {7,12},      {},  {6,8},     {},      {}, {2,10},      {}, {11,13},   {4,9},     {}, {1,14}
+ |];
+distanciesEquips = [278, 406, 429, 486, 554, 609, 617, 452, 598, 548, 525, 537, 405, 378];
+distTotal = 6822;
+_objective = 6822;
+seguidorsFora = 
+[| 0,     0, 14000,     0,     0, 17000,     0,     0, 24000,     0,     0,     0, 43500
+ | 0,     0,     0,     0,     0,     0, 13000,     0,     0,     0,  3000,     0, 25500
+ | 0,  3000,  5000,     0,     0,     0,     0,     0,     0, 11000,     0,     0, 15500
+ | 0,     0,     0,     0, 34000,     0, 27000,     0,     0,     0,     0,     0,     0
+ | 0,     0,     0,     0, 27000,     0, 14000,     0, 38000,     0,     0,     0,     0
+ | 0,     0,     0,     0,     0,     0,     0,     0, 48000,     0,     0,     0,     0
+ | 0,  7000, 11000,     0,     0, 42000,     0,     0,     0,     0,     0,     0,     0
+ | 0,     0, 22000,     0,     0,     0, 17000,  4000,     0,     0,     0,     0,     0
+ | 0,  2000,     0, 37000,     0,  3000,     0,     0, 28000,     0,     0,     0,  5500
+ | 0,     0,  5000,     0,     0, 16000,     0,     0,     0,     0,     0, 15000,     0
+ | 0, 10000,  9000,  8000,  6000,     0,     0,     0,  9000,     0, 14000,     0,  2500
+ | 0,     0,     0,  1000, 17000,     0,     0,  3000,     0,     0,     0,     0, 50500
+ | 0,     0,     0,     0, 45000,     0,     0, 11000,     0,     0,     0,     0,  4500
+ |];
+seguidorsForaTotal = 767500;
+% time elapsed: 31m 5s
+----------
+%% #Bound 1981.89s best:6822  next:[1668,6821] bool_core (num_cores=188 [size:1 mw:1] a=11 d=2 fixed=624/30309 clauses=244'064)
+%% #Bound 2108.06s best:6822  next:[1669,6821] bool_core (num_cores=189 [size:1 mw:1] a=11 d=2 fixed=625/30314 clauses=273'543)
+%% #Bound 2265.21s best:6822  next:[1670,6821] bool_core (num_cores=190 [size:1 mw:1] a=11 d=2 fixed=626/30319 clauses=311'972)
+%% #Bound 2324.02s best:6822  next:[1678,6821] objective_lb_search
+%% #Bound 2346.51s best:6822  next:[1680,6821] objective_lb_search
+%% #Bound 2386.91s best:6822  next:[1684,6821] objective_lb_search
+%% #Bound 2396.87s best:6822  next:[1697,6821] objective_lb_search
+%% #Bound 2407.49s best:6822  next:[1700,6821] objective_lb_search
+%% #Bound 2807.90s best:6822  next:[1712,6821] objective_lb_search
+%% #Bound 3135.56s best:6822  next:[1714,6821] objective_lb_search
+%% #Model 3136.00s var:29647/29932 constraints:35933/36214
+%% #Bound 3240.12s best:6822  next:[1715,6821] objective_lb_search
+%% #Bound 3281.67s best:6822  next:[1729,6821] objective_lb_search
+%% #Bound 3707.22s best:6822  next:[1740,6821] objective_lb_search
+%% #Bound 3764.22s best:6822  next:[1742,6821] objective_lb_search
+%% #Bound 4278.56s best:6822  next:[1743,6821] objective_lb_search
+%% #Bound 5581.15s best:6822  next:[1794,6821] objective_lb_search
+%% #6     6725.12s best:6820  next:[1794,6819] no_lp (fixed_bools=285/29629)
+%%%mzn-stat: boolVariables=29629
+%%%mzn-stat: failures=2425407
+%%%mzn-stat: objective=6820
+%%%mzn-stat: objectiveBound=1794
+%%%mzn-stat: propagations=10751156563
+%%%mzn-stat: solveTime=6725.12
+%%%mzn-stat-end
+tauler = 
+[|   1..2,  {9,12},     {},  {8,10},     {},    6..7, {5,13},     {},      {},      {}, {3,11},     {}, {4,14}
+ |     {},   {1,3}, {6,12},   {2,7},     {},  {5,14},     {},     {},      {}, {11,13},     {},  {4,8},  9..10
+ |     {},      {},  {1,4},      {}, {2,11},      {},   7..8,  {3,9},  12..13,      {}, {5,10}, {6,14},     {}
+ |     {},  {6,11},     {},   {1,5},   8..9, {10,13}, {2,14},     {},      {},    3..4, {7,12},     {},     {}
+ |     {},      {}, {8,14},  {9,11},  {1,6},      {},     {}, {2,13},   {4,7}, {10,12},     {},     {},  {3,5}
+ |     {},   {2,8}, {5,11},      {}, 13..14,  {1,12},  {3,6}, {4,10},      {},      {},     {},  {7,9},     {}
+ | {7,13},      {},     {},      {},   4..5,      {}, {1,10}, {8,12}, {11,14},      {},  {6,9},   2..3,     {}
+ | {4,12},   {5,7}, {2,10},      {},     {},   {3,8},     {}, {1,11},      {},  {9,14},     {},     {}, {6,13}
+ |     {},      {},     {},   {4,6}, {3,12},      {},     {}, {7,14},   {1,9},   {2,5}, {8,13}, 10..11,     {}
+ | {8,11}, {10,14},     {},  {3,13},     {},      {},  {4,9},   5..6,      {},   {1,7},     {},     {}, {2,12}
+ | {6,10},  {4,13},  {3,7},      {},     {},   {2,9}, 11..12,     {},   {5,8},      {}, {1,14},     {},     {}
+ |  {5,9},      {},     {}, {12,14},     {},      {},     {},     {},  {3,10},   {6,8},  {2,4}, {1,13}, {7,11}
+ | {3,14},      {}, {9,13},      {}, {7,10},  {4,11},     {},     {},   {2,6},      {},     {}, {5,12},  {1,8}
+ |];
+distanciesEquips = [278, 479, 600, 520, 505, 534, 496, 564, 424, 486, 462, 462, 439, 571];
+distTotal = 6820;
+_objective = 6820;
+seguidorsFora = 
+[|     0,     0,     0, 27000,     0, 15000, 19000,     0,     0,     0,     0, 0,  9500
+ |     0,     0, 14000,     0,     0,     0,     0,     0,     0,     0,     0, 0, 29500
+ |     0,     0,  5000,     0, 15000,     0,  5000,     0, 32000,     0,  3000, 0,     0
+ |     0,     0,     0,     0, 24000, 44000,     0,     0,     0,     0,     0, 0,     0
+ |     0,     0,  6000,     0, 30000,     0,     0, 19000, 11000,     0,     0, 0,  2500
+ |     0, 10000,     0,     0, 26000,     0,  9000,  6000,     0,     0,     0, 0,     0
+ |     0,     0,     0,     0, 12000,     0, 14000,     0,     0,     0,  8000, 0,     0
+ |     0,     0, 27000,     0,     0,  9000,     0,     0,     0,     0,     0, 0, 58500
+ |     0,     0,     0, 20000,     0,     0,     0,     0, 12000,     0, 29000, 0,     0
+ |     0,     0,     0, 12000,     0,     0,  1000,  1000,     0,     0,     0, 0, 17500
+ | 17000, 15000,     0,     0,     0, 11000,     0,     0, 25000,     0,     0, 0,     0
+ |     0,     0,     0,     0,     0,     0,     0,     0, 22000, 14000,  4000, 0,  1500
+ |     0,     0, 24000,     0, 20000,  2000,     0,     0, 43000,     0,     0, 0, 28500
+ |];
+seguidorsForaTotal = 809500;
+% time elapsed: 1h 52m 25s
+----------
+%% #7     6725.31s best:6812  next:[1794,6811] quick_restart_no_lp (fixed_bools=975/79069)
+%%%mzn-stat: boolVariables=79069
+%%%mzn-stat: failures=1171345
+%%%mzn-stat: objective=6812
+%%%mzn-stat: objectiveBound=1794
+%%%mzn-stat: propagations=12123333687
+%%%mzn-stat: solveTime=6725.31
+%%%mzn-stat-end
+tauler = 
+[|   1..2, {9,12},     {},  {8,10},     {},    6..7, {5,13},     {},      {},      {}, {3,11},      {}, {4,14}
+ |     {},  {1,3}, {6,12},   {2,7},     {},  {5,14},     {},     {},      {}, {11,13},     {},   {4,8},  9..10
+ |     {}, {6,14},  {1,4},      {}, {2,11},      {},   7..8,  {3,9},  12..13,      {}, {5,10},      {},     {}
+ |     {},     {},     {},   {1,5},   8..9, {10,13}, {2,14},     {},      {},    3..4, {7,12},  {6,11},     {}
+ |     {},     {}, {8,14},  {9,11},  {1,6},      {},     {}, {2,13},   {4,7}, {10,12},     {},      {},  {3,5}
+ |     {},  {2,8}, {5,11},      {}, 13..14,  {1,12},  {3,6}, {4,10},      {},      {},     {},   {7,9},     {}
+ | {7,13},     {},     {},      {},   4..5,      {}, {1,10}, {8,12}, {11,14},      {},  {6,9},    2..3,     {}
+ | {4,12},  {5,7}, {2,10},      {},     {},   {3,8},     {}, {1,11},      {},  {9,14},     {},      {}, {6,13}
+ |     {}, 10..11,     {},   {4,6}, {3,12},      {},     {}, {7,14},   {1,9},   {2,5}, {8,13},      {},     {}
+ | {8,11},     {},     {},  {3,13},     {},      {},  {4,9},   5..6,      {},   {1,7},     {}, {10,14}, {2,12}
+ | {6,10}, {4,13},  {3,7},      {},     {},   {2,9}, 11..12,     {},   {5,8},      {}, {1,14},      {},     {}
+ |  {5,9},     {},     {}, {12,14},     {},      {},     {},     {},  {3,10},   {6,8},  {2,4},  {1,13}, {7,11}
+ | {3,14},     {}, {9,13},      {}, {7,10},  {4,11},     {},     {},   {2,6},      {},     {},  {5,12},  {1,8}
+ |];
+distanciesEquips = [278, 479, 600, 520, 505, 530, 496, 564, 424, 472, 492, 462, 439, 551];
+distTotal = 6812;
+_objective = 6812;
+seguidorsFora = 
+[|     0,     0,     0, 27000,     0, 15000, 19000,     0,     0,     0,     0, 0,  9500
+ |     0,     0, 14000,     0,     0,     0,     0,     0,     0,     0,     0, 0, 29500
+ |     0,     0,  5000,     0, 15000,     0,  5000,     0, 32000,     0,  3000, 0,     0
+ |     0,     0,     0,     0, 24000, 44000,     0,     0,     0,     0,     0, 0,     0
+ |     0,     0,  6000,     0, 30000,     0,     0, 19000, 11000,     0,     0, 0,  2500
+ |     0, 10000,     0,     0, 26000,     0,  9000,  6000,     0,     0,     0, 0,     0
+ |     0,     0,     0,     0, 12000,     0, 14000,     0,     0,     0,  8000, 0,     0
+ |     0,     0, 27000,     0,     0,  9000,     0,     0,     0,     0,     0, 0, 58500
+ |     0,     0,     0, 20000,     0,     0,     0,     0, 12000,     0, 29000, 0,     0
+ |     0,     0,     0, 12000,     0,     0,  1000,  1000,     0,     0,     0, 0, 17500
+ | 17000, 15000,     0,     0,     0, 11000,     0,     0, 25000,     0,     0, 0,     0
+ |     0,     0,     0,     0,     0,     0,     0,     0, 22000, 14000,  4000, 0,  1500
+ |     0,     0, 24000,     0, 20000,  2000,     0,     0, 43000,     0,     0, 0, 28500
+ |];
+seguidorsForaTotal = 809500;
+% time elapsed: 1h 52m 25s
+----------
+%% #Model 6752.76s var:29646/29932 constraints:35933/36214
+%% #8     6959.81s best:6785  next:[1794,6784] no_lp (fixed_bools=286/29629)
+%%%mzn-stat: boolVariables=29629
+%%%mzn-stat: failures=2502175
+%%%mzn-stat: objective=6785
+%%%mzn-stat: objectiveBound=1794
+%%%mzn-stat: propagations=11064429078
+%%%mzn-stat: solveTime=6959.81
+%%%mzn-stat-end
+tauler = 
+[|   1..2,      {},     {},  {8,10},     {},    6..7, {5,13},     {},      {},      {}, {3,11}, {9,12}, {4,14}
+ |     {},   {1,3}, {6,12},   {2,7},     {},  {5,14},     {},     {},      {}, {11,13},     {},  {4,8},  9..10
+ |     {},      {},  {1,4},      {}, {2,11},      {},   7..8,  {3,9},  12..13,      {}, {5,10}, {6,14},     {}
+ |     {},  {6,11},     {},   {1,5},   8..9, {10,13}, {2,14},     {},      {},    3..4, {7,12},     {},     {}
+ |     {},      {}, {8,14},  {9,11},  {1,6},      {},     {}, {2,13},   {4,7}, {10,12},     {},     {},  {3,5}
+ |  {5,9},   {2,8},     {},      {}, 13..14,  {1,12},  {3,6}, {4,10},      {},      {},     {},     {}, {7,11}
+ | {7,13},      {},     {},      {},   4..5,      {}, {1,10}, {8,12}, {11,14},      {},  {6,9},   2..3,     {}
+ | {4,12},      {}, {2,10},      {},     {},   {3,8},     {}, {1,11},      {},  {9,14},     {},  {5,7}, {6,13}
+ |     {},      {},     {},   {4,6}, {3,12},      {},     {}, {7,14},   {1,9},   {2,5}, {8,13}, 10..11,     {}
+ | {8,11}, {10,14},     {},  {3,13},     {},      {},  {4,9},   5..6,      {},   {1,7},     {},     {}, {2,12}
+ | {6,10},  {4,13},  {3,7},      {},     {},   {2,9}, 11..12,     {},   {5,8},      {}, {1,14},     {},     {}
+ |     {},   {7,9}, {5,11}, {12,14},     {},      {},     {},     {},  {3,10},   {6,8},  {2,4}, {1,13},     {}
+ | {3,14},  {5,12}, {9,13},      {}, {7,10},  {4,11},     {},     {},   {2,6},      {},     {},     {},  {1,8}
+ |];
+distanciesEquips = [278, 479, 600, 520, 509, 534, 466, 564, 404, 486, 474, 461, 439, 571];
+distTotal = 6785;
+_objective = 6785;
+seguidorsFora = 
+[|     0,     0,     0, 27000,     0, 15000, 19000,     0,     0,     0,     0, 0,  9500
+ |     0,     0, 14000,     0,     0,     0,     0,     0,     0,     0,     0, 0, 29500
+ |     0,     0,  5000,     0, 15000,     0,  5000,     0, 32000,     0,  3000, 0,     0
+ |     0,     0,     0,     0, 24000, 44000,     0,     0,     0,     0,     0, 0,     0
+ |     0,     0,  6000,     0, 30000,     0,     0, 19000, 11000,     0,     0, 0,  2500
+ |     0, 10000,     0,     0, 26000,     0,  9000,  6000,     0,     0,     0, 0,  1500
+ |     0,     0,     0,     0, 12000,     0, 14000,     0,     0,     0,  8000, 0,     0
+ |     0,     0, 27000,     0,     0,  9000,     0,     0,     0,     0,     0, 0, 58500
+ |     0,     0,     0, 20000,     0,     0,     0,     0, 12000,     0, 29000, 0,     0
+ |     0,     0,     0, 12000,     0,     0,  1000,  1000,     0,     0,     0, 0, 17500
+ | 17000, 15000,     0,     0,     0, 11000,     0,     0, 25000,     0,     0, 0,     0
+ |     0,     0,     0,     0,     0,     0,     0,     0, 22000, 14000,  4000, 0,     0
+ |     0,     0, 24000,     0, 20000,  2000,     0,     0, 43000,     0,     0, 0, 28500
+ |];
+seguidorsForaTotal = 809500;
+% time elapsed: 1h 56m 19s
+----------
+%% #9     6959.91s best:6777  next:[1794,6776] quick_restart_no_lp (fixed_bools=976/79931)
+%%%mzn-stat: boolVariables=79931
+%%%mzn-stat: failures=1204529
+%%%mzn-stat: objective=6777
+%%%mzn-stat: objectiveBound=1794
+%%%mzn-stat: propagations=12550871979
+%%%mzn-stat: solveTime=6959.91
+%%%mzn-stat-end
+tauler = 
+[|   1..2,     {},     {},  {8,10},     {},    6..7, {5,13},     {},      {},      {}, {3,11},  {9,12}, {4,14}
+ |     {},  {1,3}, {6,12},   {2,7},     {},  {5,14},     {},     {},      {}, {11,13},     {},   {4,8},  9..10
+ |     {}, {6,14},  {1,4},      {}, {2,11},      {},   7..8,  {3,9},  12..13,      {}, {5,10},      {},     {}
+ |     {},     {},     {},   {1,5},   8..9, {10,13}, {2,14},     {},      {},    3..4, {7,12},  {6,11},     {}
+ |     {},     {}, {8,14},  {9,11},  {1,6},      {},     {}, {2,13},   {4,7}, {10,12},     {},      {},  {3,5}
+ |  {5,9},  {2,8},     {},      {}, 13..14,  {1,12},  {3,6}, {4,10},      {},      {},     {},      {}, {7,11}
+ | {7,13},     {},     {},      {},   4..5,      {}, {1,10}, {8,12}, {11,14},      {},  {6,9},    2..3,     {}
+ | {4,12},     {}, {2,10},      {},     {},   {3,8},     {}, {1,11},      {},  {9,14},     {},   {5,7}, {6,13}
+ |     {}, 10..11,     {},   {4,6}, {3,12},      {},     {}, {7,14},   {1,9},   {2,5}, {8,13},      {},     {}
+ | {8,11},     {},     {},  {3,13},     {},      {},  {4,9},   5..6,      {},   {1,7},     {}, {10,14}, {2,12}
+ | {6,10}, {4,13},  {3,7},      {},     {},   {2,9}, 11..12,     {},   {5,8},      {}, {1,14},      {},     {}
+ |     {},  {7,9}, {5,11}, {12,14},     {},      {},     {},     {},  {3,10},   {6,8},  {2,4},  {1,13},     {}
+ | {3,14}, {5,12}, {9,13},      {}, {7,10},  {4,11},     {},     {},   {2,6},      {},     {},      {},  {1,8}
+ |];
+distanciesEquips = [278, 479, 600, 520, 509, 530, 466, 564, 404, 472, 504, 461, 439, 551];
+distTotal = 6777;
+_objective = 6777;
+seguidorsFora = 
+[|     0,     0,     0, 27000,     0, 15000, 19000,     0,     0,     0,     0, 0,  9500
+ |     0,     0, 14000,     0,     0,     0,     0,     0,     0,     0,     0, 0, 29500
+ |     0,     0,  5000,     0, 15000,     0,  5000,     0, 32000,     0,  3000, 0,     0
+ |     0,     0,     0,     0, 24000, 44000,     0,     0,     0,     0,     0, 0,     0
+ |     0,     0,  6000,     0, 30000,     0,     0, 19000, 11000,     0,     0, 0,  2500
+ |     0, 10000,     0,     0, 26000,     0,  9000,  6000,     0,     0,     0, 0,  1500
+ |     0,     0,     0,     0, 12000,     0, 14000,     0,     0,     0,  8000, 0,     0
+ |     0,     0, 27000,     0,     0,  9000,     0,     0,     0,     0,     0, 0, 58500
+ |     0,     0,     0, 20000,     0,     0,     0,     0, 12000,     0, 29000, 0,     0
+ |     0,     0,     0, 12000,     0,     0,  1000,  1000,     0,     0,     0, 0, 17500
+ | 17000, 15000,     0,     0,     0, 11000,     0,     0, 25000,     0,     0, 0,     0
+ |     0,     0,     0,     0,     0,     0,     0,     0, 22000, 14000,  4000, 0,     0
+ |     0,     0, 24000,     0, 20000,  2000,     0,     0, 43000,     0,     0, 0, 28500
+ |];
+seguidorsForaTotal = 809500;
+% time elapsed: 1h 56m 19s
+----------
+%% #10    6972.21s best:6710  next:[1794,6709] no_lp (fixed_bools=286/29629)
+%%%mzn-stat: boolVariables=29629
+%%%mzn-stat: failures=2507349
+%%%mzn-stat: objective=6710
+%%%mzn-stat: objectiveBound=1794
+%%%mzn-stat: propagations=11077387127
+%%%mzn-stat: solveTime=6972.21
+%%%mzn-stat-end
+tauler = 
+[|   1..2,      {},     {},  {8,10},     {},    6..7, {5,13},     {},      {},      {}, {3,11}, {9,12}, {4,14}
+ |     {},   {1,3}, {6,12},   {2,7},     {},  {5,14},     {},     {},      {}, {11,13},     {},  {4,8},  9..10
+ |     {},      {},  {1,4},      {}, {2,11},      {},   7..8,  {3,9},  12..13,      {}, {5,10}, {6,14},     {}
+ |     {},  {6,11},     {},   {1,5},   8..9, {10,13}, {2,14},     {},      {},    3..4, {7,12},     {},     {}
+ |     {},      {}, {8,14},  {9,11},  {1,6},      {},     {}, {2,13},   {4,7}, {10,12},     {},     {},  {3,5}
+ |  {5,9},      {},     {},      {}, 13..14,  {1,12},  {3,6}, {4,10},      {},   {2,8},     {},     {}, {7,11}
+ | {7,13},  {8,12},     {},      {},   4..5,      {}, {1,10},     {}, {11,14},      {},  {6,9},   2..3,     {}
+ | {4,12},      {}, {2,10},      {},     {},   {3,8},     {}, {1,11},      {},  {9,14},     {},  {5,7}, {6,13}
+ |     {},   {2,5},     {},   {4,6}, {3,12},      {},     {}, {7,14},   {1,9},      {}, {8,13}, 10..11,     {}
+ |     {}, {10,14}, {5,11},  {3,13},     {},      {},  {4,9},  {6,8},      {},   {1,7},     {},     {}, {2,12}
+ | {6,10},  {4,13},  {3,7},      {},     {},   {2,9}, 11..12,     {},   {5,8},      {}, {1,14},     {},     {}
+ | {8,11},   {7,9},     {}, {12,14},     {},      {},     {},     {},  {3,10},    5..6,  {2,4}, {1,13},     {}
+ | {3,14},      {}, {9,13},      {}, {7,10},  {4,11},     {}, {5,12},   {2,6},      {},     {},     {},  {1,8}
+ |];
+distanciesEquips = [278, 423, 600, 520, 457, 534, 466, 578, 404, 486, 511, 443, 439, 571];
+distTotal = 6710;
+_objective = 6710;
+seguidorsFora = 
+[|     0,     0,     0, 27000,     0, 15000, 19000,     0,     0,    0,     0, 0,  9500
+ |     0,     0, 14000,     0,     0,     0,     0,     0,     0,    0,     0, 0, 29500
+ |     0,     0,  5000,     0, 15000,     0,  5000,     0, 32000,    0,  3000, 0,     0
+ |     0,     0,     0,     0, 24000, 44000,     0,     0,     0,    0,     0, 0,     0
+ |     0,     0,  6000,     0, 30000,     0,     0, 19000, 11000,    0,     0, 0,  2500
+ |     0,     0,     0,     0, 26000,     0,  9000,  6000,     0, 4000,     0, 0,  1500
+ |     0,     0,     0,     0, 12000,     0, 14000,     0,     0,    0,  8000, 0,     0
+ |     0,     0, 27000,     0,     0,  9000,     0,     0,     0,    0,     0, 0, 58500
+ |     0,     0,     0, 20000,     0,     0,     0,     0, 12000,    0, 29000, 0,     0
+ |     0,     0,     0, 12000,     0,     0,  1000, 19000,     0,    0,     0, 0, 17500
+ | 17000, 15000,     0,     0,     0, 11000,     0,     0, 25000,    0,     0, 0,     0
+ |     0,     0,     0,     0,     0,     0,     0,     0, 22000,    0,  4000, 0,     0
+ |     0,     0, 24000,     0, 20000,  2000,     0,     0, 43000,    0,     0, 0, 28500
+ |];
+seguidorsForaTotal = 807500;
+% time elapsed: 1h 56m 32s
+----------
+%% #Model 8465.30s var:29645/29932 constraints:35933/36214
+Stopped.
+=====UNKNOWN=====
+%%%mzn-stat: nSolutions=10
+%%%mzn-stat-end
+Finished in 2h 31m 5s.

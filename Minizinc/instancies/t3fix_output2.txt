@@ -1,0 +1,2497 @@
+
+￼
+Running calendari_v2.mzn, t3fix.dzn
+1h 4m 36s
+
+Using FZN solver C:\Program Files\MiniZinc\bin\fzn-cp-sat.EXE for solving, parameters: -r 123123 -a -p 16 -s -v 
+%% File C:\\Users\\steam\\AppData\\Local\\Temp\\tmp32A.tmp.fzn parsed in 84 ms
+%% Presolve model
+%%   - rule 'array_int_element: rewrite as a 2d element' was applied 116 times
+%%   - rule 'int_lin_eq: store 2d flattening mapping' was applied 116 times
+%%   - done in 0 ms
+%% Model C:\\Users\\steam\\AppData\\Local\\Temp\\tmp32A.tmp
+%%   - array_bool_and: 2720
+%%   - array_int_element: 185
+%%   - bool_clause: 256
+%%   - fzn_all_different_int: 24
+%%   - int_eq_imp: 3415
+%%   - int_eq_reif: 20
+%%   - int_lin_eq: 78
+%%   - int_max: 65
+%%   - Minimization problem
+%% Starting CP-SAT solver v9.11.4210
+%% Parameters: log_search_progress: true log_to_stdout: false max_domain_size_when_encoding_eq_neq_constraints: 32 num_workers: 16
+%% Initial optimization model 'C:\\Users\\steam\\AppData\\Local\\Temp\\tmp32A.tmp': (model_fingerprint: 0xc4a53ee8677489e6)
+%% #Variables: 7'089 (#ints: 1 in objective)
+%%   - 6'135 Booleans in [0,1]
+%%   - 1 in [-36000,-2000]
+%%   - 1 in [-35000,-1000]
+%%   - 2 in [-34000,0]
+%%   - 1 in [-33000,1000]
+%%   - 2 in [-32000,2000]
+%%   - 1 in [-31000,3000]
+%%   - 2 in [-30000,4000]
+%%   - 3 in [-29000,5000]
+%%   - 2 in [-28000,6000]
+%%   - 2 in [-27000,7000]
+%%   - 1 in [-26000,8000]
+%%   - 1 in [-25000,9000]
+%%   - 2 in [-24000,10000]
+%%   - 1 in [-23000,11000]
+%%   - 2 in [-22000,12000]
+%%   - 1 in [-21000,13000]
+%%   - 2 in [-19000,15000]
+%%   - 1 in [-18000,16000]
+%%   - 2 in [-17000,17000]
+%%   - 2 in [-16000,18000]
+%%   - 2 in [-14000,20000]
+%%   - 1 in [-13000,21000]
+%%   - 3 in [-12000,22000]
+%%   - 2 in [-11000,23000]
+%%   - 1 in [-10000,24000]
+%%   - 3 in [-9000,25000]
+%%   - 1 in [-8000,26000]
+%%   - 3 in [-7000,27000]
+%%   - 3 in [-6000,28000]
+%%   - 1 in [-5000,29000]
+%%   - 2 in [-4000,30000]
+%%   - 1 in [-2000,32000]
+%%   - 2 in [-1000,33000]
+%%   - 116 in [0][5][10][12][14,16][18][20][22][25,26 ... ][42][45][50][55][60][65][70][75][80][85][90][95]
+%%   - 4 in [0,50]
+%%   - 1 in [0,1000]
+%%   - 2 in [0,2000]
+%%   - 1 in [0,3000]
+%%   - 2 in [0,4000]
+%%   - 3 in [0,5000]
+%%   - 2 in [0,6000]
+%%   - 2 in [0,7000]
+%%   - 1 in [0,8000]
+%%   - 1 in [0,9000]
+%%   - 2 in [0,10000]
+%%   - 1 in [0,11000]
+%%   - 2 in [0,12000]
+%%   - 1 in [0,13000]
+%%   - 2 in [0,15000]
+%%   - 1 in [0,16000]
+%%   - 2 in [0,17000]
+%%   - 2 in [0,18000]
+%%   - 2 in [0,20000]
+%%   - 1 in [0,21000]
+%%   - 3 in [0,22000]
+%%   - 2 in [0,23000]
+%%   - 1 in [0,24000]
+%%   - 3 in [0,25000]
+%%   - 1 in [0,26000]
+%%   - 3 in [0,27000]
+%%   - 3 in [0,28000]
+%%   - 1 in [0,29000]
+%%   - 2 in [0,30000]
+%%   - 1 in [0,32000]
+%%   - 2 in [0,33000]
+%%   - 78 in [0,53000]
+%%   - 40 in [1,5][7,11]
+%%   - 482 in [1,11]
+%%   - 2 in [50,860]
+%%   - 10 in [50,950]
+%%   - 2 in [1000,35000]
+%%   - 4 in [4000,38000]
+%%   - 2 in [6000,40000]
+%%   - 65 in [7000,41000]
+%%   - 2 in [9000,43000]
+%%   - 2 in [11000,45000]
+%%   - 2 in [14000,48000]
+%%   - 2 in [16000,50000]
+%%   - 1 in [77000,1257000]
+%%   - 30 constants in {0,6,14,16,20,28,30,32,40,45,5 ... 20000,23000,25000,31000,35000,36000,40000,41000} 
+%% #kAllDiff: 24
+%% #kBoolAnd: 2'720 (#enforced: 2'720) (#literals: 8'160)
+%% #kBoolOr: 2'976 (#enforced: 2'720) (#literals: 8'160)
+%% #kElement: 69
+%% #kLinMax: 65 (#expressions: 130)
+%% #kLinear1: 935 (#enforced: 935)
+%% #kLinear2: 2'585 (#enforced: 2'520)
+%% #kLinearN: 13 (#terms: 194)
+%% #kTable: 116
+%% Starting presolve at 0.00s
+%%   1.38e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   3.22e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=4 #num_dual_strengthening=2 
+%%   2.49e-05s  0.00e+00d  [operations_research::sat::CpModelPresolver::ExtractEncodingFromLinear] 
+%% [Symmetry] Graph for symmetry has 100'505 nodes and 242'622 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0265284 dtime: 0.0783675
+%% [SAT presolve] num removable Booleans: 0 / 23794
+%% [SAT presolve] num trivial clauses: 0
+%% [SAT presolve] [0s] clauses:50024 literals:137424 vars:23063 one_side_vars:695 simple_definition:8668 singleton_clauses:0
+%% [SAT presolve] [0.003822s] clauses:50024 literals:137424 vars:23063 one_side_vars:695 simple_definition:8668 singleton_clauses:0
+%% [SAT presolve] [0.0050911s] clauses:50024 literals:137424 vars:23063 one_side_vars:695 simple_definition:8668 singleton_clauses:0
+%%   3.37e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] #without_enforcements=200 
+%%   3.38e-01s  7.78e-01d  [operations_research::sat::CpModelPresolver::Probe] #probed=62'010 #fixed_bools=2'380 #new_bounds=56 #equiv=2'924 #new_binary_clauses=93'780 
+%%   7.58e-02s  0.00e+00d  [MaxClique] Merged 43828(87656 literals) into 12728(56556 literals) at_most_ones. 
+%%   6.23e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   1.00e-01s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=2 #num_dual_strengthening=1 
+%%   6.78e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::ProcessAtMostOneAndLinear] 
+%%   3.88e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] #duplicates=738 
+%%   3.45e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   5.81e-04s  5.70e-07d  [operations_research::sat::CpModelPresolver::DetectDominatedLinearConstraints] #relevant_constraints=55 
+%%   6.20e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDifferentVariables] 
+%%   1.16e-02s  4.28e-04d  [operations_research::sat::CpModelPresolver::ProcessSetPPC] #relevant_constraints=10'980 #num_inclusions=5'330 
+%%   8.54e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::FindAlmostIdenticalLinearConstraints] 
+%%   2.93e-02s  1.35e-02d  [operations_research::sat::CpModelPresolver::FindBigAtMostOneAndLinearOverlap] 
+%%   2.72e-03s  5.95e-04d  [operations_research::sat::CpModelPresolver::FindBigVerticalLinearOverlap] 
+%%   6.92e-04s  5.00e-07d  [operations_research::sat::CpModelPresolver::FindBigHorizontalLinearOverlap] #linears=10 
+%%   7.43e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::MergeClauses] 
+%%   5.84e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   4.64e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   6.12e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   4.61e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%% [Symmetry] Graph for symmetry has 54'548 nodes and 96'063 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0097845 dtime: 0.0281758
+%%   3.01e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   2.44e-01s  5.51e-01d  [operations_research::sat::CpModelPresolver::Probe] #probed=58'682 #new_binary_clauses=76'413 
+%%   9.84e-04s  0.00e+00d  [MaxClique] 
+%%   6.13e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   4.62e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   7.05e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::ProcessAtMostOneAndLinear] 
+%%   2.82e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] 
+%%   2.64e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   4.87e-04s  5.70e-07d  [operations_research::sat::CpModelPresolver::DetectDominatedLinearConstraints] #relevant_constraints=55 
+%%   3.94e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDifferentVariables] 
+%%   4.62e-03s  1.72e-04d  [operations_research::sat::CpModelPresolver::ProcessSetPPC] #relevant_constraints=5'650 
+%%   9.90e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::FindAlmostIdenticalLinearConstraints] 
+%%   2.97e-02s  1.37e-02d  [operations_research::sat::CpModelPresolver::FindBigAtMostOneAndLinearOverlap] 
+%%   2.59e-03s  5.95e-04d  [operations_research::sat::CpModelPresolver::FindBigVerticalLinearOverlap] 
+%%   6.39e-04s  5.00e-07d  [operations_research::sat::CpModelPresolver::FindBigHorizontalLinearOverlap] #linears=10 
+%%   6.64e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::MergeClauses] 
+%%   5.94e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   4.59e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   2.43e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::ExpandObjective] #entries=1'856'740 #tight_variables=57'370 #tight_constraints=5'650 
+%% Presolve summary:
+%%   - 5849 affine relations were detected.
+%%   - rule 'TODO dual: only one blocking constraint?' was applied 3'311 times.
+%%   - rule 'TODO dual: only one unspecified blocking constraint?' was applied 257 times.
+%%   - rule 'TODO linear1: appear in only one extra 2-var constraint' was applied 40 times.
+%%   - rule 'affine: new relation' was applied 5'849 times.
+%%   - rule 'all_diff: permutation expanded' was applied 24 times.
+%%   - rule 'all_diff: removed fixed variables' was applied 4 times.
+%%   - rule 'at_most_one: empty or all false' was applied 344 times.
+%%   - rule 'at_most_one: removed literals' was applied 344 times.
+%%   - rule 'at_most_one: satisfied' was applied 4'464 times.
+%%   - rule 'at_most_one: transformed into max clique.' was applied 1 time.
+%%   - rule 'bool_and: fixed literals' was applied 2'720 times.
+%%   - rule 'bool_and: x => x' was applied 2'720 times.
+%%   - rule 'bool_or: always true' was applied 3'460 times.
+%%   - rule 'deductions: 15850 stored' was applied 1 time.
+%%   - rule 'deductions: reduced variable domain' was applied 36 times.
+%%   - rule 'dual: enforced equivalence' was applied 2'720 times.
+%%   - rule 'dual: make encoding equiv' was applied 695 times.
+%%   - rule 'duplicate: removed constraint' was applied 738 times.
+%%   - rule 'element: expanded value element' was applied 69 times.
+%%   - rule 'element: reduced target domain' was applied 73 times.
+%%   - rule 'enforcement: always false' was applied 20 times.
+%%   - rule 'enforcement: false literal' was applied 812 times.
+%%   - rule 'enforcement: true literal' was applied 812 times.
+%%   - rule 'exactly_one: satisfied' was applied 20 times.
+%%   - rule 'lin_max: affine_max target domain reduced' was applied 52 times.
+%%   - rule 'lin_max: canonicalize target using gcd' was applied 53 times.
+%%   - rule 'lin_max: converted to equality' was applied 8 times.
+%%   - rule 'lin_max: divising by gcd' was applied 53 times.
+%%   - rule 'lin_max: removed exprs' was applied 8 times.
+%%   - rule 'lin_max: rewrite with precedences' was applied 45 times.
+%%   - rule 'lin_max: x = max(x, ...)' was applied 4 times.
+%%   - rule 'linear: always true' was applied 883 times.
+%%   - rule 'linear: doubleton free' was applied 1 time.
+%%   - rule 'linear: fixed or dup variables' was applied 1'174 times.
+%%   - rule 'linear: reduced variable domains' was applied 7 times.
+%%   - rule 'linear: remapped using affine relations' was applied 121 times.
+%%   - rule 'linear: simplified rhs' was applied 6'795 times.
+%%   - rule 'linear: singleton column' was applied 12 times.
+%%   - rule 'linear: variable substitution 0' was applied 1 time.
+%%   - rule 'linear: variable substitution 1' was applied 1 time.
+%%   - rule 'objective: shifted cost with exactly ones' was applied 17 times.
+%%   - rule 'presolve: 2700 unused variables removed.' was applied 1 time.
+%%   - rule 'presolve: iteration' was applied 2 times.
+%%   - rule 'probing: bool_or reduced to implication' was applied 6 times.
+%%   - rule 'probing: simplified clauses.' was applied 34 times.
+%%   - rule 'setppc: bool_or in at_most_one.' was applied 5'200 times.
+%%   - rule 'setppc: removed dominated constraints' was applied 130 times.
+%%   - rule 'table: expanded positive constraint' was applied 116 times.
+%%   - rule 'table: reduced variable domains' was applied 232 times.
+%%   - rule 'variables with 2 values: create encoding literal' was applied 3 times.
+%%   - rule 'variables with 2 values: new affine relation' was applied 3 times.
+%%   - rule 'variables: add encoding constraint' was applied 7'402 times.
+%%   - rule 'variables: canonicalize affine domain' was applied 122 times.
+%%   - rule 'variables: canonicalize domain' was applied 8 times.
+%%   - rule 'variables: detect fully reified value encoding' was applied 695 times.
+%%   - rule 'variables: detect half reified value encoding' was applied 1'590 times.
+%%   - rule 'variables: only used in encoding' was applied 69 times.
+%%   - rule 'variables: only used in objective and in encoding' was applied 8 times.
+%% Presolved optimization model 'C:\\Users\\steam\\AppData\\Local\\Temp\\tmp32A.tmp': (model_fingerprint: 0xf4498886d96b4aba)
+%% #Variables: 18'957 (#bools: 105 #ints: 49 in objective)
+%%   - 18'490 Booleans in [0,1]
+%%   - 1 in [0][2][4][7][9][17][20]
+%%   - 1 in [0][2][4][7][17][20]
+%%   - 1 in [0][2][4][12][15]
+%%   - 3 in [0][2][5]
+%%   - 2 in [0][2][5][15][18]
+%%   - 1 in [0][2][8][10][13][15][23][26]
+%%   - 1 in [0][2][10][13]
+%%   - 1 in [0][2][12][15]
+%%   - 1 in [0][2,3]
+%%   - 1 in [0][3][5][8][10][18][21]
+%%   - 3 in [0][3][9][11][14][16][24][27]
+%%   - 1 in [0][3][13][16]
+%%   - 1 in [0][3,4]
+%%   - 1 in [0][3,4][8][14][16][19][21][29][32]
+%%   - 2 in [0][4][6][9][11][19][22]
+%%   - 1 in [0][4][6][9][19][22]
+%%   - 2 in [0][4][7]
+%%   - 1 in [0][4][10][12][15][17][25][28]
+%%   - 2 in [0][4][10][12][15][25][28]
+%%   - 1 in [0][4,5][9][15][17][20][22][30][33]
+%%   - 1 in [0][4,5][9][15][17][20][30][33]
+%%   - 2 in [0][5][7][10][12][20][23]
+%%   - 1 in [0][5][8]
+%%   - 100 in [0][5][10][12][14,16][18][20][22][25,26 ... ][42][45][50][55][60][65][70][75][80][85][90][95]
+%%   - 1 in [0][6][8][11][13][21][24]
+%%   - 2 in [0][7][10]
+%%   - 1 in [0][8][11]
+%%   - 2 in [0,1][4]
+%%   - 1 in [0,1][4][6][14][17]
+%%   - 1 in [0,1][4][14][17]
+%%   - 1 in [0,1][5][11][13][16][18][26][29]
+%%   - 36 in [0,1][5,6][10][16][18][21][23][31][34]
+%%   - 17 in [0,1][5,6][10][16][18][21][31][34]
+%%   - 3 in [0,1][7][9][12][14][22][25]
+%%   - 1 in [0,1][9][12]
+%%   - 2 in [0,2]
+%%   - 1 in [0,2][6][12][14][17][19][27][30]
+%%   - 1 in [0,2][6][12][14][17][27][30]
+%%   - 20 in [1,5][7,11]
+%%   - 245 in [1,11]
+%% #kExactlyOne: 5'650 (#literals: 57'370)
+%% #kLinMax: 8 (#expressions: 16)
+%% #kLinear1: 12'922 (#enforced: 12'922)
+%% #kLinear2: 2'205 (#enforced: 2'160)
+%% #kLinearN: 10 (#terms: 100)
+%% Preloading model.
+%% #Bound   1.36s best:inf   next:[83000,1257000] initial_domain
+%% [Symmetry] Graph for symmetry has 45'908 nodes and 96'063 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0093302 dtime: 0.0264917
+%% #Model   1.39s var:18957/18957 constraints:20795/20795
+%% Starting search at 1.41s with 16 workers.
+%% 11 full problem subsolvers: [core, default_lp, lb_tree_search, max_lp, no_lp, objective_lb_search, probing, pseudo_costs, quick_restart, quick_restart_no_lp, reduced_costs]
+%% 5 first solution subsolvers: [fj(2), fs_random, fs_random_no_lp, fs_random_quick_restart_no_lp]
+%% 11 interleaved subsolvers: [feasibility_pump, graph_arc_lns, graph_cst_lns, graph_dec_lns, graph_var_lns, ls(2), ls_lin, rins/rens, rnd_cst_lns, rnd_var_lns]
+%% 3 helper subsolvers: [neighborhood_helper, synchronization_agent, update_gap_integral]
+%% #Bound   2.14s best:inf   next:[85000,1257000] default_lp
+%% #Bound   2.14s best:inf   next:[87000,1257000] objective_lb_search
+%% #Bound   2.14s best:inf   next:[88000,1257000] objective_lb_search
+%% #1       2.15s best:449000 next:[88000,448000] no_lp (fixed_bools=0/23740)
+%%%mzn-stat: boolVariables=23740
+%%%mzn-stat: failures=15
+%%%mzn-stat: objective=449000
+%%%mzn-stat: objectiveBound=88000
+%%%mzn-stat: propagations=4694156
+%%%mzn-stat: solveTime=2.14814
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(4,4)	(11,11)	(3,3)	(8,8)	(2,2)	(7,7)	(10,10)	(1,1)	(5,5)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(8,4)	(1,11)	(5,7)	(7,5)	(4,8)	(3,9)	(10,2)	(11,1)	(2,10)
+Eq 3	(4,4)	(9,3)	   -	(6,2)	(2,7)	(1,6)	(8,10)	(11,1)	(5,11)	(7,8)	(3,9)	(10,5)
+Eq 4	(11,11)	(8,4)	(6,2)	   -	(10,6)	(4,5)	(3,7)	(1,3)	(9,1)	(5,9)	(2,10)	(7,8)
+Eq 5	(3,3)	(1,11)	(2,7)	(10,6)	   -	(9,1)	(5,9)	(8,10)	(6,5)	(11,4)	(7,8)	(4,2)
+Eq 6	(8,8)	(5,7)	(1,6)	(4,5)	(9,1)	   -	(11,3)	(3,9)	(7,4)	(2,10)	(10,2)	(6,11)
+Eq 7	(2,2)	(7,5)	(8,10)	(3,7)	(5,9)	(11,3)	   -	(10,6)	(4,8)	(6,11)	(9,4)	(1,1)
+Eq 8	(7,7)	(4,8)	(11,1)	(1,3)	(8,10)	(3,9)	(10,6)	   -	(2,2)	(9,5)	(6,11)	(5,4)
+Eq 9	(10,10)	(3,9)	(5,11)	(9,1)	(6,5)	(7,4)	(4,8)	(2,2)	   -	(8,6)	(1,3)	(11,7)
+Eq 10	(1,1)	(10,2)	(7,8)	(5,9)	(11,4)	(2,10)	(6,11)	(9,5)	(8,6)	   -	(4,7)	(3,3)
+Eq 11	(5,5)	(11,1)	(3,9)	(2,10)	(7,8)	(10,2)	(9,4)	(6,11)	(1,3)	(4,7)	   -	(8,6)
+Eq 12	(9,9)	(2,10)	(10,5)	(7,8)	(4,2)	(6,11)	(1,1)	(5,4)	(11,7)	(3,3)	(8,6)	   -
+
+
+KMs TOTALS: 4114
+SEGUIDORS FORA: 449000
+----------
+%% #Bound   2.15s best:449000 next:[94000,448000] objective_lb_search
+%% #2       2.18s best:445000 next:[94000,444000] quick_restart (fixed_bools=0/23729)
+%%%mzn-stat: boolVariables=23729
+%%%mzn-stat: failures=2
+%%%mzn-stat: objective=445000
+%%%mzn-stat: objectiveBound=94000
+%%%mzn-stat: propagations=4682751
+%%%mzn-stat: solveTime=2.18291
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(4,4)	(2,2)	(3,3)	(11,11)	(5,5)	(1,1)	(10,10)	(8,8)	(9,9)	(7,7)
+Eq 2	(6,6)	   -	(3,9)	(11,1)	(7,5)	(5,7)	(1,11)	(4,8)	(9,3)	(10,2)	(8,4)	(2,10)
+Eq 3	(4,4)	(3,9)	   -	(10,3)	(11,10)	(9,2)	(8,1)	(7,6)	(6,5)	(5,7)	(2,8)	(1,11)
+Eq 4	(2,2)	(11,1)	(10,3)	   -	(9,6)	(8,5)	(7,4)	(6,7)	(5,11)	(4,9)	(1,10)	(3,8)
+Eq 5	(3,3)	(7,5)	(11,10)	(9,6)	   -	(10,1)	(6,9)	(8,11)	(2,8)	(1,4)	(5,7)	(4,2)
+Eq 6	(11,11)	(5,7)	(9,2)	(8,5)	(10,1)	   -	(3,8)	(2,9)	(1,4)	(7,10)	(4,6)	(6,3)
+Eq 7	(5,5)	(1,11)	(8,1)	(7,4)	(6,9)	(3,8)	   -	(10,10)	(4,7)	(2,3)	(11,2)	(9,6)
+Eq 8	(1,1)	(4,8)	(7,6)	(6,7)	(8,11)	(2,9)	(10,10)	   -	(11,2)	(9,5)	(3,3)	(5,4)
+Eq 9	(10,10)	(9,3)	(6,5)	(5,11)	(2,8)	(1,4)	(4,7)	(11,2)	   -	(3,6)	(7,1)	(8,9)
+Eq 10	(8,8)	(10,2)	(5,7)	(4,9)	(1,4)	(7,10)	(2,3)	(9,5)	(3,6)	   -	(6,11)	(11,1)
+Eq 11	(9,9)	(8,4)	(2,8)	(1,10)	(5,7)	(4,6)	(11,2)	(3,3)	(7,1)	(6,11)	   -	(10,5)
+Eq 12	(7,7)	(2,10)	(1,11)	(3,8)	(4,2)	(6,3)	(9,6)	(5,4)	(8,9)	(11,1)	(10,5)	   -
+
+
+KMs TOTALS: 4058
+SEGUIDORS FORA: 442000
+----------
+%% #3       2.40s best:442000 next:[94000,441000] ls_restart_decay(batch:1 lin{mvs:1 evals:55} #w_updates:0 #perturb:0)
+%%%mzn-stat: boolVariables=23697
+%%%mzn-stat: failures=0
+%%%mzn-stat: objective=442000
+%%%mzn-stat: objectiveBound=94000
+%%%mzn-stat: propagations=4654277
+%%%mzn-stat: solveTime=2.39839
+%%%mzn-stat-end
+%% #Bound   2.74s best:442000 next:[95000,441000] reduced_costs
+%% #4       3.55s best:438000 next:[95000,437000] quick_restart_no_lp (fixed_bools=0/23770)
+%%%mzn-stat: boolVariables=23770
+%%%mzn-stat: failures=143
+%%%mzn-stat: objective=438000
+%%%mzn-stat: objectiveBound=95000
+%%%mzn-stat: propagations=14985743
+%%%mzn-stat: solveTime=3.55183
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(4,4)	(1,1)	(3,3)	(11,11)	(5,5)	(8,8)	(10,10)	(2,2)	(9,9)	(7,7)
+Eq 2	(6,6)	   -	(3,9)	(10,2)	(7,5)	(5,7)	(1,11)	(11,1)	(9,3)	(4,8)	(8,4)	(2,10)
+Eq 3	(4,4)	(3,9)	   -	(5,3)	(6,10)	(7,2)	(8,1)	(10,6)	(11,5)	(9,7)	(2,8)	(1,11)
+Eq 4	(1,1)	(10,2)	(5,3)	   -	(11,6)	(9,5)	(7,4)	(2,7)	(6,11)	(8,9)	(4,10)	(3,8)
+Eq 5	(3,3)	(7,5)	(6,10)	(11,6)	   -	(8,1)	(10,9)	(9,11)	(2,8)	(1,4)	(5,7)	(4,2)
+Eq 6	(11,11)	(5,7)	(7,2)	(9,5)	(8,1)	   -	(2,8)	(4,9)	(3,4)	(10,10)	(1,6)	(6,3)
+Eq 7	(5,5)	(1,11)	(8,1)	(7,4)	(10,9)	(2,8)	   -	(6,10)	(4,7)	(3,3)	(11,2)	(9,6)
+Eq 8	(8,8)	(11,1)	(10,6)	(2,7)	(9,11)	(4,9)	(6,10)	   -	(1,2)	(7,5)	(3,3)	(5,4)
+Eq 9	(10,10)	(9,3)	(11,5)	(6,11)	(2,8)	(3,4)	(4,7)	(1,2)	   -	(5,6)	(7,1)	(8,9)
+Eq 10	(2,2)	(4,8)	(9,7)	(8,9)	(1,4)	(10,10)	(3,3)	(7,5)	(5,6)	   -	(6,11)	(11,1)
+Eq 11	(9,9)	(8,4)	(2,8)	(4,10)	(5,7)	(1,6)	(11,2)	(3,3)	(7,1)	(6,11)	   -	(10,5)
+Eq 12	(7,7)	(2,10)	(1,11)	(3,8)	(4,2)	(6,3)	(9,6)	(5,4)	(8,9)	(11,1)	(10,5)	   -
+
+
+KMs TOTALS: 4307
+SEGUIDORS FORA: 438000
+----------
+%% #5       3.67s best:437000 next:[95000,436000] quick_restart_no_lp (fixed_bools=0/23770)
+%%%mzn-stat: boolVariables=23770
+%%%mzn-stat: failures=235
+%%%mzn-stat: objective=437000
+%%%mzn-stat: objectiveBound=95000
+%%%mzn-stat: propagations=15268728
+%%%mzn-stat: solveTime=3.66938
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(10,10)	(4,4)	(3,3)	(11,11)	(5,5)	(8,8)	(1,1)	(2,2)	(9,9)	(7,7)
+Eq 2	(6,6)	   -	(3,9)	(10,2)	(7,5)	(5,7)	(1,11)	(11,1)	(9,3)	(4,8)	(8,4)	(2,10)
+Eq 3	(10,10)	(3,9)	   -	(2,1)	(4,4)	(1,3)	(9,8)	(5,6)	(6,2)	(8,7)	(7,11)	(11,5)
+Eq 4	(4,4)	(10,2)	(2,1)	   -	(1,7)	(3,5)	(7,6)	(6,3)	(8,11)	(9,9)	(11,10)	(5,8)
+Eq 5	(3,3)	(7,5)	(4,4)	(1,7)	   -	(2,1)	(6,9)	(9,2)	(11,10)	(10,11)	(5,8)	(8,6)
+Eq 6	(11,11)	(5,7)	(1,3)	(3,5)	(2,1)	   -	(8,4)	(4,9)	(10,8)	(7,10)	(6,6)	(9,2)
+Eq 7	(5,5)	(1,11)	(9,8)	(7,6)	(6,9)	(8,4)	   -	(2,10)	(4,7)	(11,3)	(3,2)	(10,1)
+Eq 8	(8,8)	(11,1)	(5,6)	(6,3)	(9,2)	(4,9)	(2,10)	   -	(7,4)	(3,5)	(10,7)	(1,11)
+Eq 9	(1,1)	(9,3)	(6,2)	(8,11)	(11,10)	(10,8)	(4,7)	(7,4)	   -	(5,6)	(2,5)	(3,9)
+Eq 10	(2,2)	(4,8)	(8,7)	(9,9)	(10,11)	(7,10)	(11,3)	(3,5)	(5,6)	   -	(1,1)	(6,4)
+Eq 11	(9,9)	(8,4)	(7,11)	(11,10)	(5,8)	(6,6)	(3,2)	(10,7)	(2,5)	(1,1)	   -	(4,3)
+Eq 12	(7,7)	(2,10)	(11,5)	(5,8)	(8,6)	(9,2)	(10,1)	(1,11)	(3,9)	(6,4)	(4,3)	   -
+
+
+KMs TOTALS: 3967
+SEGUIDORS FORA: 435000
+----------
+%% #6       3.72s best:436000 next:[95000,435000] no_lp (fixed_bools=0/23743)
+%%%mzn-stat: boolVariables=23743
+%%%mzn-stat: failures=37
+%%%mzn-stat: objective=436000
+%%%mzn-stat: objectiveBound=95000
+%%%mzn-stat: propagations=14752554
+%%%mzn-stat: solveTime=3.7173
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(4,4)	(11,11)	(3,3)	(8,8)	(2,2)	(7,7)	(10,10)	(1,1)	(5,5)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(8,4)	(1,11)	(2,10)	(7,5)	(4,8)	(3,9)	(10,2)	(11,1)	(5,7)
+Eq 3	(4,4)	(9,3)	   -	(6,2)	(8,10)	(5,1)	(3,8)	(11,6)	(1,11)	(7,7)	(2,9)	(10,5)
+Eq 4	(11,11)	(8,4)	(6,2)	   -	(10,6)	(3,9)	(4,7)	(9,3)	(2,1)	(5,5)	(1,10)	(7,8)
+Eq 5	(3,3)	(1,11)	(8,10)	(10,6)	   -	(9,7)	(5,9)	(2,1)	(6,5)	(11,4)	(7,8)	(4,2)
+Eq 6	(8,8)	(2,10)	(5,1)	(3,9)	(9,7)	   -	(11,6)	(1,5)	(7,4)	(4,3)	(10,2)	(6,11)
+Eq 7	(2,2)	(7,5)	(3,8)	(4,7)	(5,9)	(11,6)	   -	(10,10)	(8,3)	(6,11)	(9,4)	(1,1)
+Eq 8	(7,7)	(4,8)	(11,6)	(9,3)	(2,1)	(1,5)	(10,10)	   -	(5,2)	(3,9)	(6,11)	(8,4)
+Eq 9	(10,10)	(3,9)	(1,11)	(2,1)	(6,5)	(7,4)	(8,3)	(5,2)	   -	(9,8)	(4,7)	(11,6)
+Eq 10	(1,1)	(10,2)	(7,7)	(5,5)	(11,4)	(4,3)	(6,11)	(3,9)	(9,8)	   -	(8,6)	(2,10)
+Eq 11	(5,5)	(11,1)	(2,9)	(1,10)	(7,8)	(10,2)	(9,4)	(6,11)	(4,7)	(8,6)	   -	(3,3)
+Eq 12	(9,9)	(5,7)	(10,5)	(7,8)	(4,2)	(6,11)	(1,1)	(8,4)	(11,6)	(2,10)	(3,3)	   -
+
+
+KMs TOTALS: 4130
+SEGUIDORS FORA: 436000
+----------
+%% #7       3.78s best:434000 next:[95000,433000] no_lp (fixed_bools=0/23748)
+%%%mzn-stat: boolVariables=23748
+%%%mzn-stat: failures=158
+%%%mzn-stat: objective=434000
+%%%mzn-stat: objectiveBound=95000
+%%%mzn-stat: propagations=14917167
+%%%mzn-stat: solveTime=3.77645
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(10,10)	(2,2)	(3,3)	(8,8)	(4,4)	(7,7)	(11,11)	(1,1)	(5,5)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(4,8)	(1,11)	(5,7)	(7,5)	(11,1)	(3,9)	(10,2)	(8,4)	(2,10)
+Eq 3	(10,10)	(9,3)	   -	(3,9)	(11,1)	(6,11)	(8,2)	(4,6)	(2,4)	(7,7)	(1,8)	(5,5)
+Eq 4	(2,2)	(4,8)	(3,9)	   -	(8,6)	(1,10)	(5,1)	(6,5)	(10,7)	(11,4)	(9,3)	(7,11)
+Eq 5	(3,3)	(1,11)	(11,1)	(8,6)	   -	(2,4)	(9,10)	(10,8)	(6,5)	(5,9)	(7,2)	(4,7)
+Eq 6	(8,8)	(5,7)	(6,11)	(1,10)	(2,4)	   -	(3,6)	(9,3)	(7,1)	(4,5)	(10,9)	(11,2)
+Eq 7	(4,4)	(7,5)	(8,2)	(5,1)	(9,10)	(3,6)	   -	(2,9)	(1,3)	(6,11)	(11,7)	(10,8)
+Eq 8	(7,7)	(11,1)	(4,6)	(6,5)	(10,8)	(9,3)	(2,9)	   -	(5,2)	(8,10)	(3,11)	(1,4)
+Eq 9	(11,11)	(3,9)	(2,4)	(10,7)	(6,5)	(7,1)	(1,3)	(5,2)	   -	(9,8)	(4,10)	(8,6)
+Eq 10	(1,1)	(10,2)	(7,7)	(11,4)	(5,9)	(4,5)	(6,11)	(8,10)	(9,8)	   -	(2,6)	(3,3)
+Eq 11	(5,5)	(8,4)	(1,8)	(9,3)	(7,2)	(10,9)	(11,7)	(3,11)	(4,10)	(2,6)	   -	(6,1)
+Eq 12	(9,9)	(2,10)	(5,5)	(7,11)	(4,7)	(11,2)	(10,8)	(1,4)	(8,6)	(3,3)	(6,1)	   -
+
+
+KMs TOTALS: 4379
+SEGUIDORS FORA: 434000
+----------
+%% #8       3.82s best:431000 next:[95000,430000] quick_restart_no_lp (fixed_bools=0/23812)
+%%%mzn-stat: boolVariables=23812
+%%%mzn-stat: failures=417
+%%%mzn-stat: objective=431000
+%%%mzn-stat: objectiveBound=95000
+%%%mzn-stat: propagations=15681266
+%%%mzn-stat: solveTime=3.81509
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(10,10)	(2,2)	(3,3)	(8,8)	(1,1)	(7,7)	(11,11)	(4,4)	(5,5)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(4,8)	(1,11)	(5,7)	(7,5)	(11,1)	(3,9)	(10,2)	(8,4)	(2,10)
+Eq 3	(10,10)	(9,3)	   -	(8,9)	(11,1)	(4,11)	(3,2)	(2,6)	(6,4)	(7,7)	(1,8)	(5,5)
+Eq 4	(2,2)	(4,8)	(8,9)	   -	(6,6)	(3,10)	(5,4)	(10,5)	(1,7)	(11,1)	(9,3)	(7,11)
+Eq 5	(3,3)	(1,11)	(11,1)	(6,6)	   -	(2,4)	(8,10)	(9,8)	(10,5)	(5,9)	(7,2)	(4,7)
+Eq 6	(8,8)	(5,7)	(4,11)	(3,10)	(2,4)	   -	(9,6)	(6,3)	(7,1)	(1,5)	(10,9)	(11,2)
+Eq 7	(1,1)	(7,5)	(3,2)	(5,4)	(8,10)	(9,6)	   -	(4,9)	(2,3)	(6,11)	(11,7)	(10,8)
+Eq 8	(7,7)	(11,1)	(2,6)	(10,5)	(9,8)	(6,3)	(4,9)	   -	(5,2)	(8,10)	(3,11)	(1,4)
+Eq 9	(11,11)	(3,9)	(6,4)	(1,7)	(10,5)	(7,1)	(2,3)	(5,2)	   -	(9,8)	(4,10)	(8,6)
+Eq 10	(4,4)	(10,2)	(7,7)	(11,1)	(5,9)	(1,5)	(6,11)	(8,10)	(9,8)	   -	(2,6)	(3,3)
+Eq 11	(5,5)	(8,4)	(1,8)	(9,3)	(7,2)	(10,9)	(11,7)	(3,11)	(4,10)	(2,6)	   -	(6,1)
+Eq 12	(9,9)	(2,10)	(5,5)	(7,11)	(4,7)	(11,2)	(10,8)	(1,4)	(8,6)	(3,3)	(6,1)	   -
+
+
+KMs TOTALS: 4069
+SEGUIDORS FORA: 431000
+----------
+%% #Bound   3.87s best:431000 next:[258000,430000] max_lp
+%% #9       3.93s best:428000 next:[258000,427000] default_lp (fixed_bools=0/23747)
+%%%mzn-stat: boolVariables=23747
+%%%mzn-stat: failures=33
+%%%mzn-stat: objective=428000
+%%%mzn-stat: objectiveBound=258000
+%%%mzn-stat: propagations=14745793
+%%%mzn-stat: solveTime=3.92704
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(4,4)	(11,11)	(3,3)	(8,8)	(2,2)	(7,7)	(10,10)	(1,1)	(5,5)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(8,4)	(1,11)	(2,10)	(7,5)	(4,8)	(3,9)	(10,2)	(11,1)	(5,7)
+Eq 3	(4,4)	(9,3)	   -	(5,2)	(6,1)	(1,7)	(11,10)	(3,6)	(8,11)	(7,8)	(2,9)	(10,5)
+Eq 4	(11,11)	(8,4)	(5,2)	   -	(10,6)	(4,9)	(3,7)	(9,1)	(2,3)	(6,5)	(1,10)	(7,8)
+Eq 5	(3,3)	(1,11)	(6,1)	(10,6)	   -	(9,4)	(8,9)	(2,10)	(5,5)	(11,7)	(7,8)	(4,2)
+Eq 6	(8,8)	(2,10)	(1,7)	(4,9)	(9,4)	   -	(5,6)	(11,5)	(7,1)	(3,3)	(10,2)	(6,11)
+Eq 7	(2,2)	(7,5)	(11,10)	(3,7)	(8,9)	(5,6)	   -	(10,3)	(6,8)	(4,11)	(9,4)	(1,1)
+Eq 8	(7,7)	(4,8)	(3,6)	(9,1)	(2,10)	(11,5)	(10,3)	   -	(1,2)	(5,9)	(6,11)	(8,4)
+Eq 9	(10,10)	(3,9)	(8,11)	(2,3)	(5,5)	(7,1)	(6,8)	(1,2)	   -	(9,4)	(4,7)	(11,6)
+Eq 10	(1,1)	(10,2)	(7,8)	(6,5)	(11,7)	(3,3)	(4,11)	(5,9)	(9,4)	   -	(8,6)	(2,10)
+Eq 11	(5,5)	(11,1)	(2,9)	(1,10)	(7,8)	(10,2)	(9,4)	(6,11)	(4,7)	(8,6)	   -	(3,3)
+Eq 12	(9,9)	(5,7)	(10,5)	(7,8)	(4,2)	(6,11)	(1,1)	(8,4)	(11,6)	(2,10)	(3,3)	   -
+
+
+KMs TOTALS: 4183
+SEGUIDORS FORA: 428000
+----------
+%% #10      4.12s best:427000 next:[258000,426000] default_lp (fixed_bools=0/23752)
+%%%mzn-stat: boolVariables=23752
+%%%mzn-stat: failures=521
+%%%mzn-stat: objective=427000
+%%%mzn-stat: objectiveBound=258000
+%%%mzn-stat: propagations=15304454
+%%%mzn-stat: solveTime=4.12037
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(1,1)	(4,4)	(10,10)	(3,3)	(11,11)	(7,7)	(2,2)	(8,8)	(5,5)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(2,10)	(1,11)	(4,8)	(7,5)	(10,2)	(3,9)	(11,1)	(8,4)	(5,7)
+Eq 3	(1,1)	(9,3)	   -	(3,7)	(11,8)	(2,2)	(6,9)	(8,6)	(5,4)	(7,11)	(4,10)	(10,5)
+Eq 4	(4,4)	(2,10)	(3,7)	   -	(5,2)	(11,9)	(1,6)	(9,1)	(6,11)	(10,5)	(7,8)	(8,3)
+Eq 5	(10,10)	(1,11)	(11,8)	(5,2)	   -	(9,4)	(8,1)	(2,9)	(7,5)	(6,7)	(3,3)	(4,6)
+Eq 6	(3,3)	(4,8)	(2,2)	(11,9)	(9,4)	   -	(5,10)	(6,5)	(8,1)	(1,6)	(10,7)	(7,11)
+Eq 7	(11,11)	(7,5)	(6,9)	(1,6)	(8,1)	(5,10)	   -	(3,3)	(10,7)	(4,4)	(9,2)	(2,8)
+Eq 8	(7,7)	(10,2)	(8,6)	(9,1)	(2,9)	(6,5)	(3,3)	   -	(4,8)	(5,10)	(1,11)	(11,4)
+Eq 9	(2,2)	(3,9)	(5,4)	(6,11)	(7,5)	(8,1)	(10,7)	(4,8)	   -	(9,3)	(11,6)	(1,10)
+Eq 10	(8,8)	(11,1)	(7,11)	(10,5)	(6,7)	(1,6)	(4,4)	(5,10)	(9,3)	   -	(2,9)	(3,2)
+Eq 11	(5,5)	(8,4)	(4,10)	(7,8)	(3,3)	(10,7)	(9,2)	(1,11)	(11,6)	(2,9)	   -	(6,1)
+Eq 12	(9,9)	(5,7)	(10,5)	(8,3)	(4,6)	(7,11)	(2,8)	(11,4)	(1,10)	(3,2)	(6,1)	   -
+
+
+KMs TOTALS: 4143
+SEGUIDORS FORA: 427000
+----------
+%% #11      4.24s best:425000 next:[258000,424000] default_lp (fixed_bools=0/23753)
+%%%mzn-stat: boolVariables=23753
+%%%mzn-stat: failures=847
+%%%mzn-stat: objective=425000
+%%%mzn-stat: objectiveBound=258000
+%%%mzn-stat: propagations=15615506
+%%%mzn-stat: solveTime=4.24327
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(2,2)	(4,4)	(10,10)	(3,3)	(1,1)	(7,7)	(11,11)	(8,8)	(5,5)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(1,11)	(5,7)	(2,10)	(7,5)	(10,2)	(3,9)	(11,1)	(8,4)	(4,8)
+Eq 3	(2,2)	(9,3)	   -	(6,9)	(1,11)	(11,1)	(3,7)	(8,6)	(5,8)	(7,4)	(4,10)	(10,5)
+Eq 4	(4,4)	(1,11)	(6,9)	   -	(2,3)	(5,5)	(11,6)	(3,1)	(9,7)	(10,10)	(7,8)	(8,2)
+Eq 5	(10,10)	(5,7)	(1,11)	(2,3)	   -	(4,4)	(8,9)	(6,8)	(7,5)	(9,2)	(11,1)	(3,6)
+Eq 6	(3,3)	(2,10)	(11,1)	(5,5)	(4,4)	   -	(6,8)	(9,9)	(8,2)	(1,7)	(10,6)	(7,11)
+Eq 7	(1,1)	(7,5)	(3,7)	(11,6)	(8,9)	(6,8)	   -	(2,3)	(10,4)	(4,11)	(9,2)	(5,10)
+Eq 8	(7,7)	(10,2)	(8,6)	(3,1)	(6,8)	(9,9)	(2,3)	   -	(4,10)	(5,5)	(1,11)	(11,4)
+Eq 9	(11,11)	(3,9)	(5,8)	(9,7)	(7,5)	(8,2)	(10,4)	(4,10)	   -	(6,6)	(2,3)	(1,1)
+Eq 10	(8,8)	(11,1)	(7,4)	(10,10)	(9,2)	(1,7)	(4,11)	(5,5)	(6,6)	   -	(3,9)	(2,3)
+Eq 11	(5,5)	(8,4)	(4,10)	(7,8)	(11,1)	(10,6)	(9,2)	(1,11)	(2,3)	(3,9)	   -	(6,7)
+Eq 12	(9,9)	(4,8)	(10,5)	(8,2)	(3,6)	(7,11)	(5,10)	(11,4)	(1,1)	(2,3)	(6,7)	   -
+
+
+KMs TOTALS: 4247
+SEGUIDORS FORA: 425000
+----------
+%% #Model   4.34s var:18956/18957 constraints:20795/20795
+%% #Bound   4.97s best:425000 next:[281000,424000] max_lp
+%% #12      5.08s best:424000 next:[281000,423000] quick_restart_no_lp (fixed_bools=1/23852)
+%%%mzn-stat: boolVariables=23852
+%%%mzn-stat: failures=1889
+%%%mzn-stat: objective=424000
+%%%mzn-stat: objectiveBound=281000
+%%%mzn-stat: propagations=19093207
+%%%mzn-stat: solveTime=5.0796
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(2,2)	(4,4)	(11,11)	(3,3)	(1,1)	(7,7)	(10,10)	(8,8)	(5,5)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(1,11)	(5,7)	(2,10)	(7,5)	(4,8)	(3,9)	(11,1)	(8,4)	(10,2)
+Eq 3	(2,2)	(9,3)	   -	(3,9)	(4,8)	(10,1)	(11,7)	(8,6)	(5,11)	(7,4)	(1,10)	(6,5)
+Eq 4	(4,4)	(1,11)	(3,9)	   -	(2,3)	(6,5)	(5,6)	(11,1)	(8,7)	(10,10)	(9,2)	(7,8)
+Eq 5	(11,11)	(5,7)	(4,8)	(2,3)	   -	(7,4)	(8,9)	(6,10)	(1,5)	(9,2)	(10,1)	(3,6)
+Eq 6	(3,3)	(2,10)	(10,1)	(6,5)	(7,4)	   -	(9,2)	(5,9)	(4,8)	(1,7)	(11,6)	(8,11)
+Eq 7	(1,1)	(7,5)	(11,7)	(5,6)	(8,9)	(9,2)	   -	(10,3)	(6,4)	(4,11)	(3,8)	(2,10)
+Eq 8	(7,7)	(4,8)	(8,6)	(11,1)	(6,10)	(5,9)	(10,3)	   -	(9,2)	(3,5)	(2,11)	(1,4)
+Eq 9	(10,10)	(3,9)	(5,11)	(8,7)	(1,5)	(4,8)	(6,4)	(9,2)	   -	(2,6)	(7,3)	(11,1)
+Eq 10	(8,8)	(11,1)	(7,4)	(10,10)	(9,2)	(1,7)	(4,11)	(3,5)	(2,6)	   -	(6,9)	(5,3)
+Eq 11	(5,5)	(8,4)	(1,10)	(9,2)	(10,1)	(11,6)	(3,8)	(2,11)	(7,3)	(6,9)	   -	(4,7)
+Eq 12	(9,9)	(10,2)	(6,5)	(7,8)	(3,6)	(8,11)	(2,10)	(1,4)	(11,1)	(5,3)	(4,7)	   -
+
+
+KMs TOTALS: 4204
+SEGUIDORS FORA: 423000
+----------
+%% #13      5.16s best:423000 next:[281000,422000] quick_restart_no_lp (fixed_bools=1/23852)
+%%%mzn-stat: boolVariables=23852
+%%%mzn-stat: failures=1953
+%%%mzn-stat: objective=423000
+%%%mzn-stat: objectiveBound=281000
+%%%mzn-stat: propagations=19295705
+%%%mzn-stat: solveTime=5.157
+%%%mzn-stat-end
+%% #14      5.30s best:419000 next:[281000,418000] quick_restart (fixed_bools=1/23792)
+%%%mzn-stat: boolVariables=23792
+%%%mzn-stat: failures=807
+%%%mzn-stat: objective=419000
+%%%mzn-stat: objectiveBound=281000
+%%%mzn-stat: propagations=16940246
+%%%mzn-stat: solveTime=5.30264
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(2,2)	(4,4)	(11,11)	(3,3)	(1,1)	(7,7)	(10,10)	(8,8)	(5,5)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(3,9)	(5,7)	(2,10)	(7,5)	(4,8)	(1,11)	(11,1)	(8,4)	(10,2)
+Eq 3	(2,2)	(9,3)	   -	(1,11)	(3,8)	(11,1)	(4,10)	(5,6)	(8,9)	(7,4)	(10,7)	(6,5)
+Eq 4	(4,4)	(3,9)	(1,11)	   -	(8,3)	(5,5)	(9,6)	(11,1)	(6,7)	(10,10)	(2,2)	(7,8)
+Eq 5	(11,11)	(5,7)	(3,8)	(8,3)	   -	(7,4)	(6,9)	(10,10)	(9,5)	(2,2)	(4,1)	(1,6)
+Eq 6	(3,3)	(2,10)	(11,1)	(5,5)	(7,4)	   -	(10,2)	(6,9)	(4,8)	(9,7)	(1,6)	(8,11)
+Eq 7	(1,1)	(7,5)	(4,10)	(9,6)	(6,9)	(10,2)	   -	(8,3)	(11,4)	(5,11)	(3,8)	(2,7)
+Eq 8	(7,7)	(4,8)	(5,6)	(11,1)	(10,10)	(6,9)	(8,3)	   -	(2,2)	(1,5)	(9,11)	(3,4)
+Eq 9	(10,10)	(1,11)	(8,9)	(6,7)	(9,5)	(4,8)	(11,4)	(2,2)	   -	(3,6)	(7,3)	(5,1)
+Eq 10	(8,8)	(11,1)	(7,4)	(10,10)	(2,2)	(9,7)	(5,11)	(1,5)	(3,6)	   -	(6,9)	(4,3)
+Eq 11	(5,5)	(8,4)	(10,7)	(2,2)	(4,1)	(1,6)	(3,8)	(9,11)	(7,3)	(6,9)	   -	(11,10)
+Eq 12	(9,9)	(10,2)	(6,5)	(7,8)	(1,6)	(8,11)	(2,7)	(3,4)	(5,1)	(4,3)	(11,10)	   -
+
+
+KMs TOTALS: 4401
+SEGUIDORS FORA: 419000
+----------
+%% #15      5.42s best:418000 next:[281000,417000] default_lp (fixed_bools=1/23766)
+%%%mzn-stat: boolVariables=23766
+%%%mzn-stat: failures=4828
+%%%mzn-stat: objective=418000
+%%%mzn-stat: objectiveBound=281000
+%%%mzn-stat: propagations=18306227
+%%%mzn-stat: solveTime=5.41893
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(1,1)	(11,11)	(10,10)	(3,3)	(4,4)	(7,7)	(2,2)	(8,8)	(5,5)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(4,8)	(1,11)	(2,10)	(7,5)	(10,2)	(3,9)	(11,1)	(8,4)	(5,7)
+Eq 3	(1,1)	(9,3)	   -	(3,9)	(4,8)	(5,2)	(11,7)	(8,6)	(7,11)	(6,4)	(2,10)	(10,5)
+Eq 4	(11,11)	(4,8)	(3,9)	   -	(8,7)	(1,5)	(2,6)	(5,1)	(10,4)	(9,10)	(6,3)	(7,2)
+Eq 5	(10,10)	(1,11)	(4,8)	(8,7)	   -	(7,4)	(5,9)	(6,3)	(9,5)	(3,2)	(11,1)	(2,6)
+Eq 6	(3,3)	(2,10)	(5,2)	(1,5)	(7,4)	   -	(6,1)	(9,9)	(11,8)	(4,7)	(10,6)	(8,11)
+Eq 7	(4,4)	(7,5)	(11,7)	(2,6)	(5,9)	(6,1)	   -	(1,8)	(8,3)	(10,11)	(9,2)	(3,10)
+Eq 8	(7,7)	(10,2)	(8,6)	(5,1)	(6,3)	(9,9)	(1,8)	   -	(4,10)	(2,5)	(3,11)	(11,4)
+Eq 9	(2,2)	(3,9)	(7,11)	(10,4)	(9,5)	(11,8)	(8,3)	(4,10)	   -	(5,6)	(1,7)	(6,1)
+Eq 10	(8,8)	(11,1)	(6,4)	(9,10)	(3,2)	(4,7)	(10,11)	(2,5)	(5,6)	   -	(7,9)	(1,3)
+Eq 11	(5,5)	(8,4)	(2,10)	(6,3)	(11,1)	(10,6)	(9,2)	(3,11)	(1,7)	(7,9)	   -	(4,8)
+Eq 12	(9,9)	(5,7)	(10,5)	(7,2)	(2,6)	(8,11)	(3,10)	(11,4)	(6,1)	(1,3)	(4,8)	   -
+
+
+KMs TOTALS: 4130
+SEGUIDORS FORA: 418000
+----------
+%% #16      5.45s best:415000 next:[281000,414000] default_lp (fixed_bools=1/23769)
+%%%mzn-stat: boolVariables=23769
+%%%mzn-stat: failures=4834
+%%%mzn-stat: objective=415000
+%%%mzn-stat: objectiveBound=281000
+%%%mzn-stat: propagations=18339241
+%%%mzn-stat: solveTime=5.44938
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(1,1)	(11,11)	(10,10)	(3,3)	(4,4)	(7,7)	(2,2)	(8,8)	(5,5)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(4,8)	(1,11)	(2,10)	(7,5)	(10,2)	(3,9)	(11,1)	(8,4)	(5,7)
+Eq 3	(1,1)	(9,3)	   -	(3,9)	(4,8)	(5,2)	(11,7)	(8,6)	(7,11)	(6,4)	(2,10)	(10,5)
+Eq 4	(11,11)	(4,8)	(3,9)	   -	(8,7)	(1,5)	(2,6)	(5,1)	(10,4)	(9,10)	(6,3)	(7,2)
+Eq 5	(10,10)	(1,11)	(4,8)	(8,7)	   -	(7,4)	(5,9)	(6,3)	(9,5)	(3,2)	(11,1)	(2,6)
+Eq 6	(3,3)	(2,10)	(5,2)	(1,5)	(7,4)	   -	(6,8)	(9,9)	(11,1)	(4,7)	(10,6)	(8,11)
+Eq 7	(4,4)	(7,5)	(11,7)	(2,6)	(5,9)	(6,8)	   -	(1,10)	(8,3)	(10,11)	(9,2)	(3,1)
+Eq 8	(7,7)	(10,2)	(8,6)	(5,1)	(6,3)	(9,9)	(1,10)	   -	(4,8)	(2,5)	(3,11)	(11,4)
+Eq 9	(2,2)	(3,9)	(7,11)	(10,4)	(9,5)	(11,1)	(8,3)	(4,8)	   -	(5,6)	(1,7)	(6,10)
+Eq 10	(8,8)	(11,1)	(6,4)	(9,10)	(3,2)	(4,7)	(10,11)	(2,5)	(5,6)	   -	(7,9)	(1,3)
+Eq 11	(5,5)	(8,4)	(2,10)	(6,3)	(11,1)	(10,6)	(9,2)	(3,11)	(1,7)	(7,9)	   -	(4,8)
+Eq 12	(9,9)	(5,7)	(10,5)	(7,2)	(2,6)	(8,11)	(3,1)	(11,4)	(6,10)	(1,3)	(4,8)	   -
+
+
+KMs TOTALS: 4135
+SEGUIDORS FORA: 415000
+----------
+%% #17      5.47s best:414000 next:[281000,413000] default_lp (fixed_bools=1/23769)
+%%%mzn-stat: boolVariables=23769
+%%%mzn-stat: failures=4840
+%%%mzn-stat: objective=414000
+%%%mzn-stat: objectiveBound=281000
+%%%mzn-stat: propagations=18376221
+%%%mzn-stat: solveTime=5.47167
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(1,1)	(11,11)	(10,10)	(3,3)	(4,4)	(7,7)	(2,2)	(8,8)	(5,5)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(4,8)	(1,11)	(2,10)	(7,5)	(10,2)	(3,9)	(11,1)	(8,4)	(5,7)
+Eq 3	(1,1)	(9,3)	   -	(3,9)	(2,7)	(11,2)	(5,10)	(8,6)	(7,11)	(6,4)	(4,8)	(10,5)
+Eq 4	(11,11)	(4,8)	(3,9)	   -	(7,3)	(10,5)	(2,6)	(5,1)	(1,4)	(9,10)	(6,7)	(8,2)
+Eq 5	(10,10)	(1,11)	(2,7)	(7,3)	   -	(5,4)	(8,9)	(6,8)	(9,5)	(3,2)	(11,1)	(4,6)
+Eq 6	(3,3)	(2,10)	(11,2)	(10,5)	(5,4)	   -	(6,8)	(9,9)	(8,1)	(4,7)	(1,6)	(7,11)
+Eq 7	(4,4)	(7,5)	(5,10)	(2,6)	(8,9)	(6,8)	   -	(1,3)	(11,7)	(10,11)	(9,2)	(3,1)
+Eq 8	(7,7)	(10,2)	(8,6)	(5,1)	(6,8)	(9,9)	(1,3)	   -	(4,10)	(2,5)	(3,11)	(11,4)
+Eq 9	(2,2)	(3,9)	(7,11)	(1,4)	(9,5)	(8,1)	(11,7)	(4,10)	   -	(5,6)	(10,3)	(6,8)
+Eq 10	(8,8)	(11,1)	(6,4)	(9,10)	(3,2)	(4,7)	(10,11)	(2,5)	(5,6)	   -	(7,9)	(1,3)
+Eq 11	(5,5)	(8,4)	(4,8)	(6,7)	(11,1)	(1,6)	(9,2)	(3,11)	(10,3)	(7,9)	   -	(2,10)
+Eq 12	(9,9)	(5,7)	(10,5)	(8,2)	(4,6)	(7,11)	(3,1)	(11,4)	(6,8)	(1,3)	(2,10)	   -
+
+
+KMs TOTALS: 4360
+SEGUIDORS FORA: 413000
+----------
+%% #18      5.49s best:413000 next:[281000,412000] default_lp (fixed_bools=1/23769)
+%%%mzn-stat: boolVariables=23769
+%%%mzn-stat: failures=4840
+%%%mzn-stat: objective=413000
+%%%mzn-stat: objectiveBound=281000
+%%%mzn-stat: propagations=18403324
+%%%mzn-stat: solveTime=5.48878
+%%%mzn-stat-end
+%% #19      5.55s best:410000 next:[281000,409000] quick_restart_no_lp (fixed_bools=1/23855)
+%%%mzn-stat: boolVariables=23855
+%%%mzn-stat: failures=2315
+%%%mzn-stat: objective=410000
+%%%mzn-stat: objectiveBound=281000
+%%%mzn-stat: propagations=20270073
+%%%mzn-stat: solveTime=5.54524
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(1,1)	(11,11)	(10,10)	(3,3)	(4,4)	(7,7)	(2,2)	(8,8)	(5,5)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(4,8)	(1,11)	(2,10)	(7,5)	(10,2)	(3,9)	(11,1)	(8,4)	(5,7)
+Eq 3	(1,1)	(9,3)	   -	(5,9)	(3,5)	(10,2)	(11,10)	(8,6)	(7,11)	(2,4)	(4,7)	(6,8)
+Eq 4	(11,11)	(4,8)	(5,9)	   -	(7,7)	(9,5)	(6,6)	(2,1)	(1,4)	(3,10)	(10,3)	(8,2)
+Eq 5	(10,10)	(1,11)	(3,5)	(7,7)	   -	(8,4)	(2,9)	(9,8)	(5,3)	(6,2)	(11,1)	(4,6)
+Eq 6	(3,3)	(2,10)	(10,2)	(9,5)	(8,4)	   -	(5,8)	(6,9)	(11,1)	(4,7)	(1,6)	(7,11)
+Eq 7	(4,4)	(7,5)	(11,10)	(6,6)	(2,9)	(5,8)	   -	(1,3)	(8,7)	(10,11)	(9,2)	(3,1)
+Eq 8	(7,7)	(10,2)	(8,6)	(2,1)	(9,8)	(6,9)	(1,3)	   -	(4,10)	(5,5)	(3,11)	(11,4)
+Eq 9	(2,2)	(3,9)	(7,11)	(1,4)	(5,3)	(11,1)	(8,7)	(4,10)	   -	(9,6)	(6,8)	(10,5)
+Eq 10	(8,8)	(11,1)	(2,4)	(3,10)	(6,2)	(4,7)	(10,11)	(5,5)	(9,6)	   -	(7,9)	(1,3)
+Eq 11	(5,5)	(8,4)	(4,7)	(10,3)	(11,1)	(1,6)	(9,2)	(3,11)	(6,8)	(7,9)	   -	(2,10)
+Eq 12	(9,9)	(5,7)	(6,8)	(8,2)	(4,6)	(7,11)	(3,1)	(11,4)	(10,5)	(1,3)	(2,10)	   -
+
+
+KMs TOTALS: 3874
+SEGUIDORS FORA: 408000
+----------
+%% #20      5.61s best:408000 next:[281000,407000] ls_restart(batch:1 lin{mvs:4 evals:106} #w_updates:0 #perturb:0)
+%%%mzn-stat: boolVariables=23697
+%%%mzn-stat: failures=0
+%%%mzn-stat: objective=408000
+%%%mzn-stat: objectiveBound=281000
+%%%mzn-stat: propagations=4654277
+%%%mzn-stat: solveTime=5.61498
+%%%mzn-stat-end
+%% #Bound   6.12s best:408000 next:[307000,407000] max_lp
+%% #21      6.89s best:407000 next:[307000,406000] default_lp (fixed_bools=1/23781)
+%%%mzn-stat: boolVariables=23781
+%%%mzn-stat: failures=10686
+%%%mzn-stat: objective=407000
+%%%mzn-stat: objectiveBound=307000
+%%%mzn-stat: propagations=21753874
+%%%mzn-stat: solveTime=6.8881
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(1,1)	(11,11)	(4,4)	(3,3)	(2,2)	(7,7)	(10,10)	(8,8)	(5,5)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(10,2)	(1,11)	(2,10)	(7,5)	(4,8)	(3,9)	(11,1)	(8,4)	(5,7)
+Eq 3	(1,1)	(9,3)	   -	(7,9)	(5,7)	(11,11)	(3,10)	(2,6)	(8,8)	(6,4)	(10,2)	(4,5)
+Eq 4	(11,11)	(10,2)	(7,9)	   -	(8,3)	(4,5)	(5,6)	(3,1)	(1,4)	(9,10)	(2,7)	(6,8)
+Eq 5	(4,4)	(1,11)	(5,7)	(8,3)	   -	(7,8)	(6,9)	(9,10)	(2,5)	(3,2)	(11,1)	(10,6)
+Eq 6	(3,3)	(2,10)	(11,11)	(4,5)	(7,8)	   -	(9,4)	(10,9)	(6,1)	(5,7)	(1,6)	(8,2)
+Eq 7	(2,2)	(7,5)	(3,10)	(5,6)	(6,9)	(9,4)	   -	(8,3)	(11,7)	(10,11)	(4,8)	(1,1)
+Eq 8	(7,7)	(4,8)	(2,6)	(3,1)	(9,10)	(10,9)	(8,3)	   -	(5,2)	(1,5)	(6,11)	(11,4)
+Eq 9	(10,10)	(3,9)	(8,8)	(1,4)	(2,5)	(6,1)	(11,7)	(5,2)	   -	(4,6)	(9,3)	(7,11)
+Eq 10	(8,8)	(11,1)	(6,4)	(9,10)	(3,2)	(5,7)	(10,11)	(1,5)	(4,6)	   -	(7,9)	(2,3)
+Eq 11	(5,5)	(8,4)	(10,2)	(2,7)	(11,1)	(1,6)	(4,8)	(6,11)	(9,3)	(7,9)	   -	(3,10)
+Eq 12	(9,9)	(5,7)	(4,5)	(6,8)	(10,6)	(8,2)	(1,1)	(11,4)	(7,11)	(2,3)	(3,10)	   -
+
+
+KMs TOTALS: 4158
+SEGUIDORS FORA: 407000
+----------
+%% #22      6.91s best:406000 next:[307000,405000] default_lp (fixed_bools=1/23781)
+%%%mzn-stat: boolVariables=23781
+%%%mzn-stat: failures=10699
+%%%mzn-stat: objective=406000
+%%%mzn-stat: objectiveBound=307000
+%%%mzn-stat: propagations=21805435
+%%%mzn-stat: solveTime=6.9106
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(1,1)	(11,11)	(4,4)	(3,3)	(2,2)	(7,7)	(10,10)	(8,8)	(5,5)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(10,2)	(1,11)	(4,8)	(7,5)	(2,10)	(3,9)	(11,1)	(8,4)	(5,7)
+Eq 3	(1,1)	(9,3)	   -	(3,9)	(7,7)	(2,11)	(5,10)	(4,6)	(8,8)	(6,4)	(10,2)	(11,5)
+Eq 4	(11,11)	(10,2)	(3,9)	   -	(5,3)	(7,5)	(6,6)	(8,1)	(1,4)	(9,10)	(2,7)	(4,8)
+Eq 5	(4,4)	(1,11)	(7,7)	(5,3)	   -	(10,10)	(8,9)	(9,8)	(2,5)	(3,2)	(11,1)	(6,6)
+Eq 6	(3,3)	(4,8)	(2,11)	(7,5)	(10,10)	   -	(9,4)	(11,9)	(6,1)	(5,7)	(1,6)	(8,2)
+Eq 7	(2,2)	(7,5)	(5,10)	(6,6)	(8,9)	(9,4)	   -	(3,3)	(11,7)	(10,11)	(4,8)	(1,1)
+Eq 8	(7,7)	(2,10)	(4,6)	(8,1)	(9,8)	(11,9)	(3,3)	   -	(5,2)	(1,5)	(6,11)	(10,4)
+Eq 9	(10,10)	(3,9)	(8,8)	(1,4)	(2,5)	(6,1)	(11,7)	(5,2)	   -	(4,6)	(9,3)	(7,11)
+Eq 10	(8,8)	(11,1)	(6,4)	(9,10)	(3,2)	(5,7)	(10,11)	(1,5)	(4,6)	   -	(7,9)	(2,3)
+Eq 11	(5,5)	(8,4)	(10,2)	(2,7)	(11,1)	(1,6)	(4,8)	(6,11)	(9,3)	(7,9)	   -	(3,10)
+Eq 12	(9,9)	(5,7)	(11,5)	(4,8)	(6,6)	(8,2)	(1,1)	(10,4)	(7,11)	(2,3)	(3,10)	   -
+
+
+KMs TOTALS: 4052
+SEGUIDORS FORA: 406000
+----------
+%% #23      7.00s best:405000 next:[307000,404000] default_lp (fixed_bools=1/23781)
+%%%mzn-stat: boolVariables=23781
+%%%mzn-stat: failures=10900
+%%%mzn-stat: objective=405000
+%%%mzn-stat: objectiveBound=307000
+%%%mzn-stat: propagations=21988508
+%%%mzn-stat: solveTime=7.00034
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(1,1)	(8,8)	(4,4)	(3,3)	(10,10)	(7,7)	(11,11)	(2,2)	(5,5)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(10,2)	(1,11)	(4,8)	(7,5)	(2,10)	(3,9)	(11,1)	(8,4)	(5,7)
+Eq 3	(1,1)	(9,3)	   -	(2,9)	(7,7)	(5,11)	(11,2)	(4,6)	(8,10)	(6,4)	(10,8)	(3,5)
+Eq 4	(8,8)	(10,2)	(2,9)	   -	(9,3)	(7,5)	(6,6)	(5,1)	(4,4)	(1,10)	(3,7)	(11,11)
+Eq 5	(4,4)	(1,11)	(7,7)	(9,3)	   -	(10,10)	(8,9)	(3,8)	(2,5)	(5,6)	(11,2)	(6,1)
+Eq 6	(3,3)	(4,8)	(5,11)	(7,5)	(10,10)	   -	(2,4)	(11,9)	(6,1)	(9,7)	(1,6)	(8,2)
+Eq 7	(10,10)	(7,5)	(11,2)	(6,6)	(8,9)	(2,4)	   -	(9,3)	(5,7)	(3,11)	(4,1)	(1,8)
+Eq 8	(7,7)	(2,10)	(4,6)	(5,1)	(3,8)	(11,9)	(9,3)	   -	(1,2)	(8,5)	(6,11)	(10,4)
+Eq 9	(11,11)	(3,9)	(8,10)	(4,4)	(2,5)	(6,1)	(5,7)	(1,2)	   -	(10,8)	(9,3)	(7,6)
+Eq 10	(2,2)	(11,1)	(6,4)	(1,10)	(5,6)	(9,7)	(3,11)	(8,5)	(10,8)	   -	(7,9)	(4,3)
+Eq 11	(5,5)	(8,4)	(10,8)	(3,7)	(11,2)	(1,6)	(4,1)	(6,11)	(9,3)	(7,9)	   -	(2,10)
+Eq 12	(9,9)	(5,7)	(3,5)	(11,11)	(6,1)	(8,2)	(1,8)	(10,4)	(7,6)	(4,3)	(2,10)	   -
+
+
+KMs TOTALS: 4705
+SEGUIDORS FORA: 405000
+----------
+%% #Bound   8.95s best:405000 next:[312000,404000] max_lp
+%% #24      9.71s best:402000 next:[312000,401000] quick_restart_no_lp (fixed_bools=1/23865)
+%%%mzn-stat: boolVariables=23865
+%%%mzn-stat: failures=6781
+%%%mzn-stat: objective=402000
+%%%mzn-stat: objectiveBound=312000
+%%%mzn-stat: propagations=32337002
+%%%mzn-stat: solveTime=9.71205
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(8,8)	(4,4)	(3,3)	(1,1)	(7,7)	(11,11)	(2,2)	(10,10)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(10,2)	(1,11)	(4,8)	(7,5)	(2,10)	(3,9)	(11,1)	(8,4)	(5,7)
+Eq 3	(5,5)	(9,3)	   -	(4,9)	(10,7)	(2,11)	(11,2)	(6,6)	(8,10)	(7,4)	(3,1)	(1,8)
+Eq 4	(8,8)	(10,2)	(4,9)	   -	(7,3)	(5,5)	(6,6)	(3,1)	(2,4)	(1,10)	(9,7)	(11,11)
+Eq 5	(4,4)	(1,11)	(10,7)	(7,3)	   -	(6,10)	(8,9)	(11,8)	(9,5)	(5,6)	(2,2)	(3,1)
+Eq 6	(3,3)	(4,8)	(2,11)	(5,5)	(6,10)	   -	(10,4)	(1,9)	(7,1)	(9,7)	(11,6)	(8,2)
+Eq 7	(1,1)	(7,5)	(11,2)	(6,6)	(8,9)	(10,4)	   -	(9,3)	(5,7)	(3,11)	(4,8)	(2,10)
+Eq 8	(7,7)	(2,10)	(6,6)	(3,1)	(11,8)	(1,9)	(9,3)	   -	(4,2)	(8,5)	(5,11)	(10,4)
+Eq 9	(11,11)	(3,9)	(8,10)	(2,4)	(9,5)	(7,1)	(5,7)	(4,2)	   -	(10,8)	(1,3)	(6,6)
+Eq 10	(2,2)	(11,1)	(7,4)	(1,10)	(5,6)	(9,7)	(3,11)	(8,5)	(10,8)	   -	(6,9)	(4,3)
+Eq 11	(10,10)	(8,4)	(3,1)	(9,7)	(2,2)	(11,6)	(4,8)	(5,11)	(1,3)	(6,9)	   -	(7,5)
+Eq 12	(9,9)	(5,7)	(1,8)	(11,11)	(3,1)	(8,2)	(2,10)	(10,4)	(6,6)	(4,3)	(7,5)	   -
+
+
+KMs TOTALS: 4342
+SEGUIDORS FORA: 402000
+----------
+%% #Model   9.95s var:18955/18957 constraints:20795/20795
+%% #25     10.06s best:400000 next:[312000,399000] quick_restart_no_lp (fixed_bools=2/23865)
+%%%mzn-stat: boolVariables=23865
+%%%mzn-stat: failures=7086
+%%%mzn-stat: objective=400000
+%%%mzn-stat: objectiveBound=312000
+%%%mzn-stat: propagations=33223831
+%%%mzn-stat: solveTime=10.0632
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(8,8)	(4,4)	(3,3)	(1,1)	(7,7)	(11,11)	(2,2)	(10,10)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(10,2)	(1,11)	(4,8)	(7,5)	(2,10)	(3,9)	(11,1)	(8,4)	(5,7)
+Eq 3	(5,5)	(9,3)	   -	(1,9)	(2,1)	(6,11)	(3,2)	(4,6)	(7,10)	(8,4)	(11,7)	(10,8)
+Eq 4	(8,8)	(10,2)	(1,9)	   -	(3,7)	(2,5)	(4,6)	(5,1)	(6,4)	(7,10)	(9,11)	(11,3)
+Eq 5	(4,4)	(1,11)	(2,1)	(3,7)	   -	(5,10)	(11,9)	(10,8)	(8,3)	(9,6)	(6,2)	(7,5)
+Eq 6	(3,3)	(4,8)	(6,11)	(2,5)	(5,10)	   -	(8,4)	(11,9)	(9,1)	(10,7)	(7,6)	(1,2)
+Eq 7	(1,1)	(7,5)	(3,2)	(4,6)	(11,9)	(8,4)	   -	(9,11)	(10,7)	(5,3)	(2,8)	(6,10)
+Eq 8	(7,7)	(2,10)	(4,6)	(5,1)	(10,8)	(11,9)	(9,11)	   -	(1,2)	(6,5)	(3,3)	(8,4)
+Eq 9	(11,11)	(3,9)	(7,10)	(6,4)	(8,3)	(9,1)	(10,7)	(1,2)	   -	(4,8)	(5,5)	(2,6)
+Eq 10	(2,2)	(11,1)	(8,4)	(7,10)	(9,6)	(10,7)	(5,3)	(6,5)	(4,8)	   -	(1,9)	(3,11)
+Eq 11	(10,10)	(8,4)	(11,7)	(9,11)	(6,2)	(7,6)	(2,8)	(3,3)	(5,5)	(1,9)	   -	(4,1)
+Eq 12	(9,9)	(5,7)	(10,8)	(11,3)	(7,5)	(1,2)	(6,10)	(8,4)	(2,6)	(3,11)	(4,1)	   -
+
+
+KMs TOTALS: 4234
+SEGUIDORS FORA: 400000
+----------
+%% #Model  11.21s var:18954/18957 constraints:20795/20795
+%% #Bound  11.35s best:400000 next:[316000,399000] lb_tree_search
+%% #Model  12.99s var:18953/18957 constraints:20795/20795
+%% #Bound  14.76s best:400000 next:[318000,399000] lb_tree_search
+%% #Model  19.48s var:18952/18957 constraints:20795/20795
+%% #Bound  19.75s best:400000 next:[325000,399000] lb_tree_search
+%% #26     21.68s best:399000 next:[325000,398000] quick_restart_no_lp (fixed_bools=5/23884)
+%%%mzn-stat: boolVariables=23884
+%%%mzn-stat: failures=18096
+%%%mzn-stat: objective=399000
+%%%mzn-stat: objectiveBound=325000
+%%%mzn-stat: propagations=69496389
+%%%mzn-stat: solveTime=21.6756
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(7,7)	(4,4)	(3,3)	(1,1)	(8,8)	(11,11)	(2,2)	(10,10)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(10,2)	(1,11)	(4,8)	(7,5)	(2,10)	(3,9)	(11,1)	(8,4)	(5,7)
+Eq 3	(5,5)	(9,3)	   -	(2,9)	(3,1)	(6,11)	(4,2)	(7,6)	(1,10)	(8,4)	(11,7)	(10,8)
+Eq 4	(7,7)	(10,2)	(2,9)	   -	(8,8)	(1,5)	(3,6)	(5,1)	(6,4)	(4,10)	(9,11)	(11,3)
+Eq 5	(4,4)	(1,11)	(3,1)	(8,8)	   -	(5,10)	(11,9)	(10,7)	(2,3)	(9,6)	(6,2)	(7,5)
+Eq 6	(3,3)	(4,8)	(6,11)	(1,5)	(5,10)	   -	(8,4)	(11,9)	(9,1)	(10,7)	(7,6)	(2,2)
+Eq 7	(1,1)	(7,5)	(4,2)	(3,6)	(11,9)	(8,4)	   -	(9,11)	(10,7)	(5,3)	(2,8)	(6,10)
+Eq 8	(8,8)	(2,10)	(7,6)	(5,1)	(10,7)	(11,9)	(9,11)	   -	(4,2)	(6,5)	(3,3)	(1,4)
+Eq 9	(11,11)	(3,9)	(1,10)	(6,4)	(2,3)	(9,1)	(10,7)	(4,2)	   -	(7,8)	(5,5)	(8,6)
+Eq 10	(2,2)	(11,1)	(8,4)	(4,10)	(9,6)	(10,7)	(5,3)	(6,5)	(7,8)	   -	(1,9)	(3,11)
+Eq 11	(10,10)	(8,4)	(11,7)	(9,11)	(6,2)	(7,6)	(2,8)	(3,3)	(5,5)	(1,9)	   -	(4,1)
+Eq 12	(9,9)	(5,7)	(10,8)	(11,3)	(7,5)	(2,2)	(6,10)	(1,4)	(8,6)	(3,11)	(4,1)	   -
+
+
+KMs TOTALS: 4054
+SEGUIDORS FORA: 399000
+----------
+%% #27     21.96s best:398000 next:[325000,397000] quick_restart_no_lp (fixed_bools=5/23888)
+%%%mzn-stat: boolVariables=23888
+%%%mzn-stat: failures=18340
+%%%mzn-stat: objective=398000
+%%%mzn-stat: objectiveBound=325000
+%%%mzn-stat: propagations=70165100
+%%%mzn-stat: solveTime=21.9565
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(9,9)	(4,4)	(3,3)	(10,10)	(8,8)	(11,11)	(2,2)	(7,7)	(1,1)
+Eq 2	(6,6)	   -	(9,3)	(10,2)	(1,11)	(4,8)	(7,5)	(2,10)	(3,9)	(11,1)	(8,4)	(5,7)
+Eq 3	(5,5)	(9,3)	   -	(8,7)	(10,1)	(1,11)	(2,2)	(11,6)	(4,10)	(6,4)	(3,8)	(7,9)
+Eq 4	(9,9)	(10,2)	(8,7)	   -	(7,8)	(5,5)	(11,6)	(3,1)	(2,4)	(1,10)	(4,11)	(6,3)
+Eq 5	(4,4)	(1,11)	(10,1)	(7,8)	   -	(2,10)	(3,9)	(6,7)	(5,3)	(8,6)	(11,2)	(9,5)
+Eq 6	(3,3)	(4,8)	(1,11)	(5,5)	(2,10)	   -	(9,4)	(7,9)	(8,1)	(10,7)	(6,6)	(11,2)
+Eq 7	(10,10)	(7,5)	(2,2)	(11,6)	(3,9)	(9,4)	   -	(5,11)	(6,7)	(4,3)	(1,1)	(8,8)
+Eq 8	(8,8)	(2,10)	(11,6)	(3,1)	(6,7)	(7,9)	(5,11)	   -	(1,2)	(9,5)	(10,3)	(4,4)
+Eq 9	(11,11)	(3,9)	(4,10)	(2,4)	(5,3)	(8,1)	(6,7)	(1,2)	   -	(7,8)	(9,5)	(10,6)
+Eq 10	(2,2)	(11,1)	(6,4)	(1,10)	(8,6)	(10,7)	(4,3)	(9,5)	(7,8)	   -	(5,9)	(3,11)
+Eq 11	(7,7)	(8,4)	(3,8)	(4,11)	(11,2)	(6,6)	(1,1)	(10,3)	(9,5)	(5,9)	   -	(2,10)
+Eq 12	(1,1)	(5,7)	(7,9)	(6,3)	(9,5)	(11,2)	(8,8)	(4,4)	(10,6)	(3,11)	(2,10)	   -
+
+
+KMs TOTALS: 4153
+SEGUIDORS FORA: 398000
+----------
+%% #28     22.11s best:397000 next:[325000,396000] quick_restart_no_lp (fixed_bools=5/23888)
+%%%mzn-stat: boolVariables=23888
+%%%mzn-stat: failures=18476
+%%%mzn-stat: objective=397000
+%%%mzn-stat: objectiveBound=325000
+%%%mzn-stat: propagations=70573343
+%%%mzn-stat: solveTime=22.1123
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(9,9)	(4,4)	(3,3)	(10,10)	(8,8)	(11,11)	(2,2)	(7,7)	(1,1)
+Eq 2	(6,6)	   -	(9,3)	(10,2)	(1,11)	(4,8)	(7,5)	(2,10)	(3,9)	(11,1)	(8,4)	(5,7)
+Eq 3	(5,5)	(9,3)	   -	(1,7)	(10,9)	(6,11)	(8,1)	(7,6)	(4,10)	(3,4)	(11,2)	(2,8)
+Eq 4	(9,9)	(10,2)	(1,7)	   -	(3,8)	(8,5)	(11,6)	(6,1)	(2,4)	(4,10)	(5,11)	(7,3)
+Eq 5	(4,4)	(1,11)	(10,9)	(3,8)	   -	(5,10)	(2,2)	(11,7)	(8,3)	(7,6)	(6,1)	(9,5)
+Eq 6	(3,3)	(4,8)	(6,11)	(8,5)	(5,10)	   -	(9,4)	(1,9)	(7,1)	(10,7)	(2,6)	(11,2)
+Eq 7	(10,10)	(7,5)	(8,1)	(11,6)	(2,2)	(9,4)	   -	(3,11)	(1,7)	(5,3)	(4,8)	(6,9)
+Eq 8	(8,8)	(2,10)	(7,6)	(6,1)	(11,7)	(1,9)	(3,11)	   -	(5,2)	(9,5)	(10,3)	(4,4)
+Eq 9	(11,11)	(3,9)	(4,10)	(2,4)	(8,3)	(7,1)	(1,7)	(5,2)	   -	(6,8)	(9,5)	(10,6)
+Eq 10	(2,2)	(11,1)	(3,4)	(4,10)	(7,6)	(10,7)	(5,3)	(9,5)	(6,8)	   -	(1,9)	(8,11)
+Eq 11	(7,7)	(8,4)	(11,2)	(5,11)	(6,1)	(2,6)	(4,8)	(10,3)	(9,5)	(1,9)	   -	(3,10)
+Eq 12	(1,1)	(5,7)	(2,8)	(7,3)	(9,5)	(11,2)	(6,9)	(4,4)	(10,6)	(8,11)	(3,10)	   -
+
+
+KMs TOTALS: 4451
+SEGUIDORS FORA: 397000
+----------
+%% #Model  22.69s var:18951/18957 constraints:20795/20795
+%% #Model  23.51s var:18950/18957 constraints:20795/20795
+%% #Model  24.11s var:18949/18957 constraints:20795/20795
+%% #Bound  24.32s best:397000 next:[337000,396000] lb_tree_search
+%% #Model  24.59s var:18947/18957 constraints:20795/20795
+%% #Model  25.44s var:18946/18957 constraints:20795/20795
+%% #Model  28.31s var:18945/18957 constraints:20795/20795
+%% #Model  29.56s var:18944/18957 constraints:20795/20795
+%% #Model  31.87s var:18943/18957 constraints:20795/20795
+%% #Bound  32.23s best:397000 next:[340000,396000] lb_tree_search
+%% #Bound  38.71s best:397000 next:[341000,396000] lb_tree_search
+%% #29     38.94s best:396000 next:[341000,395000] quick_restart_no_lp (fixed_bools=14/23902)
+%%%mzn-stat: boolVariables=23902
+%%%mzn-stat: failures=34847
+%%%mzn-stat: objective=396000
+%%%mzn-stat: objectiveBound=341000
+%%%mzn-stat: propagations=116554616
+%%%mzn-stat: solveTime=38.9445
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(9,9)	(3,3)	(10,10)	(11,11)	(8,8)	(4,4)	(2,2)	(7,7)	(1,1)
+Eq 2	(6,6)	   -	(10,2)	(4,8)	(1,11)	(9,3)	(7,5)	(2,10)	(3,9)	(11,1)	(8,4)	(5,7)
+Eq 3	(5,5)	(10,2)	   -	(1,7)	(7,9)	(8,11)	(9,10)	(3,6)	(11,3)	(4,4)	(6,1)	(2,8)
+Eq 4	(9,9)	(4,8)	(1,7)	   -	(2,4)	(6,5)	(10,6)	(11,1)	(8,2)	(3,10)	(5,11)	(7,3)
+Eq 5	(3,3)	(1,11)	(7,9)	(2,4)	   -	(4,8)	(8,1)	(6,7)	(5,10)	(10,6)	(11,2)	(9,5)
+Eq 6	(10,10)	(9,3)	(8,11)	(6,5)	(4,8)	   -	(3,4)	(5,9)	(1,1)	(7,7)	(2,6)	(11,2)
+Eq 7	(11,11)	(7,5)	(9,10)	(10,6)	(8,1)	(3,4)	   -	(1,2)	(2,7)	(5,3)	(4,8)	(6,9)
+Eq 8	(8,8)	(2,10)	(3,6)	(11,1)	(6,7)	(5,9)	(1,2)	   -	(7,11)	(9,5)	(10,3)	(4,4)
+Eq 9	(4,4)	(3,9)	(11,3)	(8,2)	(5,10)	(1,1)	(2,7)	(7,11)	   -	(6,8)	(9,5)	(10,6)
+Eq 10	(2,2)	(11,1)	(4,4)	(3,10)	(10,6)	(7,7)	(5,3)	(9,5)	(6,8)	   -	(1,9)	(8,11)
+Eq 11	(7,7)	(8,4)	(6,1)	(5,11)	(11,2)	(2,6)	(4,8)	(10,3)	(9,5)	(1,9)	   -	(3,10)
+Eq 12	(1,1)	(5,7)	(2,8)	(7,3)	(9,5)	(11,2)	(6,9)	(4,4)	(10,6)	(8,11)	(3,10)	   -
+
+
+KMs TOTALS: 4268
+SEGUIDORS FORA: 395000
+----------
+%% #30     39.41s best:395000 next:[341000,394000] quick_restart (fixed_bools=14/23847)
+%%%mzn-stat: boolVariables=23847
+%%%mzn-stat: failures=20989
+%%%mzn-stat: objective=395000
+%%%mzn-stat: objectiveBound=341000
+%%%mzn-stat: propagations=78654213
+%%%mzn-stat: solveTime=39.4125
+%%%mzn-stat-end
+%% #Model  40.37s var:18942/18957 constraints:20795/20795
+%% #31     40.42s best:393000 next:[341000,392000] quick_restart_no_lp (fixed_bools=15/23904)
+%%%mzn-stat: boolVariables=23904
+%%%mzn-stat: failures=36369
+%%%mzn-stat: objective=393000
+%%%mzn-stat: objectiveBound=341000
+%%%mzn-stat: propagations=119924202
+%%%mzn-stat: solveTime=40.4219
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(9,9)	(4,4)	(10,10)	(1,1)	(8,8)	(11,11)	(2,2)	(7,7)	(3,3)
+Eq 2	(6,6)	   -	(10,2)	(4,8)	(1,11)	(9,3)	(7,5)	(2,10)	(3,9)	(11,1)	(8,4)	(5,7)
+Eq 3	(5,5)	(10,2)	   -	(7,3)	(8,9)	(1,11)	(9,8)	(11,6)	(4,7)	(6,4)	(3,10)	(2,1)
+Eq 4	(9,9)	(4,8)	(7,3)	   -	(11,2)	(5,5)	(8,7)	(1,1)	(2,4)	(3,10)	(6,11)	(10,6)
+Eq 5	(4,4)	(1,11)	(8,9)	(11,2)	   -	(7,8)	(2,10)	(3,7)	(6,3)	(10,6)	(5,1)	(9,5)
+Eq 6	(10,10)	(9,3)	(1,11)	(5,5)	(7,8)	   -	(3,4)	(6,9)	(8,1)	(4,7)	(2,6)	(11,2)
+Eq 7	(1,1)	(7,5)	(9,8)	(8,7)	(2,10)	(3,4)	   -	(4,11)	(10,6)	(5,3)	(11,2)	(6,9)
+Eq 8	(8,8)	(2,10)	(11,6)	(1,1)	(3,7)	(6,9)	(4,11)	   -	(5,2)	(9,5)	(10,3)	(7,4)
+Eq 9	(11,11)	(3,9)	(4,7)	(2,4)	(6,3)	(8,1)	(10,6)	(5,2)	   -	(7,8)	(9,5)	(1,10)
+Eq 10	(2,2)	(11,1)	(6,4)	(3,10)	(10,6)	(4,7)	(5,3)	(9,5)	(7,8)	   -	(1,9)	(8,11)
+Eq 11	(7,7)	(8,4)	(3,10)	(6,11)	(5,1)	(2,6)	(11,2)	(10,3)	(9,5)	(1,9)	   -	(4,8)
+Eq 12	(3,3)	(5,7)	(2,1)	(10,6)	(9,5)	(11,2)	(6,9)	(7,4)	(1,10)	(8,11)	(4,8)	   -
+
+
+KMs TOTALS: 4413
+SEGUIDORS FORA: 393000
+----------
+%% #Model  41.75s var:18941/18957 constraints:20795/20795
+%% #Bound  45.65s best:393000 next:[342000,392000] lb_tree_search
+%% #Model  46.19s var:18940/18957 constraints:20795/20795
+%% #Model  47.36s var:18939/18957 constraints:20795/20795
+%% #Model  51.32s var:18938/18957 constraints:20795/20795
+%% #Model  56.77s var:18937/18957 constraints:20795/20795
+%% #32     57.26s best:392000 next:[342000,391000] graph_var_lns (d=1.00 s=441 t=0.10 p=0.71 stall=19 h=folio_rnd)
+%%%mzn-stat: boolVariables=23697
+%%%mzn-stat: failures=0
+%%%mzn-stat: objective=392000
+%%%mzn-stat: objectiveBound=342000
+%%%mzn-stat: propagations=4654277
+%%%mzn-stat: solveTime=57.2609
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(9,9)	(4,4)	(10,10)	(3,3)	(8,8)	(11,11)	(2,2)	(7,7)	(1,1)
+Eq 2	(6,6)	   -	(10,2)	(4,8)	(1,11)	(9,3)	(5,7)	(2,10)	(3,9)	(11,1)	(8,4)	(7,5)
+Eq 3	(5,5)	(10,2)	   -	(7,3)	(8,9)	(1,11)	(2,1)	(11,6)	(4,7)	(6,4)	(3,10)	(9,8)
+Eq 4	(9,9)	(4,8)	(7,3)	   -	(11,2)	(5,5)	(10,6)	(1,1)	(2,4)	(3,10)	(6,11)	(8,7)
+Eq 5	(4,4)	(1,11)	(8,9)	(11,2)	   -	(7,8)	(9,5)	(3,7)	(6,3)	(10,6)	(5,1)	(2,10)
+Eq 6	(10,10)	(9,3)	(1,11)	(5,5)	(7,8)	   -	(11,2)	(6,9)	(8,1)	(4,7)	(2,6)	(3,4)
+Eq 7	(3,3)	(5,7)	(2,1)	(10,6)	(9,5)	(11,2)	   -	(7,4)	(1,10)	(8,11)	(4,8)	(6,9)
+Eq 8	(8,8)	(2,10)	(11,6)	(1,1)	(3,7)	(6,9)	(7,4)	   -	(5,2)	(9,5)	(10,3)	(4,11)
+Eq 9	(11,11)	(3,9)	(4,7)	(2,4)	(6,3)	(8,1)	(1,10)	(5,2)	   -	(7,8)	(9,5)	(10,6)
+Eq 10	(2,2)	(11,1)	(6,4)	(3,10)	(10,6)	(4,7)	(8,11)	(9,5)	(7,8)	   -	(1,9)	(5,3)
+Eq 11	(7,7)	(8,4)	(3,10)	(6,11)	(5,1)	(2,6)	(4,8)	(10,3)	(9,5)	(1,9)	   -	(11,2)
+Eq 12	(1,1)	(7,5)	(9,8)	(8,7)	(2,10)	(3,4)	(6,9)	(4,11)	(10,6)	(5,3)	(11,2)	   -
+
+
+KMs TOTALS: 4413
+SEGUIDORS FORA: 392000
+----------
+%% #33     60.77s best:390000 next:[342000,389000] quick_restart_no_lp (fixed_bools=20/23917)
+%%%mzn-stat: boolVariables=23917
+%%%mzn-stat: failures=52462
+%%%mzn-stat: objective=390000
+%%%mzn-stat: objectiveBound=342000
+%%%mzn-stat: propagations=166116255
+%%%mzn-stat: solveTime=60.7722
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(9,9)	(3,3)	(10,10)	(1,1)	(8,8)	(4,4)	(2,2)	(7,7)	(11,11)
+Eq 2	(6,6)	   -	(8,4)	(4,8)	(10,2)	(9,3)	(5,7)	(2,10)	(3,9)	(11,1)	(1,11)	(7,5)
+Eq 3	(5,5)	(8,4)	   -	(6,3)	(7,9)	(11,11)	(3,8)	(1,7)	(9,10)	(4,6)	(10,2)	(2,1)
+Eq 4	(9,9)	(4,8)	(6,3)	   -	(2,7)	(8,5)	(11,6)	(5,1)	(7,11)	(10,10)	(3,4)	(1,2)
+Eq 5	(3,3)	(10,2)	(7,9)	(2,7)	   -	(1,8)	(8,5)	(9,11)	(11,6)	(6,4)	(5,1)	(4,10)
+Eq 6	(10,10)	(9,3)	(11,11)	(8,5)	(1,8)	   -	(2,2)	(4,9)	(5,1)	(7,7)	(6,6)	(3,4)
+Eq 7	(1,1)	(5,7)	(3,8)	(11,6)	(8,5)	(2,2)	   -	(7,4)	(10,3)	(9,11)	(4,10)	(6,9)
+Eq 8	(8,8)	(2,10)	(1,7)	(5,1)	(9,11)	(4,9)	(7,4)	   -	(6,2)	(3,5)	(11,3)	(10,6)
+Eq 9	(4,4)	(3,9)	(9,10)	(7,11)	(11,6)	(5,1)	(10,3)	(6,2)	   -	(1,8)	(2,5)	(8,7)
+Eq 10	(2,2)	(11,1)	(4,6)	(10,10)	(6,4)	(7,7)	(9,11)	(3,5)	(1,8)	   -	(8,9)	(5,3)
+Eq 11	(7,7)	(1,11)	(10,2)	(3,4)	(5,1)	(6,6)	(4,10)	(11,3)	(2,5)	(8,9)	   -	(9,8)
+Eq 12	(11,11)	(7,5)	(2,1)	(1,2)	(4,10)	(3,4)	(6,9)	(10,6)	(8,7)	(5,3)	(9,8)	   -
+
+
+KMs TOTALS: 4369
+SEGUIDORS FORA: 390000
+----------
+%% #Model  61.89s var:18936/18957 constraints:20795/20795
+%% #Model  64.60s var:18935/18957 constraints:20795/20795
+%% #Bound  66.56s best:390000 next:[346000,389000] lb_tree_search
+%% #Model  66.71s var:18934/18957 constraints:20795/20795
+%% #Model  67.73s var:18933/18957 constraints:20795/20795
+%% #Model  77.84s var:18932/18957 constraints:20795/20795
+%% #Model  83.75s var:18931/18957 constraints:20795/20795
+%% #34     85.61s best:384000 next:[346000,383000] quick_restart (fixed_bools=26/23874)
+%%%mzn-stat: boolVariables=23874
+%%%mzn-stat: failures=43126
+%%%mzn-stat: objective=384000
+%%%mzn-stat: objectiveBound=346000
+%%%mzn-stat: propagations=141866964
+%%%mzn-stat: solveTime=85.6104
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(9,9)	(3,3)	(10,10)	(11,11)	(8,8)	(7,7)	(2,2)	(4,4)	(1,1)
+Eq 2	(6,6)	   -	(8,4)	(4,8)	(11,1)	(9,3)	(5,7)	(2,10)	(1,11)	(3,9)	(10,2)	(7,5)
+Eq 3	(5,5)	(8,4)	   -	(10,3)	(7,9)	(11,11)	(6,8)	(1,7)	(9,10)	(4,6)	(3,1)	(2,2)
+Eq 4	(9,9)	(4,8)	(10,3)	   -	(6,2)	(1,5)	(3,6)	(5,1)	(2,4)	(8,10)	(7,7)	(11,11)
+Eq 5	(3,3)	(11,1)	(7,9)	(6,2)	   -	(5,8)	(1,5)	(9,11)	(4,6)	(10,4)	(2,10)	(8,7)
+Eq 6	(10,10)	(9,3)	(11,11)	(1,5)	(5,8)	   -	(2,2)	(4,9)	(8,1)	(7,7)	(6,6)	(3,4)
+Eq 7	(11,11)	(5,7)	(6,8)	(3,6)	(1,5)	(2,2)	   -	(7,4)	(10,3)	(9,1)	(8,9)	(4,10)
+Eq 8	(8,8)	(2,10)	(1,7)	(5,1)	(9,11)	(4,9)	(7,4)	   -	(3,2)	(6,5)	(11,3)	(10,6)
+Eq 9	(7,7)	(1,11)	(9,10)	(2,4)	(4,6)	(8,1)	(10,3)	(3,2)	   -	(11,8)	(5,5)	(6,9)
+Eq 10	(2,2)	(3,9)	(4,6)	(8,10)	(10,4)	(7,7)	(9,1)	(6,5)	(11,8)	   -	(1,11)	(5,3)
+Eq 11	(4,4)	(10,2)	(3,1)	(7,7)	(2,10)	(6,6)	(8,9)	(11,3)	(5,5)	(1,11)	   -	(9,8)
+Eq 12	(1,1)	(7,5)	(2,2)	(11,11)	(8,7)	(3,4)	(4,10)	(10,6)	(6,9)	(5,3)	(9,8)	   -
+
+
+KMs TOTALS: 4279
+SEGUIDORS FORA: 384000
+----------
+%% #Model  86.06s var:18930/18957 constraints:20795/20795
+%% #Bound  86.51s best:384000 next:[349000,383000] lb_tree_search
+%% #Model  90.23s var:18929/18957 constraints:20795/20795
+%% #Model  90.75s var:18928/18957 constraints:20795/20795
+%% #35     92.06s best:383000 next:[349000,382000] quick_restart (fixed_bools=29/23877)
+%%%mzn-stat: boolVariables=23877
+%%%mzn-stat: failures=45188
+%%%mzn-stat: objective=383000
+%%%mzn-stat: objectiveBound=349000
+%%%mzn-stat: propagations=157423485
+%%%mzn-stat: solveTime=92.0593
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(9,9)	(3,3)	(1,1)	(10,10)	(8,8)	(7,7)	(2,2)	(4,4)	(11,11)
+Eq 2	(6,6)	   -	(8,4)	(4,8)	(11,1)	(9,3)	(5,7)	(2,10)	(1,11)	(3,9)	(10,2)	(7,5)
+Eq 3	(5,5)	(8,4)	   -	(10,3)	(1,9)	(11,11)	(7,8)	(6,7)	(9,1)	(4,6)	(3,10)	(2,2)
+Eq 4	(9,9)	(4,8)	(10,3)	   -	(6,2)	(5,5)	(11,6)	(1,1)	(3,4)	(7,10)	(2,11)	(8,7)
+Eq 5	(3,3)	(11,1)	(1,9)	(6,2)	   -	(2,8)	(9,5)	(5,11)	(8,6)	(10,4)	(7,7)	(4,10)
+Eq 6	(1,1)	(9,3)	(11,11)	(5,5)	(2,8)	   -	(4,2)	(7,9)	(10,10)	(8,7)	(6,6)	(3,4)
+Eq 7	(10,10)	(5,7)	(7,8)	(11,6)	(9,5)	(4,2)	   -	(3,4)	(2,3)	(6,11)	(8,9)	(1,1)
+Eq 8	(8,8)	(2,10)	(6,7)	(1,1)	(5,11)	(7,9)	(3,4)	   -	(4,2)	(9,5)	(11,3)	(10,6)
+Eq 9	(7,7)	(1,11)	(9,1)	(3,4)	(8,6)	(10,10)	(2,3)	(4,2)	   -	(11,8)	(5,5)	(6,9)
+Eq 10	(2,2)	(3,9)	(4,6)	(7,10)	(10,4)	(8,7)	(6,11)	(9,5)	(11,8)	   -	(1,1)	(5,3)
+Eq 11	(4,4)	(10,2)	(3,10)	(2,11)	(7,7)	(6,6)	(8,9)	(11,3)	(5,5)	(1,1)	   -	(9,8)
+Eq 12	(11,11)	(7,5)	(2,2)	(8,7)	(4,10)	(3,4)	(1,1)	(10,6)	(6,9)	(5,3)	(9,8)	   -
+
+
+KMs TOTALS: 3969
+SEGUIDORS FORA: 383000
+----------
+%% #Bound  95.15s best:383000 next:[350000,382000] lb_tree_search
+%% #Model  95.34s var:18927/18957 constraints:20795/20795
+%% #Model  97.55s var:18926/18957 constraints:20795/20795
+%% #Model  99.08s var:18925/18957 constraints:20795/20795
+%% #Model  99.09s var:18924/18957 constraints:20795/20795
+%% #Model  99.22s var:18923/18957 constraints:20795/20795
+%% #Model  99.33s var:18921/18957 constraints:20795/20795
+%% #Model  99.69s var:18920/18957 constraints:20795/20795
+%% #Model  99.79s var:18919/18957 constraints:20795/20795
+%% #Model 101.29s var:18918/18957 constraints:20795/20795
+%% #Model 101.32s var:18917/18957 constraints:20795/20795
+%% #Model 101.48s var:18916/18957 constraints:20795/20795
+%% #Model 102.68s var:18915/18957 constraints:20795/20795
+%% #Model 104.08s var:18914/18957 constraints:20795/20795
+%% #Model 104.46s var:18913/18957 constraints:20795/20795
+%% #Model 104.76s var:18912/18957 constraints:20795/20795
+%% #Bound 108.14s best:383000 next:[352000,382000] lb_tree_search
+%% #Model 111.48s var:18911/18957 constraints:20795/20795
+%% #36    112.64s best:382000 next:[352000,381000] quick_restart (fixed_bools=46/23883)
+%%%mzn-stat: boolVariables=23883
+%%%mzn-stat: failures=55788
+%%%mzn-stat: objective=382000
+%%%mzn-stat: objectiveBound=352000
+%%%mzn-stat: propagations=182177042
+%%%mzn-stat: solveTime=112.641
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(9,9)	(3,3)	(1,1)	(10,10)	(8,8)	(7,7)	(2,2)	(4,4)	(11,11)
+Eq 2	(6,6)	   -	(8,4)	(4,8)	(11,1)	(7,5)	(9,3)	(2,10)	(1,11)	(3,9)	(10,2)	(5,7)
+Eq 3	(5,5)	(8,4)	   -	(1,2)	(2,9)	(3,11)	(4,1)	(6,7)	(9,3)	(7,6)	(11,8)	(10,10)
+Eq 4	(9,9)	(4,8)	(1,2)	   -	(6,7)	(2,3)	(3,6)	(10,1)	(5,4)	(11,10)	(7,11)	(8,5)
+Eq 5	(3,3)	(11,1)	(2,9)	(6,7)	   -	(5,8)	(1,5)	(7,11)	(10,6)	(4,4)	(8,10)	(9,2)
+Eq 6	(1,1)	(7,5)	(3,11)	(2,3)	(5,8)	   -	(6,2)	(11,9)	(8,10)	(10,7)	(9,6)	(4,4)
+Eq 7	(10,10)	(9,3)	(4,1)	(3,6)	(1,5)	(6,2)	   -	(5,4)	(11,9)	(8,11)	(2,7)	(7,8)
+Eq 8	(8,8)	(2,10)	(6,7)	(10,1)	(7,11)	(11,9)	(5,4)	   -	(4,2)	(9,5)	(1,3)	(3,6)
+Eq 9	(7,7)	(1,11)	(9,3)	(5,4)	(10,6)	(8,10)	(11,9)	(4,2)	   -	(6,8)	(3,5)	(2,1)
+Eq 10	(2,2)	(3,9)	(7,6)	(11,10)	(4,4)	(10,7)	(8,11)	(9,5)	(6,8)	   -	(5,1)	(1,3)
+Eq 11	(4,4)	(10,2)	(11,8)	(7,11)	(8,10)	(9,6)	(2,7)	(1,3)	(3,5)	(5,1)	   -	(6,9)
+Eq 12	(11,11)	(5,7)	(10,10)	(8,5)	(9,2)	(4,4)	(7,8)	(3,6)	(2,1)	(1,3)	(6,9)	   -
+
+
+KMs TOTALS: 4217
+SEGUIDORS FORA: 382000
+----------
+%% #Model 113.69s var:18910/18957 constraints:20795/20795
+%% #Model 115.48s var:18909/18957 constraints:20795/20795
+%% #Model 121.79s var:18908/18957 constraints:20795/20795
+%% #Model 122.43s var:18907/18957 constraints:20795/20795
+%% #Model 122.54s var:18906/18957 constraints:20795/20795
+%% #Model 123.37s var:18903/18957 constraints:20795/20795
+%% #Model 123.55s var:18902/18957 constraints:20795/20795
+%% #Model 123.77s var:18901/18957 constraints:20795/20795
+%% #Model 123.92s var:18899/18957 constraints:20795/20795
+%% #Model 124.08s var:18898/18957 constraints:20795/20795
+%% #Model 124.43s var:18897/18957 constraints:20795/20795
+%% #Model 124.70s var:18896/18957 constraints:20795/20795
+%% #Model 125.95s var:18895/18957 constraints:20795/20795
+%% #Model 126.83s var:18894/18957 constraints:20795/20795
+%% #Model 127.35s var:18892/18957 constraints:20795/20795
+%% #Model 127.80s var:18891/18957 constraints:20795/20795
+%% #Model 127.83s var:18890/18957 constraints:20795/20795
+%% #Bound 127.99s best:382000 next:[353000,381000] lb_tree_search
+%% #Model 131.61s var:18889/18957 constraints:20795/20795
+%% #Model 140.77s var:18888/18957 constraints:20795/20795
+%% #Model 141.81s var:18887/18957 constraints:20795/20795
+%% #Model 142.20s var:18886/18957 constraints:20795/20795
+%% #Model 144.85s var:18885/18957 constraints:20795/20795
+%% #Model 147.50s var:18884/18957 constraints:20795/20795
+%% #Model 147.52s var:18883/18957 constraints:20795/20795
+%% #Model 148.01s var:18882/18957 constraints:20795/20795
+%% #Model 148.14s var:18881/18957 constraints:20795/20795
+%% #Model 148.73s var:18880/18957 constraints:20795/20795
+%% #Model 148.91s var:18879/18957 constraints:20795/20795
+%% #Model 149.12s var:18878/18957 constraints:20795/20795
+%% #Model 149.40s var:18877/18957 constraints:20795/20795
+%% #Model 149.50s var:18874/18957 constraints:20795/20795
+%% #Model 149.64s var:18871/18957 constraints:20795/20795
+%% #Model 149.66s var:18870/18957 constraints:20795/20795
+%% #Model 149.73s var:18869/18957 constraints:20795/20795
+%% #Model 149.89s var:18867/18957 constraints:20795/20795
+%% #Model 149.94s var:18866/18957 constraints:20795/20795
+%% #Model 150.11s var:18862/18957 constraints:20795/20795
+%% #Model 150.89s var:18861/18957 constraints:20795/20795
+%% #Model 153.03s var:18860/18957 constraints:20795/20795
+%% #Bound 153.33s best:382000 next:[355000,381000] lb_tree_search
+%% #Model 155.28s var:18859/18957 constraints:20795/20795
+%% #Model 155.82s var:18858/18957 constraints:20795/20795
+%% #Model 157.88s var:18857/18957 constraints:20795/20795
+%% #Model 158.01s var:18855/18957 constraints:20795/20795
+%% #Model 158.63s var:18854/18957 constraints:20795/20795
+%% #Model 158.91s var:18853/18957 constraints:20795/20795
+%% #Model 163.01s var:18852/18957 constraints:20795/20795
+%% #Model 163.48s var:18851/18957 constraints:20795/20795
+%% #Bound 163.67s best:382000 next:[356000,381000] lb_tree_search
+%% #Model 171.36s var:18850/18957 constraints:20795/20795
+%% #Model 174.91s var:18849/18957 constraints:20795/20795
+%% #Model 174.97s var:18848/18957 constraints:20795/20795
+%% #Model 175.20s var:18847/18957 constraints:20795/20795
+%% #Model 175.28s var:18846/18957 constraints:20795/20795
+%% #Model 175.40s var:18845/18957 constraints:20795/20795
+%% #Model 175.49s var:18843/18957 constraints:20795/20795
+%% #Model 175.95s var:18840/18957 constraints:20795/20795
+%% #Model 176.09s var:18839/18957 constraints:20795/20795
+%% #Model 176.21s var:18838/18957 constraints:20795/20795
+%% #Model 176.34s var:18837/18957 constraints:20795/20795
+%% #Model 176.49s var:18835/18957 constraints:20795/20795
+%% #Model 176.73s var:18834/18957 constraints:20795/20795
+%% #Model 177.01s var:18833/18957 constraints:20795/20795
+%% #Model 177.09s var:18832/18957 constraints:20795/20795
+%% #Model 177.19s var:18831/18957 constraints:20795/20795
+%% #Model 177.32s var:18829/18957 constraints:20795/20795
+%% #Model 177.77s var:18827/18957 constraints:20795/20795
+%% #Model 177.91s var:18825/18957 constraints:20795/20795
+%% #Model 178.45s var:18823/18957 constraints:20795/20795
+%% #Model 179.32s var:18822/18957 constraints:20795/20795
+%% #Model 180.30s var:18821/18957 constraints:20795/20795
+%% #Model 180.66s var:18815/18957 constraints:20795/20795
+%% #Model 181.97s var:18814/18957 constraints:20795/20795
+%% #Model 182.48s var:18813/18957 constraints:20795/20795
+%% #Model 182.63s var:18812/18957 constraints:20795/20795
+%% #Model 183.09s var:18811/18957 constraints:20795/20795
+%% #Model 183.60s var:18810/18957 constraints:20795/20795
+%% #Model 184.45s var:18809/18957 constraints:20795/20795
+%% #Model 185.27s var:18808/18957 constraints:20795/20795
+%% #Model 187.55s var:18807/18957 constraints:20795/20795
+%% #Model 189.15s var:18806/18957 constraints:20795/20795
+%% #Model 189.24s var:18805/18957 constraints:20795/20795
+%% #Bound 189.26s best:382000 next:[357000,381000] lb_tree_search
+%% #Model 190.87s var:18803/18957 constraints:20795/20795
+%% #Model 192.28s var:18802/18957 constraints:20795/20795
+%% #Model 192.54s var:18801/18957 constraints:20795/20795
+%% #Model 192.79s var:18800/18957 constraints:20795/20795
+%% #Model 192.94s var:18797/18957 constraints:20795/20795
+%% #Model 193.17s var:18796/18957 constraints:20795/20795
+%% #Model 193.31s var:18794/18957 constraints:20795/20795
+%% #Model 193.45s var:18792/18957 constraints:20795/20795
+%% #Model 193.59s var:18791/18957 constraints:20795/20795
+%% #Model 193.73s var:18790/18957 constraints:20795/20795
+%% #Model 193.99s var:18787/18957 constraints:20795/20795
+%% #Model 194.06s var:18786/18957 constraints:20795/20795
+%% #Model 194.20s var:18785/18957 constraints:20795/20795
+%% #Model 194.87s var:18784/18957 constraints:20795/20795
+%% #Model 195.33s var:18783/18957 constraints:20795/20795
+%% #Model 195.90s var:18777/18957 constraints:20795/20795
+%% #Model 196.51s var:18775/18957 constraints:20795/20795
+%% #Model 201.83s var:18774/18957 constraints:20795/20795
+%% #Model 201.98s var:18772/18957 constraints:20795/20795
+%% #Model 202.15s var:18769/18957 constraints:20792/20795
+%% #Model 202.98s var:18768/18957 constraints:20792/20795
+%% #Model 203.03s var:18767/18957 constraints:20792/20795
+%% #Model 203.17s var:18765/18957 constraints:20792/20795
+%% #Model 203.31s var:18764/18957 constraints:20792/20795
+%% #Model 203.40s var:18763/18957 constraints:20792/20795
+%% #Model 203.65s var:18762/18957 constraints:20792/20795
+%% #Model 203.79s var:18760/18957 constraints:20792/20795
+%% #Model 204.44s var:18759/18957 constraints:20792/20795
+%% #Model 204.59s var:18757/18957 constraints:20792/20795
+%% #Model 204.85s var:18756/18957 constraints:20792/20795
+%% #Model 205.50s var:18755/18957 constraints:20792/20795
+%% #Model 209.45s var:18754/18957 constraints:20792/20795
+%% #Model 211.55s var:18753/18957 constraints:20792/20795
+%% #Model 213.75s var:18752/18957 constraints:20792/20795
+%% #Model 214.45s var:18750/18957 constraints:20792/20795
+%% #Model 216.17s var:18749/18957 constraints:20792/20795
+%% #Model 217.18s var:18748/18957 constraints:20792/20795
+%% #Model 218.41s var:18747/18957 constraints:20792/20795
+%% #Model 220.68s var:18746/18957 constraints:20792/20795
+%% #Bound 223.33s best:382000 next:[358000,381000] lb_tree_search
+%% #Model 228.47s var:18745/18957 constraints:20792/20795
+%% #Model 228.67s var:18744/18957 constraints:20792/20795
+%% #Model 229.71s var:18742/18957 constraints:20792/20795
+%% #Model 229.85s var:18740/18957 constraints:20792/20795
+%% #Model 229.90s var:18739/18957 constraints:20792/20795
+%% #Model 230.09s var:18738/18957 constraints:20792/20795
+%% #Model 230.76s var:18737/18957 constraints:20792/20795
+%% #Model 231.05s var:18733/18957 constraints:20792/20795
+%% #Model 231.09s var:18731/18957 constraints:20792/20795
+%% #Model 231.18s var:18730/18957 constraints:20792/20795
+%% #Model 231.26s var:18729/18957 constraints:20792/20795
+%% #Model 231.30s var:18728/18957 constraints:20792/20795
+%% #Model 231.35s var:18726/18957 constraints:20792/20795
+%% #Model 231.48s var:18724/18957 constraints:20792/20795
+%% #Model 231.57s var:18723/18957 constraints:20792/20795
+%% #Model 231.69s var:18721/18957 constraints:20792/20795
+%% #Model 231.85s var:18720/18957 constraints:20792/20795
+%% #Model 232.12s var:18719/18957 constraints:20792/20795
+%% #Model 232.28s var:18717/18957 constraints:20792/20795
+%% #Model 232.44s var:18716/18957 constraints:20792/20795
+%% #Model 232.69s var:18715/18957 constraints:20792/20795
+%% #Model 233.27s var:18714/18957 constraints:20792/20795
+%% #Model 233.41s var:18713/18957 constraints:20792/20795
+%% #Model 233.56s var:18712/18957 constraints:20792/20795
+%% #Model 233.71s var:18709/18957 constraints:20792/20795
+%% #Model 233.87s var:18706/18957 constraints:20792/20795
+%% #Model 234.80s var:18705/18957 constraints:20792/20795
+%% #Model 235.65s var:18704/18957 constraints:20792/20795
+%% #Model 236.52s var:18703/18957 constraints:20792/20795
+%% #Model 238.13s var:18700/18957 constraints:20792/20795
+%% #Model 239.35s var:18699/18957 constraints:20792/20795
+%% #Model 241.61s var:18698/18957 constraints:20792/20795
+%% #Model 248.02s var:18697/18957 constraints:20792/20795
+%% #Model 251.67s var:18696/18957 constraints:20792/20795
+%% #Model 251.83s var:18695/18957 constraints:20792/20795
+%% #Bound 251.91s best:382000 next:[359000,381000] lb_tree_search
+%% #Model 252.33s var:18693/18957 constraints:20792/20795
+%% #Model 252.48s var:18692/18957 constraints:20792/20795
+%% #Model 257.38s var:18691/18957 constraints:20792/20795
+%% #Model 260.27s var:18690/18957 constraints:20792/20795
+%% #Model 260.53s var:18689/18957 constraints:20792/20795
+%% #Model 261.01s var:18688/18957 constraints:20792/20795
+%% #Model 261.39s var:18686/18957 constraints:20792/20795
+%% #Model 261.59s var:18685/18957 constraints:20792/20795
+%% #Model 261.85s var:18683/18957 constraints:20792/20795
+%% #Model 261.97s var:18682/18957 constraints:20792/20795
+%% #Model 262.29s var:18681/18957 constraints:20792/20795
+%% #Model 262.74s var:18680/18957 constraints:20792/20795
+%% #Model 262.87s var:18679/18957 constraints:20792/20795
+%% #Model 263.26s var:18678/18957 constraints:20792/20795
+%% #Model 263.42s var:18676/18957 constraints:20792/20795
+%% #Model 263.60s var:18674/18957 constraints:20792/20795
+%% #Model 263.71s var:18673/18957 constraints:20792/20795
+%% #Model 263.88s var:18672/18957 constraints:20792/20795
+%% #Model 267.72s var:18671/18957 constraints:20792/20795
+%% #Model 268.29s var:18668/18957 constraints:20792/20795
+%% #Model 270.05s var:18667/18957 constraints:20792/20795
+%% #Model 270.60s var:18666/18957 constraints:20792/20795
+%% #Model 270.77s var:18664/18957 constraints:20792/20795
+%% #Model 270.95s var:18662/18957 constraints:20792/20795
+%% #Model 271.03s var:18661/18957 constraints:20792/20795
+%% #Model 271.22s var:18659/18957 constraints:20792/20795
+%% #Model 271.40s var:18658/18957 constraints:20792/20795
+%% #Model 271.58s var:18657/18957 constraints:20792/20795
+%% #Model 271.63s var:18656/18957 constraints:20792/20795
+%% #Model 271.88s var:18655/18957 constraints:20792/20795
+%% #Model 272.02s var:18654/18957 constraints:20792/20795
+%% #Model 272.24s var:18653/18957 constraints:20792/20795
+%% #Model 272.30s var:18652/18957 constraints:20792/20795
+%% #Model 272.47s var:18648/18957 constraints:20792/20795
+%% #Model 272.56s var:18647/18957 constraints:20792/20795
+%% #Model 272.83s var:18646/18957 constraints:20792/20795
+%% #Model 273.15s var:18645/18957 constraints:20792/20795
+%% #Model 273.75s var:18644/18957 constraints:20792/20795
+%% #Model 274.00s var:18643/18957 constraints:20792/20795
+%% #Model 274.97s var:18642/18957 constraints:20792/20795
+%% #Model 276.65s var:18640/18957 constraints:20792/20795
+%% #Model 277.66s var:18639/18957 constraints:20792/20795
+%% #Model 279.87s var:18638/18957 constraints:20792/20795
+%% #Bound 282.13s best:382000 next:[360000,381000] lb_tree_search
+%% #Model 285.49s var:18637/18957 constraints:20792/20795
+%% #Model 285.90s var:18636/18957 constraints:20792/20795
+%% #Model 286.20s var:18635/18957 constraints:20792/20795
+%% #Model 287.69s var:18634/18957 constraints:20792/20795
+%% #Model 287.76s var:18631/18957 constraints:20792/20795
+%% #Model 287.95s var:18627/18957 constraints:20792/20795
+%% #Model 288.18s var:18623/18957 constraints:20789/20795
+%% #Model 288.80s var:18620/18957 constraints:20789/20795
+%% #Model 288.98s var:18616/18957 constraints:20789/20795
+%% #Model 289.20s var:18615/18957 constraints:20789/20795
+%% #Model 289.31s var:18613/18957 constraints:20789/20795
+%% #Model 289.37s var:18611/18957 constraints:20789/20795
+%% #Model 289.55s var:18610/18957 constraints:20789/20795
+%% #Model 289.71s var:18608/18957 constraints:20789/20795
+%% #Model 289.91s var:18606/18957 constraints:20789/20795
+%% #Model 289.99s var:18605/18957 constraints:20789/20795
+%% #Model 290.18s var:18604/18957 constraints:20789/20795
+%% #Model 293.32s var:18600/18957 constraints:20789/20795
+%% #Model 294.30s var:18599/18957 constraints:20789/20795
+%% #Model 295.91s var:18598/18957 constraints:20789/20795
+%% #Model 296.13s var:18597/18957 constraints:20789/20795
+%% #Model 297.74s var:18596/18957 constraints:20789/20795
+%% #Model 302.53s var:18595/18957 constraints:20789/20795
+%% #Model 302.85s var:18594/18957 constraints:20789/20795
+%% #Model 303.65s var:18593/18957 constraints:20789/20795
+%% #Model 304.46s var:18591/18957 constraints:20789/20795
+%% #Model 305.78s var:18590/18957 constraints:20789/20795
+%% #Model 306.05s var:18589/18957 constraints:20789/20795
+%% #Model 306.96s var:18587/18957 constraints:20789/20795
+%% #Model 307.15s var:18586/18957 constraints:20789/20795
+%% #Model 307.26s var:18585/18957 constraints:20789/20795
+%% #Model 307.42s var:18584/18957 constraints:20789/20795
+%% #Model 308.26s var:18583/18957 constraints:20789/20795
+%% #Model 308.43s var:18581/18957 constraints:20789/20795
+%% #Model 309.13s var:18580/18957 constraints:20789/20795
+%% #Model 309.22s var:18578/18957 constraints:20789/20795
+%% #Model 309.45s var:18574/18957 constraints:20789/20795
+%% #Model 309.54s var:18573/18957 constraints:20789/20795
+%% #Model 309.73s var:18572/18957 constraints:20789/20795
+%% #Model 310.23s var:18570/18957 constraints:20789/20795
+%% #Model 311.45s var:18569/18957 constraints:20789/20795
+%% #Model 311.77s var:18568/18957 constraints:20789/20795
+%% #Model 312.53s var:18561/18957 constraints:20789/20795
+%% #Model 313.38s var:18560/18957 constraints:20789/20795
+%% #Model 313.66s var:18559/18957 constraints:20789/20795
+%% #Model 314.77s var:18558/18957 constraints:20789/20795
+%% #Model 314.93s var:18557/18957 constraints:20789/20795
+%% #Model 315.12s var:18555/18957 constraints:20789/20795
+%% #Model 315.19s var:18554/18957 constraints:20789/20795
+%% #Model 315.25s var:18552/18957 constraints:20789/20795
+%% #Model 315.45s var:18550/18957 constraints:20789/20795
+%% #Model 315.92s var:18549/18957 constraints:20789/20795
+%% #Model 316.14s var:18547/18957 constraints:20789/20795
+%% #Model 316.37s var:18545/18957 constraints:20789/20795
+%% #Model 316.59s var:18544/18957 constraints:20789/20795
+%% #Model 316.80s var:18543/18957 constraints:20789/20795
+%% #Model 317.06s var:18542/18957 constraints:20789/20795
+%% #Model 317.21s var:18541/18957 constraints:20789/20795
+%% #Model 317.37s var:18539/18957 constraints:20789/20795
+%% #Model 317.60s var:18534/18957 constraints:20786/20795
+%% #Model 317.81s var:18533/18957 constraints:20786/20795
+%% #Model 318.03s var:18532/18957 constraints:20786/20795
+%% #Model 322.00s var:18531/18957 constraints:20786/20795
+%% #Model 322.37s var:18530/18957 constraints:20786/20795
+%% #Bound 322.94s best:382000 next:[361000,381000] lb_tree_search
+%% #Model 323.59s var:18529/18957 constraints:20786/20795
+%% #Model 326.26s var:18528/18957 constraints:20786/20795
+%% #Model 326.76s var:18527/18957 constraints:20786/20795
+%% #Model 328.73s var:18526/18957 constraints:20786/20795
+%% #Model 331.55s var:18525/18957 constraints:20786/20795
+%% #Model 334.54s var:18524/18957 constraints:20786/20795
+%% #Model 335.64s var:18523/18957 constraints:20786/20795
+%% #Model 336.27s var:18521/18957 constraints:20786/20795
+%% #Model 336.50s var:18520/18957 constraints:20786/20795
+%% #Model 336.91s var:18519/18957 constraints:20786/20795
+%% #Model 338.73s var:18518/18957 constraints:20786/20795
+%% #Model 339.68s var:18517/18957 constraints:20786/20795
+%% #Model 339.87s var:18516/18957 constraints:20786/20795
+%% #Model 340.17s var:18515/18957 constraints:20786/20795
+%% #Model 340.44s var:18512/18957 constraints:20786/20795
+%% #Model 341.15s var:18510/18957 constraints:20786/20795
+%% #Model 341.40s var:18508/18957 constraints:20786/20795
+%% #Model 341.86s var:18507/18957 constraints:20786/20795
+%% #Model 342.09s var:18500/18957 constraints:20786/20795
+%% #Model 342.27s var:18498/18957 constraints:20786/20795
+%% #Model 342.48s var:18492/18957 constraints:20786/20795
+%% #Model 342.72s var:18489/18957 constraints:20786/20795
+%% #Model 343.40s var:18488/18957 constraints:20786/20795
+%% #Model 343.97s var:18486/18957 constraints:20786/20795
+%% #Model 344.08s var:18484/18957 constraints:20786/20795
+%% #Model 344.32s var:18483/18957 constraints:20786/20795
+%% #Model 344.57s var:18480/18957 constraints:20786/20795
+%% #Model 344.79s var:18478/18957 constraints:20786/20795
+%% #Model 345.35s var:18477/18957 constraints:20786/20795
+%% #Model 345.52s var:18476/18957 constraints:20786/20795
+%% #Model 345.60s var:18473/18957 constraints:20786/20795
+%% #Model 345.81s var:18472/18957 constraints:20786/20795
+%% #Model 345.87s var:18471/18957 constraints:20786/20795
+%% #Model 346.14s var:18470/18957 constraints:20786/20795
+%% #Model 346.39s var:18466/18957 constraints:20786/20795
+%% #Model 346.74s var:18465/18957 constraints:20786/20795
+%% #Model 347.00s var:18463/18957 constraints:20786/20795
+%% #Model 347.27s var:18461/18957 constraints:20786/20795
+%% #Model 347.53s var:18460/18957 constraints:20786/20795
+%% #Model 348.21s var:18459/18957 constraints:20786/20795
+%% #Model 349.69s var:18456/18957 constraints:20786/20795
+%% #Model 350.01s var:18455/18957 constraints:20786/20795
+%% #Model 351.03s var:18454/18957 constraints:20786/20795
+%% #Model 352.28s var:18453/18957 constraints:20786/20795
+%% #Model 353.31s var:18452/18957 constraints:20786/20795
+%% #Model 353.54s var:18451/18957 constraints:20786/20795
+%% #Model 353.66s var:18450/18957 constraints:20786/20795
+%% #Model 354.25s var:18449/18957 constraints:20786/20795
+%% #Model 355.31s var:18448/18957 constraints:20786/20795
+%% #Model 357.82s var:18447/18957 constraints:20786/20795
+%% #Model 357.95s var:18446/18957 constraints:20786/20795
+%% #Model 358.42s var:18445/18957 constraints:20786/20795
+%% #Model 359.70s var:18444/18957 constraints:20786/20795
+%% #Model 359.89s var:18443/18957 constraints:20786/20795
+%% #Model 361.38s var:18442/18957 constraints:20786/20795
+%% #Model 362.16s var:18441/18957 constraints:20786/20795
+%% #Model 363.75s var:18440/18957 constraints:20786/20795
+%% #Model 364.04s var:18439/18957 constraints:20786/20795
+%% #Model 364.16s var:18438/18957 constraints:20786/20795
+%% #Model 365.22s var:18437/18957 constraints:20786/20795
+%% #Model 365.42s var:18433/18957 constraints:20786/20795
+%% #Bound 366.29s best:382000 next:[363000,381000] lb_tree_search
+%% #Model 366.56s var:18431/18957 constraints:20786/20795
+%% #Model 366.71s var:18430/18957 constraints:20786/20795
+%% #Model 366.84s var:18427/18957 constraints:20786/20795
+%% #Model 367.11s var:18426/18957 constraints:20786/20795
+%% #Model 367.23s var:18423/18957 constraints:20786/20795
+%% #Model 367.52s var:18422/18957 constraints:20786/20795
+%% #Model 367.82s var:18421/18957 constraints:20786/20795
+%% #Model 368.04s var:18420/18957 constraints:20786/20795
+%% #Model 368.20s var:18413/18957 constraints:20786/20795
+%% #Model 372.87s var:18412/18957 constraints:20786/20795
+%% #Model 376.07s var:18411/18957 constraints:20786/20795
+%% #Model 376.36s var:18410/18957 constraints:20786/20795
+%% #Model 376.54s var:18409/18957 constraints:20786/20795
+%% #Model 376.83s var:18407/18957 constraints:20786/20795
+%% #Model 377.27s var:18406/18957 constraints:20786/20795
+%% #Model 377.54s var:18404/18957 constraints:20786/20795
+%% #Model 377.67s var:18403/18957 constraints:20786/20795
+%% #Model 378.27s var:18402/18957 constraints:20786/20795
+%% #Model 378.51s var:18398/18957 constraints:20786/20795
+%% #Model 379.23s var:18397/18957 constraints:20786/20795
+%% #Model 379.52s var:18396/18957 constraints:20786/20795
+%% #Model 379.75s var:18395/18957 constraints:20786/20795
+%% #Model 380.18s var:18394/18957 constraints:20786/20795
+%% #Model 380.41s var:18392/18957 constraints:20786/20795
+%% #Model 381.04s var:18391/18957 constraints:20786/20795
+%% #Model 381.19s var:18390/18957 constraints:20786/20795
+%% #Model 386.50s var:18389/18957 constraints:20786/20795
+%% #Model 386.76s var:18387/18957 constraints:20786/20795
+%% #Model 386.94s var:18385/18957 constraints:20786/20795
+%% #Model 387.34s var:18384/18957 constraints:20786/20795
+%% #Model 387.53s var:18383/18957 constraints:20786/20795
+%% #Model 387.75s var:18382/18957 constraints:20786/20795
+%% #Model 388.01s var:18379/18957 constraints:20786/20795
+%% #Model 388.15s var:18378/18957 constraints:20786/20795
+%% #Model 388.28s var:18374/18957 constraints:20786/20795
+%% #Model 388.63s var:18373/18957 constraints:20786/20795
+%% #Model 388.81s var:18372/18957 constraints:20786/20795
+%% #Model 389.01s var:18366/18957 constraints:20786/20795
+%% #Model 389.35s var:18365/18957 constraints:20786/20795
+%% #Model 389.71s var:18364/18957 constraints:20786/20795
+%% #Model 390.05s var:18363/18957 constraints:20786/20795
+%% #Model 391.02s var:18362/18957 constraints:20786/20795
+%% #Model 391.27s var:18361/18957 constraints:20786/20795
+%% #Model 392.92s var:18360/18957 constraints:20786/20795
+%% #Model 393.27s var:18358/18957 constraints:20786/20795
+%% #Model 394.80s var:18357/18957 constraints:20786/20795
+%% #Model 396.75s var:18356/18957 constraints:20786/20795
+%% #Model 397.55s var:18354/18957 constraints:20786/20795
+%% #Model 397.99s var:18353/18957 constraints:20786/20795
+%% #Model 399.22s var:18352/18957 constraints:20786/20795
+%% #Model 399.49s var:18351/18957 constraints:20786/20795
+%% #Model 400.64s var:18350/18957 constraints:20786/20795
+%% #Model 400.97s var:18349/18957 constraints:20786/20795
+%% #Model 401.45s var:18348/18957 constraints:20786/20795
+%% #Model 401.99s var:18347/18957 constraints:20786/20795
+%% #Model 402.33s var:18346/18957 constraints:20786/20795
+%% #Model 404.34s var:18344/18957 constraints:20786/20795
+%% #Model 405.10s var:18343/18957 constraints:20786/20795
+%% #Model 405.61s var:18342/18957 constraints:20786/20795
+%% #Bound 405.73s best:382000 next:[364000,381000] lb_tree_search
+%% #Model 406.02s var:18341/18957 constraints:20786/20795
+%% #Model 408.18s var:18340/18957 constraints:20786/20795
+%% #Model 408.47s var:18336/18957 constraints:20786/20795
+%% #Model 408.96s var:18325/18957 constraints:20786/20795 [skipped_logs=2]
+%% #Model 409.94s var:18308/18957 constraints:20783/20795 [skipped_logs=2]
+%% #Model 410.89s var:18279/18957 constraints:20783/20795 [skipped_logs=3]
+%% #Model 411.85s var:18257/18957 constraints:20783/20795 [skipped_logs=5]
+%% #Model 413.08s var:18255/18957 constraints:20783/20795 [skipped_logs=1]
+%% #Model 413.92s var:18254/18957 constraints:20783/20795
+%% #Model 414.94s var:18252/18957 constraints:20783/20795 [skipped_logs=1]
+%% #Model 415.98s var:18250/18957 constraints:20783/20795
+%% #Model 416.70s var:18248/18957 constraints:20783/20795 [skipped_logs=1]
+%% #Model 417.92s var:18246/18957 constraints:20780/20795
+%% #Model 421.21s var:18245/18957 constraints:20780/20795
+%% #Model 423.52s var:18244/18957 constraints:20780/20795
+%% #Model 424.61s var:18243/18957 constraints:20780/20795
+%% #Model 425.63s var:18242/18957 constraints:20780/20795
+%% #Model 429.77s var:18241/18957 constraints:20780/20795
+%% #Model 430.15s var:18240/18957 constraints:20780/20795
+%% #Model 430.53s var:18239/18957 constraints:20780/20795
+%% #Model 430.87s var:18236/18957 constraints:20780/20795
+%% #Model 431.10s var:18230/18957 constraints:20780/20795
+%% #Model 431.30s var:18225/18957 constraints:20780/20795
+%% #Model 431.61s var:18218/18957 constraints:20780/20795
+%% #Model 431.76s var:18214/18957 constraints:20777/20795
+%% #Model 433.29s var:18213/18957 constraints:20777/20795
+%% #Model 433.63s var:18210/18957 constraints:20777/20795
+%% #Model 433.97s var:18198/18957 constraints:20777/20795
+%% #Model 434.48s var:18197/18957 constraints:20777/20795
+%% #Model 434.82s var:18195/18957 constraints:20777/20795 [skipped_logs=0]
+%% #Model 436.35s var:18192/18957 constraints:20777/20795
+%% #Model 436.89s var:18183/18957 constraints:20774/20795 [skipped_logs=2]
+%% #Model 438.21s var:18177/18957 constraints:20774/20795 [skipped_logs=2]
+%% #Model 438.98s var:18172/18957 constraints:20774/20795 [skipped_logs=1]
+%% #Model 439.63s var:18169/18957 constraints:20771/20795 [skipped_logs=1]
+%% #Model 440.74s var:18168/18957 constraints:20771/20795 [skipped_logs=0]
+%% #Model 441.30s var:18167/18957 constraints:20771/20795 [skipped_logs=0]
+%% #Model 443.20s var:18166/18957 constraints:20771/20795
+%% #Model 443.93s var:18164/18957 constraints:20771/20795 [skipped_logs=1]
+%% #Model 444.94s var:18163/18957 constraints:20771/20795
+%% #Model 447.57s var:18162/18957 constraints:20771/20795
+%% #Model 448.09s var:18161/18957 constraints:20771/20795
+%% #Model 449.25s var:18160/18957 constraints:20771/20795
+%% #Model 450.35s var:18159/18957 constraints:20771/20795
+%% #Model 450.60s var:18149/18957 constraints:20762/20795
+%% #Model 450.98s var:18148/18957 constraints:20762/20795
+%% #Model 451.91s var:18134/18957 constraints:20759/20795 [skipped_logs=2]
+%% #Model 452.60s var:18121/18957 constraints:20753/20795 [skipped_logs=2]
+%% #Model 455.03s var:18120/18957 constraints:20753/20795
+%% #Model 455.31s var:18118/18957 constraints:20750/20795
+%% #Model 456.04s var:18111/18957 constraints:20750/20795 [skipped_logs=2]
+%% #Model 457.99s var:18110/18957 constraints:20750/20795
+%% #Model 458.45s var:18108/18957 constraints:20747/20795
+%% #Model 459.45s var:18107/18957 constraints:20747/20795
+%% #Model 460.21s var:18105/18957 constraints:20744/20795
+%% #Model 463.20s var:18103/18957 constraints:20744/20795
+%% #Model 463.97s var:18102/18957 constraints:20744/20795
+%% #Model 464.72s var:18101/18957 constraints:20744/20795
+%% #Model 464.92s var:18098/18957 constraints:20741/20795
+%% #Model 465.28s var:18097/18957 constraints:20741/20795
+%% #Model 467.71s var:18096/18957 constraints:20741/20795
+%% #Model 468.74s var:18095/18957 constraints:20741/20795
+%% #Model 469.26s var:18094/18957 constraints:20741/20795
+%% #Model 469.44s var:18092/18957 constraints:20741/20795
+%% #Model 469.72s var:18089/18957 constraints:20741/20795 [skipped_logs=0]
+%% #Model 471.02s var:18077/18957 constraints:20735/20795 [skipped_logs=2]
+%% #Model 472.22s var:18055/18957 constraints:20720/20795 [skipped_logs=2]
+%% #Model 473.17s var:18052/18957 constraints:20720/20795 [skipped_logs=1]
+%% #Model 475.68s var:18050/18957 constraints:20717/20795
+%% #Model 477.97s var:18048/18957 constraints:20714/20795
+%% #Model 478.40s var:18047/18957 constraints:20714/20795
+%% #Model 478.95s var:18046/18957 constraints:20714/20795
+%% #Model 480.00s var:18045/18957 constraints:20714/20795
+%% #Model 480.45s var:18044/18957 constraints:20714/20795
+%% #Model 480.90s var:18043/18957 constraints:20714/20795
+%% #Model 481.71s var:18042/18957 constraints:20714/20795
+%% #Model 486.36s var:18041/18957 constraints:20714/20795
+%% #Model 491.87s var:18040/18957 constraints:20714/20795
+%% #Model 492.16s var:18038/18957 constraints:20714/20795
+%% #Model 492.38s var:18037/18957 constraints:20714/20795
+%% #Model 494.47s var:18036/18957 constraints:20714/20795
+%% #Model 495.46s var:18035/18957 constraints:20714/20795
+%% #Model 498.11s var:18034/18957 constraints:20714/20795
+%% #Model 499.31s var:18030/18957 constraints:20708/20795
+%% #Model 499.69s var:18029/18957 constraints:20708/20795
+%% #Model 499.95s var:18024/18957 constraints:20702/20795
+%% #Model 500.21s var:18021/18957 constraints:20702/20795
+%% #Model 501.22s var:18020/18957 constraints:20702/20795
+%% #Model 501.55s var:18013/18957 constraints:20696/20795
+%% #Model 502.01s var:17996/18957 constraints:20687/20795
+%% #Model 503.17s var:17994/18957 constraints:20684/20795
+%% #Model 504.09s var:17988/18957 constraints:20681/20795
+%% #Model 504.52s var:17985/18957 constraints:20678/20795
+%% #Model 506.21s var:17984/18957 constraints:20678/20795
+%% #Model 506.55s var:17983/18957 constraints:20678/20795
+%% #Model 506.98s var:17982/18957 constraints:20678/20795
+%% #Model 510.49s var:17980/18957 constraints:20675/20795
+%% #Model 511.35s var:17978/18957 constraints:20672/20795
+%% #Model 511.76s var:17977/18957 constraints:20672/20795
+%% #Model 512.40s var:17975/18957 constraints:20669/20795
+%% #Model 513.16s var:17972/18957 constraints:20666/20795
+%% #Model 514.06s var:17970/18957 constraints:20666/20795
+%% #Model 515.30s var:17968/18957 constraints:20663/20795
+%% #Model 515.72s var:17963/18957 constraints:20660/20795
+%% #Model 518.25s var:17962/18957 constraints:20660/20795
+%% #Model 518.58s var:17961/18957 constraints:20660/20795
+%% #Model 522.19s var:17959/18957 constraints:20657/20795
+%% #Model 523.80s var:17958/18957 constraints:20657/20795
+%% #Model 524.41s var:17957/18957 constraints:20657/20795
+%% #Model 526.43s var:17956/18957 constraints:20657/20795
+%% #Model 526.89s var:17953/18957 constraints:20657/20795
+%% #Model 527.47s var:17951/18957 constraints:20657/20795
+%% #Model 527.75s var:17943/18957 constraints:20651/20795
+%% #Model 527.99s var:17938/18957 constraints:20645/20795
+%% #Model 528.20s var:17932/18957 constraints:20642/20795
+%% #Model 528.56s var:17929/18957 constraints:20642/20795
+%% #Model 529.52s var:17927/18957 constraints:20639/20795
+%% #Model 530.01s var:17918/18957 constraints:20633/20795
+%% #Model 530.50s var:17914/18957 constraints:20633/20795
+%% #Model 531.00s var:17912/18957 constraints:20630/20795
+%% #Model 531.39s var:17911/18957 constraints:20630/20795
+%% #Model 532.81s var:17909/18957 constraints:20627/20795
+%% #Model 533.91s var:17907/18957 constraints:20627/20795
+%% #Model 534.41s var:17906/18957 constraints:20627/20795
+%% #Model 535.71s var:17905/18957 constraints:20627/20795
+%% #Model 537.13s var:17904/18957 constraints:20627/20795
+%% #Bound 537.70s best:382000 next:[365000,381000] lb_tree_search
+%% #Model 539.38s var:17902/18957 constraints:20624/20795
+%% #Model 543.22s var:17900/18957 constraints:20621/20795
+%% #Model 543.75s var:17898/18957 constraints:20618/20795
+%% #Model 546.48s var:17896/18957 constraints:20615/20795
+%% #Model 547.91s var:17893/18957 constraints:20612/20795
+%% #Model 550.27s var:17891/18957 constraints:20609/20795
+%% #Model 550.71s var:17890/18957 constraints:20609/20795
+%% #Model 551.56s var:17888/18957 constraints:20609/20795
+%% #Model 554.25s var:17887/18957 constraints:20609/20795
+%% #Model 554.59s var:17883/18957 constraints:20606/20795
+%% #Model 558.59s var:17882/18957 constraints:20606/20795
+%% #Model 561.56s var:17880/18957 constraints:20603/20795
+%% #Model 563.60s var:17879/18957 constraints:20603/20795
+%% #Model 564.26s var:17877/18957 constraints:20600/20795
+%% #Model 564.61s var:17875/18957 constraints:20600/20795
+%% #Model 564.93s var:17874/18957 constraints:20600/20795
+%% #Model 567.09s var:17872/18957 constraints:20597/20795
+%% #Model 569.48s var:17871/18957 constraints:20597/20795
+%% #Model 569.90s var:17869/18957 constraints:20594/20795
+%% #Model 574.42s var:17863/18957 constraints:20588/20795
+%% #Model 574.73s var:17862/18957 constraints:20588/20795
+%% #Model 575.06s var:17860/18957 constraints:20585/20795
+%% #Model 578.90s var:17859/18957 constraints:20585/20795
+%% #Model 579.80s var:17858/18957 constraints:20585/20795
+%% #Model 581.10s var:17857/18957 constraints:20585/20795
+%% #Model 582.97s var:17856/18957 constraints:20585/20795
+%% #Model 584.85s var:17855/18957 constraints:20585/20795
+%% #Model 587.82s var:17853/18957 constraints:20582/20795
+%% #37    587.84s best:381000 next:[365000,380000] quick_restart_no_lp (fixed_bools=1104/23923)
+%%%mzn-stat: boolVariables=23923
+%%%mzn-stat: failures=492162
+%%%mzn-stat: objective=381000
+%%%mzn-stat: objectiveBound=365000
+%%%mzn-stat: propagations=1435155885
+%%%mzn-stat: solveTime=587.844
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(4,4)	(9,9)	(3,3)	(1,1)	(5,5)	(8,8)	(7,7)	(2,2)	(10,10)	(11,11)
+Eq 2	(6,6)	   -	(5,7)	(10,2)	(11,1)	(7,5)	(9,3)	(2,10)	(1,11)	(3,9)	(8,4)	(4,8)
+Eq 3	(4,4)	(5,7)	   -	(2,8)	(1,9)	(9,11)	(7,1)	(6,3)	(8,5)	(11,6)	(3,2)	(10,10)
+Eq 4	(9,9)	(10,2)	(2,8)	   -	(5,7)	(4,3)	(1,6)	(7,1)	(3,4)	(6,10)	(11,11)	(8,5)
+Eq 5	(3,3)	(11,1)	(1,9)	(5,7)	   -	(8,8)	(2,10)	(4,11)	(10,6)	(9,4)	(7,5)	(6,2)
+Eq 6	(1,1)	(7,5)	(9,11)	(4,3)	(8,8)	   -	(10,2)	(3,9)	(11,10)	(5,7)	(6,6)	(2,4)
+Eq 7	(5,5)	(9,3)	(7,1)	(1,6)	(2,10)	(10,2)	   -	(11,4)	(6,9)	(8,11)	(4,8)	(3,7)
+Eq 8	(8,8)	(2,10)	(6,3)	(7,1)	(4,11)	(3,9)	(11,4)	   -	(9,2)	(10,5)	(5,7)	(1,6)
+Eq 9	(7,7)	(1,11)	(8,5)	(3,4)	(10,6)	(11,10)	(6,9)	(9,2)	   -	(4,8)	(2,3)	(5,1)
+Eq 10	(2,2)	(3,9)	(11,6)	(6,10)	(9,4)	(5,7)	(8,11)	(10,5)	(4,8)	   -	(1,1)	(7,3)
+Eq 11	(10,10)	(8,4)	(3,2)	(11,11)	(7,5)	(6,6)	(4,8)	(5,7)	(2,3)	(1,1)	   -	(9,9)
+Eq 12	(11,11)	(4,8)	(10,10)	(8,5)	(6,2)	(2,4)	(3,7)	(1,6)	(5,1)	(7,3)	(9,9)	   -
+
+
+KMs TOTALS: 4013
+SEGUIDORS FORA: 381000
+----------
+%% #Model 594.85s var:17852/18957 constraints:20582/20795
+%% #Model 595.21s var:17849/18957 constraints:20579/20795
+%% #Model 601.98s var:17848/18957 constraints:20579/20795
+%% #Model 603.94s var:17847/18957 constraints:20579/20795
+%% #Model 610.83s var:17846/18957 constraints:20579/20795
+%% #Model 611.28s var:17844/18957 constraints:20576/20795
+%% #Model 612.55s var:17843/18957 constraints:20576/20795
+%% #Model 614.27s var:17842/18957 constraints:20576/20795
+%% #Model 615.41s var:17841/18957 constraints:20576/20795
+%% #Model 615.78s var:17836/18957 constraints:20569/20795
+%% #Model 619.53s var:17835/18957 constraints:20569/20795
+%% #Model 620.55s var:17834/18957 constraints:20569/20795
+%% #Model 623.07s var:17832/18957 constraints:20566/20795
+%% #Model 623.62s var:17831/18957 constraints:20566/20795
+%% #Model 625.08s var:17830/18957 constraints:20566/20795
+%% #Model 626.28s var:17828/18957 constraints:20563/20795
+%% #Model 627.47s var:17825/18957 constraints:20560/20795
+%% #Model 628.31s var:17824/18957 constraints:20560/20795
+%% #Model 633.08s var:17823/18957 constraints:20560/20795
+%% #Model 637.35s var:17821/18957 constraints:20557/20795
+%% #Model 638.28s var:17819/18957 constraints:20553/20795
+%% #Model 638.95s var:17816/18957 constraints:20550/20795
+%% #Model 644.85s var:17815/18957 constraints:20550/20795
+%% #Model 647.05s var:17814/18957 constraints:20550/20795
+%% #Model 648.66s var:17813/18957 constraints:20550/20795
+%% #Model 649.12s var:17812/18957 constraints:20550/20795
+%% #Model 650.55s var:17810/18957 constraints:20547/20795
+%% #Model 653.76s var:17809/18957 constraints:20547/20795
+%% #Model 654.75s var:17808/18957 constraints:20547/20795
+%% #Model 657.29s var:17806/18957 constraints:20544/20795
+%% #Model 657.81s var:17804/18957 constraints:20541/20795
+%% #Model 663.39s var:17803/18957 constraints:20541/20795
+%% #Model 664.12s var:17801/18957 constraints:20538/20795
+%% #Model 666.14s var:17800/18957 constraints:20538/20795
+%% #Model 674.78s var:17798/18957 constraints:20534/20795
+%% #Model 677.87s var:17796/18957 constraints:20531/20795
+%% #Model 681.16s var:17794/18957 constraints:20528/20795
+%% #Model 687.47s var:17792/18957 constraints:20525/20795
+%% #Model 692.31s var:17791/18957 constraints:20525/20795
+%% #Model 694.53s var:17790/18957 constraints:20525/20795
+%% #Model 697.49s var:17788/18957 constraints:20522/20795
+%% #Model 699.09s var:17787/18957 constraints:20522/20795
+%% #Model 699.51s var:17786/18957 constraints:20522/20795
+%% #Model 702.20s var:17784/18957 constraints:20518/20795
+%% #Model 703.12s var:17781/18957 constraints:20514/20795
+%% #Model 704.23s var:17780/18957 constraints:20514/20795
+%% #Model 704.81s var:17778/18957 constraints:20511/20795
+%% #Model 718.29s var:17776/18957 constraints:20511/20795
+%% #Model 723.49s var:17774/18957 constraints:20508/20795
+%% #Model 727.42s var:17772/18957 constraints:20504/20795
+%% #Model 727.88s var:17770/18957 constraints:20501/20795
+%% #Model 740.38s var:17769/18957 constraints:20501/20795
+%% #38    741.13s best:380000 next:[365000,379000] quick_restart (fixed_bools=1188/23895)
+%%%mzn-stat: boolVariables=23895
+%%%mzn-stat: failures=422331
+%%%mzn-stat: objective=380000
+%%%mzn-stat: objectiveBound=365000
+%%%mzn-stat: propagations=1323486892
+%%%mzn-stat: solveTime=741.126
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(10,10)	(9,9)	(3,3)	(1,1)	(4,4)	(8,8)	(7,7)	(2,2)	(5,5)	(11,11)
+Eq 2	(6,6)	   -	(9,3)	(10,2)	(11,1)	(7,5)	(5,7)	(2,10)	(1,11)	(3,9)	(8,4)	(4,8)
+Eq 3	(10,10)	(9,3)	   -	(6,8)	(5,9)	(2,11)	(1,1)	(4,4)	(3,5)	(7,6)	(11,2)	(8,7)
+Eq 4	(9,9)	(10,2)	(6,8)	   -	(2,7)	(8,3)	(3,6)	(5,1)	(4,4)	(11,10)	(7,11)	(1,5)
+Eq 5	(3,3)	(11,1)	(5,9)	(2,7)	   -	(4,8)	(8,5)	(6,11)	(9,6)	(1,4)	(10,10)	(7,2)
+Eq 6	(1,1)	(7,5)	(2,11)	(8,3)	(4,8)	   -	(11,2)	(3,9)	(5,10)	(6,7)	(9,6)	(10,4)
+Eq 7	(4,4)	(5,7)	(1,1)	(3,6)	(8,5)	(11,2)	   -	(7,3)	(10,9)	(9,11)	(6,8)	(2,10)
+Eq 8	(8,8)	(2,10)	(4,4)	(5,1)	(6,11)	(3,9)	(7,3)	   -	(11,2)	(10,5)	(1,7)	(9,6)
+Eq 9	(7,7)	(1,11)	(3,5)	(4,4)	(9,6)	(5,10)	(10,9)	(11,2)	   -	(8,8)	(2,3)	(6,1)
+Eq 10	(2,2)	(3,9)	(7,6)	(11,10)	(1,4)	(6,7)	(9,11)	(10,5)	(8,8)	   -	(4,1)	(5,3)
+Eq 11	(5,5)	(8,4)	(11,2)	(7,11)	(10,10)	(9,6)	(6,8)	(1,7)	(2,3)	(4,1)	   -	(3,9)
+Eq 12	(11,11)	(4,8)	(8,7)	(1,5)	(7,2)	(10,4)	(2,10)	(9,6)	(6,1)	(5,3)	(3,9)	   -
+
+
+KMs TOTALS: 4373
+SEGUIDORS FORA: 380000
+----------
+%% #Model 749.09s var:17768/18957 constraints:20501/20795
+%% #Model 751.00s var:17767/18957 constraints:20501/20795
+%% #Model 756.07s var:17765/18957 constraints:20497/20795
+%% #39    761.63s best:379000 next:[365000,378000] quick_restart (fixed_bools=1192/23896)
+%%%mzn-stat: boolVariables=23896
+%%%mzn-stat: failures=435255
+%%%mzn-stat: objective=379000
+%%%mzn-stat: objectiveBound=365000
+%%%mzn-stat: propagations=1371810343
+%%%mzn-stat: solveTime=761.632
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(7,7)	(9,9)	(3,3)	(1,1)	(10,10)	(8,8)	(11,11)	(2,2)	(5,5)	(4,4)
+Eq 2	(6,6)	   -	(9,3)	(10,2)	(11,1)	(7,5)	(5,7)	(2,10)	(4,8)	(3,9)	(8,4)	(1,11)
+Eq 3	(7,7)	(9,3)	   -	(1,8)	(2,9)	(8,11)	(3,2)	(6,4)	(10,5)	(4,6)	(11,10)	(5,1)
+Eq 4	(9,9)	(10,2)	(1,8)	   -	(4,7)	(5,3)	(8,6)	(7,1)	(6,4)	(11,10)	(3,11)	(2,5)
+Eq 5	(3,3)	(11,1)	(2,9)	(4,7)	   -	(9,8)	(6,5)	(5,11)	(1,6)	(8,4)	(10,2)	(7,10)
+Eq 6	(1,1)	(7,5)	(8,11)	(5,3)	(9,8)	   -	(4,4)	(11,9)	(3,10)	(6,7)	(2,6)	(10,2)
+Eq 7	(10,10)	(5,7)	(3,2)	(8,6)	(6,5)	(4,4)	   -	(1,3)	(2,9)	(7,11)	(9,1)	(11,8)
+Eq 8	(8,8)	(2,10)	(6,4)	(7,1)	(5,11)	(11,9)	(1,3)	   -	(9,2)	(10,5)	(4,7)	(3,6)
+Eq 9	(11,11)	(4,8)	(10,5)	(6,4)	(1,6)	(3,10)	(2,9)	(9,2)	   -	(5,1)	(7,3)	(8,7)
+Eq 10	(2,2)	(3,9)	(4,6)	(11,10)	(8,4)	(6,7)	(7,11)	(10,5)	(5,1)	   -	(1,8)	(9,3)
+Eq 11	(5,5)	(8,4)	(11,10)	(3,11)	(10,2)	(2,6)	(9,1)	(4,7)	(7,3)	(1,8)	   -	(6,9)
+Eq 12	(4,4)	(1,11)	(5,1)	(2,5)	(7,10)	(10,2)	(11,8)	(3,6)	(8,7)	(9,3)	(6,9)	   -
+
+
+KMs TOTALS: 4488
+SEGUIDORS FORA: 379000
+----------
+%% #Model 772.45s var:17764/18957 constraints:20497/20795
+%% #Model 777.18s var:17762/18957 constraints:20493/20795
+%% #Model 781.93s var:17761/18957 constraints:20493/20795
+%% #Model 792.64s var:17759/18957 constraints:20489/20795
+%% #Model 813.11s var:17757/18957 constraints:20485/20795
+%% #Model 947.11s var:17754/18957 constraints:20481/20795
+%% #Bound 1026.00s best:379000 next:[366000,378000] lb_tree_search
+%% #Model 1026.46s var:17753/18957 constraints:20479/20795
+%% #Bound 1165.43s best:379000 next:[367000,378000] lb_tree_search
+%% #40    1261.48s best:378000 next:[367000,377000] max_lp (fixed_bools=1205/23697)
+%%%mzn-stat: boolVariables=23697
+%%%mzn-stat: failures=12236
+%%%mzn-stat: objective=378000
+%%%mzn-stat: objectiveBound=367000
+%%%mzn-stat: propagations=1373312020
+%%%mzn-stat: solveTime=1261.48
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(9,9)	(7,7)	(1,1)	(8,8)	(2,2)	(4,4)	(10,10)	(3,3)	(11,11)
+Eq 2	(6,6)	   -	(9,3)	(2,10)	(1,11)	(7,5)	(5,7)	(11,1)	(10,2)	(3,9)	(4,8)	(8,4)
+Eq 3	(5,5)	(9,3)	   -	(11,6)	(8,9)	(4,11)	(3,2)	(7,4)	(6,1)	(2,7)	(10,10)	(1,8)
+Eq 4	(9,9)	(2,10)	(11,6)	   -	(4,4)	(6,3)	(7,5)	(1,8)	(3,11)	(5,1)	(8,7)	(10,2)
+Eq 5	(7,7)	(1,11)	(8,9)	(4,4)	   -	(9,8)	(2,1)	(10,10)	(5,3)	(11,2)	(6,6)	(3,5)
+Eq 6	(1,1)	(7,5)	(4,11)	(6,3)	(9,8)	   -	(10,4)	(3,9)	(2,10)	(8,6)	(11,2)	(5,7)
+Eq 7	(8,8)	(5,7)	(3,2)	(7,5)	(2,1)	(10,4)	   -	(6,3)	(11,6)	(1,11)	(9,9)	(4,10)
+Eq 8	(2,2)	(11,1)	(7,4)	(1,8)	(10,10)	(3,9)	(6,3)	   -	(8,7)	(4,5)	(5,11)	(9,6)
+Eq 9	(4,4)	(10,2)	(6,1)	(3,11)	(5,3)	(2,10)	(11,6)	(8,7)	   -	(9,8)	(1,5)	(7,9)
+Eq 10	(10,10)	(3,9)	(2,7)	(5,1)	(11,2)	(8,6)	(1,11)	(4,5)	(9,8)	   -	(7,4)	(6,3)
+Eq 11	(3,3)	(4,8)	(10,10)	(8,7)	(6,6)	(11,2)	(9,9)	(5,11)	(1,5)	(7,4)	   -	(2,1)
+Eq 12	(11,11)	(8,4)	(1,8)	(10,2)	(3,5)	(5,7)	(4,10)	(9,6)	(7,9)	(6,3)	(2,1)	   -
+
+
+KMs TOTALS: 4145
+SEGUIDORS FORA: 378000
+----------
+%% #41    1261.82s best:377000 next:[367000,376000] quick_restart_no_lp (fixed_bools=1205/23923)
+%%%mzn-stat: boolVariables=23923
+%%%mzn-stat: failures=1151255
+%%%mzn-stat: objective=377000
+%%%mzn-stat: objectiveBound=367000
+%%%mzn-stat: propagations=3590104551
+%%%mzn-stat: solveTime=1261.82
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(9,9)	(7,7)	(10,10)	(8,8)	(2,2)	(4,4)	(1,1)	(3,3)	(11,11)
+Eq 2	(6,6)	   -	(9,3)	(10,2)	(1,11)	(7,5)	(5,7)	(11,1)	(2,10)	(3,9)	(4,8)	(8,4)
+Eq 3	(5,5)	(9,3)	   -	(7,6)	(11,9)	(6,11)	(4,10)	(1,4)	(8,2)	(2,7)	(10,1)	(3,8)
+Eq 4	(9,9)	(10,2)	(7,6)	   -	(3,4)	(4,3)	(2,5)	(8,8)	(6,11)	(11,10)	(5,7)	(1,1)
+Eq 5	(7,7)	(1,11)	(11,9)	(3,4)	   -	(2,8)	(6,1)	(5,10)	(9,3)	(10,2)	(8,6)	(4,5)
+Eq 6	(10,10)	(7,5)	(6,11)	(4,3)	(2,8)	   -	(1,4)	(3,9)	(11,1)	(8,6)	(9,2)	(5,7)
+Eq 7	(8,8)	(5,7)	(4,10)	(2,5)	(6,1)	(1,4)	   -	(7,3)	(3,6)	(9,11)	(11,9)	(10,2)
+Eq 8	(2,2)	(11,1)	(1,4)	(8,8)	(5,10)	(3,9)	(7,3)	   -	(10,7)	(4,5)	(6,11)	(9,6)
+Eq 9	(4,4)	(2,10)	(8,2)	(6,11)	(9,3)	(11,1)	(3,6)	(10,7)	   -	(5,8)	(1,5)	(7,9)
+Eq 10	(1,1)	(3,9)	(2,7)	(11,10)	(10,2)	(8,6)	(9,11)	(4,5)	(5,8)	   -	(7,4)	(6,3)
+Eq 11	(3,3)	(4,8)	(10,1)	(5,7)	(8,6)	(9,2)	(11,9)	(6,11)	(1,5)	(7,4)	   -	(2,10)
+Eq 12	(11,11)	(8,4)	(3,8)	(1,1)	(4,5)	(5,7)	(10,2)	(9,6)	(7,9)	(6,3)	(2,10)	   -
+
+
+KMs TOTALS: 4460
+SEGUIDORS FORA: 377000
+----------
+%% #42    1276.27s best:376000 next:[367000,375000] quick_restart_no_lp (fixed_bools=1205/23923)
+%%%mzn-stat: boolVariables=23923
+%%%mzn-stat: failures=1162804
+%%%mzn-stat: objective=376000
+%%%mzn-stat: objectiveBound=367000
+%%%mzn-stat: propagations=3637624716
+%%%mzn-stat: solveTime=1276.27
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(9,9)	(4,4)	(10,10)	(8,8)	(2,2)	(7,7)	(1,1)	(3,3)	(11,11)
+Eq 2	(6,6)	   -	(9,3)	(10,2)	(1,11)	(7,5)	(5,7)	(11,1)	(2,10)	(3,9)	(4,8)	(8,4)
+Eq 3	(5,5)	(9,3)	   -	(6,6)	(7,9)	(1,11)	(4,10)	(8,4)	(11,2)	(2,7)	(10,1)	(3,8)
+Eq 4	(9,9)	(10,2)	(6,6)	   -	(3,7)	(2,3)	(7,5)	(4,8)	(8,4)	(11,10)	(5,11)	(1,1)
+Eq 5	(4,4)	(1,11)	(7,9)	(3,7)	   -	(11,8)	(2,1)	(6,10)	(9,3)	(10,2)	(8,6)	(5,5)
+Eq 6	(10,10)	(7,5)	(1,11)	(2,3)	(11,8)	   -	(6,4)	(3,9)	(5,1)	(8,6)	(9,2)	(4,7)
+Eq 7	(8,8)	(5,7)	(4,10)	(7,5)	(2,1)	(6,4)	   -	(1,3)	(3,6)	(9,11)	(11,9)	(10,2)
+Eq 8	(2,2)	(11,1)	(8,4)	(4,8)	(6,10)	(3,9)	(1,3)	   -	(10,11)	(5,5)	(7,7)	(9,6)
+Eq 9	(7,7)	(2,10)	(11,2)	(8,4)	(9,3)	(5,1)	(3,6)	(10,11)	   -	(4,8)	(1,5)	(6,9)
+Eq 10	(1,1)	(3,9)	(2,7)	(11,10)	(10,2)	(8,6)	(9,11)	(5,5)	(4,8)	   -	(6,4)	(7,3)
+Eq 11	(3,3)	(4,8)	(10,1)	(5,11)	(8,6)	(9,2)	(11,9)	(7,7)	(1,5)	(6,4)	   -	(2,10)
+Eq 12	(11,11)	(8,4)	(3,8)	(1,1)	(5,5)	(4,7)	(10,2)	(9,6)	(6,9)	(7,3)	(2,10)	   -
+
+
+KMs TOTALS: 4273
+SEGUIDORS FORA: 376000
+----------
+%% #Model 1345.29s var:17752/18957 constraints:20477/20795
+%% #Model 1517.92s var:17740/18957 constraints:20450/20795
+%% #43    1900.74s best:375000 next:[367000,374000] max_lp (fixed_bools=1223/23697)
+%%%mzn-stat: boolVariables=23697
+%%%mzn-stat: failures=18478
+%%%mzn-stat: objective=375000
+%%%mzn-stat: objectiveBound=367000
+%%%mzn-stat: propagations=1967261295
+%%%mzn-stat: solveTime=1900.74
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(11,11)	(4,4)	(1,1)	(8,8)	(2,2)	(7,7)	(10,10)	(9,9)	(3,3)
+Eq 2	(6,6)	   -	(9,3)	(2,10)	(1,11)	(7,5)	(5,7)	(11,1)	(10,2)	(3,9)	(4,8)	(8,4)
+Eq 3	(5,5)	(9,3)	   -	(3,2)	(8,9)	(4,11)	(10,10)	(7,4)	(11,6)	(2,7)	(6,1)	(1,8)
+Eq 4	(11,11)	(2,10)	(3,2)	   -	(7,7)	(9,9)	(6,5)	(10,8)	(1,4)	(5,1)	(8,3)	(4,6)
+Eq 5	(4,4)	(1,11)	(8,9)	(7,7)	   -	(11,8)	(2,1)	(3,10)	(5,3)	(6,2)	(10,6)	(9,5)
+Eq 6	(1,1)	(7,5)	(4,11)	(9,9)	(11,8)	   -	(3,4)	(6,3)	(2,10)	(8,6)	(5,7)	(10,2)
+Eq 7	(8,8)	(5,7)	(10,10)	(6,5)	(2,1)	(3,4)	   -	(4,6)	(9,11)	(1,3)	(11,2)	(7,9)
+Eq 8	(2,2)	(11,1)	(7,4)	(10,8)	(3,10)	(6,3)	(4,6)	   -	(8,9)	(9,5)	(1,11)	(5,7)
+Eq 9	(7,7)	(10,2)	(11,6)	(1,4)	(5,3)	(2,10)	(9,11)	(8,9)	   -	(4,8)	(3,5)	(6,1)
+Eq 10	(10,10)	(3,9)	(2,7)	(5,1)	(6,2)	(8,6)	(1,3)	(9,5)	(4,8)	   -	(7,4)	(11,11)
+Eq 11	(9,9)	(4,8)	(6,1)	(8,3)	(10,6)	(5,7)	(11,2)	(1,11)	(3,5)	(7,4)	   -	(2,10)
+Eq 12	(3,3)	(8,4)	(1,8)	(4,6)	(9,5)	(10,2)	(7,9)	(5,7)	(6,1)	(11,11)	(2,10)	   -
+
+
+KMs TOTALS: 4314
+SEGUIDORS FORA: 375000
+----------
+%% #44    1901.55s best:374000 next:[367000,373000] quick_restart_no_lp (fixed_bools=1223/23923)
+%%%mzn-stat: boolVariables=23923
+%%%mzn-stat: failures=1788017
+%%%mzn-stat: objective=374000
+%%%mzn-stat: objectiveBound=367000
+%%%mzn-stat: propagations=5836431727
+%%%mzn-stat: solveTime=1901.55
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(11,11)	(4,4)	(10,10)	(8,8)	(2,2)	(7,7)	(1,1)	(9,9)	(3,3)
+Eq 2	(6,6)	   -	(9,3)	(10,2)	(1,11)	(7,5)	(5,7)	(11,1)	(2,10)	(3,9)	(4,8)	(8,4)
+Eq 3	(5,5)	(9,3)	   -	(7,6)	(11,9)	(2,11)	(4,10)	(3,4)	(10,2)	(8,7)	(6,1)	(1,8)
+Eq 4	(11,11)	(10,2)	(7,6)	   -	(2,7)	(3,9)	(1,5)	(4,8)	(5,4)	(9,10)	(8,3)	(6,1)
+Eq 5	(4,4)	(1,11)	(11,9)	(2,7)	   -	(9,8)	(3,1)	(7,10)	(8,3)	(6,2)	(10,6)	(5,5)
+Eq 6	(10,10)	(7,5)	(2,11)	(3,9)	(9,8)	   -	(6,4)	(8,3)	(1,1)	(4,6)	(5,7)	(11,2)
+Eq 7	(8,8)	(5,7)	(4,10)	(1,5)	(3,1)	(6,4)	   -	(10,6)	(9,11)	(2,3)	(11,2)	(7,9)
+Eq 8	(2,2)	(11,1)	(3,4)	(4,8)	(7,10)	(8,3)	(10,6)	   -	(6,9)	(5,5)	(1,11)	(9,7)
+Eq 9	(7,7)	(2,10)	(10,2)	(5,4)	(8,3)	(1,1)	(9,11)	(6,9)	   -	(11,8)	(3,5)	(4,6)
+Eq 10	(1,1)	(3,9)	(8,7)	(9,10)	(6,2)	(4,6)	(2,3)	(5,5)	(11,8)	   -	(7,4)	(10,11)
+Eq 11	(9,9)	(4,8)	(6,1)	(8,3)	(10,6)	(5,7)	(11,2)	(1,11)	(3,5)	(7,4)	   -	(2,10)
+Eq 12	(3,3)	(8,4)	(1,8)	(6,1)	(5,5)	(11,2)	(7,9)	(9,7)	(4,6)	(10,11)	(2,10)	   -
+
+
+KMs TOTALS: 4287
+SEGUIDORS FORA: 373000
+----------
+%% #45    1901.98s best:373000 next:[367000,372000] quick_restart_no_lp (fixed_bools=1223/23923)
+%%%mzn-stat: boolVariables=23923
+%%%mzn-stat: failures=1788421
+%%%mzn-stat: objective=373000
+%%%mzn-stat: objectiveBound=367000
+%%%mzn-stat: propagations=5837626544
+%%%mzn-stat: solveTime=1901.98
+%%%mzn-stat-end
+%% #Model 2212.40s var:17728/18957 constraints:20409/20795
+%% #46    2528.00s best:372000 next:[367000,371000] max_lp (fixed_bools=1241/23697)
+%%%mzn-stat: boolVariables=23697
+%%%mzn-stat: failures=26243
+%%%mzn-stat: objective=372000
+%%%mzn-stat: objectiveBound=367000
+%%%mzn-stat: propagations=2598704728
+%%%mzn-stat: solveTime=2528
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(11,11)	(4,4)	(1,1)	(10,10)	(8,8)	(7,7)	(2,2)	(3,3)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(4,8)	(1,11)	(7,5)	(5,7)	(11,1)	(10,2)	(3,9)	(2,10)	(8,4)
+Eq 3	(5,5)	(9,3)	   -	(10,6)	(8,9)	(3,11)	(1,2)	(6,4)	(2,1)	(11,7)	(4,8)	(7,10)
+Eq 4	(11,11)	(4,8)	(10,6)	   -	(2,7)	(9,9)	(7,5)	(1,10)	(6,4)	(8,1)	(5,2)	(3,3)
+Eq 5	(4,4)	(1,11)	(8,9)	(2,7)	   -	(5,8)	(3,1)	(10,2)	(9,3)	(7,10)	(6,6)	(11,5)
+Eq 6	(1,1)	(7,5)	(3,11)	(9,9)	(5,8)	   -	(4,4)	(2,3)	(8,10)	(10,6)	(11,7)	(6,2)
+Eq 7	(10,10)	(5,7)	(1,2)	(7,5)	(3,1)	(4,4)	   -	(9,6)	(11,11)	(6,3)	(8,9)	(2,8)
+Eq 8	(8,8)	(11,1)	(6,4)	(1,10)	(10,2)	(2,3)	(9,6)	   -	(3,9)	(4,5)	(7,11)	(5,7)
+Eq 9	(7,7)	(10,2)	(2,1)	(6,4)	(9,3)	(8,10)	(11,11)	(3,9)	   -	(5,8)	(1,5)	(4,6)
+Eq 10	(2,2)	(3,9)	(11,7)	(8,1)	(7,10)	(10,6)	(6,3)	(4,5)	(5,8)	   -	(9,4)	(1,11)
+Eq 11	(3,3)	(2,10)	(4,8)	(5,2)	(6,6)	(11,7)	(8,9)	(7,11)	(1,5)	(9,4)	   -	(10,1)
+Eq 12	(9,9)	(8,4)	(7,10)	(3,3)	(11,5)	(6,2)	(2,8)	(5,7)	(4,6)	(1,11)	(10,1)	   -
+
+
+KMs TOTALS: 4431
+SEGUIDORS FORA: 372000
+----------
+%% #47    2528.32s best:370000 next:[367000,369000] quick_restart_no_lp (fixed_bools=1246/23923)
+%%%mzn-stat: boolVariables=23923
+%%%mzn-stat: failures=2457226
+%%%mzn-stat: objective=370000
+%%%mzn-stat: objectiveBound=367000
+%%%mzn-stat: propagations=8240124288
+%%%mzn-stat: solveTime=2528.32
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(11,11)	(4,4)	(10,10)	(1,1)	(8,8)	(7,7)	(2,2)	(3,3)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(4,8)	(1,11)	(7,5)	(5,7)	(2,10)	(10,2)	(3,9)	(11,1)	(8,4)
+Eq 3	(5,5)	(9,3)	   -	(2,6)	(3,9)	(8,11)	(7,2)	(11,4)	(6,10)	(4,7)	(1,8)	(10,1)
+Eq 4	(11,11)	(4,8)	(2,6)	   -	(6,7)	(5,9)	(9,5)	(1,1)	(8,4)	(7,10)	(10,2)	(3,3)
+Eq 5	(4,4)	(1,11)	(3,9)	(6,7)	   -	(2,8)	(10,10)	(7,2)	(9,3)	(8,1)	(5,6)	(11,5)
+Eq 6	(10,10)	(7,5)	(8,11)	(5,9)	(2,8)	   -	(3,4)	(9,3)	(1,1)	(11,6)	(4,7)	(6,2)
+Eq 7	(1,1)	(5,7)	(7,2)	(9,5)	(10,10)	(3,4)	   -	(4,6)	(11,11)	(6,3)	(8,9)	(2,8)
+Eq 8	(8,8)	(2,10)	(11,4)	(1,1)	(7,2)	(9,3)	(4,6)	   -	(3,9)	(10,5)	(6,11)	(5,7)
+Eq 9	(7,7)	(10,2)	(6,10)	(8,4)	(9,3)	(1,1)	(11,11)	(3,9)	   -	(5,8)	(2,5)	(4,6)
+Eq 10	(2,2)	(3,9)	(4,7)	(7,10)	(8,1)	(11,6)	(6,3)	(10,5)	(5,8)	   -	(9,4)	(1,11)
+Eq 11	(3,3)	(11,1)	(1,8)	(10,2)	(5,6)	(4,7)	(8,9)	(6,11)	(2,5)	(9,4)	   -	(7,10)
+Eq 12	(9,9)	(8,4)	(10,1)	(3,3)	(11,5)	(6,2)	(2,8)	(5,7)	(4,6)	(1,11)	(7,10)	   -
+
+
+KMs TOTALS: 4231
+SEGUIDORS FORA: 370000
+----------
+%% #Model 3393.78s var:17526/18957 constraints:19994/20795
+%% #Model 3394.31s var:17525/18957 constraints:19994/20795
+%% #Model 3394.72s var:17524/18957 constraints:19994/20795
+%% #Model 3396.60s var:17523/18957 constraints:19994/20795
+%% #Model 3397.19s var:17520/18957 constraints:19994/20795
+%% #Model 3398.77s var:17502/18957 constraints:19994/20795
+%% #Model 3399.10s var:17500/18957 constraints:19994/20795
+%% #Model 3399.39s var:17496/18957 constraints:19994/20795
+%% #48    3438.29s best:369000 next:[367000,368000] quick_restart (fixed_bools=1542/23905)
+%%%mzn-stat: boolVariables=23905
+%%%mzn-stat: failures=2383423
+%%%mzn-stat: objective=369000
+%%%mzn-stat: objectiveBound=367000
+%%%mzn-stat: propagations=8175466077
+%%%mzn-stat: solveTime=3438.29
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(11,11)	(4,4)	(10,10)	(2,2)	(8,8)	(7,7)	(1,1)	(9,9)	(3,3)
+Eq 2	(6,6)	   -	(9,3)	(10,2)	(11,1)	(7,5)	(5,7)	(2,10)	(1,11)	(3,9)	(4,8)	(8,4)
+Eq 3	(5,5)	(9,3)	   -	(3,6)	(8,9)	(1,11)	(7,1)	(11,4)	(2,2)	(6,7)	(10,10)	(4,8)
+Eq 4	(11,11)	(10,2)	(3,6)	   -	(2,7)	(8,9)	(6,8)	(4,1)	(5,4)	(9,10)	(1,3)	(7,5)
+Eq 5	(4,4)	(11,1)	(8,9)	(2,7)	   -	(5,8)	(3,5)	(1,11)	(6,3)	(10,2)	(7,6)	(9,10)
+Eq 6	(10,10)	(7,5)	(1,11)	(8,9)	(5,8)	   -	(9,4)	(3,3)	(11,1)	(4,6)	(6,7)	(2,2)
+Eq 7	(2,2)	(5,7)	(7,1)	(6,8)	(3,5)	(9,4)	   -	(10,6)	(4,10)	(11,3)	(8,11)	(1,9)
+Eq 8	(8,8)	(2,10)	(11,4)	(4,1)	(1,11)	(3,3)	(10,6)	   -	(9,9)	(7,5)	(5,2)	(6,7)
+Eq 9	(7,7)	(1,11)	(2,2)	(5,4)	(6,3)	(11,1)	(4,10)	(9,9)	   -	(8,8)	(3,5)	(10,6)
+Eq 10	(1,1)	(3,9)	(6,7)	(9,10)	(10,2)	(4,6)	(11,3)	(7,5)	(8,8)	   -	(2,4)	(5,11)
+Eq 11	(9,9)	(4,8)	(10,10)	(1,3)	(7,6)	(6,7)	(8,11)	(5,2)	(3,5)	(2,4)	   -	(11,1)
+Eq 12	(3,3)	(8,4)	(4,8)	(7,5)	(9,10)	(2,2)	(1,9)	(6,7)	(10,6)	(5,11)	(11,1)	   -
+
+
+KMs TOTALS: 4222
+SEGUIDORS FORA: 369000
+----------
+%% #49    3859.44s best:367000 next:[]         core (fixed_bools=2466/41101)
+%%%mzn-stat: boolVariables=41101
+%%%mzn-stat: failures=5023274
+%%%mzn-stat: objective=367000
+%%%mzn-stat: objectiveBound=367000
+%%%mzn-stat: propagations=16643072501
+%%%mzn-stat: solveTime=3859.44
+%%%mzn-stat-end
+MATRIU DE PARTITS (DIA, ESTADI): 
+	Eq 1	Eq 2	Eq 3	Eq 4	Eq 5	Eq 6	Eq 7	Eq 8	Eq 9	Eq 10	Eq 11	Eq 12	
+--------------------------------------------------------------------------------------------------------
+Eq 1	   -	(6,6)	(5,5)	(11,11)	(4,4)	(10,10)	(2,2)	(8,8)	(7,7)	(1,1)	(3,3)	(9,9)
+Eq 2	(6,6)	   -	(9,3)	(10,2)	(11,1)	(7,5)	(5,7)	(2,10)	(1,11)	(3,9)	(8,4)	(4,8)
+Eq 3	(5,5)	(9,3)	   -	(8,6)	(10,10)	(3,11)	(11,8)	(7,7)	(6,9)	(2,4)	(4,1)	(1,2)
+Eq 4	(11,11)	(10,2)	(8,6)	   -	(7,7)	(2,9)	(6,5)	(4,1)	(5,4)	(9,10)	(1,8)	(3,3)
+Eq 5	(4,4)	(11,1)	(10,10)	(7,7)	   -	(9,8)	(1,11)	(5,9)	(3,3)	(8,2)	(6,5)	(2,6)
+Eq 6	(10,10)	(7,5)	(3,11)	(2,9)	(9,8)	   -	(8,4)	(1,3)	(4,1)	(11,6)	(5,2)	(6,7)
+Eq 7	(2,2)	(5,7)	(11,8)	(6,5)	(1,11)	(8,4)	   -	(3,6)	(9,10)	(4,3)	(10,9)	(7,1)
+Eq 8	(8,8)	(2,10)	(7,7)	(4,1)	(5,9)	(1,3)	(3,6)	   -	(11,2)	(6,5)	(9,11)	(10,4)
+Eq 9	(7,7)	(1,11)	(6,9)	(5,4)	(3,3)	(4,1)	(9,10)	(11,2)	   -	(10,8)	(2,6)	(8,5)
+Eq 10	(1,1)	(3,9)	(2,4)	(9,10)	(8,2)	(11,6)	(4,3)	(6,5)	(10,8)	   -	(7,7)	(5,11)
+Eq 11	(3,3)	(8,4)	(4,1)	(1,8)	(6,5)	(5,2)	(10,9)	(9,11)	(2,6)	(7,7)	   -	(11,10)
+Eq 12	(9,9)	(4,8)	(1,2)	(3,3)	(2,6)	(6,7)	(7,1)	(10,4)	(8,5)	(5,11)	(11,10)	   -
+
+
+KMs TOTALS: 4168
+SEGUIDORS FORA: 367000
+----------
+%% #Done  3859.45s core
+%% #Done  3859.45s probing
+%% #Model 3859.85s var:17414/18957 constraints:19840/20795 compo:17412,1,1
+%% Task timing                                n [     min,      max]      avg      dev     time         n [     min,      max]      avg      dev    dtime
+%%                            'core':         1 [   1.07h,    1.07h]    1.07h   0.00ns    1.07h         1 [   1.16h,    1.16h]    1.16h   0.00ns    1.16h
+%%                      'default_lp':         1 [   1.07h,    1.07h]    1.07h   0.00ns    1.07h         1 [  39.57m,   39.57m]   39.57m   0.00ns   39.57m
+%%                'feasibility_pump':       891 [138.70ms,    1.38s] 495.19ms 246.04ms    7.35m       890 [  2.45ms,   7.94ms]   4.38ms   2.07ms    3.90s
+%%                              'fj':         3 [114.71ms, 200.86ms] 149.62ms  37.01ms 448.86ms         3 [100.48ms, 100.52ms] 100.50ms  16.92us 301.51ms
+%%                              'fj':         3 [123.82ms, 163.09ms] 145.48ms  16.28ms 436.43ms         3 [100.48ms, 100.51ms] 100.50ms  13.35us 301.49ms
+%%                       'fs_random':         1 [742.65ms, 742.65ms] 742.65ms   0.00ns 742.65ms         1 [580.00ns, 580.00ns] 580.00ns   0.00ns 580.00ns
+%%                 'fs_random_no_lp':         1 [847.97ms, 847.97ms] 847.97ms   0.00ns 847.97ms         1 [106.92ms, 106.92ms] 106.92ms   0.00ns 106.92ms
+%%   'fs_random_quick_restart_no_lp':         1 [834.29ms, 834.29ms] 834.29ms   0.00ns 834.29ms         1 [ 59.64ms,  59.64ms]  59.64ms   0.00ns  59.64ms
+%%                   'graph_arc_lns':       891 [432.97ms,    4.60s]    3.08s    1.05s   45.75m       891 [  1.89ms, 101.52ms]  80.10ms  25.33ms    1.19m
+%%                   'graph_cst_lns':       891 [173.54ms,    4.58s]    3.01s    1.03s   44.72m       891 [ 10.00ns, 101.42ms]  74.95ms  30.09ms    1.11m
+%%                   'graph_dec_lns':       891 [186.42ms,    5.39s]    3.06s    1.01s   45.42m       890 [ 10.00ns, 101.49ms]  73.25ms  31.34ms    1.09m
+%%                   'graph_var_lns':       892 [400.37ms,    4.60s]    2.95s    1.03s   43.90m       891 [  1.19ms, 101.52ms]  78.60ms  26.51ms    1.17m
+%%                  'lb_tree_search':         1 [   1.07h,    1.07h]    1.07h   0.00ns    1.07h         1 [  15.12m,   15.12m]   15.12m   0.00ns   15.12m
+%%                              'ls':       891 [  6.16ms, 253.75ms] 134.81ms  33.89ms    2.00m       891 [ 10.43us, 100.21ms]  99.82ms   4.73ms    1.48m
+%%                              'ls':       891 [ 75.75ms, 274.26ms] 135.03ms  32.90ms    2.01m       891 [100.00ms, 100.22ms] 100.04ms  46.76us    1.49m
+%%                          'ls_lin':       891 [ 65.38ms, 242.53ms] 122.76ms  33.44ms    1.82m       891 [100.00ms, 100.68ms] 100.12ms 151.70us    1.49m
+%%                          'max_lp':         1 [   1.07h,    1.07h]    1.07h   0.00ns    1.07h         1 [  21.75m,   21.75m]   21.75m   0.00ns   21.75m
+%%                           'no_lp':         1 [   1.07h,    1.07h]    1.07h   0.00ns    1.07h         1 [  56.85m,   56.85m]   56.85m   0.00ns   56.85m
+%%             'objective_lb_search':         1 [   1.07h,    1.07h]    1.07h   0.00ns    1.07h         1 [  38.50m,   38.50m]   38.50m   0.00ns   38.50m
+%%                         'probing':         1 [   1.07h,    1.07h]    1.07h   0.00ns    1.07h         1 [  10.76m,   10.76m]   10.76m   0.00ns   10.76m
+%%                    'pseudo_costs':         1 [   1.07h,    1.07h]    1.07h   0.00ns    1.07h         1 [   8.19m,    8.19m]    8.19m   0.00ns    8.19m
+%%                   'quick_restart':         1 [   1.07h,    1.07h]    1.07h   0.00ns    1.07h         1 [  32.01m,   32.01m]   32.01m   0.00ns   32.01m
+%%             'quick_restart_no_lp':         1 [   1.07h,    1.07h]    1.07h   0.00ns    1.07h         1 [  44.10m,   44.10m]   44.10m   0.00ns   44.10m
+%%                   'reduced_costs':         1 [   1.07h,    1.07h]    1.07h   0.00ns    1.07h         1 [   8.41m,    8.41m]    8.41m   0.00ns    8.41m
+%%                       'rins/rens':       892 [  9.23ms,    5.06s]    2.32s    1.57s   34.53m       744 [ 10.00ns, 104.84ms]  57.05ms  48.19ms   42.45s
+%%                     'rnd_cst_lns':       892 [159.51ms,    4.64s]    3.15s    1.04s   46.77m       891 [ 10.00ns, 101.45ms]  71.76ms  32.85ms    1.07m
+%%                     'rnd_var_lns':       892 [118.39ms,    4.97s]    3.09s    1.05s   45.97m       891 [ 10.00ns, 101.52ms]  66.24ms  37.61ms   59.02s
+%% 
+%% Search stats                         Bools   Conflicts    Branches   Restarts      BoolPropag  IntegerPropag
+%%                            'core':  41'101   5'023'274  11'406'612  1'217'042  16'519'335'024    123'737'478
+%%                      'default_lp':  23'804  15'794'204  42'288'508  6'028'541  12'234'812'678  1'828'667'763
+%%                       'fs_random':  23'697           0      47'394     47'394       4'471'056        183'221
+%%                 'fs_random_no_lp':  23'697          50      48'599     47'417       4'621'501        190'824
+%%   'fs_random_quick_restart_no_lp':  23'697          10      47'489     47'395       4'479'002        183'635
+%%                  'lb_tree_search':  23'697          69   3'022'026  1'020'319     381'830'528    361'690'306
+%%                          'max_lp':  23'697      42'910  10'021'706  3'130'858   1'585'957'109  1'520'094'197
+%%                           'no_lp':  23'792  23'726'841  62'691'925  8'818'445  18'804'178'532  2'785'160'795
+%%             'objective_lb_search':  23'782  16'120'808  42'528'025  5'844'181  12'919'648'262  1'938'057'023
+%%                         'probing':  23'931     941'570  20'147'586  3'542'023   3'062'253'982    253'515'227
+%%                    'pseudo_costs':  23'697     111'362   3'181'813  1'006'768     510'638'812    488'166'650
+%%                   'quick_restart':  23'905   2'692'645  43'614'039  3'492'357   8'531'307'950    858'186'168
+%%             'quick_restart_no_lp':  23'923   3'791'515  61'124'232  4'707'001  12'145'539'284  1'179'921'045
+%%                   'reduced_costs':  23'809     215'634   4'404'645  1'300'033     927'600'176    856'433'463
+%% 
+%% SAT stats                           ClassicMinim   LitRemoved   LitLearned  LitForgotten  Subsumed   MClauses  MDecisions  MLitTrue  MSubsumed  MLitRemoved  MReused
+%%                            'core':     4'744'255  134'404'481  182'796'703   173'207'169    10'157    128'079     991'226         4     25'971      374'149   23'088
+%%                      'default_lp':    15'628'764  245'125'611  445'480'648   441'822'058    23'556  1'373'579  11'227'617         0     20'692      234'103  434'130
+%%                       'fs_random':             0            0            0             0         0          0           0         0          0            0        0
+%%                 'fs_random_no_lp':            10           16        1'621             0         0          0           0         0          0            0        0
+%%   'fs_random_quick_restart_no_lp':             2            2          320             0         2          0           0         0          0            0        0
+%%                  'lb_tree_search':            25          154        1'250             0         0    248'573   1'724'010         0      6'520       34'060   85'327
+%%                          'max_lp':        38'451      450'194    1'518'678       815'788       164    730'882   5'472'896         4      7'625       43'719  239'504
+%%                           'no_lp':    23'441'250  295'024'255  654'925'239   650'334'730    37'978  2'014'317  16'185'773         0     24'102      258'548  636'121
+%%             'objective_lb_search':    15'986'126  224'750'866  372'718'863   364'668'341    20'850  1'311'540  11'284'820         0     24'759      282'170  413'481
+%%                         'probing':       878'450   10'057'762   29'195'081    26'647'842     5'912     53'378     434'692         0      4'268       50'914   15'601
+%%                    'pseudo_costs':       108'733    1'925'459    9'721'392     7'905'352        98    232'667   1'664'708        46      7'375       39'246   77'501
+%%                   'quick_restart':     1'983'548   36'134'549  178'057'530   170'256'870    14'006    543'624   5'287'691       184    121'957    1'155'094   80'412
+%%             'quick_restart_no_lp':     2'780'600   49'693'455  246'838'768   237'036'698    24'117    712'385   6'984'176       260    180'804    1'719'817   96'334
+%%                   'reduced_costs':       213'085    4'687'819   15'597'635    12'971'012       115    296'143   2'211'118         0      7'043       35'835   95'020
+%% 
+%% Lp stats                  Component  Iterations  AddedCuts      OPTIMAL  DUAL_F.  DUAL_U.
+%%            'default_lp':         29  11'264'258        665   31'721'808        0       13
+%%             'fs_random':         29           0          0            5        0        0
+%%        'lb_tree_search':          1   1'096'843     87'883          118    3'041        0
+%%                'max_lp':          1   1'412'605     10'638            8  122'663        9
+%%   'objective_lb_search':         29  11'623'229        372   30'851'406        0        3
+%%               'probing':         29   5'598'723      1'885  180'847'394    1'262       84
+%%          'pseudo_costs':          1   2'474'157     85'895          198  224'012      153
+%%         'quick_restart':         29  12'457'168        314   19'229'119        0       81
+%%         'reduced_costs':          1   2'867'245     60'726          115  273'977       50
+%% 
+%% Lp dimension                                                                    Final dimension of first component
+%%            'default_lp':               0 rows, 2 columns, 0 entries with magnitude in [0.000000e+00, 0.000000e+00]
+%%             'fs_random':               0 rows, 2 columns, 0 entries with magnitude in [0.000000e+00, 0.000000e+00]
+%%        'lb_tree_search':  14980 rows, 18964 columns, 141585 entries with magnitude in [5.822489e-05, 1.000000e+00]
+%%                'max_lp':  12330 rows, 18964 columns, 113758 entries with magnitude in [3.100288e-02, 1.000000e+00]
+%%   'objective_lb_search':               0 rows, 2 columns, 0 entries with magnitude in [0.000000e+00, 0.000000e+00]
+%%               'probing':               0 rows, 2 columns, 0 entries with magnitude in [0.000000e+00, 0.000000e+00]
+%%          'pseudo_costs':    6741 rows, 18964 columns, 33042 entries with magnitude in [6.774241e-03, 1.000000e+00]
+%%         'quick_restart':               0 rows, 2 columns, 0 entries with magnitude in [0.000000e+00, 0.000000e+00]
+%%         'reduced_costs':    4450 rows, 18964 columns, 27464 entries with magnitude in [1.050588e-03, 1.000000e+00]
+%% 
+%% Lp debug                  CutPropag  CutEqPropag     Adjust  Overflow        Bad  BadScaling
+%%            'default_lp':          0            2  4'693'682         0      1'208           0
+%%             'fs_random':          0            0          0         0          0           0
+%%        'lb_tree_search':         24           14      3'159         0  1'054'930           0
+%%                'max_lp':          0            0    122'680         0     52'675           0
+%%   'objective_lb_search':          0            8  4'451'469         0        842           0
+%%               'probing':          0           12  8'170'593         0      8'145           0
+%%          'pseudo_costs':          0            0    223'804         0    324'054           0
+%%         'quick_restart':          0            9  5'175'295         0        376           0
+%%         'reduced_costs':          0            0    274'135         0    265'904           0
+%% 
+%% Lp pool                   Constraints  Updates  Simplif  Merged  Shortened   Split  Strenghtened       Cuts/Call
+%%            'default_lp':          978       53    1'151       3        610     485           570     665/172'453
+%%             'fs_random':          316        0        0       0          0       0             0             0/0
+%%        'lb_tree_search':       46'909    1'418   72'863     304     65'454  14'213        24'609  87'883/158'424
+%%                'max_lp':       21'667      238    6'579     301      6'483     651         1'587   10'638/16'451
+%%   'objective_lb_search':          688       46      923       0        384     308           183     372/140'677
+%%               'probing':        2'201      157    5'641       0        369     546           671   1'885/126'028
+%%          'pseudo_costs':       22'925      127   14'545     300      9'079      82         9'706  85'895/150'473
+%%         'quick_restart':          629       35      875       1        301     300            89     314/214'150
+%%         'reduced_costs':       22'755      168   34'653     301     30'784     137        44'870  60'726/161'396
+%% 
+%% Lp Cut            default_lp  max_lp  quick_restart  reduced_costs  pseudo_costs  lb_tree_search  probing  objective_lb_search
+%%           CG_FF:          22     237             16         10'908        15'404             505      257                   32
+%%            CG_K:           8     346              2          4'281        10'699             908      114                   14
+%%           CG_KL:           1      27              2             89           181              81       10                    3
+%%            CG_R:         123     356             11          8'225        15'789           1'112      349                   51
+%%           CG_RB:         158     709             23         14'498        16'935           2'309      352                   36
+%%          CG_RBP:          36     420              3          3'072         4'485           1'353      115                    5
+%%          CG_RLT:           -       -              -             10             8               -        -                    -
+%%          Clique:           -      40              -            359           594             522        -                    -
+%%              IB:         185     266            215          3'435         6'484           1'221      277                  160
+%%        MIR_1_FF:          18      78              8          2'052         1'984           1'340       28                   15
+%%         MIR_1_K:           4     400              1            917           613           2'588       22                    2
+%%        MIR_1_KL:           1     174              -            519           438             769        4                    -
+%%         MIR_1_R:           6       1              1            294           104              34       15                    5
+%%        MIR_1_RB:          12     449              -            765           783           3'365       24                    3
+%%       MIR_1_RBP:           -      71              -             74            79             535       11                    1
+%%       MIR_1_RLT:           -       -              -            153           193               1        -                    -
+%%        MIR_2_FF:          13     484              8          1'033           807           3'683       30                    9
+%%         MIR_2_K:           2     564              -            472           307           4'361       16                    1
+%%        MIR_2_KL:           -     177              -            192            92           1'533        1                    -
+%%         MIR_2_R:           8     459              1            250           211           2'403       15                    2
+%%        MIR_2_RB:          10     407              -            213           198           4'422        6                    -
+%%       MIR_2_RBP:           1     170              -             27            27           1'812        3                    -
+%%        MIR_3_FF:           5     550              4            881         1'048           3'931       25                    3
+%%         MIR_3_K:           -     393              1            225           237           3'517        7                    1
+%%        MIR_3_KL:           -     100              -             34            30             962        2                    -
+%%         MIR_3_R:           4     543              -            443           448           3'015        8                    1
+%%        MIR_3_RB:           7     221              3            195           133           3'337        8                    4
+%%       MIR_3_RBP:           -     115              -             28            30           1'469        -                    -
+%%        MIR_4_FF:           2     226              -            548           655           2'042       17                    3
+%%         MIR_4_K:           -     171              -            311           421           2'043        9                    1
+%%        MIR_4_KL:           -      36              -             28            36             470        -                    -
+%%         MIR_4_R:           2     204              -            475           519           1'541        3                    -
+%%        MIR_4_RB:           -     154              -            198           213           2'343       14                    -
+%%       MIR_4_RBP:           -      54              -             32            57             922        1                    -
+%%        MIR_5_FF:           -     155              1            474           449           1'530        5                    4
+%%         MIR_5_K:           -     121              -            236           228           1'579        1                    1
+%%        MIR_5_KL:           -      28              -             10            19             381        1                    -
+%%         MIR_5_R:           -     152              -            409           308           1'156        1                    -
+%%        MIR_5_RB:           -     117              1            137           168           2'009        3                    -
+%%       MIR_5_RBP:           -      38              -             11            32             830        1                    -
+%%        MIR_6_FF:           -      93              -            269           275           1'099        -                    -
+%%         MIR_6_K:           -      79              -            177           202           1'199        -                    -
+%%        MIR_6_KL:           -      10              -              2             7             271        -                    -
+%%         MIR_6_R:           1     108              -            297           232             897        -                    -
+%%        MIR_6_RB:           -      86              -            118           170           1'481        -                    -
+%%       MIR_6_RBP:           1      30              -             14            49             651        -                    -
+%%    ZERO_HALF_FF:           2     124              2            772         1'072           1'005       29                    3
+%%     ZERO_HALF_K:           -     101              3            255           228           1'003        5                    -
+%%    ZERO_HALF_KL:           -      64              -             62            46             436        1                    -
+%%     ZERO_HALF_R:          26     538              7          1'326         1'334          10'018       59                    8
+%%    ZERO_HALF_RB:           6     120              -            647           700           1'253       20                    1
+%%   ZERO_HALF_RBP:           1      72              1            274           134             636       16                    3
+%% 
+%% LNS stats           Improv/Calls  Closed  Difficulty  TimeLimit
+%%   'graph_arc_lns':        55/891     51%        0.91       0.10
+%%   'graph_cst_lns':        64/891     51%        0.96       0.10
+%%   'graph_dec_lns':        66/890     51%        0.95       0.10
+%%   'graph_var_lns':        57/891     52%        1.00       0.10
+%%       'rins/rens':       108/814     51%        0.99       0.10
+%%     'rnd_cst_lns':        60/891     51%        0.97       0.10
+%%     'rnd_var_lns':        59/891     51%        0.97       0.10
+%% 
+%% LS stats                                    Batches  Restarts/Perturbs   LinMoves   GenMoves  CompoundMoves  Bactracks  WeightUpdates  ScoreComputed
+%%                              'fj_restart':        1                  1     27'857          0              0          0            195        122'186
+%%   'fj_restart_decay_compound_perturb_obj':        2                  2          0     38'991          6'716     16'135              5        735'813
+%%                    'fj_restart_decay_obj':        1                  1     31'549          0              0          0             93        115'202
+%%                          'fj_restart_obj':        1                  1     27'783          0              0          0            205        123'436
+%%                      'fj_restart_perturb':        1                  1     27'992          0              0          0            201        120'254
+%%                          'ls_lin_restart':      114                 62  2'541'315          0              0          0         46'635     16'510'776
+%%                 'ls_lin_restart_compound':      130                 64          0  3'229'545        264'564  1'482'310          7'194     65'244'157
+%%         'ls_lin_restart_compound_perturb':       99                 54          0  2'477'210        194'790  1'141'094          5'820     49'724'080
+%%                    'ls_lin_restart_decay':      107                 70  2'942'872          0              0          0         13'834     14'247'454
+%%           'ls_lin_restart_decay_compound':      136                 67          0  3'264'150        712'836  1'275'452          3'485     69'562'112
+%%   'ls_lin_restart_decay_compound_perturb':       83                 52          0  1'972'703        453'929    759'256          2'665     43'022'181
+%%            'ls_lin_restart_decay_perturb':       97                 60  2'660'954          0              0          0         12'171     12'939'188
+%%                  'ls_lin_restart_perturb':      125                 70  2'801'319          0              0          0         55'717     17'948'850
+%%                              'ls_restart':      199                 88  5'291'740          0              0          0         87'904     28'192'197
+%%                     'ls_restart_compound':      156                 94          0  3'378'039         95'414  1'641'200         20'620     66'692'728
+%%             'ls_restart_compound_perturb':      243                102          0  5'253'306        210'457  2'521'274         25'022    100'400'229
+%%                        'ls_restart_decay':      285                115  8'725'996          0              0          0         28'327     37'639'466
+%%               'ls_restart_decay_compound':      184                 99          0  3'461'972        754'867  1'353'312          4'681     68'740'208
+%%       'ls_restart_decay_compound_perturb':      233                112          0  4'392'023        945'926  1'722'755          5'319     87'301'739
+%%                'ls_restart_decay_perturb':      245                110  7'556'528          0              0          0         25'063     32'036'474
+%%                      'ls_restart_perturb':      237                119  6'358'665          0              0          0        113'340     33'476'744
+%% 
+%% Solutions (49)            Num     Rank
+%%                  'core':    1  [49,49]
+%%            'default_lp':   10   [9,23]
+%%         'graph_var_lns':    1  [32,32]
+%%            'ls_restart':    1  [20,20]
+%%      'ls_restart_decay':    1    [3,3]
+%%                'max_lp':    3  [40,46]
+%%                 'no_lp':    3    [1,7]
+%%         'quick_restart':    9   [2,48]
+%%   'quick_restart_no_lp':   20   [4,47]
+%% 
+%% Objective bounds          Num
+%%            'default_lp':    1
+%%        'initial_domain':    1
+%%        'lb_tree_search':   24
+%%                'max_lp':    4
+%%   'objective_lb_search':    3
+%%         'reduced_costs':    1
+%% 
+%% Solution repositories     Added  Queried  Synchro
+%%   'feasible solutions':     794   14'490      787
+%%         'lp solutions':   6'093      425    5'747
+%%                 'pump':  11'825      467
+%% 
+%% Improving bounds shared    Num
+%%                   'core':   17
+%%             'default_lp':   44
+%%         'lb_tree_search':  364
+%%                 'max_lp':   26
+%%                  'no_lp':   43
+%%    'objective_lb_search':   53
+%%                'probing':   63
+%%           'pseudo_costs':   18
+%%          'quick_restart':  451
+%%    'quick_restart_no_lp':  639
+%%          'reduced_costs':   24
+%% 
+%% Clauses shared                         Num
+%%                            'core':  12'260
+%%                      'default_lp':  44'664
+%%                 'fs_random_no_lp':     239
+%%   'fs_random_quick_restart_no_lp':     329
+%%                  'lb_tree_search':   4'084
+%%                          'max_lp':  21'333
+%%                           'no_lp':  72'157
+%%             'objective_lb_search':  54'798
+%%                         'probing':  14'538
+%%                    'pseudo_costs':  17'192
+%%                   'quick_restart':  39'800
+%%             'quick_restart_no_lp':  70'180
+%%                   'reduced_costs':  17'941
+%% 
+%% CpSolverResponse summary:
+%% status: OPTIMAL
+%% objective: 367000
+%% best_bound: 367000
+%% integers: 597
+%% booleans: 23697
+%% conflicts: 0
+%% branches: 47394
+%% propagations: 4471056
+%% integer_propagations: 183221
+%% restarts: 47394
+%% lp_iterations: 0
+%% walltime: 3874.24
+%% usertime: 3874.24
+%% deterministic_time: 21394.7
+%% gap_integral: 35108
+%% solution_fingerprint: 0xbaaf7fded4058252
+%% 
+==========
+%%%mzn-stat: nSolutions=43
+%%%mzn-stat-end
+%%%mzn-stat: boolVariables=23697
+%%%mzn-stat: failures=0
+%%%mzn-stat: objective=367000
+%%%mzn-stat: objectiveBound=367000
+%%%mzn-stat: propagations=4654277
+%%%mzn-stat: solveTime=3874.24
+%%%mzn-stat-end
+Finished in 1h 4m 36s.

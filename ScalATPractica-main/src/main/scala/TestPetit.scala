@@ -4,8 +4,8 @@ object TestPetit extends App {
 
     val variables = e.newVarArray(6).toList // a, b, c, d, e, f
 
-    e.addEOLog(variables)
-    e.addClause(-variables.head :: List())
+    e.addEK(variables, 1000)
+    //e.addClause(-variables.head :: List())
     val result=e.solve()
     println(result)
     if (result.satisfiable) println(variables.map{ v => (v, e.getValue(v))})

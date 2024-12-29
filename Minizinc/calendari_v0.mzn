@@ -40,10 +40,7 @@ constraint forall(d in DAY, s in STADIUM) (
 
 %% Forçar cardinalitat dels sets a 0 o a 2
 constraint forall(d in DAY, s in STADIUM) (
-    let {
-        var int: count = card(tauler[d,s]);
-    } in
-    (count == 0 \/ count == 2)
+    card(tauler[d,s]) in {0,2}
 );
 
 %% Filtrant nº de partits per dia.

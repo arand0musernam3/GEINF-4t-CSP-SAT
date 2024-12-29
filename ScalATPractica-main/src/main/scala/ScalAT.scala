@@ -146,16 +146,11 @@ class ScalAT(problemName: String = "", workingpath: String = "working/") {
                 addClause(-l(i) :: -l(j) :: List())
     }
 
-    //Adds the logaritic encoding of the at-most-one
+    //Adds the logarithmic encoding of the at-most-one
     def addAMOLog(l: List[Int]): Unit = {
-        def nextPowerExponent(n: Int): Int = {
-            (Math.log(n) / Math.log(2)).ceil.toInt
-        }
-
-        val twoPow = nextPowerExponent(l.length)
+        val twoPow = (Math.log(l.length) / Math.log(2)).ceil.toInt
         val newVariables = newVarArray(twoPow)
 
-        // Optimized function to add clauses
         def addClauses(variable: Int, numDec: Int): Unit = {
             newVariables.zipWithIndex.foreach {
                 case (v, i) =>
@@ -268,13 +263,16 @@ class ScalAT(problemName: String = "", workingpath: String = "working/") {
     //Adds the encoding of an exactly-K constraint.
     // x can be empty, and K take any value from -infinity to infinity
     def addEK(x: List[Int], K: Int): Unit = {
-        if (K > x.length || K < 1) {
-            throw new IndexOutOfBoundsException("La K ha de ser positiva i igual o inferior al nombre de variables")
+        if (K > x.length || K < 0) {
+            addClause(Nil) // forcem una contradicció
         }
-        if (K == x.length) {
+        else if (K == 0) {
+            x.foreach{ v => addClause(-v :: List())}
+        }
+        else if (K == x.length) {
             x.foreach{ v => addClause(v :: List()) }
         }
-        else {
+        else { // K within [1, size_of_array]
             val sortedX = newVarArray(x.length).toList
             addSorter(x, sortedX)
             addClause(-sortedX(K) :: List())
@@ -286,10 +284,13 @@ class ScalAT(problemName: String = "", workingpath: String = "working/") {
     //Adds the encoding of an at-least-K constraint.
     // x can be empty, and K take any value from -infinity to infinity
     def addALK(x: List[Int], K: Int): Unit = {
-        if (K > x.length || K < 1) {
-            throw new IndexOutOfBoundsException("La K ha de ser positiva i igual o inferior al nombre de variables")
+        if (K > x.length || K < 0) {
+            addClause(Nil) // forcem una contradicció
         }
-        if (K == x.length) {
+        else if (K == 0) {
+            // no cal fer res!
+        }
+        else if (K == x.length) {
             x.foreach{ v => addClause(v :: List()) }
         }
         else {
@@ -303,16 +304,20 @@ class ScalAT(problemName: String = "", workingpath: String = "working/") {
     //Adds the encoding of an at-most-K constraint.
     // x can be empty, and K take any value from -infinity to infinity
     def addAMK(x: List[Int], K: Int): Unit = {
-        if (K > x.length || K < 1) {
-            throw new IndexOutOfBoundsException("La K ha de ser positiva i igual o inferior al nombre de variables")
+        if (K > x.length || K < 0) {
+            addClause(Nil) // forcem una contradicció
         }
-        if (K == x.length) {
+        else if (K == 0) {
+            x.foreach{ v => addClause(-v :: List())}
+        }
+        else if (K == x.length) {
             // No cal afegir cap restricció en aquest cas
-            return
         }
-        val sortedX = newVarArray(x.length).toList
-        addSorter(x, sortedX)
-        addClause(-sortedX(K) :: List())
+        else {
+            val sortedX = newVarArray(x.length).toList
+            addSorter(x, sortedX)
+            addClause(-sortedX(K) :: List())
+        }
     }
 
 

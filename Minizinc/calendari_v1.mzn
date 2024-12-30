@@ -26,6 +26,9 @@ array[STADIUM] of int: capacitats;
 int: lboundDistance = min([distancies[s,s2] | s, s2 in STADIUM where s != s2]) * (ndays - 1);
 int: uboundDistance = max([distancies[s,s2] | s, s2 in STADIUM where s != s2]) * (ndays - 1);
 
+int: lboundSeguidors = 0;
+int: uboundSeguidors = max(0, max(tifosi)*2 - min(capacitat));
+
 % Variables
 % =========
 array[DAY,STADIUM] of var set of TEAM: tauler;
@@ -88,11 +91,6 @@ constraint
             where t in tauler[d, st1] /\ t in tauler[d+1, st2]
         ])
     );
-    
-% mirar que això no ho envii tot a la merda
-%constraint forall(t in TEAM)(
-%    distanciesEquips[t] >= 0 /\ distanciesEquips[t] <= uboundDistance
-%);
 
 constraint distTotal = sum(distanciesEquips);
 % solve minimize distTotal;
@@ -100,8 +98,9 @@ constraint distTotal = sum(distanciesEquips);
 
 % ==================
 %%% Maximitzar entrades de seguidors: (i.e. minimitzar seguidors a fora)
-array[DAY, STADIUM] of var 0..(max(tifosi)*2-min(capacitats)): seguidorsFora; % buscar també lower i upper bounds !!!!
-var int: seguidorsForaTotal;
+array[DAY, STADIUM] of var lboundSeguidors..uboundSeguidors: seguidorsFora;
+var lboundSeguidors*ndays*nstadiums..uboundSeguidors*ndays*nstadiums: seguidorsForaTotal;
+
 constraint
     forall(d in DAY, s in STADIUM)(
         seguidorsFora[d, s] = 
@@ -112,11 +111,6 @@ constraint
     );
 
 constraint seguidorsForaTotal = sum(seguidorsFora);
-
-% revisar aquesta fantasia...
-%constraint forall(d in DAY, s in STADIUM)(
-%    seguidorsFora[d, s] >= 0 /\ seguidorsFora[d, s] <= max(tifosi)
-%);
 
 solve minimize seguidorsForaTotal;
 % ==================

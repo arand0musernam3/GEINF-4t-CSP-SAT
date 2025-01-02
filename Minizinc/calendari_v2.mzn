@@ -19,19 +19,18 @@ array[STADIUM] of int: capacitats;
 
 % Boundaries
 int: lboundDistance = min([distancies[s,s2] | s, s2 in STADIUM where s != s2]) * (ndays - 1);
-% int: lboundDistance = sum(sort([distancies[s, s2] | s, s2 in STADIUM where s != s2])[1..ndays-1]);
 int: uboundDistance = max([distancies[s,s2] | s, s2 in STADIUM where s != s2]) * (ndays - 1);
 
-% Variables (sempre afegirem la restricció t1 < t2)
+% Variables
 % =========
 array[TEAM, TEAM] of var tuple(DAY,STADIUM): tauler;
 array[TEAM] of var lboundDistance..uboundDistance: team_distance;
-% Calculate spectators left out for each match
 array[TEAM, TEAM] of var 0..(max(tifosi)*2-min(capacitats)): spectators_left_out;
 
 % Constraints
 % ===========
-% Això s'ha de poder millorar d'alguna forma...
+
+% Fixes for specific days and stadiums
 constraint forall(d in DAY, s in STADIUM)(
     if card(fixes[d,s]) == 1 then
         exists(t2 in TEAM where t2 != fixes[d,s][1])(tauler[min(fixes[d,s][1], t2), max(fixes[d,s][1], t2)] = (d,s))
@@ -42,7 +41,7 @@ constraint forall(d in DAY, s in STADIUM)(
     endif
 );
 
-% Que no es repeteixi cap dia ni estadi per equip.
+% No repetition of days or stadiums for teams
 constraint forall(t in TEAM) (
     all_different([tauler[t, t2].1 | t2 in TEAM where t2 > t] ++
                   [tauler[t2, t].1 | t2 in TEAM where t2 < t]) /\
@@ -50,37 +49,23 @@ constraint forall(t in TEAM) (
                   [tauler[t2, t].2 | t2 in TEAM where t2 < t])
 );
 
-
-% Distància (potser es pot millorar)
-predicate calculate_distance(
-    array[TEAM, TEAM] of var tuple(DAY, STADIUM): tauler,
-    array[STADIUM, STADIUM] of int: distancies,
-    array[TEAM] of var lboundDistance..uboundDistance: team_distance) = 
-        forall(t in TEAM) (
-            team_distance[t] = sum(d in 1..ndays-1)( 
-                let {
-                    var STADIUM: prev_stadium;
-                    var STADIUM: curr_stadium;
-                    constraint exists(t2 in TEAM)((t < t2 /\ tauler[t, t2] = (d, prev_stadium)) \/ (t2 < t /\ tauler[t2, t] = (d, prev_stadium)));
-                    constraint exists(t2 in TEAM)((t < t2 /\ tauler[t, t2] = (d+1, curr_stadium)) \/ (t2 < t /\ tauler[t2, t] = (d+1, curr_stadium)));
-                } in
-                distancies[prev_stadium, curr_stadium]
-            )
+% Distance constraints
+constraint forall(t in TEAM) (
+    team_distance[t] = sum(d in 1..ndays-1)(
+        let {
+            var STADIUM: prev_stadium;
+            var STADIUM: curr_stadium;
+            constraint exists(t2 in TEAM)((t < t2 /\ tauler[t, t2] = (d, prev_stadium)) \/ (t2 < t /\ tauler[t2, t] = (d, prev_stadium)));
+            constraint exists(t2 in TEAM)((t < t2 /\ tauler[t, t2] = (d+1, curr_stadium)) \/ (t2 < t /\ tauler[t2, t] = (d+1, curr_stadium)));
+        } in
+        distancies[prev_stadium, curr_stadium]
+    )
 );
 
-% Espectadors fora (potser es pot millorar)
-predicate calculate_spectators_left(
-    array[TEAM, TEAM] of var tuple(DAY, STADIUM): tauler,
-    array[TEAM] of int: tifosi,
-    array[STADIUM] of int: capacitats,
-    array[TEAM, TEAM] of var 0..(max(tifosi) * 2 - min(capacitats)): spectators_left_out) =
-        forall(t1 in TEAM, t2 in TEAM where t1 < t2)(
-            spectators_left_out[t1, t2] = max(tifosi[t1] + tifosi[t2] - capacitats[tauler[t1, t2].2], 0)
-        );
-
-
-constraint calculate_distance(tauler, distancies, team_distance);
-constraint calculate_spectators_left(tauler, tifosi, capacitats, spectators_left_out);
+% Spectators left out constraints
+constraint forall(t1 in TEAM, t2 in TEAM where t1 < t2)(
+    spectators_left_out[t1, t2] = max(tifosi[t1] + tifosi[t2] - capacitats[tauler[t1, t2].2], 0)
+);
 
 % TROBAR UNA SOLUCIÓ
 /*
@@ -100,12 +85,12 @@ solve minimize sum(t1 in TEAM, t2 in TEAM where t1 < t2)(spectators_left_out[t1,
 
 
 
-output  
+output
         ["MATRIU DE PARTITS (DIA, ESTADI): \n"] ++
         ["\t"] ++ ["Eq " ++ show(t1) ++ "\t" | t1 in TEAM] ++ ["\n"] ++
         ["--------" | t1 in 0..nteams] ++ ["\n"] ++
         [
-            if t2 == 1 then "Eq " ++ show(t1) ++ "\t" else "" endif ++ "" ++ 
+            if t2 == 1 then "Eq " ++ show(t1) ++ "\t" else "" endif ++ "" ++
             if t1 < t2 then "(" ++ show(tauler[t1,t2].1) ++ "," ++ show(tauler[t1,t2].2) ++ ")"
             elseif t1 == t2 then "   -"
             else "(" ++ show(tauler[t2,t1].1) ++ "," ++ show(tauler[t2,t1].2) ++ ")" endif ++

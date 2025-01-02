@@ -173,7 +173,7 @@ class ScalAT(problemName: String = "", workingpath: String = "working/") {
         addALO(l)
     }
 
-    //Adds the encoding of the exactly-one using the logaritmic at-most-one
+    //Adds the encoding of the exactly-one using the logarithmic at-most-one
     def addEOLog(l: List[Int]): Unit = {
         addAMOLog(l)
         addALO(l)

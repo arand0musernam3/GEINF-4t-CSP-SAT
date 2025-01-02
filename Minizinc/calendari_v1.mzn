@@ -4,8 +4,6 @@
 % Unió dels sets per columna ha de ser tots els equips.
 % No hi poden haver repetits, és clar. Potser en comptes d'un set, una array (pel tema de que la unió sigui tal sense repetits).
 
-include "globals.mzn";
-
 % Entrada
 % =======
 int: nmachesperday;
@@ -89,10 +87,6 @@ constraint
         ])
     );
     
-% mirar que això no ho envii tot a la merda
-%constraint forall(t in TEAM)(
-%    distanciesEquips[t] >= 0 /\ distanciesEquips[t] <= uboundDistance
-%);
 
 constraint distTotal = sum(distanciesEquips);
 % solve minimize distTotal;
@@ -112,11 +106,6 @@ constraint
     );
 
 constraint seguidorsForaTotal = sum(seguidorsFora);
-
-% revisar aquesta fantasia...
-%constraint forall(d in DAY, s in STADIUM)(
-%    seguidorsFora[d, s] >= 0 /\ seguidorsFora[d, s] <= max(tifosi)
-%);
 
 solve minimize seguidorsForaTotal;
 % ==================

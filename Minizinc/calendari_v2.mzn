@@ -21,11 +21,14 @@ array[STADIUM] of int: capacitats;
 int: lboundDistance = min([distancies[s,s2] | s, s2 in STADIUM where s != s2]) * (ndays - 1);
 int: uboundDistance = max([distancies[s,s2] | s, s2 in STADIUM where s != s2]) * (ndays - 1);
 
+int: lboundSeguidors = 0;
+int: uboundSeguidors = max(0, max(tifosi)*2 - min(capacitat));
+
 % Variables
 % =========
 array[TEAM, TEAM] of var tuple(DAY,STADIUM): tauler;
 array[TEAM] of var lboundDistance..uboundDistance: team_distance;
-array[TEAM, TEAM] of var 0..(max(tifosi)*2-min(capacitats)): spectators_left_out;
+array[TEAM, TEAM] of var lboundSeguidors..uboundSeguidors: spectators_left_out;
 
 % Constraints
 % ===========

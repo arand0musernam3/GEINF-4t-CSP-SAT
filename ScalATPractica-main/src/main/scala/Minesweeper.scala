@@ -5,7 +5,7 @@ object Minesweeper extends App {
     val e = new ScalAT("Minesweeper")
 
     private val directions = List(
-        (-1, -1), (-1, 0), (-1, 1), // Top row: left, center, right
+        (-1, -1), (-1, 0), (-1, 1),  // Top row: left, center, right
         (0, -1), (0, 1),             // Middle row: left, right
         (1, -1), (1, 0), (1, 1)      // Bottom row: left, center, right
     )

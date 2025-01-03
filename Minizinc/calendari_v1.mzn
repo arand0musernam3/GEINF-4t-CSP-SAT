@@ -4,8 +4,6 @@
 % Unió dels sets per columna ha de ser tots els equips.
 % No hi poden haver repetits, és clar. Potser en comptes d'un set, una array (pel tema de que la unió sigui tal sense repetits).
 
-include "globals.mzn";
-
 % Entrada
 % =======
 int: nmachesperday;
@@ -91,6 +89,7 @@ constraint
             where t in tauler[d, st1] /\ t in tauler[d+1, st2]
         ])
     );
+
 
 constraint distTotal = sum(distanciesEquips);
 % solve minimize distTotal;

@@ -1,4 +1,4 @@
-include "globals.mzn";
+include "all_different.mzn";
 
 % Entrada
 % =======
@@ -71,19 +71,18 @@ constraint forall(t1 in TEAM, t2 in TEAM where t1 < t2)(
 );
 
 % TROBAR UNA SOLUCIÓ
-/*
-solve satisfy;
-*/
+%solve satisfy;
+
 
 % MINIMITZAR DISTÀNCIES DELS EQUIPS:
-%solve minimize sum(team_distance);
+solve minimize sum(team_distance);
 
 
 % MAXIMITZAR NOMBRE D'ESPECTADORS:
-solve minimize sum(t1 in TEAM, t2 in TEAM where t1 < t2)(spectators_left_out[t1, t2]);
+%solve minimize sum(t1 in TEAM, t2 in TEAM where t1 < t2)(spectators_left_out[t1, t2]);
 
 % MINIMITZAR DIFERÈNCIA ENTRE DISTÀNCIES EQUIPS
-% solve minimize((max(team_distance) - min(team_distance))*sum(team_distance));
+% solve minimize((max(team_distance) - min(team_distance) + 1)*sum(team_distance)); % mirar si hi ha una manera més elegant de fer això
 
 
 

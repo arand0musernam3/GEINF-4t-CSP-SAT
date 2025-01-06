@@ -1,6 +1,6 @@
 include "all_different.mzn";
 
-% Entrada
+% Input
 % =======
 int: nmachesperday;
 int: nmatchesperstadium;
@@ -18,6 +18,7 @@ array[TEAM] of int: tifosi;
 array[STADIUM] of int: capacitats;
 
 % Boundaries
+% ==========
 int: lboundDistance = min([distancies[s,s2] | s, s2 in STADIUM where s != s2]) * (ndays - 1);
 int: uboundDistance = max([distancies[s,s2] | s, s2 in STADIUM where s != s2]) * (ndays - 1);
 
@@ -70,22 +71,43 @@ constraint forall(t1 in TEAM, t2 in TEAM where t1 < t2)(
     spectators_left_out[t1, t2] = max(tifosi[t1] + tifosi[t2] - capacitats[tauler[t1, t2].2], 0)
 );
 
-% TROBAR UNA SOLUCIÓ
+
+% Solving queries
+% ===============
+
+%% 1. FIRST SOLUTION
 %solve satisfy;
 
+%% 2. MINIMIZE TEAM DISTANCES:
+%solve minimize sum(team_distance);
 
-% MINIMITZAR DISTÀNCIES DELS EQUIPS:
-solve minimize sum(team_distance);
-
-
-% MAXIMITZAR NOMBRE D'ESPECTADORS:
+%% 3. MAXIMIZE SPECTATORS (MINIMIZING SPECTATORS LEFT OUT):
 %solve minimize sum(t1 in TEAM, t2 in TEAM where t1 < t2)(spectators_left_out[t1, t2]);
 
-% MINIMITZAR DIFERÈNCIA ENTRE DISTÀNCIES EQUIPS
-% solve minimize((max(team_distance) - min(team_distance) + 1)*sum(team_distance)); % mirar si hi ha una manera més elegant de fer això
+%% 4. MAXIMIZE SPECTATORS REDUCING DISTANCES
+%int: LARGE_NUMBER = 1000000; % A large value to prioritize minimizing spectators left out
+
+%var int: combined_objective =
+%    LARGE_NUMBER * sum(t1 in TEAM, t2 in TEAM where t1 < t2)(spectators_left_out[t1, t2]) +
+%    sum(team_distance);
+
+%solve minimize combined_objective;
+
+%% 5. MINIMIZE TEAM DISTANCES REDUCING SPECTATORS LEFT OUT
+%int: LARGE_NUMBER = 1000000; % A large value to prioritize minimizing spectators left out
+
+%var int: combined_objective =
+%    LARGE_NUMBER * sum(team_distance) +
+%    sum(t1 in TEAM, t2 in TEAM where t1 < t2)(spectators_left_out[t1, t2]);
+
+%solve minimize combined_objective;
+
+%% 6. MINIMIZE TIME DISTANCES DIFFERENCES
+% solve minimize((max(team_distance) - min(team_distance) + 1)*sum(team_distance));
 
 
-
+% Output
+% ======
 
 output
         ["MATRIU DE PARTITS (DIA, ESTADI): \n"] ++

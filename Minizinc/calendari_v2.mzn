@@ -23,7 +23,7 @@ int: lboundDistance = min([distancies[s,s2] | s, s2 in STADIUM where s != s2]) *
 int: uboundDistance = max([distancies[s,s2] | s, s2 in STADIUM where s != s2]) * (ndays - 1);
 
 int: lboundSeguidors = 0;
-int: uboundSeguidors = max(0, max(tifosi)*2 - min(capacitat));
+int: uboundSeguidors = max(0, max(tifosi)*2 - min(capacitats));
 
 % Variables
 % =========
@@ -46,12 +46,14 @@ constraint forall(d in DAY, s in STADIUM)(
 );
 
 % No repetition of days or stadiums for teams
+
 constraint forall(t in TEAM) (
-    all_different([tauler[t, t2].1 | t2 in TEAM where t2 > t] ++
-                  [tauler[t2, t].1 | t2 in TEAM where t2 < t]) /\
-    all_different([tauler[t, t2].2 | t2 in TEAM where t2 > t] ++
-                  [tauler[t2, t].2 | t2 in TEAM where t2 < t])
+    all_different([if t2 > t then tauler[t,t2].1 else tauler[t2,t].1 endif | t2 in TEAM where t2 != t]) /\
+    all_different([if t2 > t then tauler[t,t2].2 else tauler[t2,t].2 endif | t2 in TEAM where t2 != t])
 );
+
+% all_different de les tuples generades (ja força nmachesperday i nmatchesperstadium)
+constraint all_different([tauler[t1,t2].1 * 100 + tauler[t1,t2].2 | t1,t2 in TEAM where t1 < t2]);
 
 % Distance constraints
 constraint forall(t in TEAM) (
@@ -82,7 +84,7 @@ constraint forall(t1 in TEAM, t2 in TEAM where t1 < t2)(
 %solve minimize sum(team_distance);
 
 %% 3. MAXIMIZE SPECTATORS (MINIMIZING SPECTATORS LEFT OUT):
-%solve minimize sum(t1 in TEAM, t2 in TEAM where t1 < t2)(spectators_left_out[t1, t2]);
+solve minimize sum(t1 in TEAM, t2 in TEAM where t1 < t2)(spectators_left_out[t1, t2]);
 
 %% 4. MAXIMIZE SPECTATORS REDUCING DISTANCES
 %int: LARGE_NUMBER = 1000000; % A large value to prioritize minimizing spectators left out

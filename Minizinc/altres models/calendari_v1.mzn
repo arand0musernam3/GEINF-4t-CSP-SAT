@@ -81,20 +81,23 @@ constraint forall(s in STADIUM, t in TEAM) (
 % solve satisfy;
 
 %% 2. Minimitzar km recorreguts per l'equip (sense seguidors)
-%array[TEAM] of var lboundDistance..uboundDistance: distanciesEquips; % Millorem els límits
-%var lboundDistance*nteams..uboundDistance*nteams: distTotal;
+array[TEAM] of var lboundDistance..uboundDistance: distanciesEquips; % Millorem els límits
+var lboundDistance*nteams..uboundDistance*nteams: distTotal;
 
-%constraint
-%    forall(t in TEAM) (
-%        distanciesEquips[t] = sum([
-%            distancies[st1, st2] | d in 1..ndays-1, st1 in STADIUM, st2 in STADIUM
-%            where t in tauler[d, st1] /\ t in tauler[d+1, st2]
-%        ])
-%    );
+constraint
+    forall(t in TEAM) (
+        distanciesEquips[t] = sum([
+            distancies[st1, st2] | d in 1..ndays-1, st1 in STADIUM, st2 in STADIUM
+            where t in tauler[d, st1] /\ t in tauler[d+1, st2]
+        ])
+    );
 
 
-%constraint distTotal = sum(distanciesEquips);
-% solve minimize distTotal;
+constraint distTotal = sum(distanciesEquips);
+% solve :: seq_search([
+%    set_search(tauler, first_fail, indomain_min),
+%    int_search(distanciesEquips, first_fail, indomain_min),
+%]) minimize distTotal;
 % ==================
 
 %% 3. Maximitzar entrades de seguidors: (i.e. minimitzar seguidors a fora)
@@ -112,7 +115,10 @@ constraint
 
 constraint seguidorsForaTotal = sum(seguidorsFora);
 
-solve minimize seguidorsForaTotal;
+solve :: seq_search([
+    set_search(tauler, first_fail, indomain_min),
+	int_search(seguidorsFora, first_fail, indomain_min)
+]) minimize seguidorsForaTotal;
 % ==================
 
 % Output
@@ -128,8 +134,8 @@ output [
      endif) ++ "\n"
     | d in DAY, s in STADIUM
 ] ++ [
-    %"\n\nKMs TOTALS: " ++ show(distTotal) ++ "\n" ++
-    %"Repartiment d'equips (per distància): " ++ show(distanciesEquips) ++ "\n" ++
+    "\n\nKMs TOTALS: " ++ show(distTotal) ++ "\n" ++
+    "Repartiment d'equips (per distància): " ++ show(distanciesEquips) ++ "\n" ++
     "SEGUIDORS FORA TOTAL: " ++ show(seguidorsForaTotal) ++ "\n"
 ];
 

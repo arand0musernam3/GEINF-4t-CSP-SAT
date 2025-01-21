@@ -1,0 +1,1343 @@
+
+￼
+Running calendari_v2.mzn, t2fix.dzn
+1h 1m 53s
+
+Using FZN solver C:\Program Files\MiniZinc\bin\fzn-cp-sat.EXE for solving, parameters: -r 123123 -a -p 16 -s -v 
+%% File C:\\Users\\steam\\AppData\\Local\\Temp\\tmp7E83.tmp.fzn parsed in 33 ms
+%% Presolve model
+%%   - rule 'array_int_element: rewrite as a 2d element' was applied 66 times
+%%   - rule 'int_lin_eq: store 2d flattening mapping' was applied 66 times
+%%   - done in 0 ms
+%% Model C:\\Users\\steam\\AppData\\Local\\Temp\\tmp7E83.tmp
+%%   - array_bool_and: 1107
+%%   - array_int_element: 121
+%%   - bool_clause: 149
+%%   - fzn_all_different_int: 21
+%%   - int_eq_imp: 1424
+%%   - int_eq_reif: 68
+%%   - int_lin_eq: 93
+%%   - int_max: 41
+%%   - Minimization problem
+%% Starting CP-SAT solver v9.11.4210
+%% Parameters: log_search_progress: true log_to_stdout: false max_domain_size_when_encoding_eq_neq_constraints: 32 num_workers: 16
+%% Initial optimization model 'C:\\Users\\steam\\AppData\\Local\\Temp\\tmp7E83.tmp': (model_fingerprint: 0x24975c63d111377a)
+%% Search strategy: on 10 variables, CHOOSE_FIRST, SELECT_MIN_VALUE
+%% Search strategy: on 45 variables, CHOOSE_FIRST, SELECT_MIN_VALUE
+%% Search strategy: on 45 variables, CHOOSE_FIRST, SELECT_MIN_VALUE
+%% #Variables: 3'152 (#ints: 1 in objective)
+%%   - 2'531 Booleans in [0,1]
+%%   - 1 in [-35000,-2000]
+%%   - 1 in [-31000,2000]
+%%   - 1 in [-30000,3000]
+%%   - 1 in [-29000,4000]
+%%   - 2 in [-28000,5000]
+%%   - 1 in [-27000,6000]
+%%   - 1 in [-24000,9000]
+%%   - 2 in [-23000,10000]
+%%   - 1 in [-22000,11000]
+%%   - 1 in [-21000,12000]
+%%   - 2 in [-18000,15000]
+%%   - 1 in [-17000,16000]
+%%   - 1 in [-16000,17000]
+%%   - 1 in [-13000,20000]
+%%   - 2 in [-11000,22000]
+%%   - 2 in [-10000,23000]
+%%   - 1 in [-8000,25000]
+%%   - 1 in [-7000,26000]
+%%   - 2 in [-6000,27000]
+%%   - 2 in [-5000,28000]
+%%   - 1 in [-4000,29000]
+%%   - 2 in [-3000,30000]
+%%   - 1 in [-1000,32000]
+%%   - 66 in [0][10][12][14,16][18][20][22][25,26][28 ... ][35][38][40][42][45][50][55][60][65][70][75][80]
+%%   - 4 in [0,40]
+%%   - 4 in [0,45]
+%%   - 4 in [0,70]
+%%   - 2 in [0,75]
+%%   - 1 in [0,2000]
+%%   - 1 in [0,3000]
+%%   - 1 in [0,4000]
+%%   - 2 in [0,5000]
+%%   - 1 in [0,6000]
+%%   - 1 in [0,9000]
+%%   - 2 in [0,10000]
+%%   - 1 in [0,11000]
+%%   - 1 in [0,12000]
+%%   - 2 in [0,15000]
+%%   - 1 in [0,16000]
+%%   - 1 in [0,17000]
+%%   - 1 in [0,20000]
+%%   - 2 in [0,22000]
+%%   - 2 in [0,23000]
+%%   - 1 in [0,25000]
+%%   - 1 in [0,26000]
+%%   - 2 in [0,27000]
+%%   - 2 in [0,28000]
+%%   - 1 in [0,29000]
+%%   - 2 in [0,30000]
+%%   - 1 in [0,32000]
+%%   - 4 in [0,33000]
+%%   - 55 in [0,53000]
+%%   - 228 in [1,9]
+%%   - 2 in [80,560]
+%%   - 2 in [80,570]
+%%   - 2 in [80,620]
+%%   - 2 in [80,635]
+%%   - 2 in [80,640]
+%%   - 41 in [101,909]
+%%   - 1 in [800,6050]
+%%   - 2 in [2000,35000]
+%%   - 4 in [5000,38000]
+%%   - 43 in [7000,40000]
+%%   - 2 in [10000,43000]
+%%   - 2 in [12000,45000]
+%%   - 2 in [15000,48000]
+%%   - 2 in [17000,50000]
+%%   - 84 constants in {0,1,2,4,5,6,8,10,12,15,16,18, ... 18000,20000,22000,23000,25000,35000,36000,40000} 
+%% #kAllDiff: 21
+%% #kBoolAnd: 1'107 (#enforced: 1'107) (#literals: 3'321)
+%% #kBoolOr: 1'256 (#enforced: 1'107) (#literals: 3'323)
+%% #kElement: 55
+%% #kLinMax: 41 (#expressions: 82)
+%% #kLinear1: 472 (#enforced: 472)
+%% #kLinear2: 1'129 (#enforced: 1'088)
+%% #kLinear3: 41
+%% #kLinearN: 11 (#terms: 101)
+%% #kTable: 66
+%% Starting presolve at 0.00s
+%%   6.27e-04s  0.00e+00d  [DetectDominanceRelations] 
+%%   1.79e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=4 #num_dual_strengthening=2 
+%%   1.38e-05s  0.00e+00d  [operations_research::sat::CpModelPresolver::ExtractEncodingFromLinear] 
+%% [Symmetry] Graph for symmetry has 48'792 nodes and 101'602 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0108764 dtime: 0.031408
+%% [SAT presolve] num removable Booleans: 0 / 11038
+%% [SAT presolve] num trivial clauses: 0
+%% [SAT presolve] [0s] clauses:17320 literals:46349 vars:8480 one_side_vars:301 simple_definition:3683 singleton_clauses:0
+%% [SAT presolve] [0.0012095s] clauses:17320 literals:46349 vars:8480 one_side_vars:301 simple_definition:3683 singleton_clauses:0
+%% [SAT presolve] [0.0018198s] clauses:17320 literals:46349 vars:8480 one_side_vars:301 simple_definition:3683 singleton_clauses:0
+%%   1.62e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] #without_enforcements=21 
+%%   2.12e-01s  4.52e-01d  [operations_research::sat::CpModelPresolver::Probe] #probed=33'628 #fixed_bools=873 #new_bounds=61 #equiv=1'207 #new_binary_clauses=122'155 
+%%   2.75e-02s  0.00e+00d  [MaxClique] Merged 14666(31327 literals) into 4802(21520 literals) at_most_ones. 
+%%   2.87e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   7.69e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=3 #num_dual_strengthening=1 
+%%   2.76e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::ProcessAtMostOneAndLinear] 
+%%   1.45e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] #duplicates=174 
+%%   1.02e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   1.90e-04s  6.36e-07d  [operations_research::sat::CpModelPresolver::DetectDominatedLinearConstraints] #relevant_constraints=51 
+%%   1.67e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDifferentVariables] 
+%%   3.75e-03s  1.57e-04d  [operations_research::sat::CpModelPresolver::ProcessSetPPC] #relevant_constraints=5'162 #num_inclusions=2'441 
+%%   2.11e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::FindAlmostIdenticalLinearConstraints] 
+%%   7.79e-03s  4.44e-03d  [operations_research::sat::CpModelPresolver::FindBigAtMostOneAndLinearOverlap] 
+%%   7.20e-04s  2.92e-04d  [operations_research::sat::CpModelPresolver::FindBigVerticalLinearOverlap] 
+%%   1.73e-04s  4.45e-07d  [operations_research::sat::CpModelPresolver::FindBigHorizontalLinearOverlap] #linears=10 
+%%   2.70e-04s  6.00e-08d  [operations_research::sat::CpModelPresolver::MergeClauses] 
+%%   2.50e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   3.78e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   2.52e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   3.69e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%% [Symmetry] Graph for symmetry has 31'979 nodes and 50'936 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0176047 dtime: 0.0268629
+%% [Symmetry] #generators: 4, average support size: 2835
+%% [Symmetry] 3538 orbits with sizes: 4,4,4,4,4,4,4,4,4,4,...
+%% [Symmetry] Num fixable by intersecting at_most_one with orbits: 26 largest_orbit: 4
+%% [SAT presolve] num removable Booleans: 0 / 8958
+%% [SAT presolve] num trivial clauses: 0
+%% [SAT presolve] [0s] clauses:8 literals:20 vars:16 one_side_vars:12 simple_definition:4 singleton_clauses:0
+%% [SAT presolve] [2.33e-05s] clauses:8 literals:20 vars:16 one_side_vars:12 simple_definition:4 singleton_clauses:0
+%% [SAT presolve] [0.0002206s] clauses:8 literals:20 vars:16 one_side_vars:12 simple_definition:4 singleton_clauses:0
+%%   1.52e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   1.54e-01s  3.00e-01d  [operations_research::sat::CpModelPresolver::Probe] #probed=29'786 #fixed_bools=413 #new_bounds=75 #equiv=40 #new_binary_clauses=104'748 
+%%   4.62e-03s  0.00e+00d  [MaxClique] 
+%%   2.82e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   4.95e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=2 #num_dual_strengthening=1 
+%%   2.51e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::ProcessAtMostOneAndLinear] 
+%%   1.31e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] #duplicates=2 
+%%   8.69e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   1.25e-04s  6.12e-07d  [operations_research::sat::CpModelPresolver::DetectDominatedLinearConstraints] #relevant_constraints=50 
+%%   1.67e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDifferentVariables] 
+%%   1.54e-03s  6.24e-05d  [operations_research::sat::CpModelPresolver::ProcessSetPPC] #relevant_constraints=2'619 
+%%   1.88e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::FindAlmostIdenticalLinearConstraints] 
+%%   7.30e-03s  4.01e-03d  [operations_research::sat::CpModelPresolver::FindBigAtMostOneAndLinearOverlap] 
+%%   8.72e-04s  2.80e-04d  [operations_research::sat::CpModelPresolver::FindBigVerticalLinearOverlap] 
+%%   2.27e-04s  4.05e-07d  [operations_research::sat::CpModelPresolver::FindBigHorizontalLinearOverlap] #linears=9 
+%%   3.34e-04s  6.00e-08d  [operations_research::sat::CpModelPresolver::MergeClauses] 
+%%   2.54e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   3.69e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   2.51e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   3.65e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%% [Symmetry] Graph for symmetry has 31'078 nodes and 48'207 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0049162 dtime: 0.0111407
+%% [SAT presolve] num removable Booleans: 0 / 8387
+%% [SAT presolve] num trivial clauses: 0
+%% [SAT presolve] [0s] clauses:4 literals:12 vars:12 one_side_vars:12 simple_definition:0 singleton_clauses:0
+%% [SAT presolve] [2.37e-05s] clauses:4 literals:12 vars:12 one_side_vars:12 simple_definition:0 singleton_clauses:0
+%% [SAT presolve] [0.0001683s] clauses:4 literals:12 vars:12 one_side_vars:12 simple_definition:0 singleton_clauses:0
+%%   1.78e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] #without_enforcements=5 
+%%   1.51e-01s  2.85e-01d  [operations_research::sat::CpModelPresolver::Probe] #probed=29'298 #new_binary_clauses=100'725 
+%%   4.61e-03s  0.00e+00d  [MaxClique] 
+%%   2.75e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   3.75e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   2.55e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::ProcessAtMostOneAndLinear] 
+%%   1.07e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] 
+%%   9.06e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   1.18e-04s  6.12e-07d  [operations_research::sat::CpModelPresolver::DetectDominatedLinearConstraints] #relevant_constraints=50 
+%%   1.50e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDifferentVariables] 
+%%   1.40e-03s  6.12e-05d  [operations_research::sat::CpModelPresolver::ProcessSetPPC] #relevant_constraints=2'522 
+%%   1.60e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::FindAlmostIdenticalLinearConstraints] 
+%%   7.34e-03s  4.02e-03d  [operations_research::sat::CpModelPresolver::FindBigAtMostOneAndLinearOverlap] 
+%%   7.50e-04s  2.79e-04d  [operations_research::sat::CpModelPresolver::FindBigVerticalLinearOverlap] 
+%%   2.02e-04s  4.05e-07d  [operations_research::sat::CpModelPresolver::FindBigHorizontalLinearOverlap] #linears=9 
+%%   3.68e-04s  6.00e-08d  [operations_research::sat::CpModelPresolver::MergeClauses] 
+%%   2.48e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   3.66e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   5.05e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::ExpandObjective] #entries=322'014 #tight_variables=18'610 #tight_constraints=2'486 
+%% Presolve summary:
+%%   - 2444 affine relations were detected.
+%%   - rule 'TODO dual: only one blocking constraint?' was applied 1'188 times.
+%%   - rule 'TODO dual: only one unspecified blocking constraint?' was applied 164 times.
+%%   - rule 'affine: new relation' was applied 2'444 times.
+%%   - rule 'all_diff: expanded' was applied 1 time.
+%%   - rule 'all_diff: permutation expanded' was applied 20 times.
+%%   - rule 'all_diff: propagated fixed expressions' was applied 14 times.
+%%   - rule 'all_diff: removed fixed variables' was applied 17 times.
+%%   - rule 'at_most_one: empty or all false' was applied 18 times.
+%%   - rule 'at_most_one: removed literals' was applied 529 times.
+%%   - rule 'at_most_one: resolved two constraints with opposite literal' was applied 92 times.
+%%   - rule 'at_most_one: satisfied' was applied 716 times.
+%%   - rule 'at_most_one: size one' was applied 468 times.
+%%   - rule 'at_most_one: transformed into max clique.' was applied 1 time.
+%%   - rule 'bool_and: always false' was applied 14 times.
+%%   - rule 'bool_and: fixed literals' was applied 1'093 times.
+%%   - rule 'bool_and: x => x' was applied 1'093 times.
+%%   - rule 'bool_or: always true' was applied 1'327 times.
+%%   - rule 'bool_or: fixed literals' was applied 43 times.
+%%   - rule 'bool_or: implications' was applied 2 times.
+%%   - rule 'bool_or: only one literal' was applied 30 times.
+%%   - rule 'deductions: 12908 stored' was applied 1 time.
+%%   - rule 'deductions: reduced variable domain' was applied 114 times.
+%%   - rule 'dual: enforced equivalence' was applied 1'093 times.
+%%   - rule 'dual: make encoding equiv' was applied 14'547 times.
+%%   - rule 'duplicate: removed constraint' was applied 176 times.
+%%   - rule 'duplicate: removed enforced constraint' was applied 5 times.
+%%   - rule 'element: expanded value element' was applied 55 times.
+%%   - rule 'element: reduced target domain' was applied 69 times.
+%%   - rule 'enforcement: always false' was applied 52 times.
+%%   - rule 'enforcement: false literal' was applied 628 times.
+%%   - rule 'enforcement: literal not used' was applied 14 times.
+%%   - rule 'enforcement: true literal' was applied 628 times.
+%%   - rule 'exactly_one: removed literals' was applied 413 times.
+%%   - rule 'exactly_one: satisfied' was applied 82 times.
+%%   - rule 'exactly_one: x and not(x)' was applied 29 times.
+%%   - rule 'lin_max: converted to equality' was applied 10 times.
+%%   - rule 'lin_max: removed exprs' was applied 10 times.
+%%   - rule 'lin_max: unused affine target' was applied 30 times.
+%%   - rule 'lin_max: x = max(x, ...)' was applied 1 time.
+%%   - rule 'linear1: always true' was applied 52 times.
+%%   - rule 'linear: always true' was applied 629 times.
+%%   - rule 'linear: divide by GCD' was applied 36 times.
+%%   - rule 'linear: fixed or dup variables' was applied 132 times.
+%%   - rule 'linear: infeasible' was applied 16 times.
+%%   - rule 'linear: reduced variable domains' was applied 157 times.
+%%   - rule 'linear: remapped using affine relations' was applied 57 times.
+%%   - rule 'linear: simplified rhs' was applied 5'694 times.
+%%   - rule 'linear: variable substitution 0' was applied 2 times.
+%%   - rule 'objective: shifted cost with exactly ones' was applied 7 times.
+%%   - rule 'presolve: 1502 unused variables removed.' was applied 1 time.
+%%   - rule 'presolve: iteration' was applied 3 times.
+%%   - rule 'probing: bool_or reduced to implication' was applied 72 times.
+%%   - rule 'probing: simplified clauses.' was applied 32 times.
+%%   - rule 'setppc: bool_or in at_most_one.' was applied 2'355 times.
+%%   - rule 'setppc: removed dominated constraints' was applied 86 times.
+%%   - rule 'symmetry: fixed to false in general orbit' was applied 26 times.
+%%   - rule 'table: expanded positive constraint' was applied 66 times.
+%%   - rule 'table: reduced variable domains' was applied 132 times.
+%%   - rule 'variables: add encoding constraint' was applied 5'557 times.
+%%   - rule 'variables: canonicalize affine domain' was applied 45 times.
+%%   - rule 'variables: canonicalize domain' was applied 8 times.
+%%   - rule 'variables: detect fully reified value encoding' was applied 335 times.
+%%   - rule 'variables: detect half reified value encoding' was applied 705 times.
+%%   - rule 'variables: only used in encoding' was applied 41 times.
+%%   - rule 'variables: only used in objective and in encoding' was applied 7 times.
+%% Presolved optimization model 'C:\\Users\\steam\\AppData\\Local\\Temp\\tmp7E83.tmp': (model_fingerprint: 0x77ad0333344ada24)
+%% Search strategy: on 9 variables, CHOOSE_FIRST, SELECT_MIN_VALUE
+%% Search strategy: on 41 variables, CHOOSE_FIRST, SELECT_MIN_VALUE
+%% #Variables: 8'731 (#bools: 214 #ints: 9 in objective)
+%%   - 8'387 Booleans in [0,1]
+%%   - 12 in [0][10][12][14,15][20][25][28][30][32][38][42][45][50][55][60][65][70][75][80]
+%%   - 18 in [0][10][12][14,16][18][20][22][25,26][28][30][32][35][38][40][42][45][50][55][60][75][80]
+%%   - 14 in [0][10][12][14,16][18][20][22][26][28][30][32][38][40][42][45][50][60][70][80]
+%%   - 12 in [0][10][14,16][20][22][26][30][32][35][40][42][45][50][55][60][65][70][75][80]
+%%   - 4 in [1][3][5,9]
+%%   - 4 in [1][3,4][6,9]
+%%   - 2 in [1][3,7]
+%%   - 6 in [1][3,7][9]
+%%   - 10 in [1][3,8]
+%%   - 32 in [1][3,9]
+%%   - 4 in [1,3][5][7,9]
+%%   - 8 in [1,3][5,7][9]
+%%   - 34 in [1,3][5,9]
+%%   - 4 in [1,3][6,9]
+%%   - 4 in [1,4][6,7][9]
+%%   - 2 in [1,4][6,8]
+%%   - 28 in [1,4][6,9]
+%%   - 4 in [1,5][7][9]
+%%   - 4 in [1,5][7,9]
+%%   - 46 in [1,7][9]
+%%   - 2 in [1,9]
+%%   - 2 in [2,3][5][7][9][11][13][15]
+%%   - 6 in [2,3][5,9]
+%%   - 2 in [2,4][6,9]
+%%   - 4 in [2,5][7,9]
+%%   - 2 in [2,6][8,9]
+%%   - 6 in [2,7][9]
+%%   - 2 in [2,9]
+%%   - 2 in [3,9]
+%%   - 6 in [10][15][20][30][42][45][65][70]
+%%   - 3 in [12][18][25][28][30][38][42][45]
+%%   - 1 in [12][18][25][28][38][42][45]
+%%   - 4 in [16][18][22][26][30][35][40]
+%%   - 2 in [80,528][530,533][535,538][540,542][545,546][550][555][560]
+%%   - 2 in [80,543][545,553][555][557,563][565][567] ... 587][590][593][595][597][600][605][615][625][635]
+%%   - 2 in [80,560][562,565][567][570]
+%%   - 3 in [80,568][570][572,573][575][577,578][580] ... 585][587][590][592][595][600][605][610][615][620]
+%%   - 1 in [101][103][105,107][109][201,203][205,207 ... 7][701][703][705,707][709][901,903][905,907][909]
+%%   - 3 in [101][103][105,107][109][201,203][205,207 ... 7][701][703][705,707][709][901,903][905,907][909]
+%%   - 1 in [101][103][105,107][109][208][301,303][30 ... 09][801,803][805,807][809][901,903][905,907][909]
+%%   - 1 in [101][103][105,107][109][208][302,303][30 ... 09][801,803][805,807][809][901,903][905,907][909]
+%%   - 1 in [101][103][105,108][201][203][205,207][30 ... ][609][702][801][803][805,807][901][903][905,908]
+%%   - 1 in [101][103][105,108][201][203][205,207][30 ... ][609][702][801][803][805,807][901][903][905,908]
+%%   - 1 in [101][103][106,109][201,203][206,207][209 ... 706,709][801,803][806,807][809][901,903][906,909]
+%%   - 3 in [101][103][106,109][201,203][206,207][209 ... 706,709][801,803][806,807][809][901,903][906,909]
+%%   - 1 in [101][103,104][106,107][109][201,204][206 ... 01][703,704][706,707][709][901,904][906,907][909]
+%%   - 3 in [101][103,104][106,107][109][201,204][206 ... 01][703,704][706,707][709][901,904][906,907][909]
+%%   - 1 in [101][103,104][106,107][109][208][301,304 ... 09][801,804][806,807][809][901,904][906,907][909]
+%%   - 1 in [101][103,104][106,107][109][208][302,304 ... 09][801,804][806,807][809][901,904][906,907][909]
+%%   - 1 in [101][103,104][106,108][201][203,204][206 ... 02][801][803,804][806,807][901][903,904][906,908]
+%%   - 1 in [101][103,104][106,108][201][203,204][206 ... 02][801][803,804][806,807][901][903,904][906,908]
+%%   - 1 in [101][103,107][109][301,307][309][401,403 ... 01,604][606,607][701][703,707][709][901,907][909]
+%%   - 1 in [101][103,107][109][302,307][309][401,403 ... 01,604][606,607][701][703,707][709][901,907][909]
+%%   - 1 in [101][103,107][201][203,207][301][303,307 ... 3][405,407][501][503,507][609][702][901][903,907]
+%%   - 1 in [101][103,107][201][203,207][303,307][401][403][405,407][501][503,507][609][702][901][903,907]
+%%   - 1 in [101][103,107][208][301][303,307][401][40 ... 1][503,507][609][702][801][803,807][901][903,907]
+%%   - 1 in [201][203][205,207][209][301][303][305,30 ... 5,709][801][803][805,807][809][901][903][905,909]
+%%   - 3 in [201][203][205,207][209][303][305,309][50 ... 5,709][801][803][805,807][809][901][903][905,909]
+%%   - 1 in [201][203,204][206,207][209][301][303,304 ... 01][803,804][806,807][809][901][903,904][906,909]
+%%   - 3 in [201][203,204][206,207][209][303,304][306 ... 01][803,804][806,807][809][901][903,904][906,909]
+%%   - 1 in [201][203,207][209][301][303,307][309][40 ... 4][606,607][701][703,707][709][901][903,907][909]
+%%   - 3 in [201][203,207][209][303,307][309][401][40 ... 4][606,607][701][703,707][709][901][903,907][909]
+%%   - 1 in [201][203,207][301][303,308][401][403][405,408][501][503,508][609][801][803,807][901][903,908]
+%%   - 1 in [201][203,207][303,308][401][403][405,408][501][503,508][609][801][803,807][901][903,908]
+%%   - 1 in [208][301][303,307][309][401][403][405,40 ... 3,707][709][801][803,807][809][901][903,907][909]
+%%   - 1 in [208][303,307][309][401][403][405,407][40 ... 3,707][709][801][803,807][809][901][903,907][909]
+%% #kAtMostOne: 82 (#literals: 1'845)
+%% #kBoolOr: 4 (#literals: 12)
+%% #kExactlyOne: 2'436 (#literals: 18'528)
+%% #kLinear1: 9'670 (#enforced: 9'670)
+%% #kLinear2: 1'030 (#enforced: 1'030)
+%% #kLinear3: 41
+%% #kLinearN: 9 (#terms: 81)
+%% Preloading model.
+%% #Bound   1.12s best:inf   next:[815,6020] initial_domain
+%% [Symmetry] Graph for symmetry has 26'955 nodes and 47'971 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.004797 dtime: 0.0107659
+%% #Model   1.14s var:8731/8731 constraints:13272/13272
+%% Starting search at 1.15s with 16 workers.
+%% 11 full problem subsolvers: [core, default_lp, fixed, lb_tree_search, max_lp, no_lp, probing, pseudo_costs, quick_restart, quick_restart_no_lp, reduced_costs]
+%% 5 first solution subsolvers: [fj(2), fs_random, fs_random_no_lp, fs_random_quick_restart_no_lp]
+%% 11 interleaved subsolvers: [feasibility_pump, graph_arc_lns, graph_cst_lns, graph_dec_lns, graph_var_lns, ls(2), ls_lin, rins/rens, rnd_cst_lns, rnd_var_lns]
+%% 3 helper subsolvers: [neighborhood_helper, synchronization_agent, update_gap_integral]
+%% #1       1.76s best:2959  next:[815,2958] core (fixed_bools=37/12226)
+%%%mzn-stat: boolVariables=12226
+%%%mzn-stat: failures=219
+%%%mzn-stat: objective=2959
+%%%mzn-stat: objectiveBound=815
+%%%mzn-stat: propagations=3070870
+%%%mzn-stat: solveTime=1.76418
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(3,1)	(4,6)	(1,2)	(9,5)	(8,7)	(7,3)	(5,4)	(2,8)	(6,9)
+Team 2	(3,1)	   -	(1,8)	(9,7)	(4,4)	(7,9)	(2,5)	(6,3)	(5,2)	(8,6)
+Team 3	(4,6)	(1,8)	   -	(3,4)	(8,3)	(6,5)	(5,1)	(2,7)	(9,9)	(7,2)
+Team 4	(1,2)	(9,7)	(3,4)	   -	(7,8)	(5,3)	(6,6)	(4,9)	(8,5)	(2,1)
+Team 5	(9,5)	(4,4)	(8,3)	(7,8)	   -	(2,6)	(1,9)	(3,2)	(6,1)	(5,7)
+Team 6	(8,7)	(7,9)	(6,5)	(5,3)	(2,6)	   -	(4,2)	(9,1)	(1,4)	(3,8)
+Team 7	(7,3)	(2,5)	(5,1)	(6,6)	(1,9)	(4,2)	   -	(8,8)	(3,7)	(9,4)
+Team 8	(5,4)	(6,3)	(2,7)	(4,9)	(3,2)	(9,1)	(8,8)	   -	(7,6)	(1,5)
+Team 9	(2,8)	(5,2)	(9,9)	(8,5)	(6,1)	(1,4)	(3,7)	(7,6)	   -	(4,3)
+Team 10	(6,9)	(8,6)	(7,2)	(2,1)	(5,7)	(3,8)	(9,4)	(1,5)	(4,3)	   -
+
+Total Distance: 2959
+Team Distances: [376, 234, 271, 243, 335, 270, 300, 335, 230, 365]
+Spectators Left Out: 454000
+----------
+%% #Model   1.77s var:8712/8731 constraints:13266/13272
+%% #Model   1.83s var:8692/8731 constraints:13262/13272
+%% #Model   1.95s var:8669/8731 constraints:13258/13272
+%% #Model   1.97s var:8659/8731 constraints:13258/13272
+%% #Model   2.05s var:8641/8731 constraints:13258/13272
+%% #Model   2.43s var:8623/8731 constraints:13254/13272
+%% #Model   2.50s var:8614/8731 constraints:13252/13272
+%% #Model   2.54s var:8605/8731 constraints:13250/13272
+%% #Model   2.61s var:8597/8731 constraints:13248/13272
+%% #Model   2.68s var:8588/8731 constraints:13246/13272
+%% #Model   2.75s var:8580/8731 constraints:13244/13272
+%% #Model   2.80s var:8562/8731 constraints:13240/13272
+%% #Model   2.84s var:8553/8731 constraints:13238/13272
+%% #Model   2.96s var:8526/8731 constraints:13232/13272
+%% #Model   3.04s var:8517/8731 constraints:13230/13272
+%% #Model   3.06s var:8508/8731 constraints:13228/13272
+%% #2       3.07s best:2791  next:[815,2790] quick_restart_no_lp (fixed_bools=232/12244)
+%%%mzn-stat: boolVariables=12244
+%%%mzn-stat: failures=352
+%%%mzn-stat: objective=2791
+%%%mzn-stat: objectiveBound=815
+%%%mzn-stat: propagations=12739614
+%%%mzn-stat: solveTime=3.07491
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(3,1)	(4,7)	(1,2)	(9,5)	(5,3)	(7,9)	(6,4)	(2,8)	(8,6)
+Team 2	(3,1)	   -	(1,8)	(9,3)	(4,4)	(7,6)	(2,5)	(5,2)	(8,7)	(6,9)
+Team 3	(4,7)	(1,8)	   -	(3,4)	(8,1)	(6,5)	(5,6)	(2,3)	(9,9)	(7,2)
+Team 4	(1,2)	(9,3)	(3,4)	   -	(7,8)	(8,9)	(6,7)	(4,6)	(5,5)	(2,1)
+Team 5	(9,5)	(4,4)	(8,1)	(7,8)	   -	(2,2)	(1,3)	(3,9)	(6,6)	(5,7)
+Team 6	(5,3)	(7,6)	(6,5)	(8,9)	(2,2)	   -	(4,1)	(9,7)	(1,4)	(3,8)
+Team 7	(7,9)	(2,5)	(5,6)	(6,7)	(1,3)	(4,1)	   -	(8,8)	(3,2)	(9,4)
+Team 8	(6,4)	(5,2)	(2,3)	(4,6)	(3,9)	(9,7)	(8,8)	   -	(7,1)	(1,5)
+Team 9	(2,8)	(8,7)	(9,9)	(5,5)	(6,6)	(1,4)	(3,2)	(7,1)	   -	(4,3)
+Team 10	(8,6)	(6,9)	(7,2)	(2,1)	(5,7)	(3,8)	(9,4)	(1,5)	(4,3)	   -
+
+Total Distance: 2791
+Team Distances: [340, 286, 250, 185, 317, 268, 203, 287, 290, 365]
+Spectators Left Out: 457000
+----------
+%% #Model   3.16s var:8490/8731 constraints:13224/13272
+%% #Model   3.21s var:8471/8731 constraints:13220/13272
+%% #3       3.26s best:2778  next:[815,2777] core (fixed_bools=260/12226)
+%%%mzn-stat: boolVariables=12226
+%%%mzn-stat: failures=680
+%%%mzn-stat: objective=2778
+%%%mzn-stat: objectiveBound=815
+%%%mzn-stat: propagations=13642816
+%%%mzn-stat: solveTime=3.26096
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(3,1)	(4,9)	(1,2)	(7,7)	(9,4)	(5,5)	(6,6)	(2,8)	(8,3)
+Team 2	(3,1)	   -	(1,8)	(2,7)	(4,4)	(7,9)	(6,3)	(9,5)	(8,2)	(5,6)
+Team 3	(4,9)	(1,8)	   -	(8,4)	(5,1)	(6,5)	(3,7)	(2,3)	(9,6)	(7,2)
+Team 4	(1,2)	(2,7)	(8,4)	   -	(6,8)	(4,3)	(7,6)	(5,9)	(3,5)	(9,1)
+Team 5	(7,7)	(4,4)	(5,1)	(6,8)	   -	(8,6)	(9,9)	(3,2)	(1,3)	(2,5)
+Team 6	(9,4)	(7,9)	(6,5)	(4,3)	(8,6)	   -	(2,2)	(1,1)	(5,7)	(3,8)
+Team 7	(5,5)	(6,3)	(3,7)	(7,6)	(9,9)	(2,2)	   -	(8,8)	(4,1)	(1,4)
+Team 8	(6,6)	(9,5)	(2,3)	(5,9)	(3,2)	(1,1)	(8,8)	   -	(7,4)	(4,7)
+Team 9	(2,8)	(8,2)	(9,6)	(3,5)	(1,3)	(5,7)	(4,1)	(7,4)	   -	(6,9)
+Team 10	(8,3)	(5,6)	(7,2)	(9,1)	(2,5)	(3,8)	(1,4)	(4,7)	(6,9)	   -
+
+Total Distance: 2778
+Team Distances: [339, 325, 315, 241, 241, 286, 264, 240, 310, 217]
+Spectators Left Out: 454000
+----------
+%% #4       3.31s best:2758  next:[815,2757] no_lp (fixed_bools=241/12217)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=1060
+%%%mzn-stat: objective=2758
+%%%mzn-stat: objectiveBound=815
+%%%mzn-stat: propagations=14196997
+%%%mzn-stat: solveTime=3.30777
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(6,3)	(5,8)	(1,2)	(7,6)	(3,9)	(4,1)	(2,5)	(8,4)	(9,7)
+Team 2	(6,3)	   -	(8,9)	(3,8)	(4,4)	(7,1)	(5,2)	(1,7)	(9,5)	(2,6)
+Team 3	(5,8)	(8,9)	   -	(9,4)	(3,7)	(6,5)	(2,3)	(4,6)	(1,1)	(7,2)
+Team 4	(1,2)	(3,8)	(9,4)	   -	(5,5)	(2,7)	(6,6)	(7,9)	(4,3)	(8,1)
+Team 5	(7,6)	(4,4)	(3,7)	(5,5)	   -	(8,2)	(9,9)	(6,1)	(2,8)	(1,3)
+Team 6	(3,9)	(7,1)	(6,5)	(2,7)	(8,2)	   -	(1,4)	(9,3)	(5,6)	(4,8)
+Team 7	(4,1)	(5,2)	(2,3)	(6,6)	(9,9)	(1,4)	   -	(8,8)	(7,7)	(3,5)
+Team 8	(2,5)	(1,7)	(4,6)	(7,9)	(6,1)	(9,3)	(8,8)	   -	(3,2)	(5,4)
+Team 9	(8,4)	(9,5)	(1,1)	(4,3)	(2,8)	(5,6)	(7,7)	(3,2)	   -	(6,9)
+Team 10	(9,7)	(2,6)	(7,2)	(8,1)	(1,3)	(4,8)	(3,5)	(5,4)	(6,9)	   -
+
+Total Distance: 2758
+Team Distances: [368, 256, 281, 293, 326, 169, 168, 299, 288, 310]
+Spectators Left Out: 463000
+----------
+%% #Model   3.35s var:8462/8731 constraints:13218/13272
+%% #5       3.36s best:2688  next:[815,2687] no_lp (fixed_bools=278/12217)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=1174
+%%%mzn-stat: objective=2688
+%%%mzn-stat: objectiveBound=815
+%%%mzn-stat: propagations=14455713
+%%%mzn-stat: solveTime=3.361
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(6,1)	(5,8)	(1,2)	(7,6)	(3,9)	(4,3)	(2,5)	(8,4)	(9,7)
+Team 2	(6,1)	   -	(8,9)	(3,8)	(4,4)	(7,3)	(5,2)	(1,7)	(9,5)	(2,6)
+Team 3	(5,8)	(8,9)	   -	(9,4)	(3,7)	(6,5)	(2,1)	(4,6)	(1,3)	(7,2)
+Team 4	(1,2)	(3,8)	(9,4)	   -	(5,5)	(2,7)	(6,6)	(7,9)	(4,1)	(8,3)
+Team 5	(7,6)	(4,4)	(3,7)	(5,5)	   -	(8,2)	(9,9)	(6,3)	(2,8)	(1,1)
+Team 6	(3,9)	(7,3)	(6,5)	(2,7)	(8,2)	   -	(1,4)	(9,1)	(5,6)	(4,8)
+Team 7	(4,3)	(5,2)	(2,1)	(6,6)	(9,9)	(1,4)	   -	(8,8)	(7,7)	(3,5)
+Team 8	(2,5)	(1,7)	(4,6)	(7,9)	(6,3)	(9,1)	(8,8)	   -	(3,2)	(5,4)
+Team 9	(8,4)	(9,5)	(1,3)	(4,1)	(2,8)	(5,6)	(7,7)	(3,2)	   -	(6,9)
+Team 10	(9,7)	(2,6)	(7,2)	(8,3)	(1,1)	(4,8)	(3,5)	(5,4)	(6,9)	   -
+
+Total Distance: 2688
+Team Distances: [356, 221, 299, 288, 315, 151, 191, 276, 276, 315]
+Spectators Left Out: 467000
+----------
+%% #Model   3.38s var:8453/8731 constraints:13216/13272
+%% #6       3.40s best:2647  next:[815,2646] no_lp (fixed_bools=288/12217)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=1237
+%%%mzn-stat: objective=2647
+%%%mzn-stat: objectiveBound=815
+%%%mzn-stat: propagations=14629915
+%%%mzn-stat: solveTime=3.39818
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(6,1)	(5,8)	(1,2)	(7,6)	(4,9)	(3,3)	(2,5)	(8,4)	(9,7)
+Team 2	(6,1)	   -	(8,9)	(7,8)	(4,4)	(9,3)	(5,2)	(1,7)	(3,5)	(2,6)
+Team 3	(5,8)	(8,9)	   -	(9,4)	(3,7)	(6,5)	(2,1)	(4,6)	(1,3)	(7,2)
+Team 4	(1,2)	(7,8)	(9,4)	   -	(5,5)	(2,7)	(6,6)	(3,9)	(4,1)	(8,3)
+Team 5	(7,6)	(4,4)	(3,7)	(5,5)	   -	(8,2)	(9,9)	(6,3)	(2,8)	(1,1)
+Team 6	(4,9)	(9,3)	(6,5)	(2,7)	(8,2)	   -	(1,4)	(7,1)	(5,6)	(3,8)
+Team 7	(3,3)	(5,2)	(2,1)	(6,6)	(9,9)	(1,4)	   -	(8,8)	(7,7)	(4,5)
+Team 8	(2,5)	(1,7)	(4,6)	(3,9)	(6,3)	(7,1)	(8,8)	   -	(9,2)	(5,4)
+Team 9	(8,4)	(3,5)	(1,3)	(4,1)	(2,8)	(5,6)	(7,7)	(9,2)	   -	(6,9)
+Team 10	(9,7)	(2,6)	(7,2)	(8,3)	(1,1)	(3,8)	(4,5)	(5,4)	(6,9)	   -
+
+Total Distance: 2647
+Team Distances: [303, 213, 299, 288, 315, 174, 191, 291, 278, 295]
+Spectators Left Out: 467000
+----------
+%% #7       3.42s best:2631  next:[815,2630] default_lp (fixed_bools=288/12217)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=896
+%%%mzn-stat: objective=2631
+%%%mzn-stat: objectiveBound=815
+%%%mzn-stat: propagations=13654669
+%%%mzn-stat: solveTime=3.42083
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(3,1)	(5,6)	(1,2)	(9,8)	(7,4)	(4,3)	(2,7)	(8,5)	(6,9)
+Team 2	(3,1)	   -	(8,2)	(9,7)	(4,4)	(5,9)	(6,6)	(7,5)	(2,8)	(1,3)
+Team 3	(5,6)	(8,2)	   -	(4,8)	(7,3)	(6,5)	(9,9)	(1,4)	(3,7)	(2,1)
+Team 4	(1,2)	(9,7)	(4,8)	   -	(6,1)	(8,3)	(2,4)	(3,9)	(7,6)	(5,5)
+Team 5	(9,8)	(4,4)	(7,3)	(6,1)	   -	(2,6)	(3,5)	(5,2)	(1,9)	(8,7)
+Team 6	(7,4)	(5,9)	(6,5)	(8,3)	(2,6)	   -	(1,7)	(9,1)	(4,2)	(3,8)
+Team 7	(4,3)	(6,6)	(9,9)	(2,4)	(3,5)	(1,7)	   -	(8,8)	(5,1)	(7,2)
+Team 8	(2,7)	(7,5)	(1,4)	(3,9)	(5,2)	(9,1)	(8,8)	   -	(6,3)	(4,6)
+Team 9	(8,5)	(2,8)	(3,7)	(7,6)	(1,9)	(4,2)	(5,1)	(6,3)	   -	(9,4)
+Team 10	(6,9)	(1,3)	(2,1)	(5,5)	(8,7)	(3,8)	(7,2)	(4,6)	(9,4)	   -
+
+Total Distance: 2631
+Team Distances: [290, 326, 253, 274, 176, 264, 268, 270, 176, 334]
+Spectators Left Out: 458000
+----------
+%% #Model   3.43s var:8442/8731 constraints:13214/13272
+%% #8       3.45s best:2611  next:[815,2610] default_lp (fixed_bools=289/12217)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=900
+%%%mzn-stat: objective=2611
+%%%mzn-stat: objectiveBound=815
+%%%mzn-stat: propagations=13674134
+%%%mzn-stat: solveTime=3.44695
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(3,1)	(5,7)	(1,2)	(9,8)	(7,4)	(4,3)	(2,6)	(8,5)	(6,9)
+Team 2	(3,1)	   -	(8,2)	(9,6)	(4,4)	(5,9)	(6,7)	(7,5)	(2,8)	(1,3)
+Team 3	(5,7)	(8,2)	   -	(4,8)	(7,3)	(6,5)	(9,9)	(1,4)	(3,6)	(2,1)
+Team 4	(1,2)	(9,6)	(4,8)	   -	(6,1)	(8,3)	(2,4)	(3,9)	(7,7)	(5,5)
+Team 5	(9,8)	(4,4)	(7,3)	(6,1)	   -	(2,7)	(3,5)	(5,2)	(1,9)	(8,6)
+Team 6	(7,4)	(5,9)	(6,5)	(8,3)	(2,7)	   -	(1,6)	(9,1)	(4,2)	(3,8)
+Team 7	(4,3)	(6,7)	(9,9)	(2,4)	(3,5)	(1,6)	   -	(8,8)	(5,1)	(7,2)
+Team 8	(2,6)	(7,5)	(1,4)	(3,9)	(5,2)	(9,1)	(8,8)	   -	(6,3)	(4,7)
+Team 9	(8,5)	(2,8)	(3,6)	(7,7)	(1,9)	(4,2)	(5,1)	(6,3)	   -	(9,4)
+Team 10	(6,9)	(1,3)	(2,1)	(5,5)	(8,6)	(3,8)	(7,2)	(4,7)	(9,4)	   -
+
+Total Distance: 2611
+Team Distances: [270, 316, 253, 284, 171, 259, 278, 270, 191, 319]
+Spectators Left Out: 458000
+----------
+%% #Model   3.49s var:8434/8731 constraints:13212/13272
+%% #9       3.52s best:2609  next:[815,2608] no_lp (fixed_bools=297/12217)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=1505
+%%%mzn-stat: objective=2609
+%%%mzn-stat: objectiveBound=815
+%%%mzn-stat: propagations=15243226
+%%%mzn-stat: solveTime=3.52465
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(6,3)	(5,8)	(1,2)	(7,6)	(4,9)	(3,1)	(2,5)	(8,4)	(9,7)
+Team 2	(6,3)	   -	(8,9)	(7,8)	(4,4)	(9,1)	(5,2)	(1,7)	(3,5)	(2,6)
+Team 3	(5,8)	(8,9)	   -	(9,4)	(3,7)	(6,5)	(2,3)	(4,6)	(1,1)	(7,2)
+Team 4	(1,2)	(7,8)	(9,4)	   -	(5,5)	(2,7)	(6,6)	(3,9)	(4,3)	(8,1)
+Team 5	(7,6)	(4,4)	(3,7)	(5,5)	   -	(8,2)	(9,9)	(6,1)	(2,8)	(1,3)
+Team 6	(4,9)	(9,1)	(6,5)	(2,7)	(8,2)	   -	(1,4)	(7,3)	(5,6)	(3,8)
+Team 7	(3,1)	(5,2)	(2,3)	(6,6)	(9,9)	(1,4)	   -	(8,8)	(7,7)	(4,5)
+Team 8	(2,5)	(1,7)	(4,6)	(3,9)	(6,1)	(7,3)	(8,8)	   -	(9,2)	(5,4)
+Team 9	(8,4)	(3,5)	(1,1)	(4,3)	(2,8)	(5,6)	(7,7)	(9,2)	   -	(6,9)
+Team 10	(9,7)	(2,6)	(7,2)	(8,1)	(1,3)	(3,8)	(4,5)	(5,4)	(6,9)	   -
+
+Total Distance: 2609
+Team Distances: [308, 223, 281, 283, 326, 156, 191, 284, 267, 290]
+Spectators Left Out: 463000
+----------
+%% #10      3.53s best:2571  next:[815,2570] default_lp (fixed_bools=297/12217)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=1090
+%%%mzn-stat: objective=2571
+%%%mzn-stat: objectiveBound=815
+%%%mzn-stat: propagations=14064678
+%%%mzn-stat: solveTime=3.53146
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(3,6)	(5,7)	(1,2)	(9,8)	(7,4)	(4,3)	(2,1)	(8,5)	(6,9)
+Team 2	(3,6)	   -	(8,2)	(9,1)	(4,4)	(5,9)	(6,7)	(7,5)	(2,8)	(1,3)
+Team 3	(5,7)	(8,2)	   -	(4,8)	(7,3)	(6,5)	(9,9)	(1,4)	(3,1)	(2,6)
+Team 4	(1,2)	(9,1)	(4,8)	   -	(6,6)	(8,3)	(2,4)	(3,9)	(7,7)	(5,5)
+Team 5	(9,8)	(4,4)	(7,3)	(6,6)	   -	(2,7)	(3,5)	(5,2)	(1,9)	(8,1)
+Team 6	(7,4)	(5,9)	(6,5)	(8,3)	(2,7)	   -	(1,1)	(9,6)	(4,2)	(3,8)
+Team 7	(4,3)	(6,7)	(9,9)	(2,4)	(3,5)	(1,1)	   -	(8,8)	(5,6)	(7,2)
+Team 8	(2,1)	(7,5)	(1,4)	(3,9)	(5,2)	(9,6)	(8,8)	   -	(6,3)	(4,7)
+Team 9	(8,5)	(2,8)	(3,1)	(7,7)	(1,9)	(4,2)	(5,6)	(6,3)	   -	(9,4)
+Team 10	(6,9)	(1,3)	(2,6)	(5,5)	(8,1)	(3,8)	(7,2)	(4,7)	(9,4)	   -
+
+Total Distance: 2571
+Team Distances: [247, 229, 301, 202, 256, 317, 246, 272, 253, 248]
+Spectators Left Out: 442000
+----------
+%% #11      3.54s best:2566  next:[815,2565] default_lp (fixed_bools=297/12217)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=1091
+%%%mzn-stat: objective=2566
+%%%mzn-stat: objectiveBound=815
+%%%mzn-stat: propagations=14086052
+%%%mzn-stat: solveTime=3.54459
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(3,6)	(5,7)	(1,2)	(9,8)	(7,4)	(4,3)	(2,1)	(8,5)	(6,9)
+Team 2	(3,6)	   -	(8,2)	(9,1)	(4,4)	(5,9)	(6,7)	(7,5)	(2,8)	(1,3)
+Team 3	(5,7)	(8,2)	   -	(3,8)	(7,3)	(6,5)	(9,9)	(1,4)	(4,1)	(2,6)
+Team 4	(1,2)	(9,1)	(3,8)	   -	(6,6)	(8,3)	(2,4)	(4,9)	(7,7)	(5,5)
+Team 5	(9,8)	(4,4)	(7,3)	(6,6)	   -	(2,7)	(3,5)	(5,2)	(1,9)	(8,1)
+Team 6	(7,4)	(5,9)	(6,5)	(8,3)	(2,7)	   -	(1,1)	(9,6)	(3,2)	(4,8)
+Team 7	(4,3)	(6,7)	(9,9)	(2,4)	(3,5)	(1,1)	   -	(8,8)	(5,6)	(7,2)
+Team 8	(2,1)	(7,5)	(1,4)	(4,9)	(5,2)	(9,6)	(8,8)	   -	(6,3)	(3,7)
+Team 9	(8,5)	(2,8)	(4,1)	(7,7)	(1,9)	(3,2)	(5,6)	(6,3)	   -	(9,4)
+Team 10	(6,9)	(1,3)	(2,6)	(5,5)	(8,1)	(4,8)	(7,2)	(3,7)	(9,4)	   -
+
+Total Distance: 2566
+Team Distances: [247, 229, 316, 209, 256, 292, 246, 272, 253, 246]
+Spectators Left Out: 442000
+----------
+%% #Model   3.69s var:8416/8731 constraints:13208/13272
+%% #Model   3.89s var:8379/8731 constraints:13200/13272 [skipped_logs=2]
+%% #Bound   4.02s best:2566  next:[816,2565] fixed
+%% #12      4.39s best:2541  next:[816,2540] no_lp (fixed_bools=417/12217)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=3542
+%%%mzn-stat: objective=2541
+%%%mzn-stat: objectiveBound=816
+%%%mzn-stat: propagations=19352306
+%%%mzn-stat: solveTime=4.39408
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(7,5)	(4,8)	(1,2)	(9,3)	(5,9)	(6,6)	(2,1)	(8,4)	(3,7)
+Team 2	(7,5)	   -	(9,9)	(6,8)	(4,4)	(8,1)	(5,2)	(1,7)	(3,3)	(2,6)
+Team 3	(4,8)	(9,9)	   -	(5,4)	(8,7)	(6,5)	(2,3)	(3,6)	(1,1)	(7,2)
+Team 4	(1,2)	(6,8)	(5,4)	   -	(3,5)	(2,7)	(9,1)	(7,9)	(4,6)	(8,3)
+Team 5	(9,3)	(4,4)	(8,7)	(3,5)	   -	(7,6)	(1,9)	(6,2)	(2,8)	(5,1)
+Team 6	(5,9)	(8,1)	(6,5)	(2,7)	(7,6)	   -	(3,4)	(4,3)	(9,2)	(1,8)
+Team 7	(6,6)	(5,2)	(2,3)	(9,1)	(1,9)	(3,4)	   -	(8,8)	(7,7)	(4,5)
+Team 8	(2,1)	(1,7)	(3,6)	(7,9)	(6,2)	(4,3)	(8,8)	   -	(5,5)	(9,4)
+Team 9	(8,4)	(3,3)	(1,1)	(4,6)	(2,8)	(9,2)	(7,7)	(5,5)	   -	(6,9)
+Team 10	(3,7)	(2,6)	(7,2)	(8,3)	(5,1)	(1,8)	(4,5)	(9,4)	(6,9)	   -
+
+Total Distance: 2541
+Team Distances: [171, 298, 242, 247, 199, 231, 259, 326, 286, 282]
+Spectators Left Out: 470000
+----------
+%% #Model   4.96s var:8271/8731 constraints:13180/13272 [skipped_logs=9]
+%% #13      5.64s best:2427  next:[816,2426] default_lp (fixed_bools=473/12217)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=5297
+%%%mzn-stat: objective=2427
+%%%mzn-stat: objectiveBound=816
+%%%mzn-stat: propagations=22652795
+%%%mzn-stat: solveTime=5.63991
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(5,6)	(3,7)	(1,2)	(9,8)	(7,4)	(4,3)	(2,1)	(8,5)	(6,9)
+Team 2	(5,6)	   -	(8,2)	(9,1)	(4,4)	(3,9)	(6,7)	(7,5)	(2,8)	(1,3)
+Team 3	(3,7)	(8,2)	   -	(5,8)	(7,3)	(6,5)	(9,9)	(1,4)	(4,1)	(2,6)
+Team 4	(1,2)	(9,1)	(5,8)	   -	(6,6)	(8,3)	(2,4)	(4,9)	(7,7)	(3,5)
+Team 5	(9,8)	(4,4)	(7,3)	(6,6)	   -	(2,7)	(5,5)	(3,2)	(1,9)	(8,1)
+Team 6	(7,4)	(3,9)	(6,5)	(8,3)	(2,7)	   -	(1,1)	(9,6)	(5,2)	(4,8)
+Team 7	(4,3)	(6,7)	(9,9)	(2,4)	(5,5)	(1,1)	   -	(8,8)	(3,6)	(7,2)
+Team 8	(2,1)	(7,5)	(1,4)	(4,9)	(3,2)	(9,6)	(8,8)	   -	(6,3)	(5,7)
+Team 9	(8,5)	(2,8)	(4,1)	(7,7)	(1,9)	(5,2)	(3,6)	(6,3)	   -	(9,4)
+Team 10	(6,9)	(1,3)	(2,6)	(3,5)	(8,1)	(4,8)	(7,2)	(5,7)	(9,4)	   -
+
+Total Distance: 2427
+Team Distances: [267, 213, 314, 189, 256, 252, 268, 249, 191, 228]
+Spectators Left Out: 442000
+----------
+%% #14      5.71s best:2426  next:[816,2425] default_lp (fixed_bools=473/12217)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=5428
+%%%mzn-stat: objective=2426
+%%%mzn-stat: objectiveBound=816
+%%%mzn-stat: propagations=22885146
+%%%mzn-stat: solveTime=5.70501
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(5,6)	(3,7)	(1,2)	(9,8)	(7,4)	(4,3)	(2,1)	(8,5)	(6,9)
+Team 2	(5,6)	   -	(8,2)	(9,1)	(4,4)	(3,9)	(6,7)	(7,5)	(2,8)	(1,3)
+Team 3	(3,7)	(8,2)	   -	(4,8)	(7,3)	(6,5)	(9,9)	(1,4)	(5,1)	(2,6)
+Team 4	(1,2)	(9,1)	(4,8)	   -	(6,6)	(8,3)	(2,4)	(5,9)	(7,7)	(3,5)
+Team 5	(9,8)	(4,4)	(7,3)	(6,6)	   -	(2,7)	(5,5)	(3,2)	(1,9)	(8,1)
+Team 6	(7,4)	(3,9)	(6,5)	(8,3)	(2,7)	   -	(1,1)	(9,6)	(4,2)	(5,8)
+Team 7	(4,3)	(6,7)	(9,9)	(2,4)	(5,5)	(1,1)	   -	(8,8)	(3,6)	(7,2)
+Team 8	(2,1)	(7,5)	(1,4)	(5,9)	(3,2)	(9,6)	(8,8)	   -	(6,3)	(4,7)
+Team 9	(8,5)	(2,8)	(5,1)	(7,7)	(1,9)	(4,2)	(3,6)	(6,3)	   -	(9,4)
+Team 10	(6,9)	(1,3)	(2,6)	(3,5)	(8,1)	(5,8)	(7,2)	(4,7)	(9,4)	   -
+
+Total Distance: 2426
+Team Distances: [267, 213, 279, 189, 256, 312, 268, 237, 191, 214]
+Spectators Left Out: 442000
+----------
+%% #Model   5.78s var:8257/8731 constraints:13178/13272 [skipped_logs=4]
+%% #Bound   6.36s best:2426  next:[835,2425] bool_core (num_cores=1 [size:39 mw:20 amo:5 lit:39 d:4] a=217 d=4 fixed=278/12234 clauses=27'131)
+%% #Bound   6.37s best:2426  next:[836,2425] bool_core (num_cores=1 [size:39 mw:20 amo:5 lit:39 d:4] a=205 d=4 fixed=482/12238 clauses=27'135)
+%% #15      6.55s best:2413  next:[836,2412] default_lp (fixed_bools=481/12217)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=6941
+%%%mzn-stat: objective=2413
+%%%mzn-stat: objectiveBound=836
+%%%mzn-stat: propagations=25776714
+%%%mzn-stat: solveTime=6.55498
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(5,6)	(4,7)	(1,2)	(9,8)	(7,4)	(3,3)	(2,1)	(8,5)	(6,9)
+Team 2	(5,6)	   -	(8,2)	(9,1)	(4,4)	(3,9)	(6,7)	(7,5)	(2,8)	(1,3)
+Team 3	(4,7)	(8,2)	   -	(5,8)	(7,3)	(6,5)	(9,9)	(1,4)	(3,1)	(2,6)
+Team 4	(1,2)	(9,1)	(5,8)	   -	(6,6)	(8,3)	(2,4)	(4,9)	(7,7)	(3,5)
+Team 5	(9,8)	(4,4)	(7,3)	(6,6)	   -	(2,7)	(5,5)	(3,2)	(1,9)	(8,1)
+Team 6	(7,4)	(3,9)	(6,5)	(8,3)	(2,7)	   -	(1,1)	(9,6)	(5,2)	(4,8)
+Team 7	(3,3)	(6,7)	(9,9)	(2,4)	(5,5)	(1,1)	   -	(8,8)	(4,6)	(7,2)
+Team 8	(2,1)	(7,5)	(1,4)	(4,9)	(3,2)	(9,6)	(8,8)	   -	(6,3)	(5,7)
+Team 9	(8,5)	(2,8)	(3,1)	(7,7)	(1,9)	(5,2)	(4,6)	(6,3)	   -	(9,4)
+Team 10	(6,9)	(1,3)	(2,6)	(3,5)	(8,1)	(4,8)	(7,2)	(5,7)	(9,4)	   -
+
+Total Distance: 2413
+Team Distances: [209, 213, 295, 189, 256, 252, 246, 249, 276, 228]
+Spectators Left Out: 442000
+----------
+%% #Model   6.87s var:8236/8731 constraints:13174/13272 [skipped_logs=3]
+%% #Model   7.94s var:8230/8731 constraints:13174/13272 [skipped_logs=4]
+%% #Model   8.52s var:8225/8731 constraints:13174/13272 [skipped_logs=3]
+%% #Model   9.61s var:8219/8731 constraints:13174/13272 [skipped_logs=4]
+%% #Model  10.57s var:8214/8731 constraints:13174/13272 [skipped_logs=4]
+%% #Bound  11.53s best:2413  next:[854,2412] bool_core (num_cores=2 [size:46 mw:18 amo:4 lit:44 d:5] a=203 d=5 fixed=482/12246 clauses=33'496)
+%% #Model  11.96s var:8157/8731 constraints:13174/13272 [skipped_logs=9]
+%% #Model  12.12s var:8151/8731 constraints:13174/13272 [skipped_logs=1]
+%% #16     13.79s best:2354  next:[854,2353] default_lp (fixed_bools=592/12217)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=16752
+%%%mzn-stat: objective=2354
+%%%mzn-stat: objectiveBound=854
+%%%mzn-stat: propagations=52697662
+%%%mzn-stat: solveTime=13.7872
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(5,7)	(4,8)	(1,2)	(9,6)	(7,4)	(3,3)	(2,1)	(8,5)	(6,9)
+Team 2	(5,7)	   -	(8,2)	(9,1)	(4,4)	(3,9)	(6,6)	(7,5)	(2,8)	(1,3)
+Team 3	(4,8)	(8,2)	   -	(3,7)	(7,3)	(6,5)	(9,9)	(1,4)	(5,1)	(2,6)
+Team 4	(1,2)	(9,1)	(3,7)	   -	(6,8)	(8,3)	(2,4)	(5,9)	(7,6)	(4,5)
+Team 5	(9,6)	(4,4)	(7,3)	(6,8)	   -	(2,7)	(5,5)	(3,2)	(1,9)	(8,1)
+Team 6	(7,4)	(3,9)	(6,5)	(8,3)	(2,7)	   -	(1,1)	(4,6)	(9,2)	(5,8)
+Team 7	(3,3)	(6,6)	(9,9)	(2,4)	(5,5)	(1,1)	   -	(8,8)	(4,7)	(7,2)
+Team 8	(2,1)	(7,5)	(1,4)	(5,9)	(3,2)	(4,6)	(8,8)	   -	(6,3)	(9,7)
+Team 9	(8,5)	(2,8)	(5,1)	(7,6)	(1,9)	(9,2)	(4,7)	(6,3)	   -	(3,4)
+Team 10	(6,9)	(1,3)	(2,6)	(4,5)	(8,1)	(5,8)	(7,2)	(9,7)	(3,4)	   -
+
+Total Distance: 2354
+Team Distances: [189, 213, 279, 211, 263, 205, 246, 232, 253, 263]
+Spectators Left Out: 443000
+----------
+%% #Model  13.70s var:8129/8731 constraints:13174/13272 [skipped_logs=4]
+%% #Model  14.85s var:8126/8731 constraints:13174/13272 [skipped_logs=1]
+%% #Model  15.97s var:8103/8731 constraints:13171/13272 [skipped_logs=7]
+%% #Bound  16.20s best:2354  next:[856,2353] pseudo_costs
+%% #Bound  16.70s best:2354  next:[869,2353] bool_core (num_cores=3 [size:30 mw:15 amo:3 lit:30 d:3] a=202 d=5 fixed=585/12257 clauses=32'153)
+%% #Model  16.86s var:8090/8731 constraints:13168/13272 [skipped_logs=5]
+%% #Model  17.98s var:8089/8731 constraints:13168/13272
+%% #Model  18.59s var:8087/8731 constraints:13168/13272 [skipped_logs=1]
+%% #Bound  19.59s best:2354  next:[884,2353] bool_core (num_cores=4 [size:22 mw:15 amo:3 lit:21 d:6] a=197 d=6 fixed=641/12264 clauses=37'180)
+%% #Model  19.85s var:8081/8731 constraints:13165/13272 [skipped_logs=4]
+%% #Bound  20.92s best:2354  next:[886,2353] reduced_costs
+%% #Model  20.85s var:8078/8731 constraints:13165/13272 [skipped_logs=1]
+%% #Bound  21.26s best:2354  next:[899,2353] reduced_costs
+%% #Bound  21.90s best:2354  next:[900,2353] reduced_costs
+%% #Model  21.88s var:8073/8731 constraints:13159/13272 [skipped_logs=1]
+%% #17     22.68s best:2353  next:[900,2352] no_lp (fixed_bools=652/12217)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=36530
+%%%mzn-stat: objective=2353
+%%%mzn-stat: objectiveBound=900
+%%%mzn-stat: propagations=85912939
+%%%mzn-stat: solveTime=22.6816
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(8,5)	(3,8)	(1,2)	(7,6)	(4,1)	(5,3)	(2,9)	(6,4)	(9,7)
+Team 2	(8,5)	   -	(9,9)	(5,8)	(4,4)	(3,2)	(6,1)	(1,7)	(7,3)	(2,6)
+Team 3	(3,8)	(9,9)	   -	(8,4)	(5,1)	(6,5)	(2,7)	(4,3)	(1,6)	(7,2)
+Team 4	(1,2)	(5,8)	(8,4)	   -	(9,5)	(2,3)	(3,6)	(7,1)	(4,7)	(6,9)
+Team 5	(7,6)	(4,4)	(5,1)	(9,5)	   -	(8,7)	(1,9)	(6,2)	(2,8)	(3,3)
+Team 6	(4,1)	(3,2)	(6,5)	(2,3)	(8,7)	   -	(7,4)	(9,6)	(5,9)	(1,8)
+Team 7	(5,3)	(6,1)	(2,7)	(3,6)	(1,9)	(7,4)	   -	(8,8)	(9,2)	(4,5)
+Team 8	(2,9)	(1,7)	(4,3)	(7,1)	(6,2)	(9,6)	(8,8)	   -	(3,5)	(5,4)
+Team 9	(6,4)	(7,3)	(1,6)	(4,7)	(2,8)	(5,9)	(9,2)	(3,5)	   -	(8,1)
+Team 10	(9,7)	(2,6)	(7,2)	(6,9)	(3,3)	(1,8)	(4,5)	(5,4)	(8,1)	   -
+
+Total Distance: 2353
+Team Distances: [257, 278, 239, 214, 192, 260, 229, 219, 183, 282]
+Spectators Left Out: 456000
+----------
+%% #Model  22.94s var:8065/8731 constraints:13159/13272 [skipped_logs=4]
+%% #Bound  23.81s best:2353  next:[902,2352] reduced_costs
+%% #Model  23.92s var:8049/8731 constraints:13147/13272 [skipped_logs=7]
+%% #Bound  24.49s best:2353  next:[904,2352] reduced_costs
+%% #Bound  24.71s best:2353  next:[910,2352] reduced_costs
+%% #Model  24.95s var:8045/8731 constraints:13144/13272 [skipped_logs=2]
+%% #Model  25.82s var:8037/8731 constraints:13144/13272 [skipped_logs=6]
+%% #Bound  26.18s best:2353  next:[921,2352] reduced_costs
+%% #Model  26.95s var:8028/8731 constraints:13141/13272 [skipped_logs=3]
+%% #Model  27.97s var:8023/8731 constraints:13141/13272 [skipped_logs=3]
+%% #Bound  28.37s best:2353  next:[926,2352] pseudo_costs
+%% #Bound  28.51s best:2353  next:[927,2352] bool_core (num_cores=30 [size:1 mw:1] a=194 d=7 fixed=716/12292 clauses=36'893)
+%% #Bound  28.52s best:2353  next:[928,2352] bool_core (num_cores=31 [size:1 mw:1] a=194 d=7 fixed=716/12292 clauses=36'893)
+%% #Bound  28.54s best:2353  next:[929,2352] bool_core (num_cores=32 [size:1 mw:1] a=194 d=7 fixed=716/12292 clauses=36'893)
+%% #Bound  28.55s best:2353  next:[930,2352] bool_core (num_cores=33 [size:1 mw:1] a=194 d=7 fixed=716/12292 clauses=36'893)
+%% #Bound  28.57s best:2353  next:[931,2352] bool_core (num_cores=34 [size:1 mw:1] a=194 d=7 fixed=716/12292 clauses=36'893)
+%% #Bound  28.58s best:2353  next:[932,2352] bool_core (num_cores=35 [size:1 mw:1] a=194 d=7 fixed=716/12292 clauses=36'893)
+%% #Bound  28.60s best:2353  next:[933,2352] bool_core (num_cores=36 [size:1 mw:1] a=194 d=7 fixed=716/12292 clauses=36'893)
+%% #Bound  28.61s best:2353  next:[934,2352] bool_core (num_cores=37 [size:1 mw:1] a=194 d=7 fixed=716/12292 clauses=36'893)
+%% #Bound  28.63s best:2353  next:[935,2352] bool_core (num_cores=38 [size:1 mw:1] a=194 d=7 fixed=716/12292 clauses=36'893)
+%% #Bound  28.64s best:2353  next:[936,2352] bool_core (num_cores=39 [size:1 mw:1] a=194 d=7 fixed=716/12292 clauses=36'893)
+%% #Bound  28.65s best:2353  next:[937,2352] bool_core (num_cores=40 [size:1 mw:1] a=194 d=7 fixed=716/12292 clauses=36'893)
+%% #Bound  28.67s best:2353  next:[938,2352] bool_core (num_cores=41 [size:1 mw:1] a=194 d=7 fixed=716/12292 clauses=36'893)
+%% #Bound  28.68s best:2353  next:[939,2352] bool_core (num_cores=42 [size:1 mw:1] a=194 d=7 fixed=716/12292 clauses=36'893)
+%% #Model  28.85s var:8013/8731 constraints:13135/13272 [skipped_logs=4]
+%% #Model  29.89s var:8009/8731 constraints:13132/13272 [skipped_logs=1]
+%% #Model  30.84s var:8002/8731 constraints:13126/13272 [skipped_logs=2]
+%% #Bound  31.80s best:2353  next:[940,2352] pseudo_costs
+%% #Model  31.92s var:7988/8731 constraints:13123/13272 [skipped_logs=8]
+%% #Bound  32.29s best:2353  next:[942,2352] pseudo_costs
+%% #Bound  32.72s best:2353  next:[946,2352] pseudo_costs
+%% #Model  32.99s var:7981/8731 constraints:13117/13272 [skipped_logs=3]
+%% #Bound  33.70s best:2353  next:[947,2352] reduced_costs
+%% #Model  33.86s var:7976/8731 constraints:13117/13272 [skipped_logs=2]
+%% #Bound  34.33s best:2353  next:[948,2352] bool_core (num_cores=49 [size:1 mw:1] a=193 d=7 fixed=761/12297 clauses=38'170)
+%% #Bound  34.34s best:2353  next:[949,2352] bool_core (num_cores=50 [size:1 mw:1] a=193 d=7 fixed=761/12297 clauses=38'170)
+%% #Bound  34.36s best:2353  next:[950,2352] bool_core (num_cores=51 [size:1 mw:1] a=193 d=7 fixed=761/12297 clauses=38'170)
+%% #Bound  34.38s best:2353  next:[951,2352] bool_core (num_cores=52 [size:1 mw:1] a=193 d=7 fixed=761/12297 clauses=38'170)
+%% #Bound  34.39s best:2353  next:[952,2352] bool_core (num_cores=53 [size:1 mw:1] a=193 d=7 fixed=761/12297 clauses=38'170)
+%% #Bound  34.41s best:2353  next:[953,2352] bool_core (num_cores=54 [size:1 mw:1] a=193 d=7 fixed=761/12297 clauses=38'170)
+%% #Bound  34.43s best:2353  next:[954,2352] bool_core (num_cores=55 [size:1 mw:1] a=193 d=7 fixed=761/12297 clauses=38'170)
+%% #Bound  34.45s best:2353  next:[955,2352] bool_core (num_cores=56 [size:1 mw:1] a=193 d=7 fixed=761/12297 clauses=38'170)
+%% #Bound  34.47s best:2353  next:[956,2352] bool_core (num_cores=57 [size:1 mw:1] a=193 d=7 fixed=761/12297 clauses=38'170)
+%% #Bound  34.48s best:2353  next:[957,2352] bool_core (num_cores=58 [size:1 mw:1] a=193 d=7 fixed=761/12297 clauses=38'170)
+%% #Bound  34.58s best:2353  next:[958,2352] bool_core (num_cores=59 [size:1 mw:1] a=193 d=7 fixed=761/12298 clauses=38'380)
+%% #Bound  34.66s best:2353  next:[959,2352] bool_core (num_cores=60 [size:1 mw:1] a=193 d=7 fixed=762/12299 clauses=38'492)
+%% #Bound  34.75s best:2353  next:[960,2352] bool_core (num_cores=61 [size:1 mw:1] a=193 d=7 fixed=763/12300 clauses=38'551)
+%% #Bound  34.77s best:2353  next:[961,2352] bool_core (num_cores=62 [size:1 mw:1] a=193 d=7 fixed=765/12301 clauses=38'551)
+%% #Bound  34.85s best:2353  next:[962,2352] bool_core (num_cores=63 [size:1 mw:1] a=193 d=7 fixed=766/12302 clauses=38'600)
+%% #Bound  34.94s best:2353  next:[963,2352] bool_core (num_cores=64 [size:1 mw:1] a=193 d=7 fixed=767/12303 clauses=38'669)
+%% #Bound  34.95s best:2353  next:[964,2352] bool_core (num_cores=65 [size:1 mw:1] a=193 d=7 fixed=768/12304 clauses=38'669)
+%% #Model  34.20s var:7975/8731 constraints:13117/13272 [skipped_logs=0]
+%% #Bound  34.98s best:2353  next:[965,2352] bool_core (num_cores=66 [size:1 mw:1] a=193 d=7 fixed=768/12304 clauses=38'669)
+%% #Bound  35.00s best:2353  next:[966,2352] bool_core (num_cores=67 [size:1 mw:1] a=193 d=7 fixed=768/12304 clauses=38'669)
+%% #Bound  35.02s best:2353  next:[967,2352] bool_core (num_cores=68 [size:1 mw:1] a=193 d=7 fixed=768/12304 clauses=38'669)
+%% #Bound  35.04s best:2353  next:[968,2352] bool_core (num_cores=69 [size:1 mw:1] a=193 d=7 fixed=768/12304 clauses=38'669)
+%% #Bound  35.06s best:2353  next:[969,2352] bool_core (num_cores=70 [size:1 mw:1] a=193 d=7 fixed=768/12304 clauses=38'669)
+%% #Bound  35.14s best:2353  next:[970,2352] bool_core (num_cores=71 [size:1 mw:1] a=193 d=7 fixed=768/12305 clauses=38'754)
+%% #Bound  35.93s best:2353  next:[981,2352] bool_core (num_cores=82 [size:1 mw:1] a=193 d=7 fixed=785/12316 clauses=39'296) [skipped_logs=10]
+%% #Model  35.41s var:7970/8731 constraints:13114/13272 [skipped_logs=2]
+%% #Bound  36.93s best:2353  next:[995,2352] bool_core (num_cores=96 [size:1 mw:1] a=193 d=7 fixed=812/12330 clauses=39'992) [skipped_logs=13]
+%% #Model  36.87s var:7961/8731 constraints:13108/13272 [skipped_logs=2]
+%% #Bound  37.79s best:2353  next:[1004,2352] bool_core (num_cores=105 [size:1 mw:1] a=193 d=7 fixed=821/12339 clauses=40'828) [skipped_logs=8]
+%% #Model  37.00s var:7957/8731 constraints:13105/13272 [skipped_logs=0]
+%% #Bound  38.48s best:2353  next:[1006,2352] bool_core (num_cores=107 [size:1 mw:1] a=193 d=7 fixed=823/12341 clauses=32'210) [skipped_logs=1]
+%% #Model  38.17s var:7956/8731 constraints:13105/13272 [skipped_logs=0]
+%% #Model  39.88s var:7953/8731 constraints:13102/13272 [skipped_logs=1]
+%% #Model  40.90s var:7950/8731 constraints:13102/13272 [skipped_logs=2]
+%% #Model  41.03s var:7949/8731 constraints:13102/13272 [skipped_logs=0]
+%% #Model  42.82s var:7945/8731 constraints:13099/13272 [skipped_logs=2]
+%% #Model  43.73s var:7937/8731 constraints:13093/13272 [skipped_logs=3]
+%% #Bound  44.85s best:2353  next:[1007,2352] bool_core (num_cores=108 [size:48 mw:1 amo:3 lit:47 d:3] a=192 d=7 fixed=824/12347 clauses=32'314)
+%% #Model  44.76s var:7931/8731 constraints:13090/13272 [skipped_logs=2]
+%% #Model  45.60s var:7910/8731 constraints:13072/13272 [skipped_logs=5]
+%% #Model  46.55s var:7909/8731 constraints:13072/13272 [skipped_logs=0]
+%% #Bound  47.13s best:2353  next:[1009,2352] pseudo_costs
+%% #Bound  47.69s best:2353  next:[1010,2352] bool_core (num_cores=111 [size:1 mw:1] a=192 d=7 fixed=873/12352 clauses=30'509)
+%% #Bound  47.93s best:2353  next:[1011,2352] bool_core (num_cores=112 [size:1 mw:1] a=192 d=7 fixed=873/12352 clauses=30'910)
+%% #Bound  48.00s best:2353  next:[1012,2352] bool_core (num_cores=113 [size:1 mw:1] a=192 d=7 fixed=873/12352 clauses=31'014)
+%% #Bound  48.05s best:2353  next:[1013,2352] bool_core (num_cores=114 [size:1 mw:1] a=192 d=7 fixed=873/12352 clauses=31'065)
+%% #Model  48.24s var:7908/8731 constraints:13072/13272
+%% #Bound  48.27s best:2353  next:[1015,2352] bool_core (num_cores=115 [size:1 mw:1] a=192 d=7 fixed=875/12352 clauses=31'459)
+%% #Bound  48.38s best:2353  next:[1016,2352] bool_core (num_cores=116 [size:1 mw:1] a=192 d=7 fixed=877/12353 clauses=31'580)
+%% #Bound  48.41s best:2353  next:[1017,2352] bool_core (num_cores=117 [size:1 mw:1] a=192 d=7 fixed=877/12353 clauses=31'589)
+%% #Bound  48.92s best:2353  next:[1019,2352] bool_core (num_cores=119 [size:1 mw:1] a=192 d=7 fixed=885/12355 clauses=32'274) [skipped_logs=1]
+%% #Model  48.92s var:7900/8731 constraints:13066/13272 [skipped_logs=3]
+%% #Bound  49.92s best:2353  next:[1024,2352] bool_core (num_cores=124 [size:1 mw:1] a=192 d=7 fixed=892/12358 clauses=34'104) [skipped_logs=4]
+%% #Model  49.88s var:7896/8731 constraints:13063/13272 [skipped_logs=1]
+%% #Bound  50.58s best:2353  next:[1025,2352] bool_core (num_cores=125 [size:1 mw:1] a=192 d=7 fixed=900/12359 clauses=35'331) [skipped_logs=0]
+%% #Model  50.42s var:7889/8731 constraints:13060/13272 [skipped_logs=2]
+%% #Bound  51.93s best:2353  next:[1031,2352] bool_core (num_cores=131 [size:1 mw:1] a=192 d=7 fixed=907/12365 clauses=37'962) [skipped_logs=5]
+%% #Model  51.17s var:7887/8731 constraints:13057/13272 [skipped_logs=0]
+%% #Bound  52.43s best:2353  next:[1032,2352] bool_core (num_cores=132 [size:1 mw:1] a=192 d=7 fixed=915/12366 clauses=38'692) [skipped_logs=0]
+%% #Model  52.91s var:7874/8731 constraints:13051/13272 [skipped_logs=5]
+%% #Bound  53.28s best:2353  next:[1038,2352] pseudo_costs [skipped_logs=0]
+%% #Model  53.89s var:7863/8731 constraints:13036/13272 [skipped_logs=4]
+%% #Bound  54.61s best:2353  next:[1047,2352] pseudo_costs [skipped_logs=0]
+%% #Model  54.82s var:7862/8731 constraints:13036/13272 [skipped_logs=0]
+%% #Bound  55.94s best:2353  next:[1059,2352] bool_core (num_cores=140 [size:1 mw:1] a=192 d=7 fixed=943/12370 clauses=28'552) [skipped_logs=3]
+%% #Model  55.75s var:7859/8731 constraints:13033/13272 [skipped_logs=1]
+%% #Bound  56.97s best:2353  next:[1071,2352] bool_core (num_cores=144 [size:1 mw:1] a=192 d=7 fixed=946/12372 clauses=30'253) [skipped_logs=3]
+%% #Model  56.94s var:7857/8731 constraints:13030/13272 [skipped_logs=0]
+%% #Bound  57.28s best:2353  next:[1075,2352] bool_core (num_cores=146 [size:1 mw:1] a=192 d=7 fixed=948/12373 clauses=30'776) [skipped_logs=1]
+%% #Model  57.31s var:7856/8731 constraints:13030/13272 [skipped_logs=0]
+%% #Model  58.83s var:7853/8731 constraints:13027/13272 [skipped_logs=0]
+%% #Model  59.72s var:7849/8731 constraints:13027/13272 [skipped_logs=2]
+%% #Bound  60.18s best:2353  next:[1083,2352] pseudo_costs
+%% #Model  60.42s var:7848/8731 constraints:13027/13272 [skipped_logs=0]
+%% #Bound  61.43s best:2353  next:[1085,2352] bool_core (num_cores=150 [size:1 mw:1] a=189 d=7 fixed=962/12390 clauses=29'148)
+%% #Bound  61.54s best:2353  next:[1087,2352] bool_core (num_cores=151 [size:1 mw:1] a=189 d=7 fixed=962/12390 clauses=29'373)
+%% #Bound  61.95s best:2353  next:[1098,2352] bool_core (num_cores=156 [size:1 mw:1] a=189 d=7 fixed=964/12391 clauses=29'893) [skipped_logs=4]
+%% #Model  61.01s var:7846/8731 constraints:13024/13272 [skipped_logs=0]
+%% #Bound  62.49s best:2353  next:[1105,2352] bool_core (num_cores=161 [size:1 mw:1] a=189 d=7 fixed=969/12395 clauses=30'654) [skipped_logs=4]
+%% #Model  62.53s var:7843/8731 constraints:13021/13272 [skipped_logs=1]
+%% #Model  64.01s var:7842/8731 constraints:13021/13272
+%% #Bound  64.79s best:2353  next:[1123,2352] reduced_costs
+%% #Model  64.80s var:7836/8731 constraints:13012/13272 [skipped_logs=2]
+%% #Bound  66.11s best:2353  next:[1134,2352] pseudo_costs
+%% #Bound  67.44s best:2353  next:[1140,2352] pseudo_costs
+%% #Model  68.82s var:7835/8731 constraints:13012/13272
+%% #Model  68.95s var:7833/8731 constraints:13009/13272
+%% #Bound  69.37s best:2353  next:[1150,2352] pseudo_costs
+%% #Model  69.91s var:7831/8731 constraints:13006/13272
+%% #Bound  70.25s best:2353  next:[1151,2352] reduced_costs
+%% #Bound  72.02s best:2353  next:[1154,2352] pseudo_costs
+%% #Bound  73.43s best:2353  next:[1157,2352] pseudo_costs
+%% #Bound  74.75s best:2353  next:[1160,2352] lb_tree_search
+%% #Bound  76.21s best:2353  next:[1170,2352] pseudo_costs
+%% #Bound  77.41s best:2353  next:[1171,2352] bool_core (num_cores=182 [size:1 mw:1] a=187 d=7 fixed=990/12417 clauses=30'385)
+%% #Bound  77.92s best:2353  next:[1173,2352] bool_core (num_cores=183 [size:1 mw:1] a=187 d=7 fixed=991/12417 clauses=31'047)
+%% #Bound  78.63s best:2353  next:[1174,2352] bool_core (num_cores=184 [size:1 mw:1] a=187 d=7 fixed=991/12418 clauses=31'995)
+%% #Bound  78.83s best:2353  next:[1175,2352] bool_core (num_cores=185 [size:1 mw:1] a=187 d=7 fixed=991/12418 clauses=32'288)
+%% #Bound  81.67s best:2353  next:[1176,2352] bool_core (num_cores=186 [size:1 mw:1] a=187 d=7 fixed=991/12418 clauses=31'385)
+%% #Bound  81.79s best:2353  next:[1181,2352] bool_core (num_cores=187 [size:1 mw:1] a=187 d=7 fixed=995/12418 clauses=31'577)
+%% #Bound  81.95s best:2353  next:[1183,2352] bool_core (num_cores=188 [size:1 mw:1] a=187 d=7 fixed=995/12421 clauses=31'798)
+%% #Bound  81.98s best:2353  next:[1186,2352] bool_core (num_cores=189 [size:1 mw:1] a=187 d=7 fixed=996/12421 clauses=31'824)
+%% #Bound  82.04s best:2353  next:[1187,2352] bool_core (num_cores=190 [size:1 mw:1] a=187 d=7 fixed=996/12423 clauses=31'858)
+%% #Bound  84.26s best:2353  next:[1188,2352] bool_core (num_cores=191 [size:7 mw:1 amo:1 lit:6 d:6] a=187 d=7 fixed=996/12425 clauses=35'644)
+%% #Bound  84.54s best:2353  next:[1191,2352] bool_core (num_cores=192 [size:1 mw:1] a=187 d=7 fixed=999/12435 clauses=36'036)
+%% #Bound  84.68s best:2353  next:[1192,2352] bool_core (num_cores=193 [size:1 mw:1] a=187 d=7 fixed=999/12437 clauses=36'197)
+%% #Bound  84.76s best:2353  next:[1194,2352] bool_core (num_cores=194 [size:1 mw:1] a=187 d=7 fixed=1001/12438 clauses=36'288) [skipped_logs=0]
+%% #Bound  85.90s best:2353  next:[1201,2352] bool_core (num_cores=198 [size:1 mw:1] a=187 d=7 fixed=1008/12445 clauses=28'960) [skipped_logs=3]
+%% #Bound  87.04s best:2353  next:[1202,2352] bool_core (num_cores=199 [size:4 mw:1 amo:1 lit:2 d:7] a=187 d=7 fixed=1008/12449 clauses=30'571)
+%% #Bound  87.44s best:2353  next:[1205,2352] bool_core (num_cores=202 [size:1 mw:1] a=187 d=7 fixed=1009/12460 clauses=31'149) [skipped_logs=2]
+%% #Bound  88.87s best:2353  next:[1207,2352] bool_core (num_cores=204 [size:1 mw:1] a=187 d=7 fixed=1011/12462 clauses=33'297) [skipped_logs=1]
+%% #Bound  90.94s best:2353  next:[1208,2352] bool_core (num_cores=205 [size:5 mw:1 amo:1 lit:2 d:8] a=187 d=8 fixed=1011/12466 clauses=36'580)
+%% #Bound  91.30s best:2353  next:[1209,2352] bool_core (num_cores=206 [size:1 mw:1] a=187 d=8 fixed=1012/12479 clauses=37'219)
+%% #Bound  94.93s best:2353  next:[1210,2352] bool_core (num_cores=207 [size:1 mw:1] a=187 d=8 fixed=1013/12480 clauses=36'990)
+%% #Bound  95.32s best:2353  next:[1211,2352] bool_core (num_cores=208 [size:1 mw:1] a=187 d=8 fixed=1014/12481 clauses=28'575)
+%% #Bound  95.90s best:2353  next:[1212,2352] bool_core (num_cores=209 [size:1 mw:1] a=187 d=8 fixed=1014/12481 clauses=29'289)
+%% #Bound  96.94s best:2353  next:[1213,2352] bool_core (num_cores=210 [size:2 mw:1 d:9] a=186 d=9 fixed=1014/12482 clauses=30'998)
+%% #Bound  97.00s best:2353  next:[1214,2352] bool_core (num_cores=210 [cover] a=186 d=9 fixed=1014/12496 clauses=31'132)
+%% #Bound  97.02s best:2353  next:[1215,2352] bool_core (num_cores=210 [cover] a=186 d=9 fixed=1015/12509 clauses=31'219)
+%% #Bound  97.94s best:2353  next:[1233,2352] bool_core (num_cores=210 [cover] a=186 d=9 fixed=1033/12743 clauses=35'500) [skipped_logs=17]
+%% #Bound  98.87s best:2353  next:[1241,2352] bool_core (num_cores=210 [cover] a=186 d=9 fixed=1041/12847 clauses=39'323) [skipped_logs=7]
+%% #Bound  99.95s best:2353  next:[1246,2352] bool_core (num_cores=210 [cover] a=186 d=9 fixed=1046/12912 clauses=32'021) [skipped_logs=4]
+%% #Bound 100.90s best:2353  next:[1252,2352] bool_core (num_cores=212 [cover] a=186 d=9 fixed=1051/12952 clauses=35'453) [skipped_logs=4]
+%% #Bound 101.70s best:2353  next:[1255,2352] bool_core (num_cores=213 [cover] a=186 d=9 fixed=1053/12978 clauses=38'204) [skipped_logs=2]
+%% #Bound 102.69s best:2353  next:[1259,2352] bool_core (num_cores=215 [cover] a=186 d=9 fixed=1055/13004 clauses=41'140) [skipped_logs=3]
+%% #Bound 103.77s best:2353  next:[1262,2352] bool_core (num_cores=217 [size:1 mw:1] a=186 d=9 fixed=1059/13032 clauses=32'503) [skipped_logs=2]
+%% #Bound 104.79s best:2353  next:[1265,2352] bool_core (num_cores=219 [size:1 mw:1] a=186 d=9 fixed=1062/13047 clauses=35'458) [skipped_logs=2]
+%% #Bound 105.76s best:2353  next:[1268,2352] bool_core (num_cores=221 [size:1 mw:1] a=186 d=9 fixed=1064/13062 clauses=37'997) [skipped_logs=2]
+%% #Bound 108.49s best:2353  next:[1269,2352] bool_core (num_cores=222 [size:1 mw:1] a=186 d=9 fixed=1066/13063 clauses=34'432)
+%% #Bound 108.76s best:2353  next:[1270,2352] bool_core (num_cores=222 [cover] a=186 d=9 fixed=1066/13063 clauses=34'995)
+%% #Bound 109.15s best:2353  next:[1271,2352] bool_core (num_cores=223 [size:1 mw:1] a=186 d=9 fixed=1068/13077 clauses=36'102)
+%% #Bound 109.73s best:2353  next:[1273,2352] bool_core (num_cores=224 [cover] a=186 d=9 fixed=1068/13077 clauses=37'527) [skipped_logs=1]
+%% #Bound 110.55s best:2353  next:[1275,2352] bool_core (num_cores=226 [size:1 mw:1] a=186 d=9 fixed=1070/13092 clauses=32'640) [skipped_logs=1]
+%% #Bound 112.00s best:2353  next:[1278,2352] bool_core (num_cores=229 [size:1 mw:1] a=186 d=9 fixed=1074/13095 clauses=36'144) [skipped_logs=2]
+%% #Bound 113.04s best:2353  next:[1280,2352] bool_core (num_cores=230 [cover] a=186 d=9 fixed=1075/13096 clauses=37'967) [skipped_logs=1]
+%% #Bound 113.56s best:2353  next:[1281,2352] bool_core (num_cores=231 [size:1 mw:1] a=186 d=9 fixed=1076/13110 clauses=39'188) [skipped_logs=0]
+%% #Bound 114.53s best:2353  next:[1283,2352] bool_core (num_cores=233 [size:1 mw:1] a=186 d=9 fixed=1079/13112 clauses=41'212) [skipped_logs=1]
+%% #Bound 115.90s best:2353  next:[1285,2352] bool_core (num_cores=235 [size:1 mw:1] a=186 d=9 fixed=1081/13114 clauses=34'097) [skipped_logs=1]
+%% #Bound 116.79s best:2353  next:[1289,2352] bool_core (num_cores=236 [size:1 mw:1] a=186 d=9 fixed=1085/13128 clauses=36'136) [skipped_logs=1]
+%% #Bound 117.80s best:2353  next:[1291,2352] bool_core (num_cores=238 [size:1 mw:1] a=186 d=9 fixed=1087/13132 clauses=38'551) [skipped_logs=1]
+%% #Bound 118.35s best:2353  next:[1292,2352] bool_core (num_cores=239 [size:1 mw:1] a=186 d=9 fixed=1088/13133 clauses=39'551) [skipped_logs=0]
+%% #Bound 121.37s best:2353  next:[1293,2352] bool_core (num_cores=240 [size:1 mw:1] a=186 d=9 fixed=1089/13134 clauses=35'449)
+%% #18    121.66s best:2347  next:[1293,2346] default_lp (fixed_bools=900/12217)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=147895
+%%%mzn-stat: objective=2347
+%%%mzn-stat: objectiveBound=1293
+%%%mzn-stat: propagations=363823782
+%%%mzn-stat: solveTime=121.658
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(5,3)	(3,8)	(1,2)	(9,6)	(7,4)	(4,7)	(2,1)	(8,5)	(6,9)
+Team 2	(5,3)	   -	(8,2)	(9,1)	(4,4)	(3,9)	(6,6)	(7,5)	(2,8)	(1,7)
+Team 3	(3,8)	(8,2)	   -	(5,7)	(7,3)	(6,5)	(9,9)	(1,4)	(4,1)	(2,6)
+Team 4	(1,2)	(9,1)	(5,7)	   -	(6,8)	(8,3)	(2,4)	(4,9)	(7,6)	(3,5)
+Team 5	(9,6)	(4,4)	(7,3)	(6,8)	   -	(2,7)	(5,5)	(3,2)	(1,9)	(8,1)
+Team 6	(7,4)	(3,9)	(6,5)	(8,3)	(2,7)	   -	(1,1)	(5,6)	(9,2)	(4,8)
+Team 7	(4,7)	(6,6)	(9,9)	(2,4)	(5,5)	(1,1)	   -	(8,8)	(3,3)	(7,2)
+Team 8	(2,1)	(7,5)	(1,4)	(4,9)	(3,2)	(5,6)	(8,8)	   -	(6,7)	(9,3)
+Team 9	(8,5)	(2,8)	(4,1)	(7,6)	(1,9)	(9,2)	(3,3)	(6,7)	   -	(5,4)
+Team 10	(6,9)	(1,7)	(2,6)	(3,5)	(8,1)	(4,8)	(7,2)	(9,3)	(5,4)	   -
+
+Total Distance: 2347
+Team Distances: [266, 175, 316, 190, 263, 171, 246, 260, 208, 252]
+Spectators Left Out: 443000
+----------
+%% #Bound 121.93s best:2347  next:[1294,2346] bool_core (num_cores=241 [size:1 mw:1] a=186 d=9 fixed=1089/13135 clauses=36'448)
+%% #Bound 122.74s best:2347  next:[1295,2346] bool_core (num_cores=242 [size:1 mw:1] a=186 d=9 fixed=1091/13136 clauses=32'428)
+%% #Bound 123.36s best:2347  next:[1296,2346] bool_core (num_cores=243 [size:1 mw:1] a=186 d=9 fixed=1092/13137 clauses=33'517)
+%% #Bound 124.13s best:2347  next:[1297,2346] bool_core (num_cores=244 [size:1 mw:1] a=186 d=9 fixed=1093/13138 clauses=34'691)
+%% #Bound 124.97s best:2347  next:[1298,2346] bool_core (num_cores=245 [size:1 mw:1] a=186 d=9 fixed=1094/13139 clauses=35'848)
+%% #Bound 125.73s best:2347  next:[1299,2346] bool_core (num_cores=246 [size:1 mw:1] a=186 d=9 fixed=1095/13140 clauses=37'001) [skipped_logs=0]
+%% #Bound 126.58s best:2347  next:[1300,2346] bool_core (num_cores=247 [size:1 mw:1] a=186 d=9 fixed=1096/13141 clauses=38'233) [skipped_logs=0]
+%% #Bound 127.43s best:2347  next:[1301,2346] bool_core (num_cores=248 [size:1 mw:1] a=186 d=9 fixed=1097/13142 clauses=39'356) [skipped_logs=0]
+%% #Bound 128.96s best:2347  next:[1303,2346] bool_core (num_cores=250 [size:1 mw:1] a=186 d=9 fixed=1099/13144 clauses=41'631) [skipped_logs=1]
+%% #Bound 129.76s best:2347  next:[1304,2346] bool_core (num_cores=251 [size:1 mw:1] a=186 d=9 fixed=1100/13145 clauses=42'861) [skipped_logs=0]
+%% #Bound 130.54s best:2347  next:[1305,2346] bool_core (num_cores=252 [size:1 mw:1] a=186 d=9 fixed=1101/13146 clauses=36'032) [skipped_logs=0]
+%% #Bound 131.71s best:2347  next:[1308,2346] bool_core (num_cores=254 [size:1 mw:1] a=186 d=9 fixed=1104/13161 clauses=39'003) [skipped_logs=2]
+%% #Bound 132.56s best:2347  next:[1310,2346] bool_core (num_cores=256 [size:1 mw:1] a=186 d=9 fixed=1106/13163 clauses=41'355) [skipped_logs=1]
+%% #Bound 133.22s best:2347  next:[1311,2346] bool_core (num_cores=257 [size:1 mw:1] a=186 d=9 fixed=1107/13164 clauses=42'379) [skipped_logs=0]
+%% #Bound 134.02s best:2347  next:[1312,2346] bool_core (num_cores=258 [size:1 mw:1] a=186 d=9 fixed=1108/13165 clauses=44'140) [skipped_logs=0]
+%% #19    136.38s best:2329  next:[1312,2328] default_lp (fixed_bools=900/12217)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=168617
+%%%mzn-stat: objective=2329
+%%%mzn-stat: objectiveBound=1312
+%%%mzn-stat: propagations=401017751
+%%%mzn-stat: solveTime=136.378
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(5,5)	(3,8)	(1,2)	(9,1)	(7,7)	(4,6)	(2,3)	(8,4)	(6,9)
+Team 2	(5,5)	   -	(9,6)	(8,7)	(4,4)	(3,9)	(6,3)	(1,1)	(2,8)	(7,2)
+Team 3	(3,8)	(9,6)	   -	(5,4)	(1,7)	(6,5)	(2,2)	(7,9)	(4,3)	(8,1)
+Team 4	(1,2)	(8,7)	(5,4)	   -	(6,8)	(2,1)	(9,9)	(4,5)	(7,6)	(3,3)
+Team 5	(9,1)	(4,4)	(1,7)	(6,8)	   -	(8,3)	(7,5)	(3,2)	(5,9)	(2,6)
+Team 6	(7,7)	(3,9)	(6,5)	(2,1)	(8,3)	   -	(1,4)	(5,6)	(9,2)	(4,8)
+Team 7	(4,6)	(6,3)	(2,2)	(9,9)	(7,5)	(1,4)	   -	(8,8)	(3,1)	(5,7)
+Team 8	(2,3)	(1,1)	(7,9)	(4,5)	(3,2)	(5,6)	(8,8)	   -	(6,7)	(9,4)
+Team 9	(8,4)	(2,8)	(4,3)	(7,6)	(5,9)	(9,2)	(3,1)	(6,7)	   -	(1,5)
+Team 10	(6,9)	(7,2)	(8,1)	(3,3)	(2,6)	(4,8)	(5,7)	(9,4)	(1,5)	   -
+
+Total Distance: 2329
+Team Distances: [224, 249, 365, 166, 211, 239, 203, 172, 257, 243]
+Spectators Left Out: 462000
+----------
+%% #Bound 137.37s best:2329  next:[1313,2328] bool_core (num_cores=259 [size:1 mw:1] a=186 d=9 fixed=1109/13166 clauses=37'446)
+%% #Bound 138.01s best:2329  next:[1314,2328] bool_core (num_cores=260 [size:1 mw:1] a=186 d=9 fixed=1110/13167 clauses=33'511)
+%% #Bound 138.91s best:2329  next:[1315,2328] bool_core (num_cores=261 [size:1 mw:1] a=186 d=9 fixed=1110/13168 clauses=35'237)
+%% #Bound 139.67s best:2329  next:[1316,2328] bool_core (num_cores=262 [size:1 mw:1] a=186 d=9 fixed=1112/13169 clauses=36'519)
+%% #Bound 140.37s best:2329  next:[1317,2328] bool_core (num_cores=263 [size:1 mw:1] a=186 d=9 fixed=1113/13170 clauses=37'616)
+%% #Bound 141.18s best:2329  next:[1318,2328] bool_core (num_cores=264 [size:1 mw:1] a=186 d=9 fixed=1114/13171 clauses=39'103)
+%% #Bound 141.99s best:2329  next:[1319,2328] bool_core (num_cores=265 [size:1 mw:1] a=186 d=9 fixed=1114/13172 clauses=40'252)
+%% #Bound 142.75s best:2329  next:[1320,2328] bool_core (num_cores=266 [size:1 mw:1] a=186 d=9 fixed=1116/13173 clauses=41'418) [skipped_logs=0]
+%% #Bound 143.57s best:2329  next:[1321,2328] bool_core (num_cores=267 [size:1 mw:1] a=186 d=9 fixed=1117/13174 clauses=42'773) [skipped_logs=0]
+%% #Bound 151.49s best:2329  next:[1322,2328] bool_core (num_cores=268 [size:20 mw:1 amo:2 lit:17 d:3] a=185 d=9 fixed=1117/13180 clauses=37'928)
+%% #Bound 154.29s best:2329  next:[1323,2328] bool_core (num_cores=269 [size:1 mw:1] a=185 d=9 fixed=1118/13185 clauses=37'493)
+%% #Bound 155.12s best:2329  next:[1324,2328] bool_core (num_cores=270 [size:2 mw:1 d:1] a=184 d=9 fixed=1118/13186 clauses=39'080)
+%% #Bound 155.23s best:2329  next:[1325,2328] bool_core (num_cores=270 [cover] a=184 d=9 fixed=1118/13189 clauses=39'482)
+%% #Bound 155.30s best:2329  next:[1326,2328] bool_core (num_cores=270 [cover] a=184 d=9 fixed=1119/13192 clauses=39'851)
+%% #Bound 155.34s best:2329  next:[1327,2328] bool_core (num_cores=270 [cover] a=184 d=9 fixed=1120/13195 clauses=40'220)
+%% #Bound 155.42s best:2329  next:[1328,2328] bool_core (num_cores=270 [cover] a=184 d=9 fixed=1121/13198 clauses=40'746)
+%% #Bound 155.49s best:2329  next:[1329,2328] bool_core (num_cores=270 [cover] a=184 d=9 fixed=1122/13201 clauses=41'266)
+%% #Bound 155.59s best:2329  next:[1330,2328] bool_core (num_cores=270 [cover] a=184 d=9 fixed=1123/13204 clauses=41'892)
+%% #Bound 155.71s best:2329  next:[1331,2328] bool_core (num_cores=270 [cover] a=184 d=9 fixed=1124/13207 clauses=42'672)
+%% #Bound 155.84s best:2329  next:[1332,2328] bool_core (num_cores=270 [cover] a=184 d=9 fixed=1125/13210 clauses=43'434)
+%% #Bound 155.93s best:2329  next:[1333,2328] bool_core (num_cores=270 [cover] a=184 d=9 fixed=1126/13213 clauses=43'979) [skipped_logs=0]
+%% #Bound 156.40s best:2329  next:[1337,2328] bool_core (num_cores=270 [cover] a=184 d=9 fixed=1130/13225 clauses=46'542) [skipped_logs=3]
+%% #Bound 158.00s best:2329  next:[1338,2328] bool_core (num_cores=271 [size:2 mw:1 d:10] a=183 d=10 fixed=1131/13228 clauses=39'533)
+%% #Bound 158.35s best:2329  next:[1342,2328] bool_core (num_cores=271 [cover] a=183 d=10 fixed=1134/13300 clauses=41'063) [skipped_logs=3]
+%% #Bound 159.86s best:2329  next:[1348,2328] bool_core (num_cores=272 [cover] a=183 d=10 fixed=1140/13390 clauses=45'526) [skipped_logs=5]
+%% #Bound 179.24s best:2329  next:[1349,2328] bool_core (num_cores=273 [size:46 mw:1 amo:3 lit:45 d:3] a=182 d=10 fixed=1141/13414 clauses=48'056)
+%% #Bound 182.53s best:2329  next:[1350,2328] bool_core (num_cores=274 [size:1 mw:1] a=182 d=10 fixed=1142/13420 clauses=46'984)
+%% #Bound 185.80s best:2329  next:[1351,2328] bool_core (num_cores=275 [size:1 mw:1] a=182 d=10 fixed=1143/13421 clauses=47'053)
+%% #Bound 186.38s best:2329  next:[1352,2328] bool_core (num_cores=276 [size:1 mw:1] a=182 d=10 fixed=1144/13422 clauses=48'053)
+%% #Bound 186.91s best:2329  next:[1353,2328] bool_core (num_cores=277 [size:1 mw:1] a=182 d=10 fixed=1145/13423 clauses=49'000)
+%% #Bound 188.25s best:2329  next:[1354,2328] bool_core (num_cores=278 [size:1 mw:1] a=182 d=10 fixed=1145/13424 clauses=50'380)
+%% #Bound 189.36s best:2329  next:[1355,2328] bool_core (num_cores=279 [size:1 mw:1] a=182 d=10 fixed=1146/13442 clauses=52'299)
+%% #Bound 190.06s best:2329  next:[1356,2328] bool_core (num_cores=280 [size:1 mw:1] a=182 d=10 fixed=1148/13460 clauses=44'088)
+%% #Bound 191.27s best:2329  next:[1357,2328] bool_core (num_cores=281 [size:2 mw:1 d:11] a=181 d=11 fixed=1148/13461 clauses=46'477)
+%% #Bound 191.75s best:2329  next:[1358,2328] bool_core (num_cores=282 [size:1 mw:1] a=181 d=11 fixed=1149/13485 clauses=48'047)
+%% #Bound 191.81s best:2329  next:[1359,2328] bool_core (num_cores=282 [cover] a=181 d=11 fixed=1149/13485 clauses=48'177)
+%% #Bound 192.19s best:2329  next:[1360,2328] bool_core (num_cores=283 [size:1 mw:1] a=181 d=11 fixed=1151/13510 clauses=49'590)
+%% #Bound 192.28s best:2329  next:[1361,2328] bool_core (num_cores=283 [cover] a=181 d=11 fixed=1151/13510 clauses=49'782)
+%% #Bound 192.67s best:2329  next:[1362,2328] bool_core (num_cores=284 [size:1 mw:1] a=181 d=11 fixed=1153/13535 clauses=51'403)
+%% #Bound 193.17s best:2329  next:[1363,2328] bool_core (num_cores=285 [size:1 mw:1] a=181 d=11 fixed=1154/13536 clauses=52'637)
+%% #Bound 193.45s best:2329  next:[1364,2328] bool_core (num_cores=285 [cover] a=181 d=11 fixed=1154/13536 clauses=53'534)
+%% #Bound 193.93s best:2329  next:[1365,2328] bool_core (num_cores=286 [size:1 mw:1] a=181 d=11 fixed=1156/13561 clauses=55'250)
+%% #Bound 194.09s best:2329  next:[1366,2328] bool_core (num_cores=286 [cover] a=181 d=11 fixed=1156/13561 clauses=45'797)
+%% #Bound 194.52s best:2329  next:[1367,2328] bool_core (num_cores=287 [size:1 mw:1] a=181 d=11 fixed=1158/13586 clauses=47'450)
+%% #Bound 197.35s best:2329  next:[1368,2328] bool_core (num_cores=288 [size:1 mw:1] a=181 d=11 fixed=1158/13587 clauses=53'057)
+%% #Bound 197.99s best:2329  next:[1369,2328] bool_core (num_cores=289 [size:1 mw:1] a=181 d=11 fixed=1160/13611 clauses=55'216)
+%% #Bound 198.55s best:2329  next:[1370,2328] bool_core (num_cores=290 [size:1 mw:1] a=181 d=11 fixed=1161/13612 clauses=56'684)
+%% #Bound 198.89s best:2329  next:[1371,2328] bool_core (num_cores=290 [cover] a=181 d=11 fixed=1161/13612 clauses=57'484)
+%% #Bound 202.24s best:2329  next:[1372,2328] bool_core (num_cores=291 [size:1 mw:1] a=181 d=11 fixed=1162/13637 clauses=45'816)
+%% #Bound 204.09s best:2329  next:[1373,2328] bool_core (num_cores=292 [size:1 mw:1] a=181 d=11 fixed=1163/13638 clauses=48'530)
+%% #Bound 204.72s best:2329  next:[1374,2328] bool_core (num_cores=293 [size:1 mw:1] a=181 d=11 fixed=1165/13662 clauses=50'135)
+%% #Bound 205.19s best:2329  next:[1375,2328] bool_core (num_cores=294 [size:1 mw:1] a=181 d=11 fixed=1166/13663 clauses=51'555)
+%% #Bound 205.68s best:2329  next:[1376,2328] bool_core (num_cores=294 [cover] a=181 d=11 fixed=1166/13663 clauses=52'543)
+%% #Bound 206.12s best:2329  next:[1377,2328] bool_core (num_cores=294 [cover] a=181 d=11 fixed=1167/13687 clauses=53'688)
+%% #Bound 206.95s best:2329  next:[1378,2328] bool_core (num_cores=295 [size:1 mw:1] a=181 d=11 fixed=1169/13712 clauses=55'580)
+%% #Bound 207.41s best:2329  next:[1379,2328] bool_core (num_cores=295 [cover] a=181 d=11 fixed=1169/13712 clauses=56'447)
+%% #Bound 207.90s best:2329  next:[1380,2328] bool_core (num_cores=295 [cover] a=181 d=11 fixed=1170/13736 clauses=57'669)
+%% #Bound 208.82s best:2329  next:[1381,2328] bool_core (num_cores=296 [size:1 mw:1] a=181 d=11 fixed=1172/13761 clauses=48'046)
+%% #Bound 209.28s best:2329  next:[1382,2328] bool_core (num_cores=296 [cover] a=181 d=11 fixed=1172/13761 clauses=48'985)
+%% #Bound 214.48s best:2329  next:[1383,2328] bool_core (num_cores=297 [size:15 mw:1 amo:1 lit:11 d:7] a=180 d=11 fixed=1173/13790 clauses=57'217)
+%% #Bound 217.92s best:2329  next:[1384,2328] bool_core (num_cores=298 [size:1 mw:1] a=180 d=11 fixed=1174/13795 clauses=48'882)
+%% #Bound 228.66s best:2329  next:[1385,2328] bool_core (num_cores=299 [size:43 mw:1 amo:3 lit:41 d:8] a=178 d=11 fixed=1174/13802 clauses=53'598)
+%% #Bound 229.31s best:2329  next:[1386,2328] bool_core (num_cores=300 [size:1 mw:1] a=178 d=11 fixed=1175/13814 clauses=54'611)
+%% #Bound 229.89s best:2329  next:[1387,2328] bool_core (num_cores=301 [size:1 mw:1] a=178 d=11 fixed=1175/13814 clauses=55'271)
+%% #Bound 234.38s best:2329  next:[1388,2328] bool_core (num_cores=302 [size:19 mw:1 amo:2 lit:17 d:9] a=178 d=11 fixed=1175/13819 clauses=60'132)
+%% #Bound 243.06s best:2329  next:[1389,2328] bool_core (num_cores=303 [size:3 mw:1 d:12] a=178 d=12 fixed=1175/13832 clauses=59'434)
+%% #Bound 243.53s best:2329  next:[1390,2328] bool_core (num_cores=304 [size:1 mw:1] a=178 d=12 fixed=1176/13861 clauses=60'686)
+%% #Bound 249.71s best:2329  next:[1391,2328] bool_core (num_cores=305 [size:1 mw:1] a=178 d=12 fixed=1176/13862 clauses=59'881)
+%% #Bound 253.46s best:2329  next:[1392,2328] bool_core (num_cores=306 [size:11 mw:1 amo:3 lit:9 d:10] a=178 d=12 fixed=1177/13896 clauses=65'897)
+%% #Bound 260.63s best:2329  next:[1393,2328] bool_core (num_cores=307 [size:14 mw:1 amo:3 lit:11 d:11] a=178 d=12 fixed=1177/13918 clauses=60'009)
+%% #Bound 261.98s best:2329  next:[1394,2328] bool_core (num_cores=308 [size:2 mw:1 d:12] a=177 d=12 fixed=1177/13935 clauses=62'217)
+%% #Bound 262.03s best:2329  next:[1395,2328] bool_core (num_cores=308 [cover] a=177 d=12 fixed=1177/13953 clauses=62'402)
+%% #Bound 262.05s best:2329  next:[1396,2328] bool_core (num_cores=308 [cover] a=177 d=12 fixed=1178/13969 clauses=62'533)
+%% #Bound 262.07s best:2329  next:[1397,2328] bool_core (num_cores=308 [cover] a=177 d=12 fixed=1179/13984 clauses=62'620)
+%% #Bound 262.09s best:2329  next:[1398,2328] bool_core (num_cores=308 [cover] a=177 d=12 fixed=1180/13999 clauses=62'699)
+%% #Bound 262.10s best:2329  next:[1399,2328] bool_core (num_cores=308 [cover] a=177 d=12 fixed=1181/14013 clauses=62'790)
+%% #Bound 262.12s best:2329  next:[1400,2328] bool_core (num_cores=308 [cover] a=177 d=12 fixed=1182/14027 clauses=62'897)
+%% #Bound 262.13s best:2329  next:[1401,2328] bool_core (num_cores=308 [cover] a=177 d=12 fixed=1183/14041 clauses=63'018)
+%% #Bound 262.22s best:2329  next:[1402,2328] bool_core (num_cores=308 [cover] a=177 d=12 fixed=1184/14055 clauses=63'533)
+%% #Bound 262.30s best:2329  next:[1403,2328] bool_core (num_cores=308 [cover] a=177 d=12 fixed=1185/14069 clauses=63'959)
+%% #Bound 262.35s best:2329  next:[1404,2328] bool_core (num_cores=308 [cover] a=177 d=12 fixed=1186/14083 clauses=64'256)
+%% #Bound 266.92s best:2329  next:[1405,2328] bool_core (num_cores=309 [size:2 mw:1 d:13] a=177 d=13 fixed=1187/14097 clauses=62'501)
+%% #Bound 268.07s best:2329  next:[1406,2328] bool_core (num_cores=310 [size:2 mw:1 d:13] a=177 d=13 fixed=1187/14124 clauses=64'293)
+%% #Bound 273.41s best:2329  next:[1407,2328] bool_core (num_cores=311 [size:3 mw:1 amo:1 lit:2 d:14] a=177 d=14 fixed=1194/14139 clauses=72'080)
+%% #Bound 277.34s best:2329  next:[1408,2328] bool_core (num_cores=312 [size:2 mw:1 d:14] a=176 d=14 fixed=1194/14167 clauses=61'640)
+%% #Bound 287.01s best:2329  next:[1409,2328] bool_core (num_cores=313 [size:1 mw:1] a=176 d=14 fixed=1194/14182 clauses=72'865)
+%% #Bound 288.86s best:2329  next:[1410,2328] bool_core (num_cores=314 [size:4 mw:1 amo:1 lit:3 d:15] a=176 d=15 fixed=1195/14211 clauses=75'375)
+%% #Bound 299.19s best:2329  next:[1411,2328] bool_core (num_cores=315 [size:1 mw:1] a=176 d=15 fixed=1195/14227 clauses=71'830)
+%% #Bound 299.61s best:2329  next:[1412,2328] bool_core (num_cores=316 [size:1 mw:1] a=176 d=15 fixed=1197/14255 clauses=72'773)
+%% #Bound 301.88s best:2329  next:[1413,2328] bool_core (num_cores=317 [size:5 mw:1 amo:1 lit:2 d:16] a=176 d=16 fixed=1197/14259 clauses=66'664)
+%% #Bound 305.63s best:2329  next:[1414,2328] bool_core (num_cores=318 [size:2 mw:1 d:17] a=175 d=17 fixed=1197/14277 clauses=71'249)
+%% #Bound 305.89s best:2329  next:[1415,2328] bool_core (num_cores=318 [cover] a=175 d=17 fixed=1197/14323 clauses=72'358)
+%% #Bound 324.35s best:2329  next:[1416,2328] bool_core (num_cores=319 [size:3 mw:1 d:18] a=174 d=18 fixed=1198/14369 clauses=78'803)
+%% #Bound 334.68s best:2329  next:[1417,2328] bool_core (num_cores=320 [size:2 mw:1 d:19] a=174 d=19 fixed=1198/14417 clauses=81'984)
+%% #Bound 348.70s best:2329  next:[1418,2328] bool_core (num_cores=321 [size:1 mw:1] a=174 d=19 fixed=1198/14466 clauses=81'641)
+%% #20    350.00s best:2324  next:[1418,2323] no_lp (fixed_bools=900/12217)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=421284
+%%%mzn-stat: objective=2324
+%%%mzn-stat: objectiveBound=1418
+%%%mzn-stat: propagations=1063432195
+%%%mzn-stat: solveTime=349.996
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(8,7)	(7,9)	(1,2)	(9,6)	(4,8)	(5,5)	(2,1)	(6,4)	(3,3)
+Team 2	(8,7)	   -	(3,6)	(5,8)	(4,4)	(1,1)	(6,2)	(9,9)	(7,3)	(2,5)
+Team 3	(7,9)	(3,6)	   -	(8,4)	(5,1)	(6,5)	(2,7)	(4,3)	(9,2)	(1,8)
+Team 4	(1,2)	(5,8)	(8,4)	   -	(3,5)	(2,3)	(9,1)	(7,6)	(4,7)	(6,9)
+Team 5	(9,6)	(4,4)	(5,1)	(3,5)	   -	(8,9)	(1,3)	(6,7)	(2,8)	(7,2)
+Team 6	(4,8)	(1,1)	(6,5)	(2,3)	(8,9)	   -	(7,4)	(3,2)	(5,6)	(9,7)
+Team 7	(5,5)	(6,2)	(2,7)	(9,1)	(1,3)	(7,4)	   -	(8,8)	(3,9)	(4,6)
+Team 8	(2,1)	(9,9)	(4,3)	(7,6)	(6,7)	(3,2)	(8,8)	   -	(1,5)	(5,4)
+Team 9	(6,4)	(7,3)	(9,2)	(4,7)	(2,8)	(5,6)	(3,9)	(1,5)	   -	(8,1)
+Team 10	(3,3)	(2,5)	(1,8)	(6,9)	(7,2)	(9,7)	(4,6)	(5,4)	(8,1)	   -
+
+Total Distance: 2324
+Team Distances: [202, 268, 231, 176, 343, 219, 280, 159, 144, 302]
+Spectators Left Out: 450000
+----------
+%% #Bound 360.71s best:2324  next:[1419,2323] bool_core (num_cores=322 [size:2 mw:1 d:20] a=174 d=20 fixed=1199/14515 clauses=82'788)
+%% #Bound 369.70s best:2324  next:[1420,2323] bool_core (num_cores=323 [size:2 mw:1 d:21] a=173 d=21 fixed=1199/14565 clauses=85'759)
+%% #21    376.70s best:2260  next:[1420,2259] no_lp (fixed_bools=900/12217)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=457073
+%%%mzn-stat: objective=2260
+%%%mzn-stat: objectiveBound=1420
+%%%mzn-stat: propagations=1140677897
+%%%mzn-stat: solveTime=376.7
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(8,9)	(5,4)	(1,2)	(9,7)	(4,8)	(6,6)	(2,1)	(7,5)	(3,3)
+Team 2	(8,9)	   -	(7,8)	(3,5)	(4,4)	(5,1)	(2,2)	(9,6)	(6,3)	(1,7)
+Team 3	(5,4)	(7,8)	   -	(8,7)	(3,9)	(6,5)	(1,1)	(4,3)	(9,2)	(2,6)
+Team 4	(1,2)	(3,5)	(8,7)	   -	(6,1)	(2,3)	(9,9)	(7,4)	(4,6)	(5,8)
+Team 5	(9,7)	(4,4)	(3,9)	(6,1)	   -	(8,6)	(5,3)	(1,5)	(2,8)	(7,2)
+Team 6	(4,8)	(5,1)	(6,5)	(2,3)	(8,6)	   -	(7,7)	(3,2)	(1,9)	(9,4)
+Team 7	(6,6)	(2,2)	(1,1)	(9,9)	(5,3)	(7,7)	   -	(8,8)	(3,4)	(4,5)
+Team 8	(2,1)	(9,6)	(4,3)	(7,4)	(1,5)	(3,2)	(8,8)	   -	(5,7)	(6,9)
+Team 9	(7,5)	(6,3)	(9,2)	(4,6)	(2,8)	(1,9)	(3,4)	(5,7)	   -	(8,1)
+Team 10	(3,3)	(1,7)	(2,6)	(5,8)	(7,2)	(9,4)	(4,5)	(6,9)	(8,1)	   -
+
+Total Distance: 2260
+Team Distances: [221, 243, 260, 231, 186, 308, 146, 234, 208, 223]
+Spectators Left Out: 466000
+----------
+%% #Bound 387.84s best:2260  next:[1421,2259] bool_core (num_cores=324 [size:1 mw:1] a=173 d=21 fixed=1199/14616 clauses=89'808)
+%% #Bound 407.64s best:2260  next:[1422,2259] bool_core (num_cores=325 [size:2 mw:1 d:22] a=173 d=22 fixed=1200/14667 clauses=94'813)
+%% #Bound 427.99s best:2260  next:[1423,2259] bool_core (num_cores=326 [size:6 mw:1 amo:2 lit:5 d:23] a=173 d=23 fixed=1200/14721 clauses=105'861)
+%% #Bound 449.04s best:2260  next:[1424,2259] bool_core (num_cores=327 [size:3 mw:1 d:24] a=173 d=24 fixed=1206/14775 clauses=100'405)
+%% #Bound 471.50s best:2260  next:[1425,2259] bool_core (num_cores=328 [size:3 mw:1 d:25] a=173 d=25 fixed=1206/14830 clauses=108'681)
+%% #Bound 500.73s best:2260  next:[1426,2259] bool_core (num_cores=329 [size:6 mw:1 amo:1 lit:5 d:26] a=173 d=26 fixed=1206/14887 clauses=111'350)
+%% #Bound 524.11s best:2260  next:[1427,2259] bool_core (num_cores=330 [size:5 mw:1 amo:1 lit:3 d:27] a=173 d=27 fixed=1206/14946 clauses=117'315)
+%% #Bound 550.32s best:2260  next:[1428,2259] bool_core (num_cores=331 [size:4 mw:1 amo:1 lit:3 d:28] a=172 d=28 fixed=1206/15006 clauses=121'365)
+%% #Bound 583.16s best:2260  next:[1429,2259] bool_core (num_cores=332 [size:11 mw:1 amo:2 lit:9 d:29] a=172 d=29 fixed=1206/15069 clauses=132'074)
+%% #Bound 611.71s best:2260  next:[1430,2259] bool_core (num_cores=333 [size:8 mw:1 amo:1 lit:6 d:30] a=172 d=30 fixed=1206/15133 clauses=132'227)
+%% #Bound 641.81s best:2260  next:[1431,2259] bool_core (num_cores=334 [size:8 mw:1 amo:2 lit:6 d:31] a=171 d=31 fixed=1207/15200 clauses=132'613)
+%% #Bound 684.19s best:2260  next:[1432,2259] bool_core (num_cores=335 [size:6 mw:1 amo:1 lit:5 d:32] a=171 d=32 fixed=1207/15266 clauses=140'022)
+%% #Bound 714.98s best:2260  next:[1433,2259] bool_core (num_cores=336 [size:8 mw:1 amo:2 lit:6 d:33] a=170 d=33 fixed=1207/15335 clauses=148'543)
+%% #Bound 744.82s best:2260  next:[1434,2259] bool_core (num_cores=337 [size:7 mw:1 amo:1 lit:5 d:34] a=170 d=34 fixed=1207/15405 clauses=152'336)
+%% #Bound 794.88s best:2260  next:[1435,2259] bool_core (num_cores=338 [size:13 mw:1 amo:2 lit:12 d:35] a=170 d=35 fixed=1209/15477 clauses=160'523)
+%% #Bound 835.96s best:2260  next:[1436,2259] bool_core (num_cores=339 [size:10 mw:1 amo:2 lit:9 d:36] a=170 d=36 fixed=1209/15550 clauses=164'996)
+%% #Bound 888.46s best:2260  next:[1437,2259] bool_core (num_cores=340 [size:9 mw:1 amo:2 lit:8 d:37] a=170 d=37 fixed=1209/15624 clauses=167'119)
+%% #Bound 933.16s best:2260  next:[1438,2259] bool_core (num_cores=341 [size:7 mw:1 amo:1 lit:5 d:38] a=168 d=38 fixed=1209/15698 clauses=177'847)
+%% #Bound 979.58s best:2260  next:[1439,2259] bool_core (num_cores=342 [size:3 mw:1 d:39] a=168 d=39 fixed=1209/15771 clauses=179'622)
+%% #Bound 1014.92s best:2260  next:[1440,2259] bool_core (num_cores=343 [size:5 mw:1 amo:1 lit:4 d:40] a=168 d=40 fixed=1210/15844 clauses=186'202)
+%% #Bound 1057.01s best:2260  next:[1441,2259] bool_core (num_cores=344 [size:4 mw:1 amo:1 lit:3 d:41] a=168 d=41 fixed=1210/15917 clauses=192'693)
+%% #Bound 1107.00s best:2260  next:[1442,2259] bool_core (num_cores=345 [size:3 mw:1 amo:1 lit:2 d:42] a=168 d=42 fixed=1212/15990 clauses=195'384)
+%% #Bound 1164.36s best:2260  next:[1443,2259] bool_core (num_cores=346 [size:5 mw:1 amo:1 lit:4 d:43] a=168 d=43 fixed=1215/16064 clauses=195'639)
+%% #Bound 1212.68s best:2260  next:[1444,2259] bool_core (num_cores=347 [size:8 mw:1 amo:2 lit:7 d:44] a=166 d=44 fixed=1215/16141 clauses=206'693)
+%% #Bound 1275.48s best:2260  next:[1445,2259] bool_core (num_cores=348 [size:8 mw:1 amo:1 lit:6 d:45] a=166 d=45 fixed=1215/16218 clauses=209'670)
+%% #Bound 1341.61s best:2260  next:[1446,2259] bool_core (num_cores=349 [size:10 mw:1 amo:2 lit:9 d:46] a=166 d=46 fixed=1215/16297 clauses=214'749)
+%% #Bound 1410.56s best:2260  next:[1447,2259] bool_core (num_cores=350 [size:10 mw:1 amo:2 lit:8 d:47] a=166 d=47 fixed=1215/16377 clauses=221'633)
+%% #Bound 1479.84s best:2260  next:[1448,2259] bool_core (num_cores=351 [size:13 mw:1 amo:3 lit:12 d:48] a=166 d=48 fixed=1217/16460 clauses=227'658)
+%% #Bound 1557.51s best:2260  next:[1449,2259] bool_core (num_cores=352 [size:11 mw:1 amo:1 lit:8 d:49] a=165 d=49 fixed=1217/16542 clauses=237'756)
+%% #Bound 1636.35s best:2260  next:[1450,2259] bool_core (num_cores=353 [size:17 mw:1 amo:3 lit:16 d:50] a=165 d=50 fixed=1217/16627 clauses=238'525)
+%% #Bound 1718.92s best:2260  next:[1451,2259] bool_core (num_cores=354 [size:13 mw:1 amo:2 lit:12 d:51] a=164 d=51 fixed=1221/16711 clauses=250'601)
+%% #Bound 1798.05s best:2260  next:[1452,2259] bool_core (num_cores=355 [size:16 mw:1 amo:3 lit:15 d:52] a=164 d=52 fixed=1222/16797 clauses=251'220)
+%% #Bound 1881.90s best:2260  next:[1453,2259] bool_core (num_cores=356 [size:15 mw:1 amo:3 lit:14 d:53] a=163 d=53 fixed=1222/16884 clauses=254'764)
+%% #Bound 1962.50s best:2260  next:[1454,2259] bool_core (num_cores=357 [size:21 mw:1 amo:3 lit:20 d:54] a=162 d=54 fixed=1222/16973 clauses=265'250)
+%% #Bound 2033.12s best:2260  next:[1455,2259] bool_core (num_cores=358 [size:16 mw:1 amo:3 lit:15 d:55] a=162 d=55 fixed=1222/17063 clauses=270'119)
+%% #Bound 2111.47s best:2260  next:[1456,2259] bool_core (num_cores=359 [size:17 mw:1 amo:3 lit:16 d:56] a=161 d=56 fixed=1223/17154 clauses=276'116)
+%% #Bound 2167.54s best:2260  next:[1457,2259] bool_core (num_cores=360 [size:18 mw:1 amo:2 lit:16 d:57] a=158 d=57 fixed=1223/17245 clauses=279'779)
+%% #22    2253.56s best:2253  next:[1457,2252] no_lp (fixed_bools=900/12217)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=2575288
+%%%mzn-stat: objective=2253
+%%%mzn-stat: objectiveBound=1457
+%%%mzn-stat: propagations=6676557490
+%%%mzn-stat: solveTime=2253.56
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(8,5)	(5,4)	(1,2)	(6,1)	(4,8)	(7,9)	(2,3)	(3,7)	(9,6)
+Team 2	(8,5)	   -	(7,8)	(6,7)	(4,4)	(5,9)	(2,2)	(9,1)	(1,6)	(3,3)
+Team 3	(5,4)	(7,8)	   -	(8,3)	(3,9)	(6,5)	(1,1)	(4,6)	(9,2)	(2,7)
+Team 4	(1,2)	(6,7)	(8,3)	   -	(9,5)	(2,1)	(3,6)	(7,4)	(4,9)	(5,8)
+Team 5	(6,1)	(4,4)	(3,9)	(9,5)	   -	(8,6)	(5,3)	(1,7)	(2,8)	(7,2)
+Team 6	(4,8)	(5,9)	(6,5)	(2,1)	(8,6)	   -	(9,7)	(3,2)	(7,3)	(1,4)
+Team 7	(7,9)	(2,2)	(1,1)	(3,6)	(5,3)	(9,7)	   -	(8,8)	(6,4)	(4,5)
+Team 8	(2,3)	(9,1)	(4,6)	(7,4)	(1,7)	(3,2)	(8,8)	   -	(5,5)	(6,9)
+Team 9	(3,7)	(1,6)	(9,2)	(4,9)	(2,8)	(7,3)	(6,4)	(5,5)	   -	(8,1)
+Team 10	(9,6)	(3,3)	(2,7)	(5,8)	(7,2)	(1,4)	(4,5)	(6,9)	(8,1)	   -
+
+Total Distance: 2253
+Team Distances: [280, 222, 246, 187, 173, 223, 175, 315, 155, 277]
+Spectators Left Out: 456000
+----------
+%% #Bound 2257.64s best:2253  next:[1458,2252] bool_core (num_cores=361 [size:22 mw:1 amo:3 lit:20 d:58] a=153 d=58 fixed=1224/17339 clauses=283'472)
+%% #23    2339.80s best:2179  next:[1458,2178] quick_restart (fixed_bools=2372/16253)
+%%%mzn-stat: boolVariables=16253
+%%%mzn-stat: failures=1623722
+%%%mzn-stat: objective=2179
+%%%mzn-stat: objectiveBound=1458
+%%%mzn-stat: propagations=4269041376
+%%%mzn-stat: solveTime=2339.8
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(8,7)	(5,4)	(1,2)	(6,1)	(4,8)	(7,5)	(2,3)	(3,9)	(9,6)
+Team 2	(8,7)	   -	(7,8)	(6,6)	(4,4)	(9,9)	(2,2)	(1,1)	(5,5)	(3,3)
+Team 3	(5,4)	(7,8)	   -	(8,3)	(1,9)	(6,5)	(4,1)	(3,6)	(9,2)	(2,7)
+Team 4	(1,2)	(6,6)	(8,3)	   -	(3,5)	(2,1)	(9,4)	(7,9)	(4,7)	(5,8)
+Team 5	(6,1)	(4,4)	(1,9)	(3,5)	   -	(8,6)	(5,3)	(9,7)	(2,8)	(7,2)
+Team 6	(4,8)	(9,9)	(6,5)	(2,1)	(8,6)	   -	(3,7)	(5,2)	(7,3)	(1,4)
+Team 7	(7,5)	(2,2)	(4,1)	(9,4)	(5,3)	(3,7)	   -	(8,8)	(1,6)	(6,9)
+Team 8	(2,3)	(1,1)	(3,6)	(7,9)	(9,7)	(5,2)	(8,8)	   -	(6,4)	(4,5)
+Team 9	(3,9)	(5,5)	(9,2)	(4,7)	(2,8)	(7,3)	(1,6)	(6,4)	   -	(8,1)
+Team 10	(9,6)	(3,3)	(2,7)	(5,8)	(7,2)	(1,4)	(6,9)	(4,5)	(8,1)	   -
+
+Total Distance: 2179
+Team Distances: [227, 126, 222, 203, 159, 289, 342, 198, 136, 277]
+Spectators Left Out: 452000
+----------
+%% #Bound 2362.21s best:2179  next:[1459,2178] bool_core (num_cores=362 [size:19 mw:1 amo:3 lit:17 d:59] a=152 d=59 fixed=1224/17435 clauses=287'048)
+%% #Bound 2470.90s best:2179  next:[1460,2178] bool_core (num_cores=363 [size:20 mw:1 amo:4 lit:17 d:60] a=150 d=60 fixed=1224/17537 clauses=299'117)
+%% #Bound 2585.87s best:2179  next:[1461,2178] bool_core (num_cores=364 [size:19 mw:1 amo:4 lit:16 d:61] a=147 d=61 fixed=1224/17643 clauses=307'215)
+%% #Bound 2708.90s best:2179  next:[1462,2178] bool_core (num_cores=365 [size:18 mw:1 amo:2 lit:15 d:62] a=147 d=62 fixed=1227/17747 clauses=316'039)
+%% #Bound 2838.11s best:2179  next:[1463,2178] bool_core (num_cores=366 [size:20 mw:1 amo:2 lit:17 d:63] a=145 d=63 fixed=1229/17852 clauses=315'284)
+%% #24    2904.49s best:2168  next:[1463,2167] graph_var_lns (d=0.95 s=20921 t=0.10 p=0.50 stall=3 h=auto_l0)
+%%%mzn-stat: boolVariables=12217
+%%%mzn-stat: failures=3
+%%%mzn-stat: objective=2168
+%%%mzn-stat: objectiveBound=1463
+%%%mzn-stat: propagations=2655499
+%%%mzn-stat: solveTime=2904.49
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	Team 9	Team 10	
+Team 1	   -	(6,1)	(7,4)	(1,2)	(8,7)	(4,8)	(2,6)	(5,5)	(3,9)	(9,3)
+Team 2	(6,1)	   -	(1,9)	(3,5)	(4,4)	(8,6)	(5,3)	(9,7)	(2,8)	(7,2)
+Team 3	(7,4)	(1,9)	   -	(8,3)	(9,8)	(6,5)	(4,1)	(2,2)	(5,6)	(3,7)
+Team 4	(1,2)	(3,5)	(8,3)	   -	(6,6)	(2,1)	(9,4)	(7,9)	(4,7)	(5,8)
+Team 5	(8,7)	(4,4)	(9,8)	(6,6)	   -	(5,9)	(3,2)	(1,1)	(7,3)	(2,5)
+Team 6	(4,8)	(8,6)	(6,5)	(2,1)	(5,9)	   -	(7,7)	(3,3)	(9,2)	(1,4)
+Team 7	(2,6)	(5,3)	(4,1)	(9,4)	(3,2)	(7,7)	   -	(8,8)	(1,5)	(6,9)
+Team 8	(5,5)	(9,7)	(2,2)	(7,9)	(1,1)	(3,3)	(8,8)	   -	(6,4)	(4,6)
+Team 9	(3,9)	(2,8)	(5,6)	(4,7)	(7,3)	(9,2)	(1,5)	(6,4)	   -	(8,1)
+Team 10	(9,3)	(7,2)	(3,7)	(5,8)	(2,5)	(1,4)	(6,9)	(4,6)	(8,1)	   -
+
+Total Distance: 2168
+Team Distances: [265, 159, 331, 203, 264, 230, 218, 161, 144, 193]
+Spectators Left Out: 449000
+----------
+%% #Bound 2982.89s best:2168  next:[1464,2167] bool_core (num_cores=367 [size:18 mw:1 amo:4 lit:16 d:64] a=144 d=64 fixed=1230/17960 clauses=328'850)
+%% #Bound 3129.96s best:2168  next:[1465,2167] bool_core (num_cores=368 [size:20 mw:1 amo:3 lit:17 d:65] a=143 d=65 fixed=1233/18070 clauses=335'621)
+%% #Bound 3263.55s best:2168  next:[1466,2167] bool_core (num_cores=369 [size:19 mw:1 amo:4 lit:18 d:66] a=142 d=66 fixed=1233/18181 clauses=337'696)
+%% #Bound 3401.36s best:2168  next:[1467,2167] bool_core (num_cores=370 [size:16 mw:1 amo:3 lit:15 d:67] a=141 d=67 fixed=1233/18292 clauses=347'108)
+%% #Bound 3563.12s best:2168  next:[1468,2167] bool_core (num_cores=371 [size:26 mw:1 amo:4 lit:24 d:68] a=139 d=68 fixed=1237/18404 clauses=360'167)
+%% #Bound 3711.88s best:2168  next:[1469,2167] bool_core (num_cores=372 [size:14 mw:1 amo:2 lit:13 d:69] a=139 d=69 fixed=1242/18515 clauses=363'493)
+Stopped.
+=====UNKNOWN=====
+%%%mzn-stat: nSolutions=24
+%%%mzn-stat-end
+Finished in 1h 1m 53s.

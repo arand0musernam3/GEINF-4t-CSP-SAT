@@ -88,20 +88,63 @@ constraint forall(t1, t2 in TEAM where t1 < t2)(
     )
 );
 
-% Optimization goals
-% ==================
-% Solve to minimize spectators left out
+% Solving queries
+% ===============
+
+%% 1. FIRST SOLUTION
+%solve satisfy;
+
+%% 2. MINIMIZE TEAM DISTANCES:
 solve :: seq_search([
     int_search([team_distance[t] | t in TEAM], input_order, indomain_min),
     int_search([spectators_left_out[t1, t2] | t1, t2 in TEAM where t1 < t2], input_order, indomain_min),
-    int_search([tauler[t1, t2].1 * 100 + tauler[t1, t2].2 | t1, t2 in TEAM where t1 < t2], input_order, indomain_min)
-]) minimize sum(t1 in TEAM, t2 in TEAM)(spectators_left_out[t1, t2]);
+    int_search([tauler[t1,t2].1 * 100 + tauler[t1,t2].2 | t1,t2 in TEAM where t1 < t2], input_order, indomain_min)
+]) minimize sum(team_distance);
+
+%% 3. MAXIMIZE SPECTATORS (MINIMIZING SPECTATORS LEFT OUT):
+%solve :: seq_search([
+%    int_search([team_distance[t] | t in TEAM], input_order, indomain_min),
+%    int_search([spectators_left_out[t1, t2] | t1, t2 in TEAM where t1 < t2], input_order, indomain_min),
+%    int_search([tauler[t1,t2].1 * 100 + tauler[t1,t2].2 | t1,t2 in TEAM where t1 < t2], input_order, indomain_min)
+%]) minimize sum(t1 in TEAM, t2 in TEAM where t1 < t2)(spectators_left_out[t1, t2]);
+
+%% 4. MAXIMIZE SPECTATORS REDUCING DISTANCES
+int: LARGE_NUMBER = 1000000; % A large value to prioritize minimizing spectators left out
+
+%var int: combined_objective =
+%    LARGE_NUMBER * sum(t1 in TEAM, t2 in TEAM where t1 < t2)(spectators_left_out[t1, t2]) +
+%    sum(team_distance);
+
+%solve :: seq_search([
+%   int_search([team_distance[t] | t in TEAM], input_order, indomain_min),
+%    int_search([spectators_left_out[t1, t2] | t1, t2 in TEAM where t1 < t2], input_order, indomain_min),
+%    int_search([tauler[t1,t2].1 * 100 + tauler[t1,t2].2 | t1,t2 in TEAM where t1 < t2], input_order, indomain_min)
+%]) minimize combined_objective;
+
+%% 5. MINIMIZE TEAM DISTANCES REDUCING SPECTATORS LEFT OUT
+
+%var int: combined_objective =
+%    LARGE_NUMBER * sum(team_distance) +
+%    sum(t1 in TEAM, t2 in TEAM where t1 < t2)(spectators_left_out[t1, t2]);
+
+%solve :: seq_search([
+%    int_search([team_distance[t] | t in TEAM], input_order, indomain_min),
+%    int_search([spectators_left_out[t1, t2] | t1, t2 in TEAM where t1 < t2], input_order, indomain_min),
+%    int_search([tauler[t1,t2].1 * 100 + tauler[t1,t2].2 | t1,t2 in TEAM where t1 < t2], input_order, indomain_min)
+%]) minimize combined_objective;
+
+%% 6. MINIMIZE TIME DISTANCES DIFFERENCES
+%solve :: seq_search([
+%    int_search([team_distance[t] | t in TEAM], input_order, indomain_min),
+%    int_search([spectators_left_out[t1, t2] | t1, t2 in TEAM where t1 < t2], input_order, indomain_min),
+%    int_search([tauler[t1,t2].1 * 100 + tauler[t1,t2].2 | t1,t2 in TEAM where t1 < t2], input_order, indomain_min)
+%]) minimize((max(team_distance) - min(team_distance) + 1)*sum(team_distance));
 
 % Output
 % ======
 output [
     "Matches Schedule (Day, Stadium):\n"
-] ++
+] ++ ["\t"] ++
 [
     "Team " ++ show(t1) ++ "\t" | t1 in TEAM
 ] ++ ["\n"] ++

@@ -1,20 +1,19 @@
 
 ￼
 Running calendari_v1.mzn, t1fix.dzn
-994msec
+1s 490msec
 
-Using FZN solver /tmp/.mount_MiniZi3nBR5f/usr/bin/fzn-cp-sat for solving, parameters: -r 123123 -a -p 16 -s -v
-%% File /tmp/mznfile0zLKy8.fzn parsed in 8 ms
+Using FZN solver C:\Program Files\MiniZinc\bin\fzn-cp-sat.EXE for solving, parameters: -a -p 16 -s -v 
+%% File C:\\Users\\steam\\AppData\\Local\\Temp\\tmp16E.tmp.fzn parsed in 7 ms
 %% Presolve model
 %%   - done in 0 ms
-%% Model mznfile0zLKy8
+%% Model C:\\Users\\steam\\AppData\\Local\\Temp\\tmp16E.tmp
 %%   - array_bool_and: 2334
-%%   - bool_lin_eq: 98
-%%   - int_eq_reif: 49
+%%   - bool_lin_eq: 49
 %%   - Minimization problem
 %% Starting CP-SAT solver v9.11.4210
 %% Parameters: log_search_progress: true log_to_stdout: false max_domain_size_when_encoding_eq_neq_constraints: 32 num_workers: 16
-%% Initial optimization model 'mznfile0zLKy8': (model_fingerprint: 0x188e56063e7683d1)
+%% Initial optimization model 'C:\\Users\\steam\\AppData\\Local\\Temp\\tmp16E.tmp': (model_fingerprint: 0x5a6193513058587e)
 %% Search strategy: on 8 variables, CHOOSE_MIN_DOMAIN_SIZE, SELECT_MAX_VALUE
 %% Search strategy: on 8 variables, CHOOSE_MIN_DOMAIN_SIZE, SELECT_MAX_VALUE
 %% Search strategy: on 8 variables, CHOOSE_MIN_DOMAIN_SIZE, SELECT_MAX_VALUE
@@ -65,69 +64,46 @@ Using FZN solver /tmp/.mount_MiniZi3nBR5f/usr/bin/fzn-cp-sat for solving, parame
 %% Search strategy: on 8 variables, CHOOSE_MIN_DOMAIN_SIZE, SELECT_MAX_VALUE
 %% Search strategy: on 8 variables, CHOOSE_MIN_DOMAIN_SIZE, SELECT_MAX_VALUE
 %% Search strategy: on 49 variables, CHOOSE_MIN_DOMAIN_SIZE, SELECT_MIN_VALUE
-%% #Variables: 835 (#ints: 1 in objective)
-%%   - 49 in [0,8]
-%%   - 786 constants in {0,1,779,793,813,2901,3044,53 ... 5130,15423,20381,20405,27771,30010,41150,233497}
+%% #Variables: 786 (#ints: 1 in objective)
+%%   - 786 constants in {0,1,779,793,813,2901,3044,53 ... 5130,15423,20381,20405,27771,30010,41150,233497} 
 %% #kBoolAnd: 2'334 (#enforced: 2'334) (#literals: 7'002)
 %% #kBoolOr: 2'334 (#enforced: 2'334) (#literals: 4'668)
-%% #kLinear1: 98 (#enforced: 98)
-%% #kLinearN: 98 (#terms: 833)
+%% #kLinearN: 49 (#terms: 392)
 %% Starting presolve at 0.00s
-%%   9.80e-05s  0.00e+00d  [DetectDominanceRelations]
-%%   2.10e-04s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1
-%%   3.38e-06s  0.00e+00d  [ExtractEncodingFromLinear]
-%% [Symmetry] Graph for symmetry has 835 nodes and 0 arcs.
-%% [Symmetry] Symmetry computation done. time: 5.0881e-05 dtime: 5.01e-05
-%%   3.43e-06s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements]
-%%   1.86e-04s  0.00e+00d  [Probe]
-%%   7.71e-06s  0.00e+00d  [MaxClique]
-%%   1.12e-06s  0.00e+00d  [PresolveToFixPoint]
-%%   3.34e-06s  0.00e+00d  [ProcessAtMostOneAndLinear]
-%%   2.14e-06s  0.00e+00d  [DetectDuplicateConstraints]
-%%   7.26e-07s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements]
-%%   6.25e-07s  0.00e+00d  [DetectDominatedLinearConstraints]
-%%   4.25e-07s  0.00e+00d  [DetectDifferentVariables]
-%%   7.29e-07s  0.00e+00d  [ProcessSetPPC]
-%%   1.22e-06s  0.00e+00d  [FindAlmostIdenticalLinearConstraints]
-%%   1.84e-05s  0.00e+00d  [FindBigAtMostOneAndLinearOverlap]
-%%   2.35e-06s  0.00e+00d  [FindBigVerticalLinearOverlap]
-%%   6.85e-07s  0.00e+00d  [FindBigHorizontalLinearOverlap]
-%%   9.46e-07s  0.00e+00d  [MergeClauses]
-%%   5.56e-07s  0.00e+00d  [PresolveToFixPoint]
-%%   4.57e-07s  0.00e+00d  [PresolveToFixPoint]
-%% [Symmetry] Graph for symmetry has 835 nodes and 0 arcs.
-%% [Symmetry] Symmetry computation done. time: 2.0689e-05 dtime: 5.01e-05
-%%   1.20e-06s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements]
-%%   1.29e-04s  0.00e+00d  [Probe]
-%%   6.11e-06s  0.00e+00d  [MaxClique]
-%%   6.88e-07s  0.00e+00d  [PresolveToFixPoint]
-%%   4.39e-07s  0.00e+00d  [ProcessAtMostOneAndLinear]
-%%   1.26e-06s  0.00e+00d  [DetectDuplicateConstraints]
-%%   5.69e-07s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements]
-%%   4.09e-07s  0.00e+00d  [DetectDominatedLinearConstraints]
-%%   2.76e-07s  0.00e+00d  [DetectDifferentVariables]
-%%   4.86e-07s  0.00e+00d  [ProcessSetPPC]
-%%   9.68e-07s  0.00e+00d  [FindAlmostIdenticalLinearConstraints]
-%%   2.00e-05s  0.00e+00d  [FindBigAtMostOneAndLinearOverlap]
-%%   2.29e-06s  0.00e+00d  [FindBigVerticalLinearOverlap]
-%%   5.35e-07s  0.00e+00d  [FindBigHorizontalLinearOverlap]
-%%   6.81e-07s  0.00e+00d  [MergeClauses]
-%%   4.91e-07s  0.00e+00d  [PresolveToFixPoint]
-%%   1.06e-05s  0.00e+00d  [ExpandObjective]
+%%   1.01e-05s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] 
+%%   6.10e-06s  0.00e+00d  [operations_research::sat::CpModelPresolver::ExtractEncodingFromLinear] 
+%% [Symmetry] Graph for symmetry has 786 nodes and 0 arcs.
+%% [Symmetry] Symmetry computation done. time: 6.73e-05 dtime: 4.716e-05
+%%   7.00e-06s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   2.63e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::Probe] 
+%%   2.40e-05s  0.00e+00d  [MaxClique] 
+%%   8.00e-07s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] 
+%%   1.80e-06s  0.00e+00d  [operations_research::sat::CpModelPresolver::ProcessAtMostOneAndLinear] 
+%%   2.40e-06s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] 
+%%   8.00e-07s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   3.40e-06s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDominatedLinearConstraints] 
+%%   1.60e-06s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDifferentVariables] 
+%%   7.00e-07s  0.00e+00d  [operations_research::sat::CpModelPresolver::ProcessSetPPC] 
+%%   6.40e-06s  0.00e+00d  [operations_research::sat::CpModelPresolver::FindAlmostIdenticalLinearConstraints] 
+%%   2.80e-05s  0.00e+00d  [operations_research::sat::CpModelPresolver::FindBigAtMostOneAndLinearOverlap] 
+%%   1.02e-05s  0.00e+00d  [operations_research::sat::CpModelPresolver::FindBigVerticalLinearOverlap] 
+%%   9.00e-07s  0.00e+00d  [operations_research::sat::CpModelPresolver::FindBigHorizontalLinearOverlap] 
+%%   3.20e-06s  0.00e+00d  [operations_research::sat::CpModelPresolver::MergeClauses] 
+%%   5.00e-07s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] 
+%%   1.51e-05s  0.00e+00d  [operations_research::sat::CpModelPresolver::ExpandObjective] 
 %% Presolve summary:
 %%   - 0 affine relations were detected.
 %%   - rule 'bool_and: non-reified.' was applied 10 times.
 %%   - rule 'bool_or: always true' was applied 2'329 times.
-%%   - rule 'enforcement: always false' was applied 2'383 times.
-%%   - rule 'linear: always true' was applied 98 times.
-%%   - rule 'linear: empty' was applied 49 times.
-%%   - rule 'linear: fixed or dup variables' was applied 539 times.
-%%   - rule 'linear: reduced variable domains' was applied 49 times.
-%%   - rule 'presolve: 835 unused variables removed.' was applied 1 time.
-%%   - rule 'presolve: iteration' was applied 2 times.
-%% Presolved optimization model 'mznfile0zLKy8': (model_fingerprint: 0xd7d5fa5f3a0fa8d5)
+%%   - rule 'enforcement: always false' was applied 2'334 times.
+%%   - rule 'linear: always true' was applied 49 times.
+%%   - rule 'linear: fixed or dup variables' was applied 441 times.
+%%   - rule 'objective: variable not used elsewhere' was applied 1 time.
+%%   - rule 'presolve: 786 unused variables removed.' was applied 1 time.
+%%   - rule 'presolve: iteration' was applied 1 time.
+%% Presolved optimization model 'C:\\Users\\steam\\AppData\\Local\\Temp\\tmp16E.tmp': (model_fingerprint: 0xd7d5fa5f3a0fa8d5)
 %% #Variables: 0 ( in objective)
-%%
+%% 
 %% Preloading model.
 %% #Bound   0.00s best:inf   next:[233497,233497] initial_domain
 %% [Symmetry] Graph for symmetry has 0 nodes and 0 arcs.
@@ -137,15 +113,15 @@ Using FZN solver /tmp/.mount_MiniZi3nBR5f/usr/bin/fzn-cp-sat for solving, parame
 %% 11 first solution subsolvers: [fj(4), fj_lin, fs_random(2), fs_random_no_lp(2), fs_random_quick_restart, fs_random_quick_restart_no_lp]
 %% 8 interleaved subsolvers: [feasibility_pump, ls(4), ls_lin(2), rins/rens]
 %% 2 helper subsolvers: [neighborhood_helper, synchronization_agent]
-%% #1       0.00s best:233497 next:[]         default_lp (fixed_bools=0/0)
+%% #1       0.00s best:233497 next:[]         no_lp (fixed_bools=0/0)
 %%%mzn-stat: boolVariables=0
 %%%mzn-stat: failures=0
 %%%mzn-stat: objective=233497
 %%%mzn-stat: objectiveBound=233497
 %%%mzn-stat: propagations=0
-%%%mzn-stat: solveTime=0.00302983
+%%%mzn-stat: solveTime=0.004291
 %%%mzn-stat-end
-MATRIU DE PARTITS (DIA, ESTADI):
+MATRIU DE PARTITS (DIA, ESTADI): 
 Dia 1, Estadi 1: Cap partit
 Dia 1, Estadi 2: Partit entre: {6,8}
 Dia 1, Estadi 3: Cap partit
@@ -201,46 +177,47 @@ KMs TOTALS: 1452
 Repartiment d'equips (per distància): [163, 147, 200, 166, 196, 135, 208, 237]
 SEGUIDORS FORA TOTAL: 233497
 ----------
-%% #Done    0.00s default_lp
+%% #Done    0.00s no_lp
+%% #Done    0.00s max_lp
 %% Task timing                                n [     min,      max]      avg      dev     time         n [     min,      max]      avg      dev    dtime
-%%                      'default_lp':         1 [195.29us, 195.29us] 195.29us   0.00ns 195.29us         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
-%%                'feasibility_pump':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+%%                      'default_lp':         1 [533.00us, 533.00us] 533.00us   0.00ns 533.00us         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+%%                'feasibility_pump':         1 [ 52.40us,  52.40us]  52.40us   0.00ns  52.40us         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
 %%                              'fj':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
-%%                              'fj':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
-%%                              'fj':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
-%%                              'fj':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
-%%                          'fj_lin':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
-%%                       'fs_random':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
-%%                       'fs_random':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
-%%                 'fs_random_no_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
-%%                 'fs_random_no_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
-%%         'fs_random_quick_restart':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
-%%   'fs_random_quick_restart_no_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+%%                              'fj':         1 [392.80us, 392.80us] 392.80us   0.00ns 392.80us         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+%%                              'fj':         1 [415.70us, 415.70us] 415.70us   0.00ns 415.70us         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+%%                              'fj':         1 [426.20us, 426.20us] 426.20us   0.00ns 426.20us         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+%%                          'fj_lin':         1 [398.60us, 398.60us] 398.60us   0.00ns 398.60us         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+%%                       'fs_random':         1 [315.00us, 315.00us] 315.00us   0.00ns 315.00us         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+%%                       'fs_random':         1 [503.30us, 503.30us] 503.30us   0.00ns 503.30us         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+%%                 'fs_random_no_lp':         1 [208.90us, 208.90us] 208.90us   0.00ns 208.90us         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+%%                 'fs_random_no_lp':         1 [327.70us, 327.70us] 327.70us   0.00ns 327.70us         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+%%         'fs_random_quick_restart':         1 [124.40us, 124.40us] 124.40us   0.00ns 124.40us         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+%%   'fs_random_quick_restart_no_lp':         1 [266.50us, 266.50us] 266.50us   0.00ns 266.50us         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
 %%                              'ls':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
 %%                              'ls':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
 %%                              'ls':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
 %%                              'ls':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
 %%                          'ls_lin':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
 %%                          'ls_lin':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
-%%                          'max_lp':         1 [  3.33ms,   3.33ms]   3.33ms   0.00ns   3.33ms         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
-%%                           'no_lp':         1 [  3.26ms,   3.26ms]   3.26ms   0.00ns   3.26ms         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
-%%                   'quick_restart':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
-%%             'quick_restart_no_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+%%                          'max_lp':         1 [873.10us, 873.10us] 873.10us   0.00ns 873.10us         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+%%                           'no_lp':         1 [525.80us, 525.80us] 525.80us   0.00ns 525.80us         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+%%                   'quick_restart':         1 [854.70us, 854.70us] 854.70us   0.00ns 854.70us         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+%%             'quick_restart_no_lp':         1 [504.60us, 504.60us] 504.60us   0.00ns 504.60us         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
 %%                       'rins/rens':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
-%%
+%% 
 %% Search stats                        Bools  Conflicts  Branches  Restarts  BoolPropag  IntegerPropag
-%%                      'default_lp':      0          0         0         0           0              1
+%%                      'default_lp':      0          0         0         0           0              0
 %%                       'fs_random':      0          0         0         0           0              0
 %%                       'fs_random':      0          0         0         0           0              0
 %%                 'fs_random_no_lp':      0          0         0         0           0              0
 %%                 'fs_random_no_lp':      0          0         0         0           0              0
 %%         'fs_random_quick_restart':      0          0         0         0           0              0
 %%   'fs_random_quick_restart_no_lp':      0          0         0         0           0              0
-%%                          'max_lp':      0          0         0         0           0              0
-%%                           'no_lp':      0          0         0         0           0              0
+%%                          'max_lp':      0          0         0         0           0              1
+%%                           'no_lp':      0          0         0         0           0              1
 %%                   'quick_restart':      0          0         0         0           0              0
 %%             'quick_restart_no_lp':      0          0         0         0           0              0
-%%
+%% 
 %% SAT stats                           ClassicMinim  LitRemoved  LitLearned  LitForgotten  Subsumed  MClauses  MDecisions  MLitTrue  MSubsumed  MLitRemoved  MReused
 %%                      'default_lp':             0           0           0             0         0         0           0         0          0            0        0
 %%                       'fs_random':             0           0           0             0         0         0           0         0          0            0        0
@@ -253,21 +230,21 @@ SEGUIDORS FORA TOTAL: 233497
 %%                           'no_lp':             0           0           0             0         0         0           0         0          0            0        0
 %%                   'quick_restart':             0           0           0             0         0         0           0         0          0            0        0
 %%             'quick_restart_no_lp':             0           0           0             0         0         0           0         0          0            0        0
-%%
+%% 
 %% LNS stats       Improv/Calls  Closed  Difficulty  TimeLimit
 %%   'rins/rens':           0/0      0%        0.50       0.10
-%%
+%% 
 %% Solutions (1)    Num   Rank
-%%   'default_lp':    1  [1,1]
-%%
+%%        'no_lp':    1  [1,1]
+%% 
 %% Objective bounds     Num
 %%   'initial_domain':    1
-%%
+%% 
 %% Solution repositories    Added  Queried  Synchro
-%%   'feasible solutions':      1        0        1
+%%   'feasible solutions':      2        0        2
 %%         'lp solutions':      0        0        0
 %%                 'pump':      0        0
-%%
+%% 
 %% CpSolverResponse summary:
 %% status: OPTIMAL
 %% objective: 233497
@@ -277,15 +254,15 @@ SEGUIDORS FORA TOTAL: 233497
 %% conflicts: 0
 %% branches: 0
 %% propagations: 0
-%% integer_propagations: 1
+%% integer_propagations: 0
 %% restarts: 0
 %% lp_iterations: 0
-%% walltime: 0.00784887
-%% usertime: 0.00784891
+%% walltime: 0.0218938
+%% usertime: 0.0218939
 %% deterministic_time: 0
 %% gap_integral: 0
-%% solution_fingerprint: 0x90abf93a4d1a82a6
-%%
+%% solution_fingerprint: 0x5dbcaa6aeb69b115
+%% 
 ==========
 %%%mzn-stat: nSolutions=1
 %%%mzn-stat-end
@@ -293,7 +270,7 @@ SEGUIDORS FORA TOTAL: 233497
 %%%mzn-stat: failures=0
 %%%mzn-stat: objective=233497
 %%%mzn-stat: objectiveBound=233497
-%%%mzn-stat: propagations=1
-%%%mzn-stat: solveTime=0.00784887
+%%%mzn-stat: propagations=0
+%%%mzn-stat: solveTime=0.0218938
 %%%mzn-stat-end
-Finished in 994msec.
+Finished in 1s 490msec.

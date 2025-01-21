@@ -1,0 +1,709 @@
+
+￼
+Running calendari_v2.mzn, t1nofix.dzn
+1h 1m 32s
+
+Using FZN solver C:\Program Files\MiniZinc\bin\fzn-cp-sat.EXE for solving, parameters: -r 123123 -a -p 16 -s -v 
+%% File C:\\Users\\steam\\AppData\\Local\\Temp\\tmpDF06.tmp.fzn parsed in 17 ms
+%% Presolve model
+%%   - rule 'array_int_element: rewrite as a 2d element' was applied 48 times
+%%   - rule 'int_lin_eq: store 2d flattening mapping' was applied 48 times
+%%   - done in 0 ms
+%% Model C:\\Users\\steam\\AppData\\Local\\Temp\\tmpDF06.tmp
+%%   - array_bool_and: 672
+%%   - array_int_element: 76
+%%   - bool_clause: 96
+%%   - fzn_all_different_int: 17
+%%   - int_eq_imp: 868
+%%   - int_lin_eq: 65
+%%   - int_max: 28
+%%   - Minimization problem
+%% Starting CP-SAT solver v9.11.4210
+%% Parameters: log_search_progress: true log_to_stdout: false max_domain_size_when_encoding_eq_neq_constraints: 32 num_workers: 16
+%% Initial optimization model 'C:\\Users\\steam\\AppData\\Local\\Temp\\tmpDF06.tmp': (model_fingerprint: 0xcbeca0aa6858925)
+%% Search strategy: on 8 variables, CHOOSE_FIRST, SELECT_MIN_VALUE
+%% Search strategy: on 28 variables, CHOOSE_FIRST, SELECT_MIN_VALUE
+%% Search strategy: on 28 variables, CHOOSE_FIRST, SELECT_MIN_VALUE
+%% #Variables: 1'908 (#ints: 1 in objective)
+%%   - 1'540 Booleans in [0,1]
+%%   - 1 in [-35000,-5000]
+%%   - 1 in [-31000,-1000]
+%%   - 1 in [-30000,0]
+%%   - 1 in [-28000,2000]
+%%   - 1 in [-27000,3000]
+%%   - 2 in [-23000,7000]
+%%   - 1 in [-22000,8000]
+%%   - 2 in [-18000,12000]
+%%   - 1 in [-17000,13000]
+%%   - 1 in [-15000,15000]
+%%   - 2 in [-13000,17000]
+%%   - 1 in [-12000,18000]
+%%   - 1 in [-10000,20000]
+%%   - 2 in [-8000,22000]
+%%   - 1 in [-7000,23000]
+%%   - 2 in [-5000,25000]
+%%   - 1 in [-3000,27000]
+%%   - 48 in [0][10][12][14,16][18][20][22][25,26][28][30][32][35][38][40][42][45][50][55][60]
+%%   - 1 in [0,2000]
+%%   - 1 in [0,3000]
+%%   - 2 in [0,7000]
+%%   - 1 in [0,8000]
+%%   - 2 in [0,12000]
+%%   - 1 in [0,13000]
+%%   - 1 in [0,15000]
+%%   - 2 in [0,17000]
+%%   - 1 in [0,18000]
+%%   - 1 in [0,20000]
+%%   - 2 in [0,22000]
+%%   - 1 in [0,23000]
+%%   - 2 in [0,25000]
+%%   - 1 in [0,27000]
+%%   - 4 in [0,30000]
+%%   - 36 in [0,50000]
+%%   - 152 in [1,7]
+%%   - 8 in [60,360]
+%%   - 28 in [101,707]
+%%   - 1 in [480,2880]
+%%   - 4 in [5000,35000]
+%%   - 30 in [10000,40000]
+%%   - 2 in [15000,45000]
+%%   - 14 constants in {0,10000,18000,20000,23000,25000,35000,40000} 
+%% #kAllDiff: 17
+%% #kBoolAnd: 672 (#enforced: 672) (#literals: 2'016)
+%% #kBoolOr: 768 (#enforced: 672) (#literals: 2'016)
+%% #kElement: 28
+%% #kLinMax: 28 (#expressions: 56)
+%% #kLinear1: 196 (#enforced: 196)
+%% #kLinear2: 700 (#enforced: 672)
+%% #kLinear3: 28
+%% #kLinearN: 9 (#terms: 65)
+%% #kTable: 48
+%% Starting presolve at 0.00s
+%%   3.92e-04s  0.00e+00d  [DetectDominanceRelations] 
+%%   8.32e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=3 #num_dual_strengthening=2 
+%%   9.80e-06s  0.00e+00d  [operations_research::sat::CpModelPresolver::ExtractEncodingFromLinear] 
+%% [Symmetry] Graph for symmetry has 29'509 nodes and 58'356 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0065558 dtime: 0.0183767
+%% [SAT presolve] num removable Booleans: 0 / 6516
+%% [SAT presolve] num trivial clauses: 0
+%% [SAT presolve] [0s] clauses:9552 literals:24912 vars:4948 one_side_vars:196 simple_definition:2400 singleton_clauses:0
+%% [SAT presolve] [0.0005852s] clauses:9552 literals:24912 vars:4948 one_side_vars:196 simple_definition:2400 singleton_clauses:0
+%% [SAT presolve] [0.0009237s] clauses:9552 literals:24912 vars:4948 one_side_vars:196 simple_definition:2400 singleton_clauses:0
+%%   9.73e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   1.09e-01s  2.48e-01d  [operations_research::sat::CpModelPresolver::Probe] #probed=21'128 #equiv=672 #new_binary_clauses=77'316 
+%%   1.37e-02s  0.00e+00d  [MaxClique] Merged 7777(16828 literals) into 2449(11500 literals) at_most_ones. 
+%%   1.78e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   3.91e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=2 #num_dual_strengthening=1 
+%%   1.30e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::ProcessAtMostOneAndLinear] 
+%%   7.33e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] #duplicates=68 
+%%   6.57e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   7.48e-05s  4.20e-07d  [operations_research::sat::CpModelPresolver::DetectDominatedLinearConstraints] #relevant_constraints=36 
+%%   8.42e-05s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDifferentVariables] 
+%%   2.30e-03s  9.51e-05d  [operations_research::sat::CpModelPresolver::ProcessSetPPC] #relevant_constraints=3'749 #num_inclusions=1'784 
+%%   9.86e-05s  0.00e+00d  [operations_research::sat::CpModelPresolver::FindAlmostIdenticalLinearConstraints] 
+%%   4.34e-03s  2.49e-03d  [operations_research::sat::CpModelPresolver::FindBigAtMostOneAndLinearOverlap] 
+%%   4.46e-04s  1.89e-04d  [operations_research::sat::CpModelPresolver::FindBigVerticalLinearOverlap] 
+%%   7.65e-05s  2.80e-07d  [operations_research::sat::CpModelPresolver::FindBigHorizontalLinearOverlap] #linears=8 
+%%   7.05e-05s  0.00e+00d  [operations_research::sat::CpModelPresolver::MergeClauses] 
+%%   1.61e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   1.98e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   1.57e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   1.94e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%% [Symmetry] Graph for symmetry has 20'937 nodes and 33'304 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0241531 dtime: 0.0355334
+%% [Symmetry] #generators: 6, average support size: 3127.67
+%% [Symmetry] 595 orbits with sizes: 28,28,28,28,28,28,28,28,28,28,...
+%% [Symmetry] Num fixable by intersecting at_most_one with orbits: 27 largest_orbit: 28
+%% [Symmetry] Found orbitope of size 1718 x 2
+%%   9.79e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   9.19e-02s  1.90e-01d  [operations_research::sat::CpModelPresolver::Probe] #probed=19'792 #fixed_bools=50 #new_bounds=33 #equiv=38 #new_binary_clauses=72'810 
+%%   2.81e-03s  0.00e+00d  [MaxClique] 
+%%   1.77e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   2.62e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=2 #num_dual_strengthening=1 
+%%   1.24e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::ProcessAtMostOneAndLinear] 
+%%   5.98e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] 
+%%   5.61e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   8.44e-05s  4.20e-07d  [operations_research::sat::CpModelPresolver::DetectDominatedLinearConstraints] #relevant_constraints=36 
+%%   8.24e-05s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDifferentVariables] 
+%%   9.34e-04s  3.96e-05d  [operations_research::sat::CpModelPresolver::ProcessSetPPC] #relevant_constraints=1'922 
+%%   6.95e-05s  0.00e+00d  [operations_research::sat::CpModelPresolver::FindAlmostIdenticalLinearConstraints] 
+%%   4.39e-03s  2.41e-03d  [operations_research::sat::CpModelPresolver::FindBigAtMostOneAndLinearOverlap] 
+%%   4.54e-04s  1.87e-04d  [operations_research::sat::CpModelPresolver::FindBigVerticalLinearOverlap] 
+%%   7.86e-05s  2.80e-07d  [operations_research::sat::CpModelPresolver::FindBigHorizontalLinearOverlap] #linears=8 
+%%   7.17e-05s  0.00e+00d  [operations_research::sat::CpModelPresolver::MergeClauses] 
+%%   1.59e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   2.00e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   1.58e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   1.97e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%% [Symmetry] Graph for symmetry has 20'793 nodes and 32'855 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0175487 dtime: 0.0257641
+%% [Symmetry] #generators: 5, average support size: 2744.8
+%% [Symmetry] 1172 orbits with sizes: 15,15,15,15,15,15,15,15,15,15,...
+%% [Symmetry] Num fixable by intersecting at_most_one with orbits: 25 largest_orbit: 15
+%% [Symmetry] Found orbitope of size 905 x 2
+%%   8.76e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   8.95e-02s  1.85e-01d  [operations_research::sat::CpModelPresolver::Probe] #probed=19'610 #fixed_bools=34 #new_bounds=33 #equiv=22 #new_binary_clauses=72'058 
+%%   2.68e-03s  0.00e+00d  [MaxClique] 
+%%   1.75e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   2.62e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=2 #num_dual_strengthening=1 
+%%   1.24e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::ProcessAtMostOneAndLinear] 
+%%   5.97e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] 
+%%   5.58e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] 
+%%   8.35e-05s  4.20e-07d  [operations_research::sat::CpModelPresolver::DetectDominatedLinearConstraints] #relevant_constraints=36 
+%%   8.26e-05s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDifferentVariables] 
+%%   9.68e-04s  3.91e-05d  [operations_research::sat::CpModelPresolver::ProcessSetPPC] #relevant_constraints=1'898 
+%%   7.63e-05s  0.00e+00d  [operations_research::sat::CpModelPresolver::FindAlmostIdenticalLinearConstraints] 
+%%   4.41e-03s  2.40e-03d  [operations_research::sat::CpModelPresolver::FindBigAtMostOneAndLinearOverlap] 
+%%   4.41e-04s  1.85e-04d  [operations_research::sat::CpModelPresolver::FindBigVerticalLinearOverlap] 
+%%   8.80e-05s  2.80e-07d  [operations_research::sat::CpModelPresolver::FindBigHorizontalLinearOverlap] #linears=8 
+%%   7.27e-05s  0.00e+00d  [operations_research::sat::CpModelPresolver::MergeClauses] 
+%%   1.58e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   1.94e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   2.95e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::ExpandObjective] #entries=156'860 #tight_variables=11'739 #tight_constraints=1'886 
+%% Presolve summary:
+%%   - 1470 affine relations were detected.
+%%   - rule 'TODO dual: only one blocking constraint?' was applied 752 times.
+%%   - rule 'TODO dual: only one unspecified blocking constraint?' was applied 112 times.
+%%   - rule 'affine: new relation' was applied 1'470 times.
+%%   - rule 'all_diff: expanded' was applied 1 time.
+%%   - rule 'all_diff: permutation expanded' was applied 16 times.
+%%   - rule 'at_most_one: removed literals' was applied 2 times.
+%%   - rule 'at_most_one: size one' was applied 1 time.
+%%   - rule 'at_most_one: transformed into max clique.' was applied 1 time.
+%%   - rule 'bool_and: fixed literals' was applied 672 times.
+%%   - rule 'bool_and: x => x' was applied 672 times.
+%%   - rule 'bool_or: always true' was applied 672 times.
+%%   - rule 'deductions: 7523 stored' was applied 1 time.
+%%   - rule 'dual: enforced equivalence' was applied 672 times.
+%%   - rule 'dual: make encoding equiv' was applied 10'978 times.
+%%   - rule 'duplicate: removed constraint' was applied 68 times.
+%%   - rule 'element: expanded value element' was applied 28 times.
+%%   - rule 'element: reduced target domain' was applied 28 times.
+%%   - rule 'enforcement: false literal' was applied 66 times.
+%%   - rule 'enforcement: true literal' was applied 66 times.
+%%   - rule 'exactly_one: removed literals' was applied 106 times.
+%%   - rule 'exactly_one: satisfied' was applied 10 times.
+%%   - rule 'exactly_one: x and not(x)' was applied 56 times.
+%%   - rule 'lin_max: converted to equality' was applied 6 times.
+%%   - rule 'lin_max: removed exprs' was applied 6 times.
+%%   - rule 'lin_max: unused affine target' was applied 19 times.
+%%   - rule 'lin_max: x = max(x, ...)' was applied 3 times.
+%%   - rule 'linear: always true' was applied 69 times.
+%%   - rule 'linear: fixed or dup variables' was applied 3 times.
+%%   - rule 'linear: reduced variable domains' was applied 42 times.
+%%   - rule 'linear: remapped using affine relations' was applied 10 times.
+%%   - rule 'linear: simplified rhs' was applied 6'027 times.
+%%   - rule 'linear: variable substitution 0' was applied 1 time.
+%%   - rule 'presolve: 186 unused variables removed.' was applied 1 time.
+%%   - rule 'presolve: iteration' was applied 3 times.
+%%   - rule 'setppc: bool_or in at_most_one.' was applied 1'728 times.
+%%   - rule 'setppc: removed dominated constraints' was applied 56 times.
+%%   - rule 'symmetry: fixed to false in general orbit' was applied 52 times.
+%%   - rule 'table: expanded positive constraint' was applied 48 times.
+%%   - rule 'table: reduced variable domains' was applied 96 times.
+%%   - rule 'variables: add encoding constraint' was applied 3'492 times.
+%%   - rule 'variables: canonicalize affine domain' was applied 28 times.
+%%   - rule 'variables: canonicalize domain' was applied 4 times.
+%%   - rule 'variables: detect fully reified value encoding' was applied 196 times.
+%%   - rule 'variables: detect half reified value encoding' was applied 392 times.
+%%   - rule 'variables: only used in encoding' was applied 28 times.
+%% Presolved optimization model 'C:\\Users\\steam\\AppData\\Local\\Temp\\tmpDF06.tmp': (model_fingerprint: 0xdcb3802b8301f588)
+%% Search strategy: on 8 variables, CHOOSE_FIRST, SELECT_MIN_VALUE
+%% Search strategy: on 28 variables, CHOOSE_FIRST, SELECT_MIN_VALUE
+%% #Variables: 5'884 (#ints: 8 in objective)
+%%   - 5'648 Booleans in [0,1]
+%%   - 44 in [0][10][12][14,16][18][20][22][25,26][28][30][32][35][38][40][42][45][50][55][60]
+%%   - 4 in [0][12][14,16][18][20][22][25,26][28][30][32][35][38][40][42][45][50][55][60]
+%%   - 146 in [1,7]
+%%   - 2 in [2,7]
+%%   - 4 in [3,7]
+%%   - 8 in [60,328][330][332,333][335][337,338][340][342][345][350][355][360]
+%%   - 1 in [101,107][201,207][301,307][401,407][501,507][601,607][701,707]
+%%   - 2 in [102,107][201,207][301,307][401,407][501,507][601,607][701,707]
+%%   - 25 in [103,107][201,207][301,307][401,407][501,507][601,607][701,707]
+%% #kAtMostOne: 48 (#literals: 1'319)
+%% #kExactlyOne: 1'850 (#literals: 11'702)
+%% #kLinear1: 6'852 (#enforced: 6'852)
+%% #kLinear2: 672 (#enforced: 672)
+%% #kLinear3: 28
+%% #kLinearN: 8 (#terms: 56)
+%% Preloading model.
+%% #Bound   0.65s best:inf   next:[480,2880] initial_domain
+%% [Symmetry] Graph for symmetry has 18'964 nodes and 32'503 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0099064 dtime: 0.0163695
+%% [Symmetry] #generators: 3, average support size: 2277.33
+%% [Symmetry] Found orbitope of size 886 x 2
+%% #Model   0.67s var:5884/5884 constraints:9458/9458
+%% Starting search at 0.68s with 16 workers.
+%% 11 full problem subsolvers: [core, default_lp, fixed, lb_tree_search, max_lp, no_lp, probing, pseudo_costs, quick_restart, quick_restart_no_lp, reduced_costs]
+%% 5 first solution subsolvers: [fj(2), fs_random, fs_random_no_lp, fs_random_quick_restart_no_lp]
+%% 11 interleaved subsolvers: [feasibility_pump, graph_arc_lns, graph_cst_lns, graph_dec_lns, graph_var_lns, ls(2), ls_lin, rins/rens, rnd_cst_lns, rnd_var_lns]
+%% 3 helper subsolvers: [neighborhood_helper, synchronization_agent, update_gap_integral]
+%% #1       1.01s best:1316  next:[480,1315] default_lp (fixed_bools=0/8390)
+%%%mzn-stat: boolVariables=8390
+%%%mzn-stat: failures=28
+%%%mzn-stat: objective=1316
+%%%mzn-stat: objectiveBound=480
+%%%mzn-stat: propagations=1693126
+%%%mzn-stat: solveTime=1.00813
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	
+Team 1	   -	(1,7)	(2,6)	(4,1)	(5,3)	(6,2)	(7,5)	(3,4)
+Team 2	(1,7)	   -	(6,3)	(3,2)	(7,1)	(2,5)	(5,4)	(4,6)
+Team 3	(2,6)	(6,3)	   -	(5,5)	(4,2)	(1,4)	(3,1)	(7,7)
+Team 4	(4,1)	(3,2)	(5,5)	   -	(2,4)	(7,6)	(6,7)	(1,3)
+Team 5	(5,3)	(7,1)	(4,2)	(2,4)	   -	(3,7)	(1,6)	(6,5)
+Team 6	(6,2)	(2,5)	(1,4)	(7,6)	(3,7)	   -	(4,3)	(5,1)
+Team 7	(7,5)	(5,4)	(3,1)	(6,7)	(1,6)	(4,3)	   -	(2,2)
+Team 8	(3,4)	(4,6)	(7,7)	(1,3)	(6,5)	(5,1)	(2,2)	   -
+
+Total Distance: 1316
+Team Distances: [142, 166, 187, 127, 198, 161, 151, 184]
+Spectators Left Out: 223000
+----------
+%% #Model   1.18s var:5860/5884 constraints:9458/9458
+%% #Bound   1.81s best:1316  next:[481,1315] bool_core (num_cores=1 [size:1 mw:1] a=8 d=0 fixed=0/8398 clauses=24'253)
+%% #Model   1.89s var:5859/5884 constraints:9458/9458
+%% #2       2.04s best:1307  next:[481,1306] quick_restart_no_lp (fixed_bools=26/8414)
+%%%mzn-stat: boolVariables=8414
+%%%mzn-stat: failures=134
+%%%mzn-stat: objective=1307
+%%%mzn-stat: objectiveBound=481
+%%%mzn-stat: propagations=10641106
+%%%mzn-stat: solveTime=2.03655
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	
+Team 1	   -	(7,1)	(6,2)	(5,3)	(4,4)	(3,5)	(2,6)	(1,7)
+Team 2	(7,1)	   -	(5,6)	(6,7)	(3,2)	(4,3)	(1,5)	(2,4)
+Team 3	(6,2)	(5,6)	   -	(7,5)	(2,3)	(1,4)	(4,7)	(3,1)
+Team 4	(5,3)	(6,7)	(7,5)	   -	(1,6)	(2,1)	(3,4)	(4,2)
+Team 5	(4,4)	(3,2)	(2,3)	(1,6)	   -	(7,7)	(6,1)	(5,5)
+Team 6	(3,5)	(4,3)	(1,4)	(2,1)	(7,7)	   -	(5,2)	(6,6)
+Team 7	(2,6)	(1,5)	(4,7)	(3,4)	(6,1)	(5,2)	   -	(7,3)
+Team 8	(1,7)	(2,4)	(3,1)	(4,2)	(5,5)	(6,6)	(7,3)	   -
+
+Total Distance: 1307
+Team Distances: [85, 164, 186, 188, 190, 166, 167, 161]
+Spectators Left Out: 235000
+----------
+%% #3       2.06s best:1293  next:[481,1292] default_lp (fixed_bools=25/8390)
+%%%mzn-stat: boolVariables=8390
+%%%mzn-stat: failures=85
+%%%mzn-stat: objective=1293
+%%%mzn-stat: objectiveBound=481
+%%%mzn-stat: propagations=10585302
+%%%mzn-stat: solveTime=2.05635
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	
+Team 1	   -	(1,7)	(2,6)	(3,1)	(5,3)	(4,2)	(7,5)	(6,4)
+Team 2	(1,7)	   -	(3,3)	(2,2)	(7,1)	(6,5)	(5,4)	(4,6)
+Team 3	(2,6)	(3,3)	   -	(5,5)	(6,2)	(1,4)	(4,1)	(7,7)
+Team 4	(3,1)	(2,2)	(5,5)	   -	(4,4)	(7,6)	(6,7)	(1,3)
+Team 5	(5,3)	(7,1)	(6,2)	(4,4)	   -	(3,7)	(1,6)	(2,5)
+Team 6	(4,2)	(6,5)	(1,4)	(7,6)	(3,7)	   -	(2,3)	(5,1)
+Team 7	(7,5)	(5,4)	(4,1)	(6,7)	(1,6)	(2,3)	   -	(3,2)
+Team 8	(6,4)	(4,6)	(7,7)	(1,3)	(2,5)	(5,1)	(3,2)	   -
+
+Total Distance: 1293
+Team Distances: [119, 188, 210, 113, 117, 175, 151, 220]
+Spectators Left Out: 223000
+----------
+%% #Model   2.12s var:5844/5884 constraints:9452/9458
+%% #4       2.16s best:1270  next:[481,1269] no_lp (fixed_bools=40/8390)
+%%%mzn-stat: boolVariables=8390
+%%%mzn-stat: failures=178
+%%%mzn-stat: objective=1270
+%%%mzn-stat: objectiveBound=481
+%%%mzn-stat: propagations=10721681
+%%%mzn-stat: solveTime=2.16487
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	
+Team 1	   -	(1,7)	(2,6)	(4,3)	(3,4)	(6,2)	(7,5)	(5,1)
+Team 2	(1,7)	   -	(6,3)	(5,4)	(7,1)	(2,5)	(3,6)	(4,2)
+Team 3	(2,6)	(6,3)	   -	(3,1)	(4,5)	(1,4)	(5,2)	(7,7)
+Team 4	(4,3)	(5,4)	(3,1)	   -	(2,2)	(7,6)	(6,7)	(1,5)
+Team 5	(3,4)	(7,1)	(4,5)	(2,2)	   -	(5,7)	(1,3)	(6,6)
+Team 6	(6,2)	(2,5)	(1,4)	(7,6)	(5,7)	   -	(4,1)	(3,3)
+Team 7	(7,5)	(3,6)	(5,2)	(6,7)	(1,3)	(4,1)	   -	(2,4)
+Team 8	(5,1)	(4,2)	(7,7)	(1,5)	(6,6)	(3,3)	(2,4)	   -
+
+Total Distance: 1270
+Team Distances: [119, 144, 210, 129, 148, 220, 181, 119]
+Spectators Left Out: 221000
+----------
+%% #5       2.20s best:1269  next:[481,1268] no_lp (fixed_bools=40/8390)
+%%%mzn-stat: boolVariables=8390
+%%%mzn-stat: failures=309
+%%%mzn-stat: objective=1269
+%%%mzn-stat: objectiveBound=481
+%%%mzn-stat: propagations=10942198
+%%%mzn-stat: solveTime=2.19977
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	
+Team 1	   -	(1,7)	(2,6)	(5,3)	(3,4)	(6,2)	(7,5)	(4,1)
+Team 2	(1,7)	   -	(6,3)	(4,4)	(7,1)	(2,5)	(3,6)	(5,2)
+Team 3	(2,6)	(6,3)	   -	(3,1)	(5,5)	(1,4)	(4,2)	(7,7)
+Team 4	(5,3)	(4,4)	(3,1)	   -	(2,2)	(7,6)	(6,7)	(1,5)
+Team 5	(3,4)	(7,1)	(5,5)	(2,2)	   -	(4,7)	(1,3)	(6,6)
+Team 6	(6,2)	(2,5)	(1,4)	(7,6)	(4,7)	   -	(5,1)	(3,3)
+Team 7	(7,5)	(3,6)	(4,2)	(6,7)	(1,3)	(5,1)	   -	(2,4)
+Team 8	(4,1)	(5,2)	(7,7)	(1,5)	(6,6)	(3,3)	(2,4)	   -
+
+Total Distance: 1269
+Team Distances: [142, 130, 187, 143, 170, 197, 181, 119]
+Spectators Left Out: 221000
+----------
+%% #6       2.37s best:1197  next:[481,1196] default_lp (fixed_bools=40/8390)
+%%%mzn-stat: boolVariables=8390
+%%%mzn-stat: failures=1010
+%%%mzn-stat: objective=1197
+%%%mzn-stat: objectiveBound=481
+%%%mzn-stat: propagations=12119867
+%%%mzn-stat: solveTime=2.37296
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	
+Team 1	   -	(1,7)	(2,6)	(7,5)	(5,3)	(4,1)	(3,2)	(6,4)
+Team 2	(1,7)	   -	(3,4)	(2,2)	(7,1)	(6,3)	(5,5)	(4,6)
+Team 3	(2,6)	(3,4)	   -	(5,1)	(6,2)	(1,5)	(4,3)	(7,7)
+Team 4	(7,5)	(2,2)	(5,1)	   -	(4,4)	(3,6)	(6,7)	(1,3)
+Team 5	(5,3)	(7,1)	(6,2)	(4,4)	   -	(2,7)	(1,6)	(3,5)
+Team 6	(4,1)	(6,3)	(1,5)	(3,6)	(2,7)	   -	(7,4)	(5,2)
+Team 7	(3,2)	(5,5)	(4,3)	(6,7)	(1,6)	(7,4)	   -	(2,1)
+Team 8	(6,4)	(4,6)	(7,7)	(1,3)	(3,5)	(5,2)	(2,1)	   -
+
+Total Distance: 1197
+Team Distances: [119, 166, 141, 204, 95, 127, 161, 184]
+Spectators Left Out: 239000
+----------
+%% #Model   2.78s var:5843/5884 constraints:9452/9458
+%% #Bound   3.01s best:1197  next:[482,1196] bool_core (num_cores=2 [size:1 mw:1] a=8 d=0 fixed=41/8399 clauses=17'340)
+%% #Bound   3.01s best:1197  next:[483,1196] fixed
+%% #Bound   3.02s best:1197  next:[484,1196] quick_restart
+%% #Bound   3.03s best:1197  next:[485,1196] quick_restart_no_lp
+%% #Bound   3.04s best:1197  next:[486,1196] quick_restart_no_lp
+%% #Bound   3.04s best:1197  next:[487,1196] quick_restart
+%% #Bound   3.05s best:1197  next:[488,1196] quick_restart_no_lp
+%% #Bound   3.05s best:1197  next:[489,1196] quick_restart
+%% #Bound   3.05s best:1197  next:[490,1196] quick_restart_no_lp
+%% #Bound   3.06s best:1197  next:[491,1196] no_lp
+%% #Bound   3.06s best:1197  next:[492,1196] quick_restart_no_lp
+%% #Bound   3.06s best:1197  next:[493,1196] quick_restart_no_lp
+%% #Bound   3.07s best:1197  next:[494,1196] quick_restart
+%% #Bound   3.08s best:1197  next:[495,1196] quick_restart_no_lp
+%% #Bound   3.09s best:1197  next:[496,1196] no_lp
+%% #Bound   3.11s best:1197  next:[497,1196] quick_restart
+%% #Bound   3.14s best:1197  next:[498,1196] quick_restart
+%% #Bound   3.18s best:1197  next:[499,1196] quick_restart_no_lp
+%% #Bound   3.20s best:1197  next:[500,1196] quick_restart_no_lp
+%% #Bound   3.22s best:1197  next:[501,1196] quick_restart
+%% #Bound   3.24s best:1197  next:[502,1196] quick_restart_no_lp
+%% #Model   3.28s var:5837/5884 constraints:9449/9458
+%% #Bound   3.29s best:1197  next:[503,1196] probing
+%% #Model   3.65s var:5836/5884 constraints:9449/9458
+%% #Model   3.79s var:5833/5884 constraints:9449/9458
+%% #Model   3.83s var:5827/5884 constraints:9446/9458
+%% #7       3.84s best:1155  next:[506,1154] default_lp (fixed_bools=57/8390)
+%%%mzn-stat: boolVariables=8390
+%%%mzn-stat: failures=5153
+%%%mzn-stat: objective=1155
+%%%mzn-stat: objectiveBound=506
+%%%mzn-stat: propagations=18163901
+%%%mzn-stat: solveTime=3.836
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	
+Team 1	   -	(1,7)	(2,5)	(7,6)	(5,3)	(4,1)	(3,2)	(6,4)
+Team 2	(1,7)	   -	(3,4)	(2,2)	(7,1)	(6,3)	(5,6)	(4,5)
+Team 3	(2,5)	(3,4)	   -	(5,1)	(6,2)	(1,6)	(4,3)	(7,7)
+Team 4	(7,6)	(2,2)	(5,1)	   -	(4,4)	(3,5)	(6,7)	(1,3)
+Team 5	(5,3)	(7,1)	(6,2)	(4,4)	   -	(2,7)	(1,5)	(3,6)
+Team 6	(4,1)	(6,3)	(1,6)	(3,5)	(2,7)	   -	(7,4)	(5,2)
+Team 7	(3,2)	(5,6)	(4,3)	(6,7)	(1,5)	(7,4)	   -	(2,1)
+Team 8	(6,4)	(4,5)	(7,7)	(1,3)	(3,6)	(5,2)	(2,1)	   -
+
+Total Distance: 1155
+Team Distances: [131, 166, 131, 172, 105, 117, 149, 184]
+Spectators Left Out: 225000
+----------
+%% #Bound   3.37s best:1197  next:[506,1196] quick_restart [skipped_logs=2]
+%% #Model   4.41s var:5819/5884 constraints:9443/9458
+%% #Model   4.70s var:5818/5884 constraints:9443/9458
+%% #Model   4.90s var:5817/5884 constraints:9443/9458
+%% #Bound   4.64s best:1155  next:[513,1154] bool_core (num_cores=10 [size:1 mw:1] a=8 d=0 fixed=97/8430 clauses=26'985) [skipped_logs=6]
+%% #Model   5.25s var:5811/5884 constraints:9440/9458
+%% #Model   5.33s var:5810/5884 constraints:9440/9458
+%% #Model   5.54s var:5803/5884 constraints:9437/9458
+%% #Model   5.77s var:5802/5884 constraints:9437/9458
+%% #Model   5.83s var:5801/5884 constraints:9437/9458
+%% #Model   5.96s var:5800/5884 constraints:9437/9458
+%% #Bound   5.96s best:1155  next:[521,1154] quick_restart_no_lp [skipped_logs=7]
+%% #Model   6.02s var:5795/5884 constraints:9434/9458
+%% #Model   6.21s var:5794/5884 constraints:9434/9458
+%% #Model   6.31s var:5792/5884 constraints:9434/9458
+%% #Model   6.37s var:5789/5884 constraints:9431/9458
+%% #Model   6.62s var:5788/5884 constraints:9431/9458
+%% #Model   6.74s var:5786/5884 constraints:9431/9458
+%% #Model   6.77s var:5783/5884 constraints:9428/9458
+%% #Bound   6.97s best:1155  next:[529,1154] bool_core (num_cores=19 [cover] a=7 d=1 fixed=136/8460 clauses=27'808) [skipped_logs=7]
+%% #Model   7.23s var:5782/5884 constraints:9428/9458
+%% #Model   7.38s var:5774/5884 constraints:9425/9458
+%% #Model   7.47s var:5773/5884 constraints:9425/9458
+%% #Bound   7.32s best:1155  next:[531,1154] bool_core (num_cores=20 [size:1 mw:1] a=7 d=1 fixed=164/8466 clauses=30'321) [skipped_logs=1]
+%% #Model   7.91s var:5746/5884 constraints:9422/9458 [skipped_logs=2]
+%% #Model   8.82s var:5712/5884 constraints:9413/9458 [skipped_logs=6]
+%% #Bound   9.21s best:1155  next:[532,1154] quick_restart_no_lp
+%% #Bound   9.84s best:1155  next:[536,1154] quick_restart [skipped_logs=3]
+%% #Model   9.72s var:5688/5884 constraints:9407/9458 [skipped_logs=4]
+%% #Bound  10.99s best:1155  next:[545,1154] bool_core (num_cores=34 [size:2 mw:1 d:2] a=6 d=2 fixed=275/8480 clauses=26'576) [skipped_logs=8]
+%% #Model  10.78s var:5681/5884 constraints:9407/9458 [skipped_logs=2]
+%% #Bound  12.04s best:1155  next:[571,1154] bool_core (num_cores=34 [cover] a=6 d=2 fixed=316/8610 clauses=33'218) [skipped_logs=25]
+%% #Model  11.57s var:5663/5884 constraints:9398/9458 [skipped_logs=2]
+%% #Bound  12.89s best:1155  next:[579,1154] bool_core (num_cores=34 [cover] a=6 d=2 fixed=324/8650 clauses=28'042) [skipped_logs=7]
+%% #Model  12.57s var:5662/5884 constraints:9398/9458 [skipped_logs=0]
+%% #Bound  13.88s best:1155  next:[584,1154] bool_core (num_cores=37 [size:1 mw:1] a=6 d=2 fixed=337/8675 clauses=33'385) [skipped_logs=4]
+%% #Model  14.09s var:5661/5884 constraints:9398/9458
+%% #Bound  14.60s best:1155  next:[586,1154] bool_core (num_cores=39 [size:1 mw:1] a=6 d=2 fixed=340/8685 clauses=36'655) [skipped_logs=1]
+%% #Model  14.89s var:5659/5884 constraints:9398/9458 [skipped_logs=1]
+%% #Model  15.89s var:5642/5884 constraints:9389/9458 [skipped_logs=4]
+%% #Bound  16.76s best:1155  next:[587,1154] bool_core (num_cores=40 [size:1 mw:1] a=6 d=2 fixed=360/8690 clauses=23'830)
+%% #Bound  16.77s best:1155  next:[588,1154] bool_core (num_cores=40 [cover] a=6 d=2 fixed=360/8690 clauses=23'867) [skipped_logs=0]
+%% #Model  16.76s var:5640/5884 constraints:9389/9458 [skipped_logs=1]
+%% #Bound  17.69s best:1155  next:[591,1154] bool_core (num_cores=43 [size:1 mw:1] a=6 d=2 fixed=374/8706 clauses=28'567) [skipped_logs=2]
+%% #Model  17.85s var:5636/5884 constraints:9389/9458 [skipped_logs=3]
+%% #Bound  18.76s best:1155  next:[594,1154] bool_core (num_cores=45 [size:1 mw:1] a=6 d=2 fixed=385/8717 clauses=33'060) [skipped_logs=2]
+%% #Model  18.31s var:5632/5884 constraints:9386/9458 [skipped_logs=0]
+%% #8      19.53s best:1152  next:[595,1151] quick_restart_no_lp (fixed_bools=381/9426)
+%%%mzn-stat: boolVariables=9426
+%%%mzn-stat: failures=36845
+%%%mzn-stat: objective=1152
+%%%mzn-stat: objectiveBound=595
+%%%mzn-stat: propagations=65851085
+%%%mzn-stat: solveTime=19.5312
+%%%mzn-stat-end
+Matches Schedule (Day, Stadium):
+Team 1	Team 2	Team 3	Team 4	Team 5	Team 6	Team 7	Team 8	
+Team 1	   -	(1,1)	(7,7)	(3,6)	(6,4)	(5,3)	(2,2)	(4,5)
+Team 2	(1,1)	   -	(5,2)	(4,4)	(7,6)	(3,5)	(6,7)	(2,3)
+Team 3	(7,7)	(5,2)	   -	(6,3)	(2,5)	(1,6)	(4,1)	(3,4)
+Team 4	(3,6)	(4,4)	(6,3)	   -	(5,1)	(2,7)	(1,5)	(7,2)
+Team 5	(6,4)	(7,6)	(2,5)	(5,1)	   -	(4,2)	(3,3)	(1,7)
+Team 6	(5,3)	(3,5)	(1,6)	(2,7)	(4,2)	   -	(7,4)	(6,1)
+Team 7	(2,2)	(6,7)	(4,1)	(1,5)	(3,3)	(7,4)	   -	(5,6)
+Team 8	(4,5)	(2,3)	(3,4)	(7,2)	(1,7)	(6,1)	(5,6)	   -
+
+Total Distance: 1152
+Team Distances: [143, 154, 131, 133, 131, 140, 172, 148]
+Spectators Left Out: 231000
+----------
+%% #Bound  19.68s best:1152  next:[597,1151] bool_core (num_cores=47 [cover] a=6 d=2 fixed=390/8727 clauses=28'146) [skipped_logs=2]
+%% #Model  19.47s var:5630/5884 constraints:9386/9458 [skipped_logs=1]
+%% #Model  20.98s var:5628/5884 constraints:9386/9458 [skipped_logs=1]
+%% #Bound  20.48s best:1152  next:[599,1151] bool_core (num_cores=48 [cover] a=6 d=2 fixed=392/8733 clauses=31'180) [skipped_logs=1]
+%% #Bound  21.89s best:1152  next:[601,1151] bool_core (num_cores=49 [cover] a=6 d=2 fixed=397/8739 clauses=27'747) [skipped_logs=1]
+%% #Model  21.85s var:5616/5884 constraints:9383/9458 [skipped_logs=2]
+%% #Bound  22.94s best:1152  next:[603,1151] bool_core (num_cores=50 [cover] a=6 d=2 fixed=413/8745 clauses=32'324) [skipped_logs=1]
+%% #Model  22.85s var:5605/5884 constraints:9377/9458 [skipped_logs=6]
+%% #Model  23.43s var:5598/5884 constraints:9377/9458 [skipped_logs=3]
+%% #Model  24.78s var:5585/5884 constraints:9371/9458 [skipped_logs=6]
+%% #Bound  25.26s best:1152  next:[604,1151] bool_core (num_cores=51 [size:1 mw:1] a=6 d=2 fixed=448/8751 clauses=26'700)
+%% #Bound  25.51s best:1152  next:[605,1151] bool_core (num_cores=51 [cover] a=6 d=2 fixed=449/8751 clauses=27'675)
+%% #Bound  25.70s best:1152  next:[606,1151] bool_core (num_cores=52 [size:1 mw:1] a=6 d=2 fixed=458/8757 clauses=28'760) [skipped_logs=0]
+%% #Model  25.84s var:5579/5884 constraints:9368/9458 [skipped_logs=2]
+%% #Bound  27.04s best:1152  next:[609,1151] bool_core (num_cores=54 [size:1 mw:1] a=6 d=2 fixed=463/8764 clauses=30'040) [skipped_logs=2]
+%% #Model  26.83s var:5576/5884 constraints:9365/9458 [skipped_logs=0]
+%% #Bound  27.97s best:1152  next:[613,1151] bool_core (num_cores=57 [size:1 mw:1] a=6 d=2 fixed=471/8771 clauses=34'000) [skipped_logs=3]
+%% #Model  27.17s var:5574/5884 constraints:9365/9458 [skipped_logs=1]
+%% #Bound  28.99s best:1152  next:[618,1151] bool_core (num_cores=61 [size:1 mw:1] a=6 d=2 fixed=472/8776 clauses=29'136) [skipped_logs=4]
+%% #Model  29.46s var:5573/5884 constraints:9365/9458
+%% #Bound  29.54s best:1152  next:[621,1151] bool_core (num_cores=63 [size:1 mw:1] a=6 d=2 fixed=474/8781 clauses=31'541) [skipped_logs=2]
+%% #Model  30.10s var:5572/5884 constraints:9365/9458
+%% #Model  30.98s var:5568/5884 constraints:9362/9458 [skipped_logs=2]
+%% #Bound  31.31s best:1152  next:[622,1151] bool_core (num_cores=64 [size:1 mw:1] a=6 d=2 fixed=475/8781 clauses=25'688)
+%% #Bound  31.78s best:1152  next:[624,1151] bool_core (num_cores=66 [size:1 mw:1] a=6 d=2 fixed=480/8781 clauses=27'685) [skipped_logs=1]
+%% #Model  31.72s var:5567/5884 constraints:9362/9458 [skipped_logs=0]
+%% #Bound  32.83s best:1152  next:[627,1151] bool_core (num_cores=68 [size:1 mw:1] a=6 d=2 fixed=483/8788 clauses=27'535) [skipped_logs=2]
+%% #Bound  33.94s best:1152  next:[630,1151] bool_core (num_cores=71 [size:1 mw:1] a=6 d=2 fixed=486/8791 clauses=31'498) [skipped_logs=2]
+%% #Model  34.74s var:5566/5884 constraints:9362/9458
+%% #Bound  34.72s best:1152  next:[632,1151] bool_core (num_cores=72 [cover] a=6 d=2 fixed=487/8792 clauses=33'750) [skipped_logs=1]
+%% #Model  35.03s var:5563/5884 constraints:9359/9458
+%% #Model  35.16s var:5558/5884 constraints:9353/9458
+%% #Bound  35.50s best:1152  next:[634,1151] bool_core (num_cores=73 [cover] a=6 d=2 fixed=490/8798 clauses=27'857) [skipped_logs=1]
+%% #Model  35.54s var:5552/5884 constraints:9350/9458 [skipped_logs=3]
+%% #Bound  36.83s best:1152  next:[636,1151] bool_core (num_cores=74 [cover] a=6 d=2 fixed=506/8804 clauses=34'383) [skipped_logs=1]
+%% #Model  37.61s var:5551/5884 constraints:9350/9458
+%% #Model  37.93s var:5550/5884 constraints:9350/9458 [skipped_logs=0]
+%% #Bound  38.77s best:1152  next:[637,1151] bool_core (num_cores=75 [size:1 mw:1] a=6 d=2 fixed=508/8810 clauses=25'738)
+%% #Bound  38.98s best:1152  next:[638,1151] bool_core (num_cores=76 [size:1 mw:1] a=6 d=2 fixed=521/8811 clauses=26'737)
+%% #Model  38.91s var:5540/5884 constraints:9341/9458 [skipped_logs=4]
+%% #Bound  39.93s best:1152  next:[642,1151] bool_core (num_cores=79 [size:1 mw:1] a=6 d=2 fixed=531/8819 clauses=30'725) [skipped_logs=3]
+%% #Model  39.76s var:5534/5884 constraints:9335/9458 [skipped_logs=1]
+%% #Bound  40.35s best:1152  next:[645,1151] bool_core (num_cores=81 [size:1 mw:1] a=6 d=2 fixed=533/8825 clauses=33'059) [skipped_logs=2]
+%% #Model  41.86s var:5532/5884 constraints:9332/9458
+%% #Bound  41.80s best:1152  next:[649,1151] bool_core (num_cores=84 [size:1 mw:1] a=6 d=2 fixed=539/8833 clauses=31'172) [skipped_logs=3]
+%% #Model  42.43s var:5531/5884 constraints:9332/9458
+%% #Bound  42.99s best:1152  next:[651,1151] bool_core (num_cores=86 [size:1 mw:1] a=6 d=2 fixed=543/8835 clauses=36'268) [skipped_logs=1]
+%% #Model  42.82s var:5529/5884 constraints:9329/9458 [skipped_logs=0]
+%% #Bound  43.84s best:1152  next:[654,1151] bool_core (num_cores=88 [size:1 mw:1] a=6 d=2 fixed=547/8842 clauses=39'465) [skipped_logs=2]
+%% #Model  44.79s var:5528/5884 constraints:9329/9458
+%% #Bound  44.15s best:1152  next:[655,1151] bool_core (num_cores=89 [size:1 mw:1] a=6 d=2 fixed=547/8843 clauses=29'406) [skipped_logs=0]
+%% #Bound  46.07s best:1152  next:[656,1151] bool_core (num_cores=90 [size:1 mw:1] a=6 d=2 fixed=550/8844 clauses=27'859)
+%% #Model  46.76s var:5526/5884 constraints:9326/9458
+%% #Bound  47.03s best:1152  next:[663,1151] bool_core (num_cores=94 [size:1 mw:1] a=6 d=2 fixed=555/8852 clauses=32'358) [skipped_logs=4]
+%% #Model  47.17s var:5523/5884 constraints:9323/9458
+%% #Model  47.94s var:5521/5884 constraints:9320/9458
+%% #Bound  47.96s best:1152  next:[667,1151] bool_core (num_cores=97 [size:1 mw:1] a=6 d=2 fixed=563/8859 clauses=28'010) [skipped_logs=3]
+%% #Model  48.56s var:5518/5884 constraints:9317/9458
+%% #Bound  48.86s best:1152  next:[672,1151] bool_core (num_cores=100 [size:1 mw:1] a=6 d=2 fixed=572/8868 clauses=32'043) [skipped_logs=3]
+%% #Bound  49.75s best:1152  next:[675,1151] bool_core (num_cores=103 [size:1 mw:1] a=6 d=2 fixed=575/8871 clauses=35'552) [skipped_logs=2]
+%% #Model  50.95s var:5517/5884 constraints:9317/9458
+%% #Bound  50.06s best:1152  next:[677,1151] bool_core (num_cores=104 [cover] a=6 d=2 fixed=576/8872 clauses=36'919) [skipped_logs=1]
+%% #Bound  51.63s best:1152  next:[678,1151] bool_core (num_cores=105 [size:1 mw:1] a=6 d=2 fixed=577/8878 clauses=33'998) [skipped_logs=0]
+%% #Bound  52.05s best:1152  next:[679,1151] bool_core (num_cores=106 [size:1 mw:1] a=6 d=2 fixed=580/8879 clauses=35'474) [skipped_logs=0]
+%% #Model  53.28s var:5516/5884 constraints:9317/9458
+%% #Bound  54.19s best:1152  next:[680,1151] bool_core (num_cores=107 [size:1 mw:1] a=6 d=2 fixed=583/8880 clauses=33'080)
+%% #Model  54.21s var:5514/5884 constraints:9314/9458
+%% #Bound  54.99s best:1152  next:[683,1151] bool_core (num_cores=109 [size:1 mw:1] a=6 d=2 fixed=586/8886 clauses=28'696) [skipped_logs=2]
+%% #Bound  55.77s best:1152  next:[687,1151] bool_core (num_cores=112 [cover] a=6 d=2 fixed=586/8886 clauses=32'394) [skipped_logs=3]
+%% #Bound  57.01s best:1152  next:[697,1151] bool_core (num_cores=122 [size:1 mw:1] a=6 d=2 fixed=597/8901 clauses=36'630) [skipped_logs=9]
+%% #Bound  57.75s best:1152  next:[700,1151] bool_core (num_cores=125 [size:1 mw:1] a=6 d=2 fixed=600/8904 clauses=38'628) [skipped_logs=2]
+%% #Bound  59.23s best:1152  next:[701,1151] bool_core (num_cores=126 [size:1 mw:1] a=6 d=2 fixed=601/8905 clauses=35'684)
+%% #Bound  59.71s best:1152  next:[705,1151] bool_core (num_cores=130 [size:1 mw:1] a=6 d=2 fixed=604/8909 clauses=36'762) [skipped_logs=3]
+%% #Bound  60.94s best:1152  next:[712,1151] bool_core (num_cores=136 [size:1 mw:1] a=6 d=2 fixed=612/8916 clauses=39'836) [skipped_logs=5]
+%% #Bound  63.14s best:1152  next:[713,1151] bool_core (num_cores=137 [size:1 mw:1] a=6 d=2 fixed=613/8917 clauses=38'067)
+%% #Bound  63.22s best:1152  next:[714,1151] bool_core (num_cores=138 [size:1 mw:1] a=6 d=2 fixed=613/8918 clauses=38'217)
+%% #Bound  63.87s best:1152  next:[717,1151] bool_core (num_cores=141 [size:1 mw:1] a=6 d=2 fixed=617/8921 clauses=33'705) [skipped_logs=2]
+%% #Bound  64.95s best:1152  next:[737,1151] bool_core (num_cores=144 [size:1 mw:1] a=5 d=2 fixed=635/8977 clauses=38'453) [skipped_logs=19]
+%% #Bound  65.83s best:1152  next:[744,1151] bool_core (num_cores=145 [cover] a=4 d=2 fixed=645/9008 clauses=41'961) [skipped_logs=6]
+%% #Bound  66.63s best:1152  next:[750,1151] bool_core (num_cores=146 [cover] a=4 d=2 fixed=651/9033 clauses=45'861) [skipped_logs=5]
+%% #Bound  67.62s best:1152  next:[752,1151] bool_core (num_cores=148 [size:1 mw:1] a=4 d=2 fixed=653/9044 clauses=40'881) [skipped_logs=1]
+%% #Bound  68.84s best:1152  next:[756,1151] bool_core (num_cores=150 [cover] a=4 d=2 fixed=657/9055 clauses=45'770) [skipped_logs=3]
+%% #Bound  69.99s best:1152  next:[760,1151] bool_core (num_cores=152 [cover] a=4 d=2 fixed=661/9067 clauses=40'587) [skipped_logs=3]
+%% #Bound  70.66s best:1152  next:[761,1151] bool_core (num_cores=153 [size:1 mw:1] a=4 d=2 fixed=662/9073 clauses=43'810) [skipped_logs=0]
+%% #Bound  71.62s best:1152  next:[764,1151] bool_core (num_cores=155 [cover] a=4 d=2 fixed=665/9083 clauses=47'577) [skipped_logs=2]
+%% #Bound  73.88s best:1152  next:[765,1151] bool_core (num_cores=156 [size:2 mw:1 d:3] a=3 d=3 fixed=666/9089 clauses=41'990)
+%% #Bound  74.28s best:1152  next:[766,1151] bool_core (num_cores=157 [size:1 mw:1] a=3 d=3 fixed=667/9096 clauses=43'583)
+%% #Bound  74.65s best:1152  next:[769,1151] bool_core (num_cores=157 [cover] a=3 d=3 fixed=669/9110 clauses=39'441) [skipped_logs=2]
+%% #Bound  75.98s best:1152  next:[774,1151] bool_core (num_cores=159 [size:1 mw:1] a=3 d=3 fixed=674/9144 clauses=44'987) [skipped_logs=4]
+%% #Bound  77.98s best:1152  next:[775,1151] bool_core (num_cores=160 [size:1 mw:1] a=3 d=3 fixed=675/9151 clauses=44'327)
+%% #Bound  79.68s best:1152  next:[776,1151] bool_core (num_cores=161 [size:1 mw:1] a=3 d=3 fixed=676/9158 clauses=50'086)
+%% #Bound  80.45s best:1152  next:[777,1151] bool_core (num_cores=162 [size:2 mw:1 d:3] a=2 d=3 fixed=677/9165 clauses=52'762)
+%% #Bound  80.74s best:1152  next:[778,1151] bool_core (num_cores=163 [size:1 mw:1] a=2 d=3 fixed=677/9172 clauses=53'894)
+%% #Bound  81.65s best:1152  next:[779,1151] bool_core (num_cores=164 [size:1 mw:1] a=2 d=3 fixed=678/9179 clauses=47'185)
+%% #Bound  85.08s best:1152  next:[780,1151] bool_core (num_cores=165 [size:1 mw:1] a=2 d=3 fixed=679/9186 clauses=49'332)
+%% #Bound  85.85s best:1152  next:[781,1151] bool_core (num_cores=166 [size:1 mw:1] a=2 d=3 fixed=680/9193 clauses=44'559)
+%% #Bound  85.94s best:1152  next:[782,1151] bool_core (num_cores=166 [cover] a=2 d=3 fixed=681/9193 clauses=44'730)
+%% #Bound  86.81s best:1152  next:[783,1151] bool_core (num_cores=167 [size:1 mw:1] a=2 d=3 fixed=682/9207 clauses=48'244)
+%% #Bound  87.98s best:1152  next:[784,1151] bool_core (num_cores=168 [size:1 mw:1] a=2 d=3 fixed=683/9214 clauses=52'715)
+%% #Bound  88.95s best:1152  next:[785,1151] bool_core (num_cores=169 [size:1 mw:1] a=2 d=3 fixed=684/9221 clauses=47'452)
+%% #Bound  89.07s best:1152  next:[786,1151] bool_core (num_cores=169 [cover] a=2 d=3 fixed=685/9221 clauses=47'847)
+%% #Bound  89.81s best:1152  next:[787,1151] bool_core (num_cores=170 [size:1 mw:1] a=2 d=3 fixed=686/9235 clauses=50'856)
+%% #Bound  91.16s best:1152  next:[788,1151] bool_core (num_cores=171 [size:1 mw:1] a=2 d=3 fixed=687/9242 clauses=55'931)
+%% #Bound  94.52s best:1152  next:[789,1151] bool_core (num_cores=172 [size:1 mw:1] a=2 d=3 fixed=688/9249 clauses=49'739)
+%% #Bound  96.18s best:1152  next:[790,1151] bool_core (num_cores=173 [size:1 mw:1] a=2 d=3 fixed=689/9256 clauses=55'508)
+%% #Bound  97.08s best:1152  next:[791,1151] bool_core (num_cores=174 [size:1 mw:1] a=2 d=3 fixed=691/9263 clauses=58'237)
+%% #Bound  98.05s best:1152  next:[792,1151] bool_core (num_cores=175 [size:1 mw:1] a=2 d=3 fixed=691/9270 clauses=52'126)
+%% #Bound  99.75s best:1152  next:[793,1151] bool_core (num_cores=176 [size:2 mw:1 d:4] a=1 d=4 fixed=692/9277 clauses=58'544)
+%% #Bound 100.36s best:1152  next:[794,1151] bool_core (num_cores=177 [size:1 mw:1] a=1 d=4 fixed=692/9292 clauses=60'860)
+%% #Bound 101.45s best:1152  next:[795,1151] bool_core (num_cores=178 [size:1 mw:1] a=1 d=4 fixed=693/9307 clauses=56'366)
+%% #Bound 105.44s best:1152  next:[796,1151] bool_core (num_cores=179 [size:1 mw:1] a=1 d=4 fixed=694/9322 clauses=54'235)
+%% #Bound 107.69s best:1152  next:[797,1151] bool_core (num_cores=180 [size:1 mw:1] a=1 d=4 fixed=695/9337 clauses=62'027)
+%% #Bound 109.76s best:1152  next:[798,1151] bool_core (num_cores=181 [size:1 mw:1] a=1 d=4 fixed=696/9352 clauses=58'924)
+%% #Bound 112.21s best:1152  next:[799,1151] bool_core (num_cores=182 [size:1 mw:1] a=1 d=4 fixed=697/9367 clauses=66'375)
+%% #Bound 116.87s best:1152  next:[800,1151] bool_core (num_cores=183 [size:1 mw:1] a=1 d=4 fixed=698/9382 clauses=63'194)
+%% #Bound 119.58s best:1152  next:[801,1151] bool_core (num_cores=184 [size:1 mw:1] a=1 d=4 fixed=699/9397 clauses=62'688)
+%% #Bound 121.91s best:1152  next:[802,1151] bool_core (num_cores=185 [size:1 mw:1] a=1 d=4 fixed=700/9412 clauses=69'026)
+%% #Bound 127.33s best:1152  next:[803,1151] bool_core (num_cores=186 [size:1 mw:1] a=1 d=4 fixed=701/9427 clauses=67'066)
+%% #Bound 130.50s best:1152  next:[804,1151] bool_core (num_cores=187 [size:1 mw:1] a=1 d=4 fixed=702/9442 clauses=67'244)
+%% #Bound 134.54s best:1152  next:[805,1151] bool_core (num_cores=188 [size:1 mw:1] a=1 d=4 fixed=703/9457 clauses=69'510)
+%% #Bound 140.95s best:1152  next:[806,1151] bool_core (num_cores=189 [size:1 mw:1] a=1 d=4 fixed=704/9472 clauses=69'967)
+%% #Bound 146.59s best:1152  next:[807,1151] bool_core (num_cores=190 [size:1 mw:1] a=1 d=4 fixed=705/9487 clauses=69'303)
+%% #Bound 155.78s best:1152  next:[808,1151] bool_core (num_cores=191 [size:1 mw:1] a=1 d=4 fixed=706/9502 clauses=76'587)
+%% #Bound 169.86s best:1152  next:[809,1151] bool_core (num_cores=192 [size:1 mw:1] a=1 d=4 fixed=707/9517 clauses=76'648)
+%% #Bound 179.59s best:1152  next:[810,1151] bool_core (num_cores=193 [size:1 mw:1] a=1 d=4 fixed=708/9532 clauses=73'672)
+%% #Bound 188.85s best:1152  next:[811,1151] bool_core (num_cores=194 [size:1 mw:1] a=1 d=4 fixed=709/9547 clauses=78'696)
+%% #Bound 197.13s best:1152  next:[812,1151] bool_core (num_cores=195 [size:1 mw:1] a=1 d=4 fixed=710/9562 clauses=72'994)
+%% #Bound 202.94s best:1152  next:[813,1151] bool_core (num_cores=196 [size:1 mw:1] a=1 d=4 fixed=711/9577 clauses=75'401)
+%% #Bound 213.26s best:1152  next:[814,1151] bool_core (num_cores=197 [size:1 mw:1] a=1 d=4 fixed=712/9592 clauses=80'937)
+%% #Bound 224.62s best:1152  next:[815,1151] bool_core (num_cores=198 [size:1 mw:1] a=1 d=4 fixed=713/9607 clauses=81'454)
+%% #Bound 235.60s best:1152  next:[816,1151] bool_core (num_cores=199 [size:1 mw:1] a=1 d=4 fixed=714/9622 clauses=79'232)
+%% #Bound 249.21s best:1152  next:[817,1151] bool_core (num_cores=200 [size:1 mw:1] a=1 d=4 fixed=715/9637 clauses=80'733)
+%% #Bound 261.17s best:1152  next:[818,1151] bool_core (num_cores=201 [size:1 mw:1] a=1 d=4 fixed=716/9652 clauses=80'160)
+%% #Bound 269.65s best:1152  next:[819,1151] bool_core (num_cores=202 [size:1 mw:1] a=1 d=4 fixed=717/9667 clauses=79'255)
+%% #Bound 277.12s best:1152  next:[820,1151] bool_core (num_cores=203 [size:1 mw:1] a=1 d=4 fixed=718/9682 clauses=79'910)
+%% #Bound 283.71s best:1152  next:[821,1151] bool_core (num_cores=204 [size:1 mw:1] a=1 d=4 fixed=719/9697 clauses=82'055)
+%% #Bound 287.79s best:1152  next:[822,1151] bool_core (num_cores=205 [size:1 mw:1] a=1 d=4 fixed=720/9712 clauses=80'680)
+%% #Bound 294.73s best:1152  next:[823,1151] bool_core (num_cores=206 [size:1 mw:1] a=1 d=4 fixed=723/9727 clauses=79'114)
+%% #Bound 298.40s best:1152  next:[824,1151] bool_core (num_cores=207 [size:1 mw:1] a=1 d=4 fixed=724/9742 clauses=85'056)
+%% #Bound 304.20s best:1152  next:[825,1151] bool_core (num_cores=208 [size:1 mw:1] a=1 d=4 fixed=725/9757 clauses=85'423)
+%% #Bound 314.49s best:1152  next:[826,1151] bool_core (num_cores=209 [size:1 mw:1] a=1 d=4 fixed=726/9772 clauses=91'275)
+%% #Bound 326.11s best:1152  next:[827,1151] bool_core (num_cores=210 [size:1 mw:1] a=1 d=4 fixed=727/9787 clauses=90'433)
+%% #Bound 335.59s best:1152  next:[828,1151] bool_core (num_cores=211 [size:1 mw:1] a=1 d=4 fixed=728/9802 clauses=91'194)
+%% #Bound 345.19s best:1152  next:[829,1151] bool_core (num_cores=212 [size:1 mw:1] a=1 d=4 fixed=729/9817 clauses=88'631)
+%% #Bound 354.69s best:1152  next:[830,1151] bool_core (num_cores=213 [size:1 mw:1] a=1 d=4 fixed=730/9832 clauses=90'020)
+%% #Bound 364.63s best:1152  next:[831,1151] bool_core (num_cores=214 [size:1 mw:1] a=1 d=4 fixed=731/9847 clauses=97'000)
+%% #Bound 377.37s best:1152  next:[832,1151] bool_core (num_cores=215 [size:1 mw:1] a=1 d=4 fixed=732/9862 clauses=96'043)
+%% #Bound 389.68s best:1152  next:[833,1151] bool_core (num_cores=216 [size:1 mw:1] a=1 d=4 fixed=733/9877 clauses=100'191)
+%% #Bound 404.15s best:1152  next:[834,1151] bool_core (num_cores=217 [size:1 mw:1] a=1 d=4 fixed=734/9892 clauses=101'493)
+%% #Bound 416.48s best:1152  next:[835,1151] bool_core (num_cores=218 [size:1 mw:1] a=1 d=4 fixed=735/9907 clauses=97'759)
+%% #Bound 430.46s best:1152  next:[836,1151] bool_core (num_cores=219 [size:1 mw:1] a=1 d=4 fixed=736/9922 clauses=104'830)
+%% #Bound 445.78s best:1152  next:[837,1151] bool_core (num_cores=220 [size:1 mw:1] a=1 d=4 fixed=737/9937 clauses=105'692)
+%% #Bound 462.57s best:1152  next:[838,1151] bool_core (num_cores=221 [size:1 mw:1] a=1 d=4 fixed=738/9952 clauses=106'390)
+%% #Bound 480.27s best:1152  next:[839,1151] bool_core (num_cores=222 [size:1 mw:1] a=1 d=4 fixed=739/9967 clauses=108'001)
+%% #Bound 499.97s best:1152  next:[840,1151] bool_core (num_cores=223 [size:1 mw:1] a=1 d=4 fixed=740/9982 clauses=112'119)
+%% #Bound 514.63s best:1152  next:[841,1151] bool_core (num_cores=224 [size:1 mw:1] a=1 d=4 fixed=741/9997 clauses=107'638)
+%% #Bound 536.04s best:1152  next:[842,1151] bool_core (num_cores=225 [size:1 mw:1] a=1 d=4 fixed=742/10012 clauses=108'639)
+%% #Bound 557.37s best:1152  next:[843,1151] bool_core (num_cores=226 [size:1 mw:1] a=1 d=4 fixed=743/10027 clauses=113'628)
+%% #Bound 579.72s best:1152  next:[844,1151] bool_core (num_cores=227 [size:1 mw:1] a=1 d=4 fixed=744/10042 clauses=119'459)
+%% #Bound 602.16s best:1152  next:[845,1151] bool_core (num_cores=228 [size:1 mw:1] a=1 d=4 fixed=745/10057 clauses=116'750)
+%% #Bound 626.10s best:1152  next:[846,1151] bool_core (num_cores=229 [size:1 mw:1] a=1 d=4 fixed=746/10072 clauses=116'999)
+%% #Bound 650.60s best:1152  next:[847,1151] bool_core (num_cores=230 [size:1 mw:1] a=1 d=4 fixed=747/10087 clauses=126'066)
+%% #Bound 676.22s best:1152  next:[848,1151] bool_core (num_cores=231 [size:1 mw:1] a=1 d=4 fixed=748/10102 clauses=126'454)
+%% #Bound 698.95s best:1152  next:[849,1151] bool_core (num_cores=232 [size:1 mw:1] a=1 d=4 fixed=749/10117 clauses=120'958)
+%% #Bound 728.22s best:1152  next:[850,1151] bool_core (num_cores=233 [size:1 mw:1] a=1 d=4 fixed=750/10132 clauses=129'497)
+%% #Bound 761.98s best:1152  next:[851,1151] bool_core (num_cores=234 [size:1 mw:1] a=1 d=4 fixed=752/10147 clauses=126'649)
+%% #Bound 793.47s best:1152  next:[852,1151] bool_core (num_cores=235 [size:1 mw:1] a=1 d=4 fixed=753/10162 clauses=132'162)
+%% #Bound 831.00s best:1152  next:[853,1151] bool_core (num_cores=236 [size:1 mw:1] a=1 d=4 fixed=754/10177 clauses=134'395)
+%% #Bound 865.56s best:1152  next:[854,1151] bool_core (num_cores=237 [size:1 mw:1] a=1 d=4 fixed=756/10192 clauses=139'640)
+%% #Bound 906.79s best:1152  next:[855,1151] bool_core (num_cores=238 [size:1 mw:1] a=1 d=4 fixed=757/10207 clauses=137'138)
+%% #Bound 944.60s best:1152  next:[856,1151] bool_core (num_cores=239 [size:1 mw:1] a=1 d=4 fixed=758/10222 clauses=139'601)
+%% #Bound 983.86s best:1152  next:[857,1151] bool_core (num_cores=240 [size:1 mw:1] a=1 d=4 fixed=759/10237 clauses=144'450)
+%% #Bound 1021.05s best:1152  next:[858,1151] bool_core (num_cores=241 [size:1 mw:1] a=1 d=4 fixed=760/10252 clauses=144'707)
+%% #Bound 1043.38s best:1152  next:[859,1151] bool_core (num_cores=242 [size:1 mw:1] a=1 d=4 fixed=761/10267 clauses=149'050)
+%% #Bound 1077.07s best:1152  next:[860,1151] bool_core (num_cores=243 [size:1 mw:1] a=1 d=4 fixed=762/10282 clauses=150'457)
+%% #Bound 1130.81s best:1152  next:[861,1151] bool_core (num_cores=244 [size:1 mw:1] a=1 d=4 fixed=763/10297 clauses=155'902)
+%% #Bound 1201.71s best:1152  next:[862,1151] bool_core (num_cores=245 [size:1 mw:1] a=1 d=4 fixed=764/10312 clauses=160'606)
+%% #Bound 1275.09s best:1152  next:[863,1151] bool_core (num_cores=246 [size:1 mw:1] a=1 d=4 fixed=765/10326 clauses=158'702)
+%% #Bound 1343.38s best:1152  next:[864,1151] bool_core (num_cores=247 [size:1 mw:1] a=1 d=4 fixed=766/10340 clauses=164'359)
+%% #Bound 1416.29s best:1152  next:[865,1151] bool_core (num_cores=248 [size:1 mw:1] a=1 d=4 fixed=767/10354 clauses=167'386)
+%% #Bound 1499.00s best:1152  next:[866,1151] bool_core (num_cores=249 [size:1 mw:1] a=1 d=4 fixed=768/10368 clauses=173'163)
+%% #Bound 1578.59s best:1152  next:[867,1151] bool_core (num_cores=250 [size:1 mw:1] a=1 d=4 fixed=769/10382 clauses=176'199)
+%% #Bound 1660.55s best:1152  next:[868,1151] bool_core (num_cores=251 [size:1 mw:1] a=1 d=4 fixed=774/10396 clauses=180'289)
+%% #Bound 1725.28s best:1152  next:[869,1151] bool_core (num_cores=252 [size:1 mw:1] a=1 d=4 fixed=778/10410 clauses=178'611)
+%% #Bound 1832.86s best:1152  next:[870,1151] bool_core (num_cores=253 [size:1 mw:1] a=1 d=4 fixed=779/10424 clauses=187'021)
+%% #Bound 1955.23s best:1152  next:[871,1151] bool_core (num_cores=254 [size:1 mw:1] a=1 d=4 fixed=780/10438 clauses=194'905)
+%% #Bound 2068.08s best:1152  next:[872,1151] bool_core (num_cores=255 [size:1 mw:1] a=1 d=4 fixed=781/10452 clauses=196'755)
+%% #Bound 2201.86s best:1152  next:[873,1151] bool_core (num_cores=256 [size:1 mw:1] a=1 d=4 fixed=783/10466 clauses=204'461)
+%% #Bound 2317.56s best:1152  next:[874,1151] bool_core (num_cores=257 [size:1 mw:1] a=1 d=4 fixed=784/10479 clauses=207'229)
+%% #Bound 2401.29s best:1152  next:[875,1151] bool_core (num_cores=258 [size:1 mw:1] a=1 d=4 fixed=786/10492 clauses=206'583)
+%% #Bound 2493.76s best:1152  next:[876,1151] bool_core (num_cores=259 [size:1 mw:1] a=1 d=4 fixed=787/10505 clauses=207'602)
+%% #Bound 2637.05s best:1152  next:[877,1151] bool_core (num_cores=260 [size:1 mw:1] a=1 d=4 fixed=789/10518 clauses=219'029)
+%% #Bound 2758.99s best:1152  next:[878,1151] bool_core (num_cores=261 [size:1 mw:1] a=1 d=4 fixed=792/10531 clauses=217'637)
+%% #Bound 2859.69s best:1152  next:[879,1151] bool_core (num_cores=262 [size:1 mw:1] a=1 d=4 fixed=793/10544 clauses=217'591)
+%% #Bound 2943.86s best:1152  next:[880,1151] bool_core (num_cores=263 [size:1 mw:1] a=1 d=4 fixed=795/10557 clauses=223'713)
+%% #Bound 3046.60s best:1152  next:[881,1151] bool_core (num_cores=264 [size:1 mw:1] a=1 d=4 fixed=796/10570 clauses=222'533)
+%% #Bound 3151.20s best:1152  next:[882,1151] bool_core (num_cores=265 [size:1 mw:1] a=1 d=4 fixed=797/10583 clauses=224'610)
+%% #Bound 3279.01s best:1152  next:[883,1151] bool_core (num_cores=266 [size:1 mw:1] a=1 d=4 fixed=799/10596 clauses=234'588)
+%% #Bound 3385.19s best:1152  next:[884,1151] bool_core (num_cores=267 [size:1 mw:1] a=1 d=4 fixed=801/10609 clauses=236'068)
+%% #Bound 3509.33s best:1152  next:[885,1151] bool_core (num_cores=268 [size:1 mw:1] a=1 d=4 fixed=802/10622 clauses=233'783)
+%% #Bound 3648.11s best:1152  next:[886,1151] bool_core (num_cores=269 [size:1 mw:1] a=1 d=4 fixed=803/10635 clauses=240'280)
+Stopped.
+=====UNKNOWN=====
+%%%mzn-stat: nSolutions=8
+%%%mzn-stat-end
+Finished in 1h 1m 32s.
